@@ -714,7 +714,7 @@
 	<ingredient name="resourceRadiator" count="1"/>
 </recipe>
 
-<recipe name="9mm Bullet" count="1" craft_time="3">
+<recipe name="9mm Bullet" count="1" craft_time="2">
 	<ingredient name="resourceBulletTip" count="1"/>
 	<ingredient name="resourceGunPowder" count="6"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
@@ -725,14 +725,14 @@
 	<ingredient name="ammo9mmBulletBallRE" count="1"/>
 </recipe>
 
-<recipe name="9mm HP Bullet" count="1" craft_time="3" tags="learnable">
+<recipe name="9mm HP Bullet" count="1" craft_time="2" tags="learnable">
 	<ingredient name="resourceBulletTip" count="1"/>
 	<ingredient name="resourceGunPowder" count="8"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 	<ingredient name="Reloading_Tool" count="1"/>
 </recipe>
 
-<recipe name="44Magnum Bullet" count="1" craft_time="3">
+<recipe name="44Magnum Bullet" count="1" craft_time="2">
 	<ingredient name="resourceBulletTip" count="4"/>
 	<ingredient name="resourceGunPowder" count="25"/>
 	<ingredient name="resourceBulletCasing" count="4"/>
@@ -743,14 +743,14 @@
 	<ingredient name="ammo44MagnumBulletBallRE" count="1"/>
 </recipe>
 
-<recipe name="44Magnum HP Bullet" count="1" craft_time="3" tags="learnable">
+<recipe name="44Magnum HP Bullet" count="1" craft_time="2" tags="learnable">
 	<ingredient name="resourceBulletTip" count="4"/>
 	<ingredient name="resourceGunPowder" count="33"/>
 	<ingredient name="resourceBulletCasing" count="4"/>
 	<ingredient name="Reloading_Tool" count="1"/>
 </recipe>
 
-<recipe name="762 Bullet" count="1" craft_time="3">
+<recipe name="762 Bullet" count="1" craft_time="2">
 	<ingredient name="resourceBulletTip" count="1"/>
 	<ingredient name="resourceGunPowder" count="7"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
@@ -761,14 +761,14 @@
 	<ingredient name="ammo762mmBulletBallRE" count="1"/>
 </recipe>
 
-<recipe name="762 HP Bullet" count="1" craft_time="3" tags="learnable">
+<recipe name="762 HP Bullet" count="1" craft_time="2" tags="learnable">
 	<ingredient name="resourceBulletTip" count="1"/>
 	<ingredient name="resourceGunPowder" count="9"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 	<ingredient name="Reloading_Tool" count="1"/>
 </recipe>
 
-<recipe name="Shotgun Shell" count="1" craft_time="3">
+<recipe name="Shotgun Shell" count="1" craft_time="2">
 	<ingredient name="resourceBuckshot" count="1"/>
 	<ingredient name="resourceGunPowder" count="20"/>
 	<ingredient name="resourcePaper" count="2"/>
@@ -779,7 +779,7 @@
 	<ingredient name="ammoShotgunShellRE" count="1"/>
 </recipe>
 
-<recipe name="Shotgun Slug" count="1" craft_time="3" tags="learnable">
+<recipe name="Shotgun Slug" count="1" craft_time="2" tags="learnable">
 	<ingredient name="resourceBulletTip" count="4"/>
 	<ingredient name="resourceGunPowder" count="25"/>
 	<ingredient name="resourceScrapPolymers" count="2"/>
