@@ -162,7 +162,7 @@ foodGumboStew,Gumbo Stew (Melee Speed)
 foodShepardsPie,Shepards Pie (Strength)
 foodSpaghetti,Spaghetti (Agility)
 foodTunaFishGravyToast,Tuna Fish Gravy Toast (Reload Speed)
-modArmorBandolierDesc,Reload 15% faster.\nThe effect does not stack but it can be installed into any chest or leg armor.
+modArmorBandolierDesc,Reload 10% faster.\nThe effect does not stack but it can be installed into any chest or leg armor.
 Athletic Jacket Mod Schematic,Athletic Jacket Mod Schematic
 High Permormance Running Soles Schematic,High Permormance Running Soles Schematic
 drinkCanMegaCrushSchematic,Mega Crush Schematic
