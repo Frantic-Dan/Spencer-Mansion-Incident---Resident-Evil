@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+	<backgrounds>
+		<tex file="..." />
+	</backgrounds>
+
+	<tips>
+		<tip key="loadingTipRE1" />
+		<tip key="loadingTipRE2" />
+		<tip key="loadingTipRE3" />
+		<tip key="loadingTipRE4" />
+		<tip key="loadingTipRE5" />
+		<tip key="loadingTipRE6" />
+		<tip key="loadingTipRE7" />
+	</tips>
+</doc>
