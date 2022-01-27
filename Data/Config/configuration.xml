@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Servers>
+
+       <ServerGroup Name="Spencer Mansion Incident - Resident Evil" Logo="" Description="">
+
+               <Server Name="Jill Valentine's Story" Logo="">
+
+                       <Description>
+
+Have you ever wanted to play Resident Evil in first person? Well now you can!
+
+STORY: Experience the 1998 Spencer Mansion Incident as Jill Valentine. Collect keys, solve puzzles, manage your limited resources and escape from the survival horror.
+
+
+Setup:
+When starting a new game, make sure to select the 'Spencer Mansion Incident' world.
+I've made setup easy to follow by making the text orange for all settings you'll need to manually change for the intended Resident Evil experience.
+It will always be night, so be sure to change the Zombie Night Speed to your liking.
+
+**IMPORTANT**
+PLEASE NOTE: 
+1) The Spencer Mansion Incident is a Permadeath mod, and will test your combat and maneuverability skills.
+2) This was designed for Single Player, playing Multiplayer could possibly result in errors,
+For Example: more than one person accessing 'The Vault' at the same time.
+3) If you don't change the orange coloured game settings to their stated value, you'll be playing with unintended settings.
+
+			
+KEY FEATURES:
+1) Limited Inventory: You'll be restricted to a 6 slot toolbelt and 6 slots of main inventory.
+2) Reworked and rebalanced Skill Tree: There are no attribute requirements for skills,
+so you'll be free to put your skill points wherever you wish as long as yopu have enough points.
+3) You can't jump.
+4) Linked Storage: You'll be able to access your stored items from any of the storage boxes. (Huge thank you to wOOkie nOOkie!!)
+5) Simplified Criticals: I've removed the severe critical injuries and shortened the duration of fatigue.
+
+
+
+			
+I'm looking for translations. Current supported languages: English, Japanese.
+
+
+                       </Description>
+
+                       <DownloadMode>Clone</DownloadMode>
+
+                       <SubscriptionLink></SubscriptionLink>
+
+                       <Version>A20.1</Version>
+
+                       <ReleaseNotes/>
+
+                       <Downloads>
+
+                       <Download>https://github.com/Frantic-Dan/Spencer-Mansion-Incident-A20</Download>
+
+                 </Downloads>
+
+               </Server>
+
+       </ServerGroup>
+
+</Servers>
