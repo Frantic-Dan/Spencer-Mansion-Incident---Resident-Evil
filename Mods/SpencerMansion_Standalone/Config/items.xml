@@ -5873,7 +5873,7 @@ add knockdown resist to armor
 		<property name="Delay" value=".85"/>
 		<property name="Range" value="2.4"/>
 		<property name="Sphere" value=".2"/>
-		<property name="DamageEntity" value="26"/>
+		<property name="DamageEntity" value="24"/>
 		<property name="DamageBlock" value="10"/>
 	</property>
 	<effect_group name="meleeHandAnimalBear" tiered="false">
