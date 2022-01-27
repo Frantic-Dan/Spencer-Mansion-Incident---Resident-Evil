@@ -786,7 +786,7 @@
 	<ingredient name="Reloading_Tool" count="1"/>
 </recipe>
 
-<recipe name="Gun Powder" count="1" craft_time="3">
+<recipe name="Gun Powder" count="1" craft_time="2">
 	<ingredient name="resourceCoal" count="5"/>
 	<ingredient name="resourcePotassiumNitratePowder" count="5"/>
 	<ingredient name="Reloading_Tool" count="1"/>
