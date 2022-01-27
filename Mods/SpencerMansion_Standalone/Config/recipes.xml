@@ -796,34 +796,34 @@
 	<ingredient name="Coin" count="1"/>
 </recipe>
 
-<recipe name="Empty Water Bottle" count="1" craft_time="3">
+<recipe name="Empty Water Bottle" count="1" craft_time="1">
 	<ingredient name="Empty_Bottle" count="1"/>
 </recipe>
 
-<recipe name="Empty UMB-No3 Bottle" count="1" craft_time="3">
+<recipe name="Empty UMB-No3 Bottle" count="1" craft_time="1">
 	<ingredient name="Empty_Bottle" count="1"/>
 </recipe>
 
-<recipe name="Empty Yellow-6 Bottle" count="1" craft_time="3">
+<recipe name="Empty Yellow-6 Bottle" count="1" craft_time="1">
 	<ingredient name="Empty_Bottle" count="1"/>
 </recipe>
 
-<recipe name="NP-004 (Mixing)" count="1" craft_time="3">
+<recipe name="NP-004 (Mixing)" count="1" craft_time="1">
 	<ingredient name="Water_(Filled)" count="1"/>
 	<ingredient name="UMB-No3_(Filled)" count="1"/>
 </recipe>
 
-<recipe name="UMB-No7 (Mixing)" count="1" craft_time="3">
+<recipe name="UMB-No7 (Mixing)" count="1" craft_time="1">
 	<ingredient name="Water_(Filled)" count="1"/>
 	<ingredient name="Yellow-6_(Filled)" count="1"/>
 </recipe>
 
-<recipe name="UMB-No10 (Mixing)" count="1" craft_time="3">
+<recipe name="UMB-No10 (Mixing)" count="1" craft_time="1">
 	<ingredient name="NP-004_(Filled)" count="1"/>
 	<ingredient name="Yellow-6_(Filled)" count="1"/>
 </recipe>
 
-<recipe name="VP-017 (Mixing)" count="1" craft_time="3">
+<recipe name="VP-017 (Mixing)" count="1" craft_time="1">
 	<ingredient name="UMB-No7_(Filled)" count="1"/>
 	<ingredient name="UMB-No10_(Filled)" count="1"/>
 </recipe>
