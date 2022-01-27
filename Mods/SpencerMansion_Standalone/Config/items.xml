@@ -1113,7 +1113,7 @@
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 		<property name="Create_item" value="resourceGunPowder,Reloading_Tool"/>
-		<property name="Create_item_count" value="2,1"/>
+		<property name="Create_item_count" value="5,1"/>
 	</property>
 </item>
 
