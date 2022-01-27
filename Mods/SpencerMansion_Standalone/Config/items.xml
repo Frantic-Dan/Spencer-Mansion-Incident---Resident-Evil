@@ -5385,7 +5385,7 @@ add knockdown resist to armor
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
 		<property name="Range" value="1.57"/>
-		<property name="DamageEntity" value="30"/>
+		<property name="DamageEntity" value="32"/>
 		<property name="DamageBlock" value="50000"/>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
