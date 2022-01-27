@@ -1,0 +1,175 @@
+<configs>
+<append xpath="/entitygroups">
+
+	<entitygroup name="ZombieForest">
+		<entity name="Forest Speyer"/>
+	</entitygroup>
+
+	<entitygroup name="ZombieCrimson">
+		<entity name="Crimson Head"/>
+	</entitygroup>
+
+	<entitygroup name="ZombieFailedTestSubject">
+		<entity name="Failed Test Subject"/>
+	</entitygroup>
+
+	<entitygroup name="ZombiePrototype">
+		<entity name="Crimson Head Prototype"/>
+	</entitygroup>
+
+	<entitygroup name="GraceGroup">
+		<entity name="Yawn the Boar"/>
+	</entitygroup>
+
+	<entitygroup name="ZombieTyrant">
+		<entity name="Tyrant"/>
+	</entitygroup>
+
+	<entitygroup name="ZombieSuperTyrant">
+		<entity name="Super Tyrant"/>
+	</entitygroup>
+
+	<entitygroup name="WolfGroup">
+		<entity name="animalWolf"/>
+	</entitygroup>
+
+	<entitygroup name="ZombieScouts">
+		<entity name="animalRabbit"/>
+	</entitygroup>
+
+	<entitygroup name="ZombiesCrawlers">
+		<entity name="Steve Crawler"/>
+		<entity name="Boe Crawler"/>
+		<entity name="Joe Crawler"/>
+		<entity name="Janitor Crawler"/>
+		<entity name="Arlene Crawler"/>
+		<entity name="Lab Worker Crawler"/>
+		<entity name="Darlene Crawler"/>
+		<entity name="Marlene Crawler"/>
+		<entity name="Yo Crawler"/>
+		<entity name="Business Man Crawler"/>
+		<entity name="Burnt Crawler"/>
+		<entity name="Nurse Crawler"/>
+		<entity name="Hazmat Crawler"/>
+		<entity name="Skateboarder Crawler"/>
+	</entitygroup>
+
+	<entitygroup name="MansionZombies">
+		<entity name="zombieBoe"/>
+		<entity name="zombieJoe"/>
+		<entity name="zombieSteve"/>
+		<entity name="zombieTomClark"/>
+		<entity name="zombieYo"/>
+		<entity name="zombieBusinessMan"/>
+		<entity name="zombieArlene"/>
+		<entity name="zombieDarlene"/>
+		<entity name="zombieMarlene"/>
+		<entity name="zombieJanitor"/>
+	</entitygroup>
+
+	<entitygroup name="MansionHunterZombies">
+		<entity name="zombieBoe"/>
+		<entity name="zombieJoe"/>
+		<entity name="zombieSteve"/>
+		<entity name="zombieTomClark"/>
+		<entity name="zombieYo"/>
+		<entity name="zombieBusinessMan"/>
+		<entity name="zombieArlene"/>
+		<entity name="zombieDarlene"/>
+		<entity name="zombieMarlene"/>
+		<entity name="zombieJanitor"/>
+		<entity name="Hunter"/>
+	</entitygroup>
+
+	<entitygroup name="ResidenceZombies">
+		<entity name="zombieMoe"/>
+		<entity name="zombieBiker"/>
+		<entity name="zombieLumberjack"/>
+		<entity name="zombieFemaleFat"/>
+		<entity name="zombieFatHawaiian"/>
+		<entity name="zombieSkateboarder"/>
+		<entity name="zombieUtilityWorker"/>
+	</entitygroup>
+
+	<entitygroup name="LaboratoryZombies">
+		<entity name="zombieLab" />
+		<entity name="zombieNurse"/>
+		<entity name="zombieMaleHazmat" />
+		<entity name="zombieSoldier" />
+		<entity name="zombieMutated" />
+	</entitygroup>
+
+	<entitygroup name="AntiDayTimeSpawns">
+		<entity name="zombieMarleneRadiated" />
+		<entity name="zombieJoeRadiated"/>
+		<entity name="zombieYoRadiated" />
+		<entity name="zombieJanitorRadiated" />
+	</entitygroup>
+
+<!-- Mansion Sleeper Volume -->
+	<entitygroup name="sleeperMansionStageGS1"><entity name="zombieJanitor"/><entity name="zombieJoe"/><entity name="zombieMarlene"/><entity name="zombieDarlene"/><entity name="zombieArlene"/><entity name="zombieBoe"/><entity name="zombieBusinessMan"/><entity name="zombieTomClark"/><entity name="zombieYo"/><entity name="zombieSteve"/></entitygroup>
+	<entitygroup name="sleeperMansionStageGS10"><entity name="zombieJanitor"/><entity name="zombieJoe"/><entity name="zombieMarlene"/><entity name="zombieDarlene"/><entity name="zombieArlene"/><entity name="zombieBoe"/><entity name="zombieBusinessMan"/><entity name="zombieTomClark"/><entity name="zombieYo"/><entity name="zombieSteve"/></entitygroup>
+	<entitygroup name="sleeperMansionStageGS20"><entity name="zombieJanitor"/><entity name="zombieJoe"/><entity name="zombieMarlene"/><entity name="zombieDarlene"/><entity name="zombieArlene"/><entity name="zombieBoe"/><entity name="zombieBusinessMan"/><entity name="zombieTomClark"/><entity name="zombieYo"/><entity name="zombieSteve"/></entitygroup>
+	<entitygroup name="sleeperMansionStageGS30"><entity name="zombieJanitor"/><entity name="zombieJoe"/><entity name="zombieMarlene"/><entity name="zombieDarlene"/><entity name="zombieArlene"/><entity name="zombieBoe"/><entity name="zombieBusinessMan"/><entity name="zombieTomClark"/><entity name="zombieYo"/><entity name="zombieSteve"/></entitygroup>
+	<entitygroup name="sleeperMansionStageGS40"><entity name="zombieJanitor"/><entity name="zombieJoe"/><entity name="zombieMarlene"/><entity name="zombieDarlene"/><entity name="zombieArlene"/><entity name="zombieBoe"/><entity name="zombieBusinessMan"/><entity name="zombieTomClark"/><entity name="zombieYo"/><entity name="zombieSteve"/></entitygroup>
+	<entitygroup name="sleeperMansionStageGS50"><entity name="zombieJanitor"/><entity name="zombieJoe"/><entity name="zombieMarlene"/><entity name="zombieDarlene"/><entity name="zombieArlene"/><entity name="zombieBoe"/><entity name="zombieBusinessMan"/><entity name="zombieTomClark"/><entity name="zombieYo"/><entity name="zombieSteve"/></entitygroup>
+
+<!-- Mansion Hunter Sleeper Volume -->
+	<entitygroup name="sleeperMansionHunterStageGS1"><entity name="zombieJanitor"/><entity name="zombieJoe"/><entity name="zombieMarlene"/><entity name="zombieDarlene"/><entity name="zombieArlene"/><entity name="zombieBoe"/><entity name="zombieBusinessMan"/><entity name="zombieTomClark"/><entity name="zombieYo"/><entity name="zombieSteve"/></entitygroup>
+	<entitygroup name="sleeperMansionHunterStageGS9"><entity name="Hunter"/></entitygroup>
+	<entitygroup name="sleeperMansionHunterStageGS20"><entity name="Hunter"/></entitygroup>
+	<entitygroup name="sleeperMansionHunterStageGS30"><entity name="Hunter"/></entitygroup>
+	<entitygroup name="sleeperMansionHunterStageGS40"><entity name="Hunter"/></entitygroup>
+	<entitygroup name="sleeperMansionHunterStageGS50"><entity name="Hunter"/></entitygroup>
+
+<!-- Residence Sleeper Volume -->
+	<entitygroup name="sleeperResidenceStageGS1"><entity name="zombieMoe"/><entity name="zombieBiker"/><entity name="zombieLumberjack"/><entity name="zombieFemaleFat"/><entity name="zombieFatHawaiian"/><entity name="zombieSkateboarder"/><entity name="zombieUtilityWorker"/></entitygroup>
+	<entitygroup name="sleeperResidenceStageGS10"><entity name="zombieMoe"/><entity name="zombieBiker"/><entity name="zombieLumberjack"/><entity name="zombieFemaleFat"/><entity name="zombieFatHawaiian"/><entity name="zombieSkateboarder"/><entity name="zombieUtilityWorker"/></entitygroup>
+	<entitygroup name="sleeperResidenceStageGS20"><entity name="zombieMoe"/><entity name="zombieBiker"/><entity name="zombieLumberjack"/><entity name="zombieFemaleFat"/><entity name="zombieFatHawaiian"/><entity name="zombieSkateboarder"/><entity name="zombieUtilityWorker"/></entitygroup>
+	<entitygroup name="sleeperResidenceStageGS30"><entity name="zombieMoe"/><entity name="zombieBiker"/><entity name="zombieLumberjack"/><entity name="zombieFemaleFat"/><entity name="zombieFatHawaiian"/><entity name="zombieSkateboarder"/><entity name="zombieUtilityWorker"/></entitygroup>
+	<entitygroup name="sleeperResidenceStageGS40"><entity name="zombieMoe"/><entity name="zombieBiker"/><entity name="zombieLumberjack"/><entity name="zombieFemaleFat"/><entity name="zombieFatHawaiian"/><entity name="zombieSkateboarder"/><entity name="zombieUtilityWorker"/></entitygroup>
+	<entitygroup name="sleeperResidenceStageGS50"><entity name="zombieMoe"/><entity name="zombieBiker"/><entity name="zombieLumberjack"/><entity name="zombieFemaleFat"/><entity name="zombieFatHawaiian"/><entity name="zombieSkateboarder"/><entity name="zombieUtilityWorker"/></entitygroup>
+
+<!-- Mansion Spider Sleeper Volume -->
+	<entitygroup name="sleeperMansionSpiderStageGS1"><entity name="Web Spinner"/></entitygroup>
+	<entitygroup name="sleeperMansionSpiderStageGS10"><entity name="Web Spinner"/></entitygroup>
+	<entitygroup name="sleeperMansionSpiderStageGS20"><entity name="Web Spinner"/></entitygroup>
+	<entitygroup name="sleeperMansionSpiderStageGS30"><entity name="Web Spinner"/></entitygroup>
+	<entitygroup name="sleeperMansionSpiderStageGS40"><entity name="Web Spinner"/></entitygroup>
+	<entitygroup name="sleeperMansionSpiderStageGS50"><entity name="Web Spinner"/></entitygroup>
+
+<!-- Mansion Black Tiger Sleeper Volume -->
+	<entitygroup name="sleeperMansionBlackTigerStageGS1"><entity name="Black Tiger Spider"/></entitygroup>
+	<entitygroup name="sleeperMansionBlackTigerStageGS10"><entity name="Black Tiger Spider"/></entitygroup>
+	<entitygroup name="sleeperMansionBlackTigerStageGS20"><entity name="Black Tiger Spider"/></entitygroup>
+	<entitygroup name="sleeperMansionBlackTigerStageGS30"><entity name="Black Tiger Spider"/></entitygroup>
+	<entitygroup name="sleeperMansionBlackTigerStageGS40"><entity name="Black Tiger Spider"/></entitygroup>
+	<entitygroup name="sleeperMansionBlackTigerStageGS50"><entity name="Black Tiger Spider"/></entitygroup>
+
+<!-- Mansion Lisa Trevor Sleeper Volume -->
+	<entitygroup name="sleeperMansionLisaTrevorStageGS1"><entity name="Lisa Trevor"/></entitygroup>
+	<entitygroup name="sleeperMansionLisaTrevorStageGS10"><entity name="Lisa Trevor"/></entitygroup>
+	<entitygroup name="sleeperMansionLisaTrevorStageGS20"><entity name="Lisa Trevor"/></entitygroup>
+	<entitygroup name="sleeperMansionLisaTrevorStageGS30"><entity name="Lisa Trevor"/></entitygroup>
+	<entitygroup name="sleeperMansionLisaTrevorStageGS40"><entity name="Lisa Trevor"/></entitygroup>
+	<entitygroup name="sleeperMansionLisaTrevorStageGS50"><entity name="Lisa Trevor"/></entitygroup>
+
+<!-- Plant 42 Sleeper Volume -->
+	<entitygroup name="sleeperPlant42StageGS1"><entity name="Plant 42"/></entitygroup>
+	<entitygroup name="sleeperPlant42StageGS10"><entity name="Plant 42"/></entitygroup>
+	<entitygroup name="sleeperPlant42StageGS20"><entity name="Plant 42"/></entitygroup>
+	<entitygroup name="sleeperPlant42StageGS30"><entity name="Plant 42"/></entitygroup>
+	<entitygroup name="sleeperPlant42StageGS40"><entity name="Plant 42"/></entitygroup>
+	<entitygroup name="sleeperPlant42StageGS50"><entity name="Plant 42"/></entitygroup>
+
+<!-- Lab Sleeper Volume -->
+	<entitygroup name="sleeperLabStageGS1"><entity name="zombieLab" /><entity name="zombieNurse"/><entity name="zombieMaleHazmat" /><entity name="zombieSoldier" /></entitygroup>
+	<entitygroup name="sleeperLabStageGS10"><entity name="zombieLab" /><entity name="zombieNurse"/><entity name="zombieMaleHazmat" /><entity name="zombieSoldier" /></entitygroup>
+	<entitygroup name="sleeperLabStageGS20"><entity name="zombieLab" /><entity name="zombieNurse"/><entity name="zombieMaleHazmat" /><entity name="zombieSoldier" /></entitygroup>
+	<entitygroup name="sleeperLabStageGS30"><entity name="zombieLab" /><entity name="zombieNurse"/><entity name="zombieMaleHazmat" /><entity name="zombieSoldier" /></entitygroup>
+	<entitygroup name="sleeperLabStageGS40"><entity name="zombieLab" /><entity name="zombieNurse"/><entity name="zombieMaleHazmat" /><entity name="zombieSoldier" /></entitygroup>
+	<entitygroup name="sleeperLabStageGS50"><entity name="zombieLab" /><entity name="zombieNurse"/><entity name="zombieMaleHazmat" /><entity name="zombieSoldier" /></entitygroup>
+
+
+	</append>
+</configs>
