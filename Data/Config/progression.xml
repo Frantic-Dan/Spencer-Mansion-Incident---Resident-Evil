@@ -987,7 +987,7 @@
 		</effect_group>
 	</perk>-->
 
-	<perk name="perkPainTolerance" max_level="3" parent="skillFortitudeSurvival" name_key="perkPainToleranceName" desc_key="perkPainToleranceDesc" base_skill_point_cost="2" icon="ui_game_symbol_character">
+	<perk name="perkPainTolerance" max_level="3" parent="skillFortitudeSurvival" name_key="perkPainToleranceName" desc_key="perkPainToleranceDesc" base_skill_point_cost="1" icon="ui_game_symbol_character">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="1" desc_key="reqFortitudeLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="1" desc_key="reqFortitudeLevel01"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="1" desc_key="reqFortitudeLevel01"/></level_requirements>
