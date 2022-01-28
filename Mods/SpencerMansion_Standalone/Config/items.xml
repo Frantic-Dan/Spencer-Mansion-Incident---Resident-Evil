@@ -397,6 +397,23 @@
 	</property>
 </item>
 
+<item name="InkRibbon">
+	<property name="HoldType" value="45"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Tags" value="junk"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="CustomIcon" value="ink-ribbon"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="0"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="DescriptionKey" value="InkRibbondesc"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="Candrop" value="false"/>
+</item>
+
 <item name="Reloading_Tool">
 	<property name="HoldType" value="45"/>
 	<property name="CreativeMode" value="None"/>
