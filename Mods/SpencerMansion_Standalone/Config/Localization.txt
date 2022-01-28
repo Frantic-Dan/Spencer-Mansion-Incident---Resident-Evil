@@ -27,7 +27,7 @@ loadingTipRE4,Doors are your main defence to help separate zombies for easier fi
 loadingTipRE4_title,Doors:
 loadingTipRE5,"Gather bones and leather along the way, you'll be needing them later when building the Gyrocopter."
 loadingTipRE5_title,Bones and Leather:
-loadingTipRE6,"Zombies don't feel pain, just like in Resident Evil, so they will only flinch when attacked."
+loadingTipRE6,"Zombies don't feel pain, just like in Resident Evil, so they won't even flinch when attacked."
 loadingTipRE6_title,Zombies Feel No Pain:
 loadingTipRE7,"A huge thank you to the following people: wOOkie nOOkie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake."
 loadingTipRE7_title,Special Thanks!
