@@ -386,6 +386,7 @@
 	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="1"/> <!-- STK ammobundle high -->
 	<property name="EconomicValue" value="0"/>
+	<property name="Candrop" value="false"/>
 	<property class="Action0">
 		<property name="Class" value="OpenBundle"/>
 		<property name="Delay" value="0"/>
