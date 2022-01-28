@@ -260,6 +260,10 @@
 	<ingredient name="Snowberry Juice" count="1"/>
 </recipe>
 
+<recipe name="drinkJarEmpty" count="1" craft_time="2">
+	<ingredient name="drinkJarRiverWater" count="1"/>
+</recipe>
+
 <recipe name="drinkJarRiverWater" count="1" craft_area="campfire">
 	<ingredient name="resourceSnowBall" count="1"/>
 	<ingredient name="drinkJarEmpty" count="1"/>
@@ -410,7 +414,7 @@
 	<ingredient name="foodCanBeef" count="2"/>
 	<ingredient name="foodCanPeas" count="2"/>
 	<ingredient name="foodCanStock" count="2"/>
-	<ingredient name="foodCropGraceCorn" count="2"/>
+	<ingredient name="foodCropGraceCorn" count="1"/>
 	<ingredient name="resourceAnimalFat" count="3"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
@@ -418,7 +422,7 @@
 <recipe name="foodShepardsPie" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="foodCanLamb" count="2"/>
 	<ingredient name="foodCanPeas" count="2"/>
-	<ingredient name="foodCropGraceCorn" count="2"/>
+	<ingredient name="foodCropGraceCorn" count="1"/>
 	<ingredient name="resourceAnimalFat" count="4"/>
 	<ingredient name="foodCropPotato" count="2"/>
 </recipe>
@@ -428,13 +432,13 @@
 	<ingredient name="foodCanPasta" count="2"/>
 	<ingredient name="foodCropMushrooms" count="3"/>
 	<ingredient name="resourceAnimalFat" count="4"/>
-	<ingredient name="foodCropGraceCorn" count="2"/>
+	<ingredient name="foodCropGraceCorn" count="1"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
 <recipe name="foodTunaFishGravyToast" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="foodCanTuna" count="3"/>
-	<ingredient name="Super Corn Meal" count="2"/>
+	<ingredient name="foodCornMeal" count="1"/>
 	<ingredient name="Super Corn Bread" count="1"/>
 	<ingredient name="resourceAnimalFat" count="4"/>
 	<ingredient name="foodCanPeas" count="2"/>
@@ -443,7 +447,7 @@
 <recipe name="foodShamChowder" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="foodCanSham" count="3"/>
 	<ingredient name="foodCropPotato" count="2"/>
-	<ingredient name="foodCropGraceCorn" count="2"/>
+	<ingredient name="foodCropGraceCorn" count="1"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
