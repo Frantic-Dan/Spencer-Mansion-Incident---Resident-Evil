@@ -5231,7 +5231,7 @@ The overall plan for loot distribution:
 <!-- cash register-->
 <lootcontainer id="55" name="cashRegister" count="1" size="5,1" destroy_on_close="true" sound_open="UseActions/open_cash_register" sound_close="UseActions/close_cash_register" loot_quality_template="qualBaseTemplate">
 	<item name="oldCash" count="20"/>
-	<!-- <item name="Ink Ribbon" count="1"/> -->
+	<!-- <item name="InkRibbon" count="1"/> -->
 </lootcontainer>
 
 <!-- Apache Artifact Chest -->
