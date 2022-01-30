@@ -506,7 +506,7 @@ attAgilityRank05LongDesc,"You are now agile and deal 275% head shot damage and h
 attAgilityRank06LongDesc,"Your movement is now very nimble and deal 290% head shot damage and have a 18% chance to dismember with bows, handguns and knives."
 attAgilityRank07LongDesc,"Your dexterity is very impressive. Deal 305% head shot damage and have a 21% chance to dismember with bows, handguns and knives."
 attAgilityRank08LongDesc,"Moving fluid and landing on your feet are second nature for you. Deal 320% head shot damage and have a 24% chance to dismember with bows, handguns and knives."
-attAgilityRank09LongDesc,progression
+attAgilityRank09LongDesc,"Your agility is good enough you could be a professional athlete. Deal 335% head shot damage and have a 27% chance to dismember with bows, handguns and knives."
 attAgilityRank10LongDesc,"Your dexterity is unmatched. Deal 350% head shot damage and have a 30% chance to dismember with bows, handguns and knives."
 perkGunslingerRank3LongDescRE,"You can keep most situations under control, sheriff. Deal 17% more damage, 8% faster fire rate, and reload 10% faster. Critical Damage: 5 successive hits in a short time cause critical damage."
 perkGunslingerRank4LongDescRE,"You're now a gunfighter and can clear out a saloon full of rowdy bastards at the drop of a hat. Deal 34% more damage, 16% faster fire rate, and reload 20% faster. Critical Damage: 4 successive hits in a short time cause the last shot to do 100% extra damage."
