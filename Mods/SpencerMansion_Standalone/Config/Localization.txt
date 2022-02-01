@@ -39,7 +39,7 @@ cntCashRegister,Typewriter
 cntHardenedChestInsecureT5,Item Storage Box
 TheVault,The Vault
 Reloading_Tool,Reloading Tool
-Reloading_Tooldesc,A useful tool that you can make ammunition with.
+Reloading_Tooldesc,"A useful tool that you can make ammunition with.\n\nMake sure your have enough empty inventory slots when crafting."
 DeathMaskDesc,This Death Mask is used on the Door of Evil.\n\nUse with the secondary action.
 MansionBattery,This will power the door in the courtyard.
 GreenHerbDesc,Heals you slightly.\n\nPhysician 0 heals 8.\nPhysician 1 heals 10.\nPhysician 2 heals 12.\nPhysician 3 heals 14.
