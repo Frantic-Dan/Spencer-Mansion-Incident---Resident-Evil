@@ -1,0 +1,546 @@
+Key,japanese
+goDifficultyRE,[FF4F00]難易度(お読みください)[-]
+goDifficultyREDesc,"C - 与ダメ 100%/受ダメ 100%\n\nB - 与ダメ 80%/受ダメ 150%\n\nA - 与ダメ 67%/受ダメ 200%\n\nS - 与ダメ 50%/受ダメ 250%\n\nX - 与ダメ 40%/受ダメ 350%\n[FF4F00](最初は低めの難易度をお選びください)"
+goDifficulty1RE,C
+goDifficulty2RE,B
+goDifficulty3RE,A
+goDifficulty4RE,S
+goDifficulty5RE,X
+goDifficulty6RE,Z
+goDayLengthRE,[FF4F00]選択 150[-]
+goDayLengthREDesc,ゲーム内の24時間が現実時間の何分かを設定します。 このModでは、150を選択してください。
+goDayLightLengthRE,[FF4F00]選択 0[-]
+goDayLightLengthREDesc,ゲーム内の1日の内、何時間が日中扱いになるかを設定します。　このModでは、「0」を選択してください。
+goBloodMoonFrequencyRE,[FF4F00]選択 0[-]
+goBloodMoonFrequencyREDesc,大襲撃の発生頻度を設定します。 このModでは、「0」を選択してください。
+goXPMultiplierRE,[FF4F00]選択 100[-]
+goXPMultiplierREDesc,プレイヤーが受け取る経験値の量を増やします。　このModでは、100%をお選びください。
+goBlockDamagePlayerRE,[FF4F00]選択 100[-]
+goBlockDamagePlayerREDesc,プレイヤーによるブロックへのダメージを調整します。　このModでは、100%をお選びください。
+goBlockDamageAIRE,[FF4F00]選択 100[-]
+goBlockDamageAIREDesc,AIによるブロックへのダメージを調整します。　このModでは、100%をお選びください。
+goLootAbundanceRE,[FF4F00]選択 100[-]
+goLootAbundanceREDesc,コンテナおよびゾンビのドロップにより現れる略奪品の割合です。　このModでは、100%をお選びください。
+goLootRespawnDaysRE,[FF4F00]選択 1[-]
+goLootRespawnDaysREDesc,プレイヤーが周りにいない状況で、略奪品が再出現する日数です。　このModでは、「1」をお選びください。
+goZombieMoveNight,[FF4F00]夜間のゾンビ移動速度\n(常時夜)[-]
+goZombieMoveNightDesc,ゾンビの移動速度を設定します。　このModでは、お好みでお選びください。
+tutorialTipQuest01_title,スペンサー邸チャレンジへようこそ
+loadingTipRE1,あなたはスペンサー邸に閉じ込められてしまいました。\n弾薬や回復アイテムは限られています。\n無事生きて脱出できるのでしょうか？　それとも、ジル・サンドイッチになってしまうのでしょうか？
+loadingTipRE1_title,バイオハザードへようこそ！
+loadingTipRE2,"アイテムの品質、耐久、ランダムステータスなどは存在しません。\n略奪で入手出来るアイテムは、なるべく毎回同じになるようにしてあるため、略奪品の運にプレイ結果が左右される事はないはずです。"
+loadingTipRE2_title,"アイテム品質、修理、ランダムステータス、略奪："
+loadingTipRE3,本家と同じように、あなたが所持出来るアイテムは12スロットまでとなるため、入手するアイテムを厳選する必要があります。
+loadingTipRE3_title,所持品：
+loadingTipRE4,ゾンビとの戦闘を有利に進めるためには、ドアを活用しましょう。\nドアを閉めることで、後ろから襲われることを防ぎます。
+loadingTipRE4_title,ドア：
+loadingTipRE5,"動物の骨や皮は忘れず入手しましょう。\nジャイロコプターをクラフトする際に必要になります。"
+loadingTipRE5_title,骨や皮：
+loadingTipRE6,"本家と同じように、ゾンビは痛みを感じません。\n攻撃を受けても、痛みを感じる動作をまったくしません。"
+loadingTipRE6_title,ゾンビは痛みを感じない：
+loadingTipRE7,"次の方達に大きな感謝： AuroraGiggleFairy, wOOkie nOOkie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake"
+loadingTipRE7_title,スペシャルサンクス！
+tutorialTipQuest01,"あなたはこれからスペンサー邸での出来事を一人称視点で体験する事になります。\n\nチャレンジ中はずっと夜なため、　夜間のゾンビの移動速度を、自分の好みに合わせて設定する事をお勧めします。\n\nバイオハザードらしいチャレンジにするために使用が変更されています。\n1) 所持品は12スロットのみになるので、館内のアイテムボックス(The Vault)をご利用ください。\nThe Vaultは館内の何カ所かに設置してありますが、中身は、館内のどこからアクセスしても同じ内容になります。\n2) ジャンプをする事は出来ません。\n3) ほとんどの敵は痛みを感じないため、いつもの戦い方では難しいかもしれません。\n\nより楽しいチャレンジになる用、ダイナミック音楽の設定は、100%にする事をお勧めします。\n\nこのModとは関連性のないモドレットの導入はせず、オレンジ色になっているゲーム設定を修正してください。"
+buffNewbieCoatNameRE,減らない食料値と水分値
+buffNewbieCoatDescRE,"このバフが付いている間は、食料値や水分値が全く減少しません。\n\nプレイヤーレベルが10になると、通常の60%のレートで、緩やかに減少し始めます。"
+xuiInventory,ジル・バレンタインの所持品
+cntCashRegister,タイプライター
+cntHardenedChestInsecureT5,アイテムボックス
+TheVault,The Vault
+Reloading_Tool,リロードツール
+Reloading_Tooldesc,弾薬をクラフトするために使用するツール。\n\n空きスロットがあることを確認してからクラフトしてください。
+DeathMaskDesc,この仮面専用の扉を開くために使用します。\n\n手に「鍵用アップグレードツール」を持ち、鞄内に仮面が入っている状態で扉を右クリックで開きます。
+MansionBattery,庭のドアを作動させるために使用します。
+GreenHerbDesc,少量の体力回復。\n\n医師レベル0の回復量： 8\n医師レベル1の回復量： 10\n医師レベル2の回復量： 12\n医師レベル3の回復量： 14
+RedHerbdesc,グリーンハーブの効果を上げます。\n\nそのままでは使用できません。
+GreenHerbCreamDesc,程よい量の体力回復。\n\n医師レベル0の回復量： 20\n医師レベル1の回復量： 25\n医師レベル2の回復量： 30\n医師レベル3の回復量： 35
+Green+RedHerbCreamDesc,多めの体力回復。\n\n医師レベル0の回復量： 32\n医師レベル1の回復量： 40\n医師レベル2の回復量： 48\n医師レベル3の回復量： 56
+BlueHerbDesc,毒の治療に使用します。
+Green+BlueHerbCreamDesc,少量の体力回復と解毒治療。\n\n医師レベル0の回復量： 12\n医師レベル1の回復量：  15\n医師レベル2の回復量：  18\n医師レベル3の回復量：  21
+Green2+BlueHerbCreamDesc,程よい量の体力回復と解毒治療。\n\n医師レベル0の回復量： 24\n医師レベル1の回復量： 30\n医師レベル2の回復量： 36\n医師レベル3の回復量： 42
+Green+Red+BlueHerbCreamDesc,多めの量の体力回復と解毒治療。\n\n医師レベル0の回復量： 36\n医師レベル1の回復量： 45\n医師レベル2の回復量： 54\n医師レベル3の回復量： 63
+FirstAidSprayDesc,完全に体力を回復します。\n\n医師レベル0の回復量：  120\n医師レベル1の回復量： 150\n医師レベル2の回復量： 180\n医師レベル3の回復量： 210
+PowerSource,地下の台所近くにあるエレベーターを動かすために使用します。\n\n手に「鍵用アップグレードツール」を持ち、鞄内にスペンサー邸エレベーター用電源が入っている状態で館のエレベータードアを右クリックし、使用可能にします。
+WolfBook,狼に関する、青色の本。
+WolfMedal,狼のメダル。\n\n第二アクションで使用します。
+EagleBook,鷲に関する、赤色の本。
+EagleMedal,鷲のメダル。\n\n第二アクションで使用します。
+"Book of Curses",呪いの本
+BookOfCursesdesc,3階に落ちていた、気持ちの悪い本。\n手に持ち、第一アクション(左クリック)でお読みください。
+"Dog Whistle",犬笛
+DogWhistledesc,犬を呼ぶために使用する笛。
+"Dog Collar",犬の首輪
+DogCollardesc,何かに使えるのでしょうか？
+Coin,コイン
+
+
+
+
+Coindesc,犬の首輪の中に入っていたコイン。
+Lighterdesc,火炎瓶に火を点けるために使用します。
+EmptyBottledesc,薬品を混ぜる際に使用します。\n\n第二アクションで汲むことが出来ます。
+FilledBottledesc,液体が入っている瓶。
+MixingBottledesc,2種類の液体が混ざっています。
+VJoltdesc,プラント42を弱らせることが出来る薬品。
+Crestdesc,六角形のクレスト。\n\n第二アクションで使用します。
+BrokenShotgundesc,修理することが出来ないほど酷く破損しているショットガン。
+Herbicidedesc,植物を枯らすために使用する薬品。
+MetalObjectdesc,中庭へのドアを開くために使用する、八角形のオブジェ。\n\n第二アクションで使用します。
+StoneRingdesc,八角形の石でできたリング。
+MetalObject2desc,八角形の鉄のオブジェ。
+StoneMetalObjectdesc,メインホールの階段の裏にあるドアを開くために使用します。\n\n第二アクションで使用します。
+Cylinderdesc,くぼみにはめ込めば完成しそうだ。
+Shaftdesc,リングのようなものが不足しているようです。
+CylinderShaftdesc,採掘場の発電機を作動させます。\n\n第二アクションで使用します。
+FuelSupplyEmptydesc,電力源の燃料として使用する、空のカプセル。\n\n冷たい何かを中に入れましょう。
+FuelSupplydesc,シャッターの燃料を入れるために使用します。
+JewelryBoxdesc,"鍵が外れましたので、中を見てみましょう。"
+RedGemstonedesc,とても高そうな石です...
+LockedBoxdesc,セキュリティロック
+PrisonKey,"'MO'と書いてある、フロッピーディスク。\n\n第二アクションで使用します。"
+"Spencer Mansion Battery","スペンサー邸バッテリー"
+"Key Upgrade Tool","鍵用アップグレードツール"
+"Spencer Mansion Elevator Powersource","スペンサー邸エレベーター用電源"
+REkeys,インタラクトボタンを長押しし、ラジアルメニューからピッキングのオプションを選び、使用します。
+Jill's_LockPick,"ジルのロックピック"
+"Sword Key","剣の鍵"
+"Armour Key","鎧の鍵"
+"Shield Key","盾の鍵"
+"Helmet Key","兜の鍵"
+"Emblem Key","エンブレムの鍵"
+"Wolf Book","狼の本"
+Wolf_Medal,狼のメダル
+"Eagle Book","鷲の本"
+Eagle_Medal,鷲のメダル
+"Death Mask Without Eyes","目が封じられた仮面"
+"Death Mask Without Mouth","口が封じられた仮面"
+"Death Mask Without Nose","鼻が封じられた仮面"
+"Death Mask Without All Three","目鼻口が封じられた仮面"
+"Laboratory Key","研究所の鍵"
+"MO Disc",MOディスク
+"Empty_Bottle",空瓶
+"Empty Water Bottle",水　(空)
+"Empty UMB-No3 Bottle",UMB-No3 (空)
+"Empty Yellow-6 Bottle",Yellow-6 (空)
+Water_(Filled),水 (満タン)
+UMB-No3_(Filled),UMB-No3 (満タン)
+Yellow-6_(Filled),Yellow-6 (満タン)
+NP-004_(Filled),NP-004 (満タン)
+UMB-No7_(Filled),UMB-No7 (満タン)
+UMB-No10_(Filled),UMB-No10 (満タン)
+VP-017_(Filled),VP-017 (満タン)
+NP-004_(Mixed),NP-004 (ミックス)
+UMB-No7_(Mixed),UMB-No7 (ミックス)
+UMB-No10_(Mixed),UMB-No10 (ミックス)
+VP-014_(Mixed),VP-017 (ミックス)
+V-Jolt,V-Jolt
+"Wind Crest",ウィンドクレスト
+"Moon Crest",ムーンクレスト
+"Star Crest",スタークレスト
+"Sun Crest",サンクレスト
+"Broken Shotgun",壊れたショットガン
+Herbicide,除草剤
+Metal_Object,鉄製のオブジェ
+Stone_Ring,石製のリング
+Metal_Object2,鉄製のオブジェ
+"Stone and Metal Object",鉄と石製のオブジェ
+"WD-40 Spray",WD-40スプレー
+"Unprinted Book",白紙の本
+Battery,電池
+Spraydesc,金属に使用する潤滑スプレー。
+Cylinder,シリンダー
+Shaft,シャフト
+"Cylinder Shaft",シリンダーシャフト
+"Fuel Supply Capsule (Empty)",燃料供給用カプセル(空)
+"Fuel Supply Capsule",燃料供給用カプセル
+Green Herb,グリーンハーブ
+"Mixed Green Herb",調合したハーブ (緑+緑)
+"Mixed 3 Green Herbs",調合したハーブ (緑+緑+緑)
+"Mixed Green+Red Herb",調合したハーブ (緑+赤)
+"Mixed Green+Blue Herb",調合したハーブ (緑+青)
+"Mixed 2 Green+Blue Herb",調合したハーブ (緑+緑+青)
+"Mixed Green+Red+Blue Herb",調合したハーブ (緑+赤+青)
+Red Herb,レッドハーブ
+Blue Herb,ブルーハーブ
+FirstAidSpray,救急スプレー
+Super Corn Bread,スーパーコーンパン
+Super Corn Meal,スーパーコーンミール
+Snowberry Juice,スノーベリージュース
+foodShamChowder,シャムチャウダー (忍耐)
+foodGumboStew,ガンボシチュー (近接攻撃速度)
+foodShepardsPie,シェパーズパイ (力)
+foodSpaghetti,スパゲティー (素早さ)
+foodTunaFishGravyToast,ツナグレイビートースト (リロード速度)
+modArmorBandolierDesc,リロード速度が10%速くなります。\n効果はスタックしませんが、チェストアーマー、またはレッグアーマーにセット可能です。
+"Athletic Jacket Mod Schematic",設計図「アスリートジャケット改造パーツ」
+"High Permormance Running Soles Schematic",設計図「高パフォーマンス靴底」
+drinkCanMegaCrushSchematic,メガクラッシュレシピ
+Military-Grade Duct Tape,軍仕様ダクトテープ
+"Jewelry Box",宝石箱
+"Key to Room 001",001号室の鍵
+"Key to Room 003",003号室の鍵
+"Gallery Key",絵画室の鍵
+"Control Room Key",コントロール室の鍵
+"Red Gemstone",赤い宝石
+"Locked Jewelry Box",鍵のかかった宝石箱
+"Master Key",マスターキー
+"Sword Door",剣の扉
+"Sword Iron Door",剣の金属扉
+"Armour Door",鎧の扉
+"Armour Iron Door",鎧の金属扉
+"Shield Door",盾の扉
+"Helmet Door",兜の扉
+"Helmet Iron Door",兜の金属扉
+"Emblem Door",エンブレムの扉
+"Wolf and Eagle Door",狼と鷲の扉
+"Laboratory Door",研究所の扉
+"Laboratory Iron Door",研究所の金属扉
+"Door That Sees No Evil",見ざるの扉
+"Door That Speaks No Evil",言わずの扉
+"Door That Smells No Evil",嗅がずの扉
+"Door That Sees Speaks Smells No Evil",見ざる言わず嗅がずの扉
+"Door Of No Evil",見ざる言わず嗅がずの扉
+"Door with an old lock",古びた鍵付きのドア
+"Plant Room Door (Insert Herbicide)",温室のドア (除草剤を入れる)
+"Insert Wind Crest",ウィンドクレストを入れる
+"Insert Moon Crest",ムーンクレストを入れる
+"Insert Star Crest",スタークレストを入れる
+"Insert Sun Crest",サンクレストを入れる
+"Insert Broken Shotgun",壊れたショットガンを入れる
+"Room 001",001号室
+"Room 003",003号室
+Gallery,絵画室
+"Control Room",コントロール室
+"Door (Insert Unprinted Book)",ドア (白紙の本を入れる)
+"Power Area Door",動力エリアのドア
+"Sturdy Door (Insert Metal Object)",頑丈なドア (鉄製のオブジェを入れる)
+"Unpowered Door",無動力なドア
+"Sturdy Door (Insert Stone and Metal Object)",頑丈なドア (鉄と石製のオブジェを入れる)
+"Master Door",マスタードア
+"Sturdy Door",頑丈なドア
+"Rusted Sturdy Door",錆び付いた頑丈なドア
+"Plant 42's Roots",プラント42の根
+"Plant 42's Poisoned Roots",毒を受けたプラント42の根(叩いて破壊)
+"Mineshaft Hatch Control (Insert Cylinder Shaft)",マインシャフトハッチコントロール (シリンダーシャフトを入れる)
+"Mineshaft Hatch Control",マインシャフトハッチコントロール
+"Laboratory Computer",研究所のコンピューター
+"Unpowered Roller Shutter (Needs refueling)",燃料切れの自動シャッター (燃料が必要です)
+"Powered Roller Shutter",自動シャッター
+"Box of Sewing Kits (Hit to Pickup)",縫合キット入りの箱 (叩いて回収)
+"Jill's Lunch and Lockpick (Hit to Pickup)",ジルのランチとロックピック (叩いて回収)
+"AK-47 (Hit to Pickup)",AK-47 (叩いて回収)
+"Anti-Tyrant Rocket Launcher (Hit to Pickup)","対タイラント用ロケットランチャー(叩いて回収)"
+"Anti-Tyrant Rocket (Hit to Pickup)","対タイラント用ロケット(叩いて回収)"
+Laboratory Prison Door (Requires 3 MO Discs),研究所の鉄格子 (MOディスク3枚必要)
+Laboratory Prison Door (Requires 2 MO Discs),研究所の鉄格子 (MOディスク2枚必要)
+Laboratory Prison Door (Requires 1 MO Disc),研究所の鉄格子 (MOディスク1枚必要)
+"Mansion Wood Door","館の木製ドア"
+"Mansion Iron Door","館の鉄のドア"
+"HiPower Leather Trunk",ハイパワーレザートランク
+"Special Clothing Leather Trunk",特殊な衣服入りのレザートランク
+"Pump Shotgun (Hit to Pickup)",ポンプショットガン(叩いて回収)
+"Magnum Revolver (Hit to Pickup)",マグナムリボルバー(叩いて回収)
+"Rocket Launcher (Hit to Pickup)",ロケットランチャー(叩いて回収)
+"Handgun Ammo (Hit to Pickup)",ハンドガンの弾
+"Shotgun Ammo (Hit to Pickup)",ショットガンの弾
+"Magnum Ammo (Hit to Pickup)",マグナムの弾
+"Rocket Ammo (Hit to Pickup)",ロケット弾(叩いて回収)
+"Assault Rifle Ammo (Hit to Pickup)",アサルトライフル弾(叩いて回収)
+"Hand Grenade (Hit to Pickup)",グレネード(叩いて回収)
+"9mm Bullet",9×19mmパラベラム弾
+"Dismantle 9mm Ammo",解体： 9×19mmパラベラム弾
+"9mm HP Bullet",ハイパワー9×19mmパラベラム弾
+"44Magnum Bullet",.357マグナム弾
+"Dismantle .44 Ammo",解体： .357マグナム弾
+"44Magnum HP Bullet",ハイパワー.357マグナム弾
+"762 Bullet",7.62ライフル弾
+"Dismantle 7.62 Ammo",解体： 7.62ライフル弾
+"762 HP Bullet",ハイパワー7.62ライフル弾
+"Shotgun Shell",12ゲージショットガンシェル
+"Dismantle Shotgun Shells",解体： 12ゲージショットガンシェル
+"Shotgun Slug",ショットガンスラッグ弾
+"Workbench Repair Kit",作業台修理キット
+Lighter,ライター
+
+
+
+Survival_Knife,サバイバルナイフ
+Knifedesc,"ジルのナイフ。\n狭い場所での戦闘や、動物の解体に使用します。"
+S.T.A.R.S_Handgun,S.T.A.R.S ハンドガン
+Handgundesc,"S.T.A.R.S の標準装備、　9x19mmパラベラム弾を使用するハンドガン。"
+"Magnum Revolver",マグナムリボルバー
+Magnumdesc,"非常に強力なハンドガン。\n.357マグナム弾を使用します。"
+"Pump Shotgun",ポンプショットガン
+Shotgundesc,広範囲攻撃が可能な武器。\n12ゲージショットガンシェルを使用します。
+AK-47,AK-47アサルトライフル
+Rifledesc,ピンチの時に役に立つアサルトライフル。
+"Rocket Launcher",ロケットランチャー
+Launcherdesc,"破壊力のある武器。\n爆風に巻き込まれないように注意してください。"
+Anti-Tyrant Rocket Launcher,対タイラント用ロケットランチャー
+apparelToughGuySunglasses,ウェスカーのサングラス
+ammo9mmBulletBallRE,9x19mmパラベラム弾
+ammo9mmBulletHPRE,ハイパワー9x19mmパラベラム弾
+ammo44MagnumBulletBallRE,.357マグナム弾
+ammo44MagnumBulletHPRE,ハイパワー.357マグナム弾
+ammo762mmBulletBallRE,7.62ライフル弾
+ammo762mmBulletHPRE,ハイパワー7.62ライフル弾
+ammoShotgunShellRE,12ゲージショットガンシェル
+ammoShotgunSlugRE,ショットガンスラッグ弾
+ammoRocketHERE,対タイラントロケットフラグ弾
+ammoRocketFragRE,ロケットフラグ弾
+thrownGrenadeRE,手榴弾
+thrownAmmoMolotovCocktailRE,火炎瓶
+mineCandyTinRE,手作り地雷
+perkEnforcerDamageDesc,マグナム使用時のダメージ量が10%上昇します。
+perkEnforcerDamageLongDesc,ダメージ: マグナムは、最も強力なハンドガンです。\nマグナム使用時のダメージ量が10%上昇します。
+perkEnforcerHPAmmoDesc,ハイパワー.357マグナム弾がクラフト可能になります。
+perkEnforcerHPAmmoLongDesc,最も強力なハンドガンの威力がさらに上がります。\nハイパワー.357マグナム弾がクラフト可能になります。
+perkEnforcerCriminalPursuitDesc,マグナム装備中の走行中のスタミナ消費量20%軽減。
+perkEnforcerCriminalPursuitLongDesc,犯罪者の追跡: 激しい戦闘のさなか、極悪人追跡で放出されるアドレナリンがスタミナをブーストします。\nマグナム装備中の走行中のスタミナ消費量20%軽減。
+
+plantedRedHerb1,レッドハーブ (種)
+plantedBlueHerb1,ブルーハーブ (種)
+plantedRedHerb2,レッドハーブ (成長中)
+plantedBlueHerb2,ブルーハーブ (成長中)
+plantedRedHerb3Harvest,レッドハーブ
+plantedBlueHerb3Harvest,ブルーハーブ
+plantedRedHerb3HarvestPlayer,レッドハーブ
+plantedBlueHerb3HarvestPlayer,ブルーハーブ
+buffPoisonedName,毒にかかった！
+buffPoisonedDesc,毒にかかってしまったため、ゆっくりと体力が失われています。\n\nブルーハーブクリームを使って解毒しましょう。
+buffPoisonedTooltip,毒にかかってしまいました！
+questStartup_offer,"バイオハザードへようこそ\n\nあなたはこれからスペンサー邸での出来事を一人称視点で体験する事になります。\n\n一部のゲーム機能が変更、または削除されています。\n1) スキルツリーは、戦闘とサバイバルに特化しており、 特殊技能習得の条件から、特性レベルを取り除きました。\n2) ジャンプする事は出来ません、 ジャンプ用のボタンは、はしご使用時にしか使用しません。\n3) クラフトレシピは、ハイパワー弾以外、全て解除されているため、 材料が集まれば、アーマーや回復アイテムや弾薬がクラフト出来ます。\n4) 弾薬や回復アイテムは限られているので、注意して使用しましょう！ ナイフをしっかりと活用してください。\n\nこれは、パーマデスチャレンジですので、お気を付けください。\n\nバイオハザードのような体験をしていただくために、 あなたの所持品スペースは12スロットのみとなっています。 館内にあるアイテムボックス(The Vault)を活用してください。\nThe Vaultは館内の何カ所かに設置してありますが、中身は、館内のどこからアクセスしても同じ内容になります。"
+questStartup_desc,"1998年7月、あなたはジル・バレンタイン、特殊作戦部隊S.T.A.R.S.の一員です。同部隊のブラヴォーチームが行方不明となったため、現場に訪れました。\n\nアークレイ山地の森の中で墜落したヘリを発見しました。\n墜落したヘリはブラヴォーチームの物で、乗員は全員死んでおり、あなたのチームは野犬に追われてしまいました。\n野犬の群れから逃げていると、遠くに館が見えたため、そこに避難する事にしました。\n\n外は大変危険なため、あなたはここから出る事が出来なくなりました！"
+BookOfCurses_offer,四つの仮面、すなわち、\n口無き仮面...\n鼻無き仮面...\n目無き仮面...\n三つ全て無き仮面...\n\n全ての仮面が揃う時、災いは再び蘇る。\n\n\n本の裏側にカギがはまっている。　取りますか？
+DogWhistle_offer,今日、スペンサー卿に呼ばれて、「あるもの」を誰にもわからない所に隠せといわれた。\n\n色々考えた結果、僕はあるアイデアを思いついた。　それは、あの狂暴な飼い犬に守らせればどうだろうか？ということだ。\n\nあの犬はいつもお気に入りの大食堂２階の西テラスにいるし、あそこで君の持つ犬笛を使えば、いつでも呼出せるじゃないか。\n\nそこで君にお願いがある。　あの犬は君にだけはなついている。　どうか君の手であの犬に、この首輪をつけてはもらえないだろうか？\n\nこの首輪には、スペンサー卿から渡された「あるもの」が隠してある。\n\n君は信用できる奴だから、君に頼みたい。 このお礼は必ずさせてもらう。　君が前に欲しがっていた例のものが、ツテで手に入りそうなんだ。\n\nそれでどうだろうか？　すまないが、よろしく頼む。\n\nジョン・トールマン
+JillLockpick,ピッキングに関しては、ジルの右に出る者はいません。
+FilesDesc,このメモの内容はジャーナルに追加されます。
+modMeleeWeightedHeadDesc,ナイフようの改造パーツ。\n15%の確率で敵に鈍足効果とスタン効果を与えます。
+"Samurai Edge Parts",サムライエッジパーツ
+SamuraiEdgeDesc,射撃レートが上がり、3点バーストが可能になります。\n\nハンドガンのハンドリングを上げます。
+"Assault Shotgun Parts",アサルトショットガンパーツ
+AssaultShotgunDesc,リチャードのお気に入りである、S.T.A.R.S.専用武器。\n\n装弾数は10弾です。\nスプレッドが狭く、射撃レートが速く、射程が長くなっていますが、リロード速度は遅くなります。
+"Magnum Speedloader",マグナム・スピードローダー
+MagnumSpeedloaderDesc,リボルバーのリロード速度が25%上がり、ハンドリングが上がります。
+"AK-47 Muzzle Brake",AK-47マズルブレーキ
+MuzzleBreakDesc,アサルトライフルの命中精度とハンドリングを上げます。
+"Athletic Jacket Mod",アスリートジャケット改造パーツ
+"High Permormance Running Soles",高パフォーマンス靴底
+modGunMeleeBlessedMetalDesc,タイラントに与えるダメージ量が大幅に上がります。\n\nナイフにセット可能。
+SuperGogglesDesc,これをかけるとジル・サンドイッチにならずに済みます。\n\n\n忍耐 +2\n素早さ +2.\nクラフト時間 -40%
+Note from Barry,バリーからのメモ
+BarryNote,"ジル、 物資をいくつか置いておく。\n\nバリー"
+"Jill Sandwich",ジル・サンドイッチ
+JillSandwichDesc,ジル・サンドイッチになるところだったぜ。
+"Watch your step",足元注意
+PuzzleDesc,南を向いた状態。\n\n横から横は安全。\n\n上下は危険。
+"Researcher's Will",ある研究員の遺書
+ResearcherWillTip_title,ある研究員の遺書
+ResearcherWillTip,"1998年6月3日\n僕の愛しいアルマへ、\nこの手紙が届いたという事は、僕にとって喜ばしい事であり、そして悲しむべき事でもある。\nあのサングラス野朗のせいで、君に電話する事すら出来なかったんだ。\nアルマ、どうか落ち着いて、この手紙を読んでほしい。\n僕がある製薬会社の研究所に移った事は前に話したと思う。\n実は先月、その研究所で事故が起って、研究中のウィルスが漏れ出してしまったんだ。\nウィルスに感染した僕の同僚は、みんな死んでしまった。\n・・・いや正確には死んでいないかもしれない。\n何故なら彼らは、今も歩き回る事が出来るし、現に何人かが今、僕の部屋のドアを叩いている。\nでも、彼らの瞳に、もはや知性の光はない。\nあの呪われたウィルスは、人間の脳から人間らしさの全て、愛も喜びも恐れも永久に消し去ってしまうんだ。\nそしてアルマ、君と過ごした日々さえ。\nそうなんだ。\n僕は感染している。\nあらゆる手を尽くしてみたが、症状の進行を数日遅らせるのがやっとだった。\n君が僕の中で日に日に失われていくのが、僕には何より耐えられない。\nだから、僕は、このまま生ける屍になるよりも安らかな死を選んだ。\n一時間後には、僕は二度と覚める事のない眠りについているだろう。\n君がこの僕の決断を解ってくれることを切に願う・・・。\nさようなら\nマーチン·クラックホーン"
+"Trevor's Diary",トレヴァーの手記
+TrevorDiaryTip_title,トレヴァーの手記
+TrevorDiaryTip,"1967年11月24日、白衣の男が食事を運んで来て、私に言った。\n「気の毒だが、機密事項のためだ。」\nこの洋館の秘密を知っているのは、スペンサー卿と私だけで、私が死ねば秘密は彼一人の物になる。\nこのままでは、危険だし、家族の無事も気になるので、私は脱出を試みる事にした。\n1967年11月26日、この暗闇でライターを無くしたのは痛かった。\n妻が誕生日に贈ってくれたもので、大切に使っていたのに。\n運命の日となった11月13日、その三日前に、急病で倒れた叔母の見舞いに出かけたという妻ジェシカと娘リサの姿がふと頭に浮かぶ。\nこの瞬間、私の中で記憶が鮮明に蘇る。\n「君の家族も今ごろは・・・」、気を失う直前、白衣の男が、確かに言っていた。\n・・・益々不安をかき立てられた。\n1967年11月27日、なんとか私は、あの部屋から出ることに成功した。\nだが、この洋館の外へ出るのは、容易ではない。\n全てのカラクリを解かなければ。"
+"Trevor's Diary2",トレヴァーの手記
+TrevorDiaryTip2_title,トレヴァーの手記
+TrevorDiaryTip2,"手書きで何かが書いてありますが、日付はありません。\n\nあれから何も変化はない。\n私が遊びで作った部屋が、こんな形で役に立つとは。\nここなら少しの間、奴らの目を盗んで隠れる事が出来る。\n何しろこの絵の秘密は、卿にも伝えていないのだから。\n絵の中の洋館、美術室の奥。"
+"Trevor's Diary3",トレヴァーの手記
+TrevorDiaryTip3_title,トレヴァーの手記
+TrevorDiaryTip3,"1967年11月29日、どうしても館から出る事ができない。\n見覚えのあるハイヒールが片方だけ廊下に転がっているのを発見してしまった。\n妻も娘も私とおなじ運命を辿ったのか！？\n1967年11月30日、のどが渇いた。\nもう何日も食事をしていない。\n気が狂いそうだ。\nこの館の異常な設計に、心を奪われた私が悪かったのだろうか・・・\n1967年11月31日、暗く、じめじめした地下道だ。\nここも行き止まりか。\nいや、何かある。\n私は震える指で最後のマッチをこすった。\n墓だ！ そこに刻まれた名前は・・・「ジョージ・トレヴァー！！」\n奴は最初から、私がここで息をひき取るのを計算し、墓を用意していたのだ。\nもう駄目だ・・・、意識が遠のいて行く・・・。\nジェシカ、リサ・・・、私を許してくれ。\nジョージ・トレヴァー"
+"Botany Book",植物学の本
+BotanyBookTip_title,植物学の本
+BotanyBookTip,"薬草の使用方法\n\n人類は太古から様々な植物を用い、傷や病を癒してきた。\n\n本書ではこの薬効を持つ植物の例としてアークレイ山地周辺に自生する三つのハーブを取り上げ、その概要を述べたいと思う。\nアークレイ山地周辺に自生するハーブには、緑色、青色、そして赤色のものと、三つの種類が存在し、それぞれに異なる薬草としての効用がある。\n\n緑色のものは、人の体力を回復させ、青色のものは、動物等から受けた毒を消す事ができるといった具合だ。\n但し、例外的に、赤色のものは、単独で用いても何ら効果を生み出さない。\n薬草は古くから調合する事で、様々な効果を発揮してきた。\n例えば、緑のもの同士の調合はわずかだが、回復の効果が上がる事が確認されている。\n\nもしかしたら赤色のハーブも調合で何らかの効能が表れるかも知れない・・・。"
+"Keeper's Diary",飼育係の日記
+KeeperDiaryTip_title,飼育係の日記
+KeeperDiaryTip,"1998年5月9日、夜、警備員のスコットとエリアス、研究員のスティーブとポーカーをした。\nスティーブの奴、やたらついてやがったがきっといかさまにちがいねェ。\n1998年5月10日、今日、研究員のおえら方から新しい化け物の世話を頼まれた。\n皮をひんむいたゴリラのような奴だ。\n生きたえさがいいってんで、豚を投げこんだら、奴ら、足をもぎ取ったり内臓を引き出したり、遊んだあげくやっと食いやがる。\n998年5月11日\n今朝5時頃、宇宙服みてえな防護衣を着たスコットに突然たたき起こされて俺も宇宙服を着せられた。\nなんでも、研究所で事故があったらしい。\n研究員の連中ときたら、夜も寝ないで実験ばかりやってるからこんな事になるんだ。\n1998年5月11日、昨日からこのいまいましい宇宙服をつけたままなんで、背中がむれちまって妙にかゆい。\nいらいらするんで、腹いせにあの犬どもの飯を抜きにしてやった。\nいい気味だ。\n1998年5月13日、あまりに背中がかゆいんで医務室にいったら、背中にでっけえバンソウコウを貼られた。\nそれから、もう俺は宇宙服を着なくていいと医者がいった。\nおかげで今夜はよく眠れそうだぜ。\n1998年5月14日、朝起きたら、背中だけでなく足にも腫物ができてやがった。\n犬どものオリがやけに静かなんで、足引きずって見に行ったら数が全然たりねえ。\nめしを三日抜いたくらいで逃げやがって。　おえら方に見つかったら大変だ。\n1998年5月16日、昨日、この屋しきから逃げ出そうとした研究いんが一人、射さつされた、て　はなしだ。\n夜、からだ中　あついかゆい。\n胸のはれ物　かきむしたら　肉がくさり落ちやがた。\nいったいおれ　どうな　て\n1998年5月19日、やと　ねつ　ひいた　も　とてもかゆい\n今日　はらへったの、いぬ　のエサ　くう\n1998年5月21日、かゆい　かゆい　スコットーきた\nひどいかおなんで　ころし\nうまかっ　です。\n4、かゆい\nうま"
+"Mail to the Chief of Security",保安部長のメール
+MailToTheChiefOfSecurityTip_title,保安部長のメール
+MailToTheChiefOfSecurityTip,"機密\n\n保安部長へ\n\n1998年7月22日2:13\n\nX-DAYが近づいている。\n一週間以内に、以下の作戦を速やかに、順次実行せよ。\n\n1)S.T.A.R.Sを研究所に誘い込み、B.O.W(生物兵器)と戦わせ、実戦データを得よ。\n\n2)変異体を含むB.O.Wの胚を、一種につき２個ずつ回収せよ。\n但し、タイラントは廃棄処分とせよ。\n\n3)人員・実験動物を含む、アークレイ研究所の全てを、事故に見せかけて処分せよ。\n\n幸運を祈る\nアンブレラ本部、\nアンブレラ社"
+"Researcher's Letter",研究員の手紙
+ResearcherLetterTip_title,研究員の手紙
+ResearcherLetterTip,"1998年6月8日\nエイダ、いま君がこれを読んでいるという事は、私はすでに私でなくなっているということだ。\n今日の検査の結果で思った通りの反応が出た、陽性だ。\n\nもうすぐあんな姿になってしまうのかと思うと、気が狂いそうになる。\n\nエイダ、君は今のところ感染していない。\nこんなことはないかもしれないが、もし君が最後の一人だったら、映像室に置いてある資料を持ち、動力室に行って起爆装置を作動させた後、ここから脱出して欲しい。\n\nそしてマスコミを使って、ことの全てを公にしてくれ。\n\n正常に機能していれば、ここのロックは全てセキュリティーシステムで解除できる。\n\nこれには小実験室にある端末から、私の名前でログインし、さらにパスワードを入力すればアクセスできるようにしておいた。\nパスワードは「ADA」、君の名だ。\n\n映像室のあるB2のロックを解くには私と君の名でアクセスした後、さらにもう一つのパスワードを入力しなければならない。\n\n下に念のため暗号でしるしておいたが、君ならすぐにわかるはずだ。\nこれが私の最後の頼みだ、もし変わり果てた姿の私を見かけたらエイダ、君の手で楽にしてくれ。\n\nありがとう、君のジョンより"
+"Observation Note",観察記録書
+ObservationNoteTip_title,観察記録書
+ObservationNoteTip,"Gの発見に至るには、始祖ウイルスの投与から、実に計21年もの熟成の期間が必要であったようだ。\n\nフランスの研究所から取り寄せて投与した「寄生生物のプロトタイプ」を、あの実験体が取り込んでしまったのも、今を思えば、容易に納得がいく。\n\n実験体の体内で、長き眠りを貪り21年という年月を経て、アレは、突然変異的に進化したのだ。\n（まさに「進化」という言葉が相応しい。）\n\nこれらの観察データは、私にさらなるすばらしいヒントをくれた。\nこれを推し進めて、さらに改良を加え、変異を与える事で、「T」を超える「G」を作り出す糸口が導きだされた。\n\nこれは、後々のB.O.Wの歴史を塗り替える画期的なものになるはずだ。\n\nあの忌々しいアレクシア嬢もあの世で悔しがっているのに違いない。\n 数年後にはその研究成果を発表できるだろう。\n\nウィリアム・バーキン"
+"Suicide Note",ある自殺者の遺書
+SuicideNoteTip_title,ある自殺者の遺書
+SuicideNoteTip,"June 22, 1998\n\n一緒に逃げていたロバートに、化け物の兆候があらわれはじめたので、仕方なく殺して浴室に入れておいた。\n\n多分、これで私が最後の一人だ。\n\n何故このようなことになってしまったのか？ 今となっては、この研究に参加した事が悔やまれる。\nもはや、私が生きて、この館を出る事はないだろう。\n\n準備は終わった。\n後は勇気を持つだけだ。\n悔いは残るがしかたがない。\n\nこのまま化け物になって、人間としての自分が消えてしまうぐらいなら、みずからの幕を\n\n＜この紙の裏に、文字が書かれている＞\n\n許してくれ、リンダ"
+"Plant 42 Report",プラント42のメモ
+Plant42ReportTip_title,プラント42のメモ
+Plant42ReportTip,"あの事故から四日後、ポイント４２のプラントの成長速度には目を見張るものがある。\n\n他のプラントに比べ、ｔ－ウイルスの強い影響を受けており、その形状に見合う生態は、もはや宿主の植物が何であったのか想像することすら困難な程である。\n\n４２の栄養源は二種類ある。\n一つは、地下室まで達した根から得ている養分だ。\n事故直後、発狂した職員が地下室の水槽を壊したため、現在地下室は水浸しだ。\nそこに流出している何らかの薬品成分が、プラント４２の急速な成育を促進させている事は想像に難くない。\n\nさらに地下室から伸びたプラント４２の部は、ダクトを通り、一階の天井から球根一状になってぶら下がっている。\nその球根から伸びている何本ものツルがもう一つの養分の入手手段となっている\n\nプラント４２は獲物を感知すると丁度イカの触手のように獲物にツルを巻つけ動けなくしてから、ツルの裏についている吸入器で血を吸うのだ。\nしかもそれなりに知能があるらしく、獲物を得た時や、睡眠中はツタを扉にからませ、外敵の侵入を防いでいる。\n\n既に数人の職員がその犠牲となった。\n\n1998、5月21日\nヘンリー＝サートン"
+Organic Chemistry Lab Experiment,有機化学実験ファイル
+OrganicChemistryLabExperimentTip_title,有機化学実験ファイル
+OrganicChemistryLabExperimentTip,"タイラントウイルスに感染し、異常成長した植物の細胞には、いくつかの共通の性質が見られるのは前回のレポートで述べたとおりである。\nしかしいくつかの実験で、興味深い事実が明らかになった。\n\nそれは、私たちがあの実験で使用した、「ＵＭＢ」系の薬品の一つである「ＵＭＢＮｏ.16 」に、これら植物の細胞を、急速に死滅させる成分が含まれているという事である。\n\n私たちはこの「ＵＭＢ　Ｎｏ.16 」を、「Ｖ－ＪＯＬＴ」と名付けた。\n計算では、プラント４２の場合、根に直接「Ｖ－ＪＯＬＴ」をかければ、全体が死滅するのに５秒もかからない。\n\n生成はＵＭＢ系の薬品をいくつかの手順で混合すれば良いのだが、ＵＭＢ系の特徴として人体に有害なガスを発生する恐れがあるので取扱いには注意が必要である。\n\nまずＵＭＢ系薬品の種類と特徴を簡単に示す：\n\nUMB No. 3   赤\nYellow-6   黄色\nUMB No. 7   緑\nUMB No. 10   オレンジ\nVP-017   青\nV-JOLT   茶褐色"
+Family Picture and Notes,ある家族の写真と手記
+FamilyPicture1Tip_title,ある家族の写真と手記
+FamilyPicture1Tip,"＜ある家族の写真 写真の裏に何かが書かれている＞\n\n\nＮｏｖ．１０．１９６７\n始祖ウィルス変異体を投与\n\n・ジェシカ\n「ＴＹＰＥ－Ａ」投与\n細胞活性時に組織断裂化\n\nウィルス定着化に失敗\n\n破棄処分\n\n\n・リサ\n\n「ＴＹＰＥ－Ｂ」投与\n細胞活性時に組織断裂化\n\n後にウィルス定着化成功\n\n器の改造に一定の成果\n\n保護観察継続\n\n\n※ジョージ\n抹消済み（Ｎｏｖ．３１．１９６７）"
+"Lisa's Journal",リサの日記
+FamilyPicture2Tip_title,リサの日記
+FamilyPicture2Tip,"Nov.14.1967\n注射で頭がボーっとする。\nお母さんに会えない。\nどこかに連れていかれた。\n二人で脱出しようって約束したのに　私だけおいていくなんて・・・\n\nNov.15.1967\nお母さんみつけた！\n今日の食事は、お母さんと一緒！\nうれしかった。\n\n違う、偽者だった。\n外は一緒だけど中が違う。\n\nお母さんを取り返さなくっちゃ！\nお母さんに返してあげなくちゃ！\n\nお母さんの顔は簡単に取り返せた。\nお母さんの顔を取っていたおばさんの悲鳴が聞こえたけど、お母さんの顔をとったやつの悲鳴なんか気にしない。\nお母さんは私のもの。\n誰にも取られないように　私にくっつけておこう。\nお母さんに会った時、　顔が無いとかわいそうだもの。\n\nNov.17.19 7\n石の箱の中　お母さん　匂い　ここ　お母さんがホント？\n石の箱　かたくてイタイ　手のジャラジャラが邪魔をする\n４つの石　つてるジャラジャラせで　お母さ　会えない\n\n19\nお父さん　一つ　くっつけた　お母さん　二つ　くっつけた\n\n中身はやぱり赤く　ヌルヌル　白くてかたかた\n\nホントのお母さ　見つからない\n\nお父　ん分からない　また　お母さ　今日見つけた\n\nお母さ　をくつけたら　お母　ん動かなくなた\n母さんは悲鳴を上げていた\n\nなぜ？\n私は一緒に居たかただけ\n\n4\nお母さん\nどこ？\n\n会いたい"
+Jessica's Letter,ジェシカの手紙
+FamilyPicture3Tip_title,ジェシカの手紙
+FamilyPicture3Tip,"愛するリサへ\n\n日に日に私が私で無くなっていく・・・。\nそんな感覚が確信に変わり始めています。\nあの注射のおかげか、体のかゆみは幾分か収まってきたみたい。\n今日も「栄養剤だ」と言われ、白衣の男達に注射を打たれました。\n\n注射をされると、意識がはっきりしてくる。\n意識が戻ってくると、何も考えられなくなっていた自分に気付いて、愕然としたの。\n\n全てを忘れてしまう感覚に襲われ、あなたの事やあの人の事・・・、 どんな性格で、どんな顔だったかすらも意識の闇に覆われてしまう。\n\nああ、リサ、私も今すぐでもあなたに会って、あなたを抱きしめて確かめたい。\nそうしないと、あなたも、あの人も消えてしまいそうで、とても怖い。\n\n・・・このままではダメね！ 早く逃げださないと！\n\nいい？ リサ チャンスは多分、次に一緒にあの実験室に行く時！ 二人して意識の無いフリをするの。\nそしてあの白衣の男が隙を見せた時が逃げ出すチャンスよ！\n\n外へ脱出したら、お父さんを一緒に探しましょう！ この手紙にあなたが気付いてくれます様に\n\nＮｏｖ．１３．１９６７\nジェシカ・トレヴァー"
+V-ACT,Ｖ－ＡＣＴについて
+VACTTip_title,Ｖ－ＡＣＴについて
+VACTTip,"研究員のノートより\n\n「ｔ－ウィルス」の変種体が、ゲノムの器である肉体に変化をもたらす事が明かになった。\nこのタイプは、宿主の意識が無くなり、休眠期に入ると体組織の再構築を行う。\n\nその際に細胞を活性化させ、体組織自身の改造をも行うようだ。 (我々はこれを「Ｖ－ＡＣＴ」と命名)\n\n特筆すべきは、その「筋力とスピードの大幅な上昇」にある。\n一度この状態になった個体は、体組織の変化により、「よりすばやい」動きを有するようになっているのである。\nそしてなにより、その性質は[狂暴]だ。\n\n既に、これらにエサを与えている際に起きた事故で、研究員４人が死亡した。\n現場は、まさに一瞬にして血の海となってしまった。(我々は、これのそのあまりの残虐性からこれらを"クリムゾン・ヘッド"と名づけた。)\n\nこのまま、あれらを放置しておく訳にもいかないが、あの貴重なプロトタイプ(プロト1)だけは、処分する事を避けなければならない。\nそれは我々の義務でもある。\nだが、このあまりに危険なサンプルをどうしたらいいものか？\n\n我々はクリムゾン・ヘッド・プロト1に冷凍ガスを使い、館裏の墓場の地下室に、これを閉じ込める事にした。"
+FAX,ファックス
+FAXTip_title,ファックス
+FAXTip,"送信先 衛生管理部門\n統合本部長\n送信元 ラクーン特研部 災害対策委員会\n\nこのメモランダムは、関係者以外の者が閲覧することを厳禁する。\n\nまた本書類の内容が了解されしだい破棄されなければならない。\n\n今回の｢T-ウィルス｣流出の件について、当委員会が実地調査を試みたところ被害の概算は当初の報告をはるかに上回るものであると推定される。\n\n第一に、\n実数についての正確なデータを得ることは現状では非常に困難では有るが、研究員の半数以上は｢T-ウィルス｣も被爆した時点で死亡しているとみられる。\nまた、生存者のほとんど全ては｢T-ウィルス｣感染者特有の症状が重度に現れており、死亡者数はさらに増加するものと思われる。\n\n第二に問題となるのは、\nセキュリティーシステムがかろうじて作動しているものの、特務警備隊もほぼ全滅の状況であり、我が社の最高機密に属する研究事項が無防備のまま外部にさらされていることである。\n特にこの点は一刻の猶予もなく対策を講じられたい。\n\nそして第三の問題として、\nこれは第二の問題と重複する点もあるが、実験体の多くがその制御を失って暴走している状況である。\n\n実は、我々が見たところ、研究員のうち実験体に殺害されたと思われる死者が決して少なくないのである。\nその死体は惨殺されたというにふさわしいものであり、奇しくも我々の研究の成功を裏付けるものであるが、このままでは報道機関に憂慮すべき材料を提供してしまう可能性も極めて高い。\n総じて事態はきわめて深刻である。\nこれらの事態をかんがみるに、中途半端な｢T-ウィルス｣の隠蔽は全く不可能と言わざるを得ない。\n望むべきは根本的で早急な解決策であると我々は考える。\n\n特にラクーンにおける、州警察やS.T.A.R.S.の介入は迅速なものと思われる。\nこの方面においても何らかの手を打つべきだろう。"
+"Security Protocols",警備システム資料
+SecurityProtocolsTip_title,警備システム資料
+SecurityProtocolsTip,"B2F\n\n映像資料室/映像資料室を特研部管轄の下に設置。\n利用に関する裁量権は、キース・アーヴィング室長に委任するものと定める。\n\n\nB3F\n\n監禁室/牢屋の使用は衛生管理部門がこれを管理する。\nウィルスを実験体に投与する場合は、顧問研究員(Ｅ･スミス、Ｓ･ロス、Ａ･ウェスカー)の同行を必須とする。\n\n\n3重ロックのドア/全てのパスコード書類を提示しない者の入室を禁ずる。\nパスコード書類は、各ブロックの研究主任が専用の出力装置によって作成したもの以外を認めない。\n\n動力室/本社派遣の監督官以外の者の入室を禁ずる。\nなお、顧問研究員が特別な指示を受けた時はこの限りではない。\n\nパスコード出力装置/研究主任以外の者が、パスコード出力装置を扱うことを禁ずる。\n\n\nB4\n\nｔ-ウィルス投与による｢タイラント｣経過報告について・・・\n(以下判読不能)"
+Quest_Completion_tip_title,チャレンジ完了！
+Completion_desc,おめでとうございます！\nスペンサー邸チャレンジを無事完了することが出来ました。\n\n私が制作しながら楽しめたように、皆様が楽しくプレイ出来た事を願います！\n\nフランティック・ダン
+Quest_Completion_tip,おめでとうございます！\nスペンサー邸チャレンジを無事完了することが出来ました。\n\n私が制作しながら楽しめたように、皆様が楽しくプレイ出来た事を願います！\n\nフランティック・ダン
+zombieArlene,JaWoodle's Girl
+zombieMarlene,Misterri
+zombieNurse,アンブレラ社の外科医
+zombieJoe,Glock9's Dealer
+zombieSteve,Draycko
+zombieBusinessMan,Aviose
+zombieBoe,DD1GG
+zombieJanitor,HellsJanitorTV
+zombieMoe,TheOrigamiGuru
+zombieLab,アンブレラ社の科学者
+zombieDarlene,Lois Griffin
+zombieYo,NotOnly25
+zombieUtilityWorker,作業員
+zombieBiker,Games4Kickz
+zombieLumberjack,JonahBirch
+zombieFemaleFat,Big Red
+zombieFatHawaiian,Peter Griffin
+zombieMaleHazmat,アンブレラ社危険物取扱者
+zombieSkateboarder,DoctorBest85
+zombieSoldier,アンブレラ社のガードマン
+animalZombieDog,ケルベロス
+Zombie Dog,ケルベロス
+animalZombieVulture,Flappy Fuck
+animalSnake,アダ―
+animalChicken,Oskurd
+"Web Spinner",ウェブスピナー
+"Crimson Head",クリムゾンヘッド
+"Crimson Head Prototype",クリムゾンヘッドプロト1
+"Crimson Head Prototype2",クリムゾンヘッドプロト1
+"Forest Speyer",フォレストゾンビ
+"Forest Speyer2",フォレストゾンビ
+Hunter,ハンター
+"Failed Test Subject",実験体
+"Plant 42",プラント42
+"Yawn the Boar",猪のヨーン
+"Black Tiger Spider",ブラックタイガー
+"Lisa Trevor",リサ・トレヴァー
+Tyrant,タイラント
+"Super Tyrant",スーパータイラント
+"Boe Crawler",Crippled DD1GG
+"Joe Crawler",Glock9's Crippled Dealer
+"Janitor Crawler",Crippled HellsJanitorTV
+"Arlene Crawler",JaWoodle's Crippled Girl
+"Lab Worker Crawler",這いずりアンブレラ社の科学者
+"Darlene Crawler",Crippled Lois Griffin
+"Marlene Crawler",Crippled Misterri
+"Yo Crawler",Crippled NotOnly25
+"Steve Crawler",Crippled Draycko
+"Business Man Crawler",Crippled Aviose
+"Burnt Crawler",這いずりクリムゾンヘッド
+"Nurse Crawler",這いずりアンブレラ社の外科医
+"Hazmat Crawler",這いずりアンブレラ社危険物取扱者
+"Skateboarder Crawler",Crippled DoctorBest85
+zombieMarleneRadiated,Misterri
+zombieJoeRadiated,Glock9's Dealer
+zombieJanitorRadiated,HellsJanitorTV
+zombieYoRadiated,NotOnly25
+
+
+attStrengthRank01LongDesc,"誰だってボディビルダーになりたいかもしれませんが、筋トレはだるいですね。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が215%になり、3%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank02LongDesc,"あなたは身体的に弱っちいかもしれませんが、内に燃え滾る強い炎が見え隠れしています。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が230%になり、6%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank03LongDesc,"あなたのような乳飲み子がなぜゾンビアポカリプスで生き残れているのでしょうか？\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が245%になり、9%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank04LongDesc,"あなたのお腹周りについているタイヤのようなお肉のおかげで餓死はしにくいでしょうが、スレハンを振るときには邪魔にしかなりませんね。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が260%になり、12%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank05LongDesc,"あなたの身体は引き締まって来ました。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が275%になり、15%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank06LongDesc,"あなたはとても強くなってきたので、ジムの凡人たちが羨ましそうに見ています。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が290%になり、18%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank07LongDesc,"棍棒やスレハンを振り続けた結果、かなり身体が鍛えられたようです。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が305%になり、21%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank08LongDesc,"伝説的な力を手に入れたようです。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が320%になり、24%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank09LongDesc,"サイズ、体力、パワー、全てがチャンピオン級になりました。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が335%になり、27%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank10LongDesc,"アポカリプスに夢を粉々にされなければ、オリンピックチャンピオンになれたほどですね、腹いせとして、ゾンビを粉々にしてやりましょう。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が350%になり、30%多くの確率で敵の部位を破壊する事が可能になりました。"
+perkDemolitionsExpertRank1LongDescRE,"あなたは手榴弾兵の見習いです、爆発物の扱いには十分注意してくださいね。\n\n爆発系武器使用時のダメージ量が17%上がり、リロード速度が10%上がり、照準を合わせる速度が15%上がり、部位破壊率が15%上がります"
+perkDemolitionsExpertRank2LongDescRE,"あなたは爆発物を扱う事が出来ます。\n\n爆発系武器使用時のダメージ量が34%上がり、リロード速度が20%上がり、照準を合わせる速度が30%上がり、部位破壊率が30%上がります"
+perkDemolitionsExpertRank3LongDescRE,"あなたは爆発物の扱いになれています。\n\n爆発系武器使用時のダメージ量が51%上がり、リロード速度が30%上がり、照準を合わせる速度が45%上がり、部位破壊率が45%上がります"
+perkBoomstickRank1LongDescRE,"ショットガン使用時のダメージ量が17%上がり、射撃レートが10%速くなり、リロード速度が10%上がります。\n\n敵のスタン状態が6間持続するようになり、部位破壊率が5%上がります。"
+perkBoomstickRank3LongDescRE,"ショットガン使用時のダメージ量が34%上がり、射撃レートが20%速くなり、リロード速度が20%上がります。\n\n敵のスタン状態が8間持続するようになり、部位破壊率が10%上がります。"
+perkBoomstickRank5LongDescRE,"ショットガン使用時のダメージ量が51%上がり、射撃レートが30%速くなり、リロード速度が30%上がります。\n\n敵の足を攻撃し、ダメージを負わせる事で、走れなくする事が出来るようになります。"
+perkBrawlerNameRE,格闘家 (スロット 7 8 9 0)
+perkBrawlerRank1LongDescRE,ナックルや素手使用時のダメージ量が17%上がります。\n\n頭部を攻撃すると、敵の感染させる能力を無効化する事が出来ます。
+perkBrawlerRank3LongDescRE,ナックルや素手使用時のダメージ量が34%上がります。\n\nパワーアタック時、20%の確率で敵をノックダウンさせることが出来、30%の確率でパワーアタック時に敵をよろけさせます。
+perkBrawlerRank5LongDescRE,ナックルや素手使用時のダメージ量が51%上がります。\n\n頭部への30%の確率で敵をノックダウンさせることが出来、頭部破壊率が上がります。
+perkSexualTrexRank1LongDescRE,ベンチウォーマーへと昇格しました。\n\n近接武器やツール使用時の通常攻撃スタミナ消費量が 6% 軽減され、パワーアタックスタミナ時の消費量が 10%軽減されます。
+perkSexualTrexRank2LongDescRE,ずいぶんと強いアスリートになってきたため、スタミナ切れする事が少なくなりました。\n\n近接武器やツール使用時の通常攻撃スタミナ消費量が12%軽減され、パワーアタックスタミナ時の消費量が20%軽減されます。\n\n近接武器で敵にとどめを刺すたびに、スタミナが10回復します。
+perkSexualTrexRank3LongDescRE,ウォリアーを尊敬しない者などいません。\n\n近接武器やツール使用時の通常攻撃スタミナ消費量が18%軽減され、パワーアタックスタミナ時の消費量が30%軽減されます。\n\n近接武器で敵にとどめを刺すたびに、スタミナが15回復します。
+perkSexualTrexRank4LongDescRE,あなたはグラディエーターになりました、アスリートの頂点です。\n\n近接武器やツール使用時の通常攻撃スタミナ消費量が24%軽減され、パワーアタックスタミナ時の消費量が40%軽減されます。\n\n近接武器で敵にとどめを刺すたびに、スタミナが20回復します。
+perkMiner69rNameRE,69年の鉱夫 (ナイフ/レンチ)
+perkMiner69rDescRE,ブロックダメージ量を上げ、伐採や解体を素早く行いましょう。
+perkMiner69rRank1LongDescRE,ナイフやレンチ使用時のブロックダメージ量が50%上昇します。
+perkMiner69rRank2LongDescRE,ナイフやレンチ使用時のブロックダメージ量が100%上昇します。
+perkMiner69rRank3LongDescRE,ナイフやレンチ使用時のブロックダメージ量が150%上昇します。
+attFortitudeRank01LongDesc,あなたはあまり頑丈ではなく、体力もあまりありませんが、かろうじて生きています。\n拳やマシンガンを使用時のヘッドショットダメージが215%になり、3%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank02LongDesc,"以前よりは少しましになりました。\n拳やマシンガンを使用時のヘッドショットダメージが230%になり、6%の確率で敵の部位を破壊する事が可能になりました。"
+attFortitudeRank03LongDesc,なんとか立っていられる状態です。\n拳やマシンガンを使用時のヘッドショットダメージが245%になり、9%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank04LongDesc,"段々普通の人に近付いてきました。\n拳やマシンガンを使用時のヘッドショットダメージが260%になり、の確率で敵の部位を破壊する事が可能になりました。"
+attFortitudeRank05LongDesc,あなたは良い健康状態です。\n拳やマシンガンを使用時のヘッドショットダメージが275%になり、15%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank06LongDesc,あなたは非常に健康な状態です。\n拳やマシンガンを使用時のヘッドショットダメージが290%になり、18%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank07LongDesc,あなたは完璧な健康状態です。\n拳やマシンガンを使用時のヘッドショットダメージが305%になり、21%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank08LongDesc,あなたは大変強い回復力の持ち主です。\n拳やマシンガンを使用時のヘッドショットダメージが320%になり、24%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank09LongDesc,あなたは驚くべき体質の持ち主です。\n拳やマシンガンを使用時のヘッドショットダメージが335%になり、27%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank10LongDesc,あなたは溢れんばかりの体力の持ち主です。\n拳やマシンガンを使用時のヘッドショットダメージが350%になり、30%の確率で敵の部位を破壊する事が可能になりました。
+perkMachineGunnerRank3LongDescRE,"幾度もの戦いの末、ソルジャーになる事が出来ました。\n\nマシンガン使用時のダメージ量が17%上がり、射撃レートが8%速くなり、リロード速度が10%短縮されます。\n\nコマンドーアドレナリン: マシンガンでの攻撃を命中すると、毎回スタミナを1ずつ回復します。"
+perkMachineGunnerRank4LongDescRE,"あなたのスキルの高さはスペシャルフォース並みです。\n\nマシンガン使用時のダメージ量が34%上がり、射撃レートが16%速くなり、リロード速度が20%短縮されます。\n\nコマンドーアドレナリン: マシンガンでの攻撃を命中すると、毎回スタミナを2ずつ回復します。"
+perkMachineGunnerRank5LongDescRE,"あなたは究極のマシンガンナーになりました。\n\nマシンガン使用時のダメージ量が51%上がり、射撃レートが24%速くなり、リロード速度が30%短縮されます。\n\nコマンドーアドレナリン: マシンガンでの攻撃を命中すると、毎回スタミナを3ずつ回復します。"
+perkPainToleranceRank1LongDescRE,着用中のアーマー1部位につき、アーマー値を 1上昇させます(キャラの詳細には反映されません)\n\nスタン状態になる確率34%減少。
+perkPainToleranceRank2LongDescRE,着用中のアーマー1部位につき、アーマー値を 2上昇させます(キャラの詳細には反映されません)\n\nスタン状態になる確率67%減少。
+perkPainToleranceRank3LongDescRE,着用中のアーマー1部位につき、アーマー値を 3上昇させます(キャラの詳細には反映されません)\n\n一切スタンされなくなります。
+buffPerkCharismaticNatureDescRE,本能を使ってサバイバルしています！
+perkCharismaticNatureDescRE,あなたはサバイバリストです。
+perkCharismaticNatureNameRE,サバイバル本能
+perkCharismaticNatureRank1DescRE,健康的
+perkCharismaticNatureRank2DescRE,力尽く
+perkCharismaticNatureRank3DescRE,鋼の身体
+perkCharismaticNatureRank1LongDescRE,最大体力と最大スタミナ量が 20 上がります。
+perkCharismaticNatureRank2LongDescRE,与ブロックダメージ量が 50%上がり、 敵へのダメージ量が 8.5%上がります。
+perkCharismaticNatureRank3LongDescRE,アーマー値と爆発ダメージ耐性が、アーマー1部位ごとに 1上がり、最大体力と最大スタミナ量が 10増えます。
+perkHealingFactorRank1LongDescRE,120秒ごとに、体力が１自然回復します。\nクリティカルダメージの回復速度が 100%早くなります。
+perkPhysicianRank1LongDescRE,医療回復アイテムの回復量 25%増加します。
+perkPhysicianRank2LongDescRE,医療回復アイテムの回復量 50%増加します。
+perkPhysicianRank3LongDescRE,医療回復アイテムの回復量 75%増加します。
+attAgilityRank01LongDesc,"あなたはとても不器用ですが、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが215%になり、3%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank02LongDesc,"あなたはアメフトチームのメンバーになる事は出来ませんでしたが、めげずに練習を続けたため、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが230%になり、6%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank03LongDesc,"あなたは不器用なため、いつも大きな音を立ててしまいますが、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが245%になり、9%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank04LongDesc,"あなたはあまり器用ではありませんが、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが260%になり、12%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank05LongDesc,"あなたは器用なため、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが275%になり、15%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank06LongDesc,"あなたはとても身軽なため、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが290%になり、18%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank07LongDesc,"あなたはとても素早く、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが305%になり、21%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank08LongDesc,"流れるような動きでいつも完璧な動きをする事は、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが320%になり、24%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank09LongDesc,"あなたはプロのアスリートになれるほどの身体能力の持ち主ですので、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが335%になり、27%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank10LongDesc,"器用さにおいて、あなたの右に出る者はいません。　弓、ハンドガン、ナイフを使用時のヘッドショットダメージが350%になり、30%の確率で敵の部位を破壊する事が可能になりました。"
+perkGunslingerRank3LongDescRE,"だいたいの状況をコントロールできるほどのシェリフになりました。\n\nハンドガン使用時のダメージ量が17%上がり、射撃レートが8%上がり、リロード速度が10%が速くなります。\n\nクリティカルダメージ: 5 回連続ヒット成功後にクリティカルヒット発生。"
+perkGunslingerRank4LongDescRE,"酒場いっぱいの騒がしい奴らを一瞬でクリアするほどのガンファイターになりました。\n\nハンドガン使用時のダメージ量が34%上がり、射撃レートが16%上がり、リロード速度が20%が速くなります。\n\nクリティカルダメージ: 4回連続ヒット成功すると最後の1発のダメージが倍になります。"
+perkGunslingerRank5LongDescRE,"ナベズゲイン1のガンスリンガーになりました。\n\nハンドガン使用時のダメージ量が51%上がり、射撃レートが24%上がり、リロード速度が30%が速くなります。\n\nクリティカルダメージ: 3 回連続ヒット成功すると最後の1発のダメージが倍になります。"
+perkDeepCutsRank1LongDescRE,持っている武器はなまくらですが、使い方は理解しているようですね。\n\nナイフ使用時の敵へのダメージ量17%上昇\n\nナイフ使用時のブロックダメージ量上昇50%
+perkDeepCutsRank2LongDescRE,あなたの友人たちはあなたの事をナイフガイと呼びます。\n\nナイフ使用時の敵へのダメージ量34%上昇\n\nナイフ使用時のブロックダメージ量上昇100%
+perkDeepCutsRank3LongDescRE,斬撃武器の扱いに関しては、あなたは他の人より一段上です。\n\nナイフ使用時の敵へのダメージ量51%上昇\n\nナイフ使用時のブロックダメージ量上昇150%
+perkRunAndGunRank1LongDescRE,"エイム力なんていらない、考えるのは後にして、とりあえず撃ちましょう。\n\n腰撃ちの命中精度が10%上がり、リロード時の移動速度低下が20%軽減されます。"
+perkRunAndGunRank2LongDescRE,素早い射撃で、危険な状況から抜け出す事が出来るようになりました。\n\n腰撃ちの命中精度が 20% 上がり、リロード時の移動速度低下が40%軽減されます。
+perkRunAndGunRank3LongDescRE,あなたは凶悪なトリガーマンになりました。\n\n腰撃ちの命中精度が30%上がり、リロード時の移動速度低下が60%軽減されます。
+perkFlurryOfBlowsRank1LongDescRE,あなたは手を素早く動かせるようになりました。\n\n片手武器や拳での攻撃速度が15%上がり、敵をキルするごとに、スタミナが5回復します。
+perkFlurryOfBlowsRank2LongDescRE,サドンストライクを習得しました。\n\n片手武器や拳での攻撃速度が30%上がり、敵をキルするごとに、スタミナが10回復します。
+perkFlurryOfBlowsRank3LongDescRE,乱れ撃ちをマスターしました。\n\n片手武器や拳での攻撃速度が45%上がり、敵をキルするごとに、スタミナが15回復します。
+
+"Gun Powder",火薬
+"The Challenge",チャレンジ
+"The Spencer Mansion Challenge","スペンサー邸チャレンジ"
+"Enter The Survival Horror","Enter The Survival Horror"
+"Build a Gyrocopter","ジャイロコプターを組み立てる"
+"Escape The Spencer Mansion","スペンサー邸から脱出"
+"Scavenge the mansion for parts and put together a gyrocopter. Then fly to the safe zone.","館内を探索し、ジャイロコプターをクラフトするために必要は材料を集め、クラフトし、館から脱出しましょう。\n必要な作業台などは館内のどこかにあります。\n必要な資材は館内の物をレンチ入手後に分解する、敷地内にある鉱脈を採掘する、ゲームステージが15から上になってから、ルートで見つけるなどと工夫して見つけてください。"
+perkDeepCutsDescRE,ナイフ使用時のダメージ量が上がります。
+"Final Escape","大脱出"
+"It's finally time for you to escape this hell!","ついにこの地獄のような場所から脱出する時が来ました！"
+"Challenge Completion","チャレンジ完了"
+"Mission",ミッション
+"Congratulations!",おめでとうございます！
