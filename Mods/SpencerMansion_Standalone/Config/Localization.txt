@@ -440,16 +440,16 @@ zombieJanitorRadiated,
 zombieYoRadiated,NotOnly25
 
 
-attStrengthRank01LongDesc,"Everyone wants to be a bodybuilder but nobody wants to lift those heavy ass weights. Deal 215% head shot damage and have a 3% greater chance to dismember with shotguns, clubs, sledgehammers and tools governed by Miner 69'er."
-attStrengthRank02LongDesc,"You might be scrawny but you have a fire inside to get big and strong. Deal 230% head shot damage and have a 6% chance to dismember with shotguns, clubs, sledgehammers and tools governed by Miner 69'er."
-attStrengthRank03LongDesc,"What is a milk drinker like you doing in the zombie apocalypse? Deal 245% head shot damage and have a 9% greater chance to dismember with shotguns, clubs, sledgehammers and tools governed by Miner 69'er."
-attStrengthRank04LongDesc,"Your spare tire might keep you from starving but isn't helping you swing a sledgehammer. Deal 260% head shot damage and have a 12% greater chance to dismember with shotguns, clubs, sledgehammers and tools governed by Miner 69'er."
-attStrengthRank05LongDesc,"You are fit and able to deal 275% head shot damage and have a 15% greater chance to dismember with shotguns, clubs, sledgehammers and tools governed by Miner 69'er."
-attStrengthRank06LongDesc,"You are very strong and all the normies at the gym are envious. Deal 290% head shot damage and have a 18% greater chance to dismember with shotguns, clubs, sledgehammers and tools governed by Miner 69'er."
-attStrengthRank07LongDesc,"Pumping clubs and sledgehammers has gave you some gains bro. Deal 305% head shot damage and have a 21% greater chance to dismember with shotguns, clubs, sledgehammers and tools governed by Miner 69'er."
-attStrengthRank08LongDesc,"Your massive strength is legendary. Deal 320% head shot damage and have a 24% greater chance to dismember with shotguns, clubs, sledgehammers and tools governed by Miner 69'er."
-attStrengthRank09LongDesc,"Size, strength and power are all champion level now. Deal 335% head shot damage and have a 27% greater chance to dismember with shotguns, clubs, sledgehammers and tools governed by Miner 69'er."
-attStrengthRank10LongDesc,"You could be an Olympic champion if the apocalypse hadn't crushed that dream. Now you can just crush zombies. Deal 350% head shot damage and have a 30% greater chance to dismember with shotguns, clubs, sledgehammers and tools governed by Miner 69'er."
+attStrengthRank01LongDesc,"Everyone wants to be a bodybuilder but nobody wants to lift those heavy ass weights. Deal 215% head shot damage and have a 3% greater chance to dismember with shotguns and fists."
+attStrengthRank02LongDesc,"You might be scrawny but you have a fire inside to get big and strong. Deal 230% head shot damage and have a 6% chance to dismember with shotguns and fists."
+attStrengthRank03LongDesc,"What is a milk drinker like you doing in the zombie apocalypse? Deal 245% head shot damage and have a 9% greater chance to dismember with shotguns and fists."
+attStrengthRank04LongDesc,"Your spare tire might keep you from starving but isn't helping you swing a sledgehammer. Deal 260% head shot damage and have a 12% greater chance to dismember with shotguns and fists."
+attStrengthRank05LongDesc,"You are fit and able to deal 275% head shot damage and have a 15% greater chance to dismember with shotguns and fists."
+attStrengthRank06LongDesc,"You are very strong and all the normies at the gym are envious. Deal 290% head shot damage and have a 18% greater chance to dismember with shotguns and fists."
+attStrengthRank07LongDesc,"Pumping clubs and sledgehammers has gave you some gains bro. Deal 305% head shot damage and have a 21% greater chance to dismember with shotguns and fists."
+attStrengthRank08LongDesc,"Your massive strength is legendary. Deal 320% head shot damage and have a 24% greater chance to dismember with shotguns and fists."
+attStrengthRank09LongDesc,"Size, strength and power are all champion level now. Deal 335% head shot damage and have a 27% greater chance to dismember with shotguns and fists."
+attStrengthRank10LongDesc,"You could be an Olympic champion if the apocalypse hadn't crushed that dream. Now you can just crush zombies. Deal 350% head shot damage and have a 30% greater chance to dismember with shotguns and fists."
 perkDemolitionsExpertRank1LongDescRE,"You are now a grenadier initiate, be careful with those explosives. Increase damage 17%, reload speed 10%, aim 15% faster, 15% greater chance to dismember."
 perkDemolitionsExpertRank2LongDescRE,"Increase damage by 34%, reload speed 20%, aim 30% faster, 30% greater chance to dismember."
 perkDemolitionsExpertRank3LongDescRE,"You are now an explosives handler. Increase damage 51%, increase reload speed by 30%, aim 45% faster, 45% greater chance to dismember."
@@ -469,16 +469,16 @@ perkMiner69rDescRE,Maximize your mining efforts by increasing tool damage to bri
 perkMiner69rRank1LongDescRE,Increases block damage by 50% with your knife and wrench.
 perkMiner69rRank2LongDescRE,Increases block damage by 100% with your knife and wrench.
 perkMiner69rRank3LongDescRE,Increases block damage by 150% with your knife and wrench.
-attFortitudeRank01LongDesc,You aren't very durable or healthy but at least you are alive. Deal 215% head shot damage and have a 3% chance to dismember with fists and machine guns.
-attFortitudeRank02LongDesc,"You feel a little better than you used to. Deal 230% head shot damage and have a 6% chance to dismember with fists, and machine guns."
-attFortitudeRank03LongDesc,You continue to defy gravity and keep standing. Deal 245% head shot damage and have a 9% chance to dismember with fists and machine guns.
-attFortitudeRank04LongDesc,"You are starting to feel like normal people. Deal 260% head shot damage and have a 12% chance to dismember with fists, and machine guns."
-attFortitudeRank05LongDesc,You are in good health. Deal 275% head shot damage and have a 15% chance to dismember with fists and machine guns.
-attFortitudeRank06LongDesc,You are very healthy. Deal 290% head shot damage and have a 18% chance to dismember with fists and machine guns.
-attFortitudeRank07LongDesc,You have vigorous health. Deal 305% head shot damage and have a 21% chance to dismember with fists and machine guns.
-attFortitudeRank08LongDesc,You are as resilient as they come. Deal 320% head shot damage and have a 24% chance to dismember with fists and machine guns.
-attFortitudeRank09LongDesc,You have an amazing constitution. Deal 335% head shot damage and have a 27% chance to dismember with fists and machine guns.
-attFortitudeRank10LongDesc,Your have exuberant fortitude and can put a beat down on a tornado. Deal 350% head shot damage and have a 30% chance to dismember with fists and machine guns.
+attFortitudeRank01LongDesc,You aren't very durable or healthy but at least you are alive. Deal 215% head shot damage and have a 3% chance to dismember with machine guns.
+attFortitudeRank02LongDesc,"You feel a little better than you used to. Deal 230% head shot damage and have a 6% chance to dismember with machine guns."
+attFortitudeRank03LongDesc,You continue to defy gravity and keep standing. Deal 245% head shot damage and have a 9% chance to dismember with machine guns.
+attFortitudeRank04LongDesc,"You are starting to feel like normal people. Deal 260% head shot damage and have a 12% chance to dismember with machine guns."
+attFortitudeRank05LongDesc,You are in good health. Deal 275% head shot damage and have a 15% chance to dismember with machine guns.
+attFortitudeRank06LongDesc,You are very healthy. Deal 290% head shot damage and have a 18% chance to dismember with machine guns.
+attFortitudeRank07LongDesc,You have vigorous health. Deal 305% head shot damage and have a 21% chance to dismember with machine guns.
+attFortitudeRank08LongDesc,You are as resilient as they come. Deal 320% head shot damage and have a 24% chance to dismember with machine guns.
+attFortitudeRank09LongDesc,You have an amazing constitution. Deal 335% head shot damage and have a 27% chance to dismember with machine guns.
+attFortitudeRank10LongDesc,Your have exuberant fortitude and can put a beat down on a tornado. Deal 350% head shot damage and have a 30% chance to dismember with machine guns.
 perkMachineGunnerRank3LongDescRE,"All the combat has sharpened your skills and you are now a soldier. Deal 17% more damage, 8% faster fire rate and reload 10% faster. Commando Adrenaline: Each shot scored with automatic weapons gives you 1 stamina."
 perkMachineGunnerRank4LongDescRE,"Your skill now matches the special forces. Deal 34% more damage, 16% faster fire rate and reload 20% faster. Commando Adrenaline: Each shot scored with automatic weapons gives you 2 stamina."
 perkMachineGunnerRank5LongDescRE,"You are now the ultimate machine gunner. Deal 51% more damage, 24% faster fire rate and reload 30% faster. Commando Adrenaline: Each shot scored with automatic weapons gives you 3 stamina."
@@ -499,15 +499,15 @@ perkPhysicianRank1LongDescRE,Medical healing items heal 25% more health.
 perkPhysicianRank2LongDescRE,Medical healing items heal 50% more health.
 perkPhysicianRank3LongDescRE,Medical healing items heal 75% more health.
 attAgilityRank01LongDesc,"You are as clumsy as they come but you still do 215% head shot damage and have a 3% chance to dismember with, handguns, and knives."
-attAgilityRank02LongDesc,"You didn't make the football team but that didn't stop you from practicing. Deal 230% head shot damage and have a 6% chance to dismember with bows, handguns and knives."
-attAgilityRank03LongDesc,"You are still loud and clunky but can deal 245% head shot damage and have a 9% chance to dismember with bows, handguns and knives."
-attAgilityRank04LongDesc,"Your dexterity is a bit inept, but you can deal 260% head shot damage and have a 12% chance to dismember with bows, handguns and knives."
-attAgilityRank05LongDesc,"You are now agile and deal 275% head shot damage and have a 15% chance to dismember with bows, handguns and knives."
-attAgilityRank06LongDesc,"Your movement is now very nimble and deal 290% head shot damage and have a 18% chance to dismember with bows, handguns and knives."
-attAgilityRank07LongDesc,"Your dexterity is very impressive. Deal 305% head shot damage and have a 21% chance to dismember with bows, handguns and knives."
-attAgilityRank08LongDesc,"Moving fluid and landing on your feet are second nature for you. Deal 320% head shot damage and have a 24% chance to dismember with bows, handguns and knives."
-attAgilityRank09LongDesc,"Your agility is good enough you could be a professional athlete. Deal 335% head shot damage and have a 27% chance to dismember with bows, handguns and knives."
-attAgilityRank10LongDesc,"Your dexterity is unmatched. Deal 350% head shot damage and have a 30% chance to dismember with bows, handguns and knives."
+attAgilityRank02LongDesc,"You didn't make the football team but that didn't stop you from practicing. Deal 230% head shot damage and have a 6% chance to dismember with handguns and knives."
+attAgilityRank03LongDesc,"You are still loud and clunky but can deal 245% head shot damage and have a 9% chance to dismember with handguns and knives."
+attAgilityRank04LongDesc,"Your dexterity is a bit inept, but you can deal 260% head shot damage and have a 12% chance to dismember with handguns and knives."
+attAgilityRank05LongDesc,"You are now agile and deal 275% head shot damage and have a 15% chance to dismember with handguns and knives."
+attAgilityRank06LongDesc,"Your movement is now very nimble and deal 290% head shot damage and have a 18% chance to dismember with handguns and knives."
+attAgilityRank07LongDesc,"Your dexterity is very impressive. Deal 305% head shot damage and have a 21% chance to dismember with handguns and knives."
+attAgilityRank08LongDesc,"Moving fluid and landing on your feet are second nature for you. Deal 320% head shot damage and have a 24% chance to dismember with handguns and knives."
+attAgilityRank09LongDesc,"Your agility is good enough you could be a professional athlete. Deal 335% head shot damage and have a 27% chance to dismember with handguns and knives."
+attAgilityRank10LongDesc,"Your dexterity is unmatched. Deal 350% head shot damage and have a 30% chance to dismember with handguns and knives."
 perkGunslingerRank3LongDescRE,"You can keep most situations under control, sheriff. Deal 17% more damage, 8% faster fire rate, and reload 10% faster. Critical Damage: 5 successive hits in a short time cause critical damage."
 perkGunslingerRank4LongDescRE,"You're now a gunfighter and can clear out a saloon full of rowdy bastards at the drop of a hat. Deal 34% more damage, 16% faster fire rate, and reload 20% faster. Critical Damage: 4 successive hits in a short time cause the last shot to do 100% extra damage."
 perkGunslingerRank5LongDescRE,"You are the fastest gunslinger in Navezgane. Deal 51% more damage, 24% faster fire rate, and 30% faster reload with handguns. Critical Damage: 3 successive hits in a short time cause the last shot to do 100% extra damage."
