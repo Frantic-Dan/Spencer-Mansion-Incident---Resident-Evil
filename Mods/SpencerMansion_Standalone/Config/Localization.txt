@@ -45,11 +45,11 @@ MansionBattery,This will power the door in the courtyard.
 GreenHerbDesc,Heals you slightly.\n\nPhysician 0 heals 8.\nPhysician 1 heals 10.\nPhysician 2 heals 12.\nPhysician 3 heals 14.
 RedHerbdesc,Amplifies the effect of Green Herbs.\n\nCan't be used on its own.
 GreenHerbCreamDesc,Heals you moderately.\n\nPhysician 0 heals 20.\nPhysician 1 heals 25.\nPhysician 2 heals 30.\nPhysician 3 heals 35.
-Green+RedHerbCreamDesc,Heals you substantially.\n\nPhysician 0 heals 32.\nPhysician 1 heals 40.\nPhysician 2 heals 48.\nPhysician 3 heals 56.
+Green+RedHerbCreamDesc,Heals you substantially.\n\nPhysician 0 heals 36.\nPhysician 1 heals 45.\nPhysician 2 heals 54.\nPhysician 3 heals 63.
 BlueHerbDesc,Cures Poison
 Green+BlueHerbCreamDesc,Heals you slightly and cures poison.\n\nPhysician 0 heals 12.\nPhysician 1 heals 15.\nPhysician 2 heals 18.\nPhysician 3 heals 21.
 Green2+BlueHerbCreamDesc,Heals you moderately and cures poison.\n\nPhysician 0 heals 24.\nPhysician 1 heals 30.\nPhysician 2 heals 36.\nPhysician 3 heals 42.
-Green+Red+BlueHerbCreamDesc,"Heals you substantially and cures poison.\n\nPhysician 0 heals 36.\nPhysician 1 heals 45.\nPhysician 2 heals 54.\nPhysician 3 heals 63."""
+Green+Red+BlueHerbCreamDesc,"Heals you substantially and cures poison.\n\nPhysician 0 heals 40.\nPhysician 1 heals 50.\nPhysician 2 heals 60.\nPhysician 3 heals 70."
 FirstAidSprayDesc,Heals you Completely.\n\nPhysician 0 heals 120.\nPhysician 1 heals 150.\nPhysician 2 heals 180.\nPhysician 3 heals 210.
 PowerSource,This is used the power the elevator door near the basement kitchen.\n\nInstall using the Key Upgrade Tool.
 WolfBook,A blue coloured book about a Wolf.
