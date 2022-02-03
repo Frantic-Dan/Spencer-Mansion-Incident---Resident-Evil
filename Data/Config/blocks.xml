@@ -11929,7 +11929,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceCoal" value="10"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceCoal" count="18" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="25" tag="allHarvest"/>
 	<drop event="Destroy" name="resourceScrapIron" count="5"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
 	<property name="Class" value="Light"/>
