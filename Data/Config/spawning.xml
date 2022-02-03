@@ -23,7 +23,7 @@
 
 
 	<biome name="pine_forest">
-		<spawn maxcount="7" respawndelay="0.5" time="Day" entitygroup="AntiDayTimeSpawns" notags="commercial,industrial,downtown" />
+		<spawn maxcount="7" respawndelay="1.11" time="Day" entitygroup="AntiDayTimeSpawns" notags="commercial,industrial,downtown" />
 		<spawn maxcount="0" respawndelay="9.9" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" />
 
 		<spawn maxcount="0" respawndelay="9.9" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
