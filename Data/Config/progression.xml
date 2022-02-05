@@ -1020,7 +1020,7 @@
 			<requirement name="NotHasBuff" buff="buffStatusThirsty02"/>
 			<requirement name="NotHasBuff" buff="buffStatusHungry03"/>
 			<requirement name="NotHasBuff" buff="buffStatusThirsty03"/>
-				<passive_effect name="HealthChangeOT" operation="base_add" level="1,2,3,4,5" value=".0042,.0084,.0084,.0084,.0084"/>
+				<passive_effect name="HealthChangeOT" operation="base_add" level="1,2,3,4,5" value=".005,.0084,.0084,.0084,.0084"/>
 
 
 
