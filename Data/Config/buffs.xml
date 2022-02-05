@@ -914,9 +914,9 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			<!-- set the speed at which crit buffs heal naturally -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1">
 				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="2">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1.5">
 				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1.4">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="2">
 				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="2"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1.6">
 				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="3"/></triggered_effect>
