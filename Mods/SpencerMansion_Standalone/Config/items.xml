@@ -982,7 +982,7 @@
 	<property name="Stacknumber" value="1"/> <!-- STK ammobundle high -->
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
-		<property name="Create_item" value="ammo9mmBulletBallRE,Reloading_Tool"/>
+		<property name="Create_item" value="Reloading_Tool,ammo9mmBulletBallRE"/>
 		<property name="Create_item_count" value="1,1"/>
 	</property>
 </item>
@@ -1007,7 +1007,7 @@
 	<property name="UnlockedBy" value="perkPistolPeteHPAmmo"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
-		<property name="Create_item" value="ammo9mmBulletHPRE,Reloading_Tool"/>
+		<property name="Create_item" value="Reloading_Tool,ammo9mmBulletHPRE"/>
 		<property name="Create_item_count" value="1,1"/>
 	</property>
 </item>
@@ -1019,7 +1019,7 @@
 	<property name="Stacknumber" value="1"/> <!-- STK ammobundle high -->
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
-		<property name="Create_item" value="ammo44MagnumBulletBallRE,Reloading_Tool"/>
+		<property name="Create_item" value="Reloading_Tool,ammo44MagnumBulletBallRE"/>
 		<property name="Create_item_count" value="1,1"/>
 	</property>
 </item>
@@ -1044,7 +1044,7 @@
 	<property name="UnlockedBy" value="perkEnforcerHPAmmo"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
-		<property name="Create_item" value="ammo44MagnumBulletHPRE,Reloading_Tool"/>
+		<property name="Create_item" value="Reloading_Tool,ammo44MagnumBulletHPRE"/>
 		<property name="Create_item_count" value="1,1"/>
 	</property>
 </item>
@@ -1056,7 +1056,7 @@
 	<property name="Stacknumber" value="1"/> <!-- STK ammobundle high -->
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
-		<property name="Create_item" value="ammo762mmBulletBallRE,Reloading_Tool"/>
+		<property name="Create_item" value="Reloading_Tool,ammo762mmBulletBallRE"/>
 		<property name="Create_item_count" value="1,1"/>
 	</property>
 </item>
@@ -1081,7 +1081,7 @@
 	<property name="UnlockedBy" value="perkSniperHPAmmo"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
-		<property name="Create_item" value="ammo762mmBulletHPRE,Reloading_Tool"/>
+		<property name="Create_item" value="Reloading_Tool,ammo762mmBulletHPRE"/>
 		<property name="Create_item_count" value="1,1"/>
 	</property>
 </item>
@@ -1093,7 +1093,7 @@
 	<property name="Stacknumber" value="1"/> <!-- STK ammobundle high -->
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
-		<property name="Create_item" value="ammoShotgunShellRE,Reloading_Tool"/>
+		<property name="Create_item" value="Reloading_Tool,ammoShotgunShellRE"/>
 		<property name="Create_item_count" value="1,1"/>
 	</property>
 </item>
@@ -1118,7 +1118,7 @@
 	<property name="UnlockedBy" value="perkShotgunMessiahSlugs"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
-		<property name="Create_item" value="ammoShotgunSlugRE,Reloading_Tool"/>
+		<property name="Create_item" value="Reloading_Tool,ammoShotgunSlugRE"/>
 		<property name="Create_item_count" value="1,1"/>
 	</property>
 </item>
@@ -1130,8 +1130,8 @@
 	<property name="Stacknumber" value="1"/> <!-- STK ammobundle high -->
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
-		<property name="Create_item" value="resourceGunPowder,Reloading_Tool"/>
-		<property name="Create_item_count" value="5,1"/>
+		<property name="Create_item" value="Reloading_Tool,resourceGunPowder"/>
+		<property name="Create_item_count" value="1,10"/>
 	</property>
 </item>
 
