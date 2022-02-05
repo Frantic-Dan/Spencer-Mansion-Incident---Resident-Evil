@@ -494,7 +494,8 @@ perkCharismaticNatureRank3DescRE,Iron Skin
 perkCharismaticNatureRank1LongDescRE,Your survival instinct gains you 20 health and stamina.
 perkCharismaticNatureRank2LongDescRE,Your Block Damage is increased by 50% and Entity Damage by 8.5%.
 perkCharismaticNatureRank3LongDescRE,Your Armour rating and Explosive resistence is increased by 1 for each piece of armour worn and your max Health and Stamina increases by another 10.
-perkHealingFactorRank1LongDescRE,You must have a fast metabolism. Gain 1 health every 120 seconds with natural healing. Critical injuries heal 100% faster.
+perkHealingFactorRank1LongDescRE,You must have a fast metabolism. Gain 1 health every 240 seconds with natural healing. Critical injuries heal 50% faster.
+perkHealingFactorRank2LongDescRE,You must have a fast metabolism. Gain 1 health every 120 seconds with natural healing. Critical injuries heal 100% faster.
 perkPhysicianRank1LongDescRE,Medical healing items heal 25% more health.
 perkPhysicianRank2LongDescRE,Medical healing items heal 50% more health.
 perkPhysicianRank3LongDescRE,Medical healing items heal 75% more health.
