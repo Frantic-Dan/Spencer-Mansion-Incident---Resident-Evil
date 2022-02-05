@@ -1008,9 +1008,9 @@
 	</perk>
 
 <!-- Recovery Perks (Fortitude) -->
-	<perk name="perkHealingFactor" max_level="1" parent="skillFortitudeRecovery" name_key="perkHealingFactorName" desc_key="perkHealingFactorDesc" base_skill_point_cost="4" icon="ui_game_symbol_healing_factor">
+	<perk name="perkHealingFactor" max_level="2" parent="skillFortitudeRecovery" name_key="perkHealingFactorName" desc_key="perkHealingFactorDesc" base_skill_point_cost="2" icon="ui_game_symbol_healing_factor">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="1" desc_key="reqFortitudeLevel01"/></level_requirements>
-		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="reqFortitudeLevel10"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="1" desc_key="reqFortitudeLevel01"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="reqFortitudeLevel10"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="reqFortitudeLevel10"/></level_requirements>
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="reqFortitudeLevel10"/></level_requirements>
@@ -1020,12 +1020,12 @@
 			<requirement name="NotHasBuff" buff="buffStatusThirsty02"/>
 			<requirement name="NotHasBuff" buff="buffStatusHungry03"/>
 			<requirement name="NotHasBuff" buff="buffStatusThirsty03"/>
-				<passive_effect name="HealthChangeOT" operation="base_add" level="1,2,3,4,5" value=".0084,.0084,.0084,.0084,.0084"/>
+				<passive_effect name="HealthChangeOT" operation="base_add" level="1,2,3,4,5" value=".0042,.0084,.0084,.0084,.0084"/>
 
 
 
 			<effect_description level="1" desc_key="perkHealingFactorRank1Desc" long_desc_key="perkHealingFactorRank1LongDescRE"/>
-			<effect_description level="2" desc_key="perkHealingFactorRank2Desc" long_desc_key="perkHealingFactorRank2LongDesc"/>
+			<effect_description level="2" desc_key="perkHealingFactorRank2Desc" long_desc_key="perkHealingFactorRank2LongDescRE"/>
 			<effect_description level="3" desc_key="perkHealingFactorRank3Desc" long_desc_key="perkHealingFactorRank3LongDesc"/>
 			<effect_description level="4" desc_key="perkHealingFactorRank4Desc" long_desc_key="perkHealingFactorRank4LongDesc"/>
 			<effect_description level="5" desc_key="perkHealingFactorRank5Desc" long_desc_key="perkHealingFactorRank5LongDesc"/>
