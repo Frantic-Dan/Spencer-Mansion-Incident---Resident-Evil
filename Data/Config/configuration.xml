@@ -54,6 +54,230 @@ Ink Ribbons will be very limited, and will allow you to continue your save if yo
 7 Days to Die Forum Thread - https://community.7daystodie.com/topic/27467-the-spencer-mansion-incident-resident-evil-a201/
 
 
+			Weapons, Armour, Recovery Items and Hostiles
+
+Weapons:
+
+Survival Knife
+Regular Attack	: 12
+Power Attack	: 18
+Block Damage	: 20
+Regular Stamina	: 18
+Power Stamina	: 24
+Attack Speed	: 60/minute
+Entity Range	: 2 metres
+
+
+S.T.A.R.S Handgun
+Regular Damage	: 36
+HiPower Damage	: 48
+Magazine Size	: 15 rounds
+Firing Rate	: 90/minute
+Reload Time	: ~3.5 seconds
+
+
+Pump Shotgun
+Regular Damage	: 12 x 10 pellets
+HiPower Damage	: 150
+Tube Size	: 6 rounds 	(10 with Assault Shotgun Parts)
+Firing Rate	: 45/minute 	(60 with Assault Shotgun Parts)
+Reload Time	: ~3.6 seconds 	(~4.3 with Assault Shotgun Parts)
+
+
+Rocket Launcher (Replaces the Grenade Launcher)
+Impact Damage	: 1000
+Reload Time	: ~3.7 seconds
+
+
+Magnum Revolver
+Regular Damage	: 150
+HiPower Damage	: 200
+Cylinder Size	: 6
+Firing Rate	: 60/minute
+Reload Time	: ~5.8 seconds (4.6 with Speed Loader)
+
+
+AK-47 Assault Rifle (Replaces the Flame Thrower)
+Regular Damage	: 42
+HiPower Damage	: 56
+Magazine Size	: 30
+Firing Rate	: 300/minute
+Reload Time	: ~5.2 seconds
+
+
+Sub Weapons:
+
+Molotov Cocktail
+Damage		: 25/seconds
+Duration	: 15 seconds
+
+
+Makeshift Mine
+Central Damage	: 160
+Delay		: 0.5 seconds
+
+
+Grenade
+Central Damage	: 341
+Delay		: 3 seconds
+
+
+Armour:
+
+Padded
+Damage Resist	: 5%
+Mobility	: 0%
+Stamina		: 0
+Mod Slots	: 1
+
+
+Leather
+Damage Resist	: 7%
+Mobility	: -2%
+Stamina		: -0.3
+Mod Slots	: 1
+
+
+Scrap Iron
+Damage Resist	: 9%
+Mobility	: -4%
+Stamina		: -0.6
+Mod Slots	: 2
+
+
+Recovery Items:
+
+Green Herb
+Physician 0	: 8 Health
+Physician 1	: 10 Health
+Physician 2	: 12 Health
+Physician 3	: 14 Health
+
+Mixed Herb (Green + Green)
+Physician 0	: 20 Health
+Physician 1	: 25 Health
+Physician 2	: 30 Health
+Physician 3	: 35 Health
+
+Mixed Herb (Green + Green + Green)
+Physician 0	: 36 Health
+Physician 1	: 45 Health
+Physician 2	: 54 Health
+Physician 3	: 63 Health
+
+Mixed Herb (Green + Red)
+Physician 0	: 36 Health
+Physician 1	: 45 Health
+Physician 2	: 54 Health
+Physician 3	: 63 Health
+
+Blue Herb
+Physician 0	: 4 Health + Cures Poison
+Physician 1	: 5 Health + Cures Poison
+Physician 2	: 6 Health + Cures Poison
+Physician 3	: 7 Health + Cures Poison
+
+Mixed Herb (Green + Blue)
+Physician 0	: 12 Health + Cures Poison
+Physician 1	: 15 Health + Cures Poison
+Physician 2	: 18 Health + Cures Poison
+Physician 3	: 21 Health + Cures Poison
+
+Mixed Herb (Green + Green + Blue)
+Physician 0	: 24 Health + Cures Poison
+Physician 1	: 30 Health + Cures Poison
+Physician 2	: 36 Health + Cures Poison
+Physician 3	: 42 Health + Cures Poison
+
+Mixed Herb (Green + Red + Blue)
+Physician 0	: 40 Health + Cures Poison
+Physician 1	: 50 Health + Cures Poison
+Physician 2	: 60 Health + Cures Poison
+Physician 3	: 70 Health + Cures Poison
+
+First Aid Spray
+Physician 0	: 120 Health
+Physician 1	: 150 Health
+Physician 2	: 180 Health
+Physician 3	: 210 Health
+
+
+Hostiles: (Spoiler warning!)
+
+Zombie (Tier 1)
+Health		: 200
+Entity Damage	: 8
+Block Damage	: 8
+EXP		: 400
+Note 1: Fast zombies can have their attacks miss if they are attacked just before they hit.
+Note 2: Slower zombies CAN NOT have their attacks interrupted.
+
+Zombie (Tier 2)
+Health		: 350
+Entity Damage	: 12
+Block Damage	: 12
+EXP		: 700
+
+Zombie (Tier 3)
+Health		: 450
+Entity Damage	: 16
+Block Damage	: 16
+EXP		: 900
+
+Zombie (Tier 4)
+Health		: 451
+Entity Damage	: 20
+Block Damage	: 20
+EXP		: 900
+
+Zombie (Crippled)
+Health		: 150
+Entity Damage	: 10
+Block Damage	: 12
+EXP		: 300
+
+Cerberus
+Health		: 200
+Entity Damage	: 8
+Block Damage	: 10
+EXP		: 400
+
+Vulture (Flappy Fuck)
+Health		: 18
+Entity Damage	: 7
+Block Damage	: 8
+EXP		: 400
+
+Adder
+Health		: 60
+Entity Damage	: 6
+Block Damage	: 4
+EXP		: 200
+
+Web Spinner
+Health		: 300
+Entity Damage	: 10
+Block Damage	: 10
+EXP		: 600
+
+Crimson Head
+Health		: 450
+Entity Damage	: 12
+Block Damage	: 50
+EXP		: 900
+
+Hunter
+Health		: 600
+Entity Damage	: 16
+Block Damage	: 40
+EXP		: 1200
+
+Failed Test Subject
+Health		: 500
+Entity Damage	: 20
+Block Damage	: 20
+EXP		: 1000
+
                        </Description>
 
                        <DownloadMode>Clone</DownloadMode>
