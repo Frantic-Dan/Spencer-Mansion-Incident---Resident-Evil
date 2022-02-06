@@ -3616,9 +3616,6 @@
 		"/>
 	<property name="OpenSound" value="door_wood_open"/>
 	<property name="CloseSound" value="door_wood_close"/>
-	<property class="RepairItems">
-		<property name="resourceWood" value="3"/>
-	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<drop event="Harvest" name="resourceWood" count="0" tag="allHarvest"/>
 	<drop event="Destroy" name="resourceDoorKnob" count="1" tag="WasteTreasuresDoorHarvest"/>
@@ -3695,9 +3692,6 @@
 		"/>
 	<property name="OpenSound" value="door_metal_open"/>
 	<property name="CloseSound" value="door_metal_close"/>
-	<property class="RepairItems">
-		<property name="resourceScrapIron" value="20"/>
-	</property>
 	<drop event="Harvest" name="resourceScrapIron" count="0" tag="allHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Destroy" count="0"/>
