@@ -50,8 +50,15 @@ Manual Saving: Auto saving will be disabled and you'll need to use an Ink Ribbon
 You'll have to manually save BEFORE you exit your game session.
 Ink Ribbons will be very limited, and will allow you to continue your save if you die, by simply exiting the game and reloading your save to revert back to your last manual save.
 
+KNOWN BUGS:
+1) The Vault - To prevent this bug, quit game from the main menu before starting a fresh new game.
+2) Clicking 'Equip' on an item in your main inventory - You will get an infinite wall of red text, to stop it, move an item from your toolbelt or into your toolbelt. DO NOT ALT+F4 AS YOUR CHARACTER WILL RESET!
+
+
 
 7 Days to Die Forum Thread - https://community.7daystodie.com/topic/27467-the-spencer-mansion-incident-resident-evil-a201/
+
+
 
 
 			Weapons, Armour, Recovery Items and Hostiles
