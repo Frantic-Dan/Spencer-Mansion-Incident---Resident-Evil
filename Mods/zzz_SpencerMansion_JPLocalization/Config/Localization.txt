@@ -49,7 +49,7 @@ cntHardenedChestInsecureT5,アイテムボックス
 TheVault,The Vault
 Reloading_Tool,リロードツール
 Reloading_Tooldesc,弾薬をクラフトするために使用するツール。\n\n空きスロットがあることを確認してからクラフトしてください。
-DeathMaskDesc,この仮面専用の扉を開くために使用します。\n\n手に「鍵用アップグレードツール」を持ち、鞄内に仮面が入っている状態で扉を右クリックで開きます。
+DeathMaskDesc,この仮面専用の扉を開くために使用します。\n\n第二アクションで使用します。
 MansionBattery,庭のドアを作動させるために使用します。
 GreenHerbDesc,少量の体力回復。\n\n医師レベル0の回復量： 8\n医師レベル1の回復量： 10\n医師レベル2の回復量： 12\n医師レベル3の回復量： 14
 RedHerbdesc,グリーンハーブの効果を上げます。\n\nそのままでは使用できません。
