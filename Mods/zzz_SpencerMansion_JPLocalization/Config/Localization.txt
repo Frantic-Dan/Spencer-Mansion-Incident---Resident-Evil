@@ -504,8 +504,8 @@ perkCharismaticNatureRank3DescRE,鋼の身体
 perkCharismaticNatureRank1LongDescRE,最大体力と最大スタミナ量が 20 上がります。
 perkCharismaticNatureRank2LongDescRE,与ブロックダメージ量が 50%上がり、 敵へのダメージ量が 8.5%上がります。
 perkCharismaticNatureRank3LongDescRE,アーマー値と爆発ダメージ耐性が、アーマー1部位ごとに 1上がり、最大体力と最大スタミナ量が 10増えます。
-perkHealingFactorRank1LongDescRE,200秒ごとに、体力が１自然回復します。\nクリティカルダメージの回復速度が 50%早くなります。
-perkHealingFactorRank2LongDescRE,120秒ごとに、体力が１自然回復します。\nクリティカルダメージの回復速度が 100%早くなります。
+perkHealingFactorRank1LongDescRE,自然治癒で毎時24の健康を得る。\nクリティカルダメージの回復速度が 50%早くなります。
+perkHealingFactorRank2LongDescRE,自然治癒で毎時42の健康を得る。\nクリティカルダメージの回復速度が 100%早くなります。
 perkPhysicianRank1LongDescRE,医療回復アイテムの回復量 25%増加します。
 perkPhysicianRank2LongDescRE,医療回復アイテムの回復量 50%増加します。
 perkPhysicianRank3LongDescRE,医療回復アイテムの回復量 75%増加します。
