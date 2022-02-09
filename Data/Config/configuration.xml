@@ -74,6 +74,14 @@ Power Stamina	: 24
 Attack Speed	: 60/minute
 Entity Range	: 2 metres
 
+Leather Knuckle Wraps (Toolbelt slots 7 8 9 0)
+Regular Attack	: 6
+Power Attack	: 12
+Block damage	: 10
+Regular Stamina	: 12
+Power Stamina	: 18
+Attack Speed	: 80/minute
+Entity Range	: 2 metres
 
 S.T.A.R.S Handgun
 Regular Damage	: 36
