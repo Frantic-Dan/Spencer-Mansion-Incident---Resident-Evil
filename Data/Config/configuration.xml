@@ -15,6 +15,12 @@ Have you ever wanted to play Resident Evil in first person? Well now you can!
 STORY: Experience the 1998 Spencer Mansion Incident as Jill Valentine. Collect keys, solve puzzles, manage your limited resources and escape from the Survival Horror.
 
 
+KNOWN BUGS:
+1) The Vault - To prevent this bug, after exiting a previous playthrough, quit game to desktop, before starting a new game or loading a different save.
+2) Clicking 'Equip' on an item in your main inventory - You will get an infinite wall of red text, to stop it, move an item from your toolbelt or into your toolbelt.
+DO NOT ALT+F4 AS YOUR CHARACTER WILL RESET!
+
+
 Setup:
 1) Requires A20.2 (b2)
 2) When starting a new game, make sure to select the 'Spencer Mansion Incident' world.
@@ -50,9 +56,6 @@ Manual Saving: Auto saving will be disabled and you'll need to use an Ink Ribbon
 You'll have to manually save BEFORE you exit your game session.
 Ink Ribbons will be very limited, and will allow you to continue your save if you die, by simply exiting the game and reloading your save to revert back to your last manual save.
 
-KNOWN BUGS:
-1) The Vault - To prevent this bug, quit game from the main menu before starting a fresh new game.
-2) Clicking 'Equip' on an item in your main inventory - You will get an infinite wall of red text, to stop it, move an item from your toolbelt or into your toolbelt. DO NOT ALT+F4 AS YOUR CHARACTER WILL RESET!
 
 
 
