@@ -4,7 +4,7 @@
 
        <ServerGroup Name="Spencer Mansion Incident - Resident Evil" Logo="" Description="">
 
-               <Server Name="Jill Valentines Story v1.01" Logo="">
+               <Server Name="Jill Valentines Story v1.02" Logo="">
 
                        <Description>
 ** Requires A20.2 (b2) **
@@ -15,9 +15,9 @@ Have you ever wanted to play Resident Evil in first person? Well now you can!
 STORY: Experience the 1998 Spencer Mansion Incident as Jill Valentine. Collect keys, solve puzzles, manage your limited resources and escape from the Survival Horror.
 
 
-KNOWN BUGS:
-1) The Vault - To prevent this bug, after exiting a previous playthrough, quit game to desktop, before starting a new game or loading a different save.
-2) Clicking 'Equip' on an item in your main inventory - You will get an infinite wall of red text, to stop it, move an item from your toolbelt or into your toolbelt.
+		KNOWN BUG:
+
+1) Clicking 'Equip' on an item in your main inventory - You will get an infinite wall of red text, to stop it, move an item from your toolbelt or into your toolbelt.
 DO NOT ALT+F4 AS YOUR CHARACTER WILL RESET!
 
 
@@ -33,8 +33,7 @@ Setup:
 **IMPORTANT**
 PLEASE NOTE: 
 1) The Spencer Mansion Incident is a Permadeath mod, and will test your combat and maneuverability skills.
-2) This was designed for Single Player, playing Multiplayer could possibly result in errors,
-For Example: more than one person accessing 'The Vault' at the same time.
+2) Multiplayer is now supported!!! So go have fun with a friend!
 3) If you don't change the orange coloured game settings to their stated value, you'll be playing with unintended settings.
 4) Currently, Twitch Integration is not supported, but is planned.
 
