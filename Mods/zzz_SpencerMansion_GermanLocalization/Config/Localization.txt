@@ -40,6 +40,8 @@ cntHardenedChestInsecureT5,Artikel Aufbewahrungsbox
 TheVault,The Vault
 "Reloading_Tool",Werkzeug zum Nachladen
 Reloading_Tooldesc,"Ein nützliches Werkzeug, mit dem du Munition herstellen kannst.\n\nAchte darauf, dass du beim Herstellen genügend leere Inventarplätze hast."
+InkRibbon,Farbband
+InkRibbondesc,"Derzeit unbrauchbar, wird aber benötigt, um Ihren Fortschritt zu speichern, wenn manuelles Speichern implementiert ist.\n\nBehalten Sie es vorerst bei."
 DeathMaskDesc,"Diese Totenmaske wird an der Tür des Bösen verwendet.\n\nBenutze mit der sekundären Aktion."
 MansionBattery,"Dadurch wird die Tür im Hof ​​angetrieben."
 GreenHerbDesc,"Heilt dich leicht.\n\nArzt 0 heilt 8.\nArzt 1 heilt 10.\nArzt 2 heilt 12.\nArzt 3 heilt 14."
