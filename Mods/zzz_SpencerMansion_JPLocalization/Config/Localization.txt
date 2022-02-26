@@ -49,6 +49,8 @@ cntHardenedChestInsecureT5,アイテムボックス
 TheVault,The Vault
 Reloading_Tool,リロードツール
 Reloading_Tooldesc,弾薬をクラフトするために使用するツール。\n\n空きスロットがあることを確認してからクラフトしてください。
+InkRibbon,インクリボン
+InkRibbondesc,"現在は役に立ちませんが、手動保存が実装されている場合は、進行状況を保存する必要があります。\n\n今のところストレージに保管してください。"
 DeathMaskDesc,この仮面専用の扉を開くために使用します。\n\n第二アクションで使用します。
 MansionBattery,庭のドアを作動させるために使用します。
 GreenHerbDesc,少量の体力回復。\n\n医師レベル0の回復量： 8\n医師レベル1の回復量： 10\n医師レベル2の回復量： 12\n医師レベル3の回復量： 14
