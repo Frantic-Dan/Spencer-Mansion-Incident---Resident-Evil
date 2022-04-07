@@ -15,10 +15,14 @@ Have you ever wanted to play Resident Evil in first person? Well now you can!
 STORY: Experience the 1998 Spencer Mansion Incident as Jill Valentine. Collect keys, solve puzzles, manage your limited resources and escape from the Survival Horror.
 
 
-		KNOWN BUG:
+		******KNOWN BUGS******
 
 1) Clicking 'Equip' on an item in your main inventory - You will get an infinite wall of red text, to stop it, move an item from your toolbelt or into your toolbelt.
 DO NOT ALT+F4 AS YOUR CHARACTER WILL RESET!
+
+2) In Multiplayer, when accessing an Untouched Vault, *ALL* players need to open the Untouched Vault *BEFORE* anyone adds or removes items.
+Otherwise, ITEMS WILL DISAPPEAR!!!
+
 
 
 Setup:
