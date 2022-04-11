@@ -215,7 +215,7 @@
 </recipe>
 
 <recipe name="drinkJarBeer" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
-	<ingredient name="resourceCropHopsFlower" count="3"/>
+	<ingredient name="resourceCropHopsFlower" count="4"/>
 	<ingredient name="drinkJarRiverWater" count="1"/>
 </recipe>
 
