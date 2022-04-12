@@ -318,6 +318,9 @@ MuzzleBreakDesc,Makes the assault rifle more accurate and overall easier to wiel
 Athletic Jacket Mod,Athletic Jacket Mod
 High Permormance Running Soles,High Permormance Running Soles
 modGunMeleeBlessedMetalDesc,Greatly increases damage to Tyrant\n\nKnife Only.
+drugBoulderBusters,"Chris Redfield secretly has these in his protein shake.\n\nIncreases brawling damage by 400%.\nStacks with Skull Crushers and Beer!"
+drugBoulderBustersDesc,"Your Brawling damage is increased by 400%.\nStacks with Skull Crushers and Beer!"
+drugRockBusters,Boulder Buster!
 SuperGogglesDesc,These bad boys will stop you from becoming a Jill Sandwich.\n\n\nFortitude +2\nAgility +2.\nCrafting time -40%.
 Note from Barry,Note from Barry
 BarryNote,"Jill, I've left you some supplies.\n\nBarry"
