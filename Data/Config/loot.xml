@@ -5806,8 +5806,10 @@ The overall plan for loot distribution:
 <lootgroup name="TyrantLoot" count="all">
 	<item name="Super Goggles"/>
 	<item name="modGunMeleeBlessedMetal"/>
+	<item name="drugRockBusters"/>
 	<item name="Workbench Repair Kit"/>
 	<item name="Master Key"/>
+
 </lootgroup>
 
 <!-- EntityLootContainerBoss, rare random drop off bosses -->
