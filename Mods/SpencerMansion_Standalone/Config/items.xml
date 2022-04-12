@@ -1186,7 +1186,7 @@
 	</property>
 	<effect_group name="meleeWpnKnucklesT0LeatherKnuckles">
 		<passive_effect name="EntityDamage" operation="base_set" value="6" tags="perkBrawler"/>
-		<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkBrawler"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="16" tags="perkBrawler"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="80" tags="perkBrawler"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="109,200" tier="0" tags="perkBrawler"/>
@@ -1213,7 +1213,7 @@
 
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="base_add" value="6" tags="secondary"/>
-		<passive_effect name="BlockDamage" operation="base_add" value="10" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="16" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.2" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="18" tags="secondary"/>
 	</effect_group>
@@ -7137,16 +7137,17 @@ add knockdown resist to armor
 <item name="drugRockBusters">
 	<property name="CreativeMode" value="None"/>
 	<property name="Extends" value="drugAtomJunkies"/>
-	<property name="DisplayType" value="drugRockBusters"/>
+	<property name="DisplayType" value="drugSkullCrushers"/>
+	<property name="DescriptionKey" value="drugBoulderBusters"/>
 	<effect_group tiered="false" name="Candy Tier 1">
-		<display_value name="dHarvestMining" value=".25"/>
-		<display_value name="dDuration" value="600"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugRockBustersDuration" operation="add" value="603"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugRockBustersDuration" operation="set" value="1803">
-			<requirement name="CVarCompare" cvar="$buffDrugRockBustersDuration" operation="GT" value="1803"/></triggered_effect>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugRockBusters"/>
+		<display_value name="dEntityDamage" value="4"/>
+		<display_value name="dDuration" value="1800"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugBoulderBustersDuration" operation="add" value="1803"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugBoulderBustersDuration" operation="set" value="5403">
+			<requirement name="CVarCompare" cvar="$buffDrugBoulderBustersDuration" operation="GT" value="5403"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugBoulderBusters"/>
 
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -7156,11 +7157,11 @@ add knockdown resist to armor
 	<property name="Extends" value="drugAtomJunkies"/>
 	<property name="DisplayType" value="drugSkullCrushers"/>
 	<effect_group tiered="false" name="Candy Tier 1">
-		<display_value name="dEntityDamage" value=".5"/>
+		<display_value name="dEntityDamage" value="1"/>
 		<display_value name="dDuration" value="600"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSkullCrushersDuration" operation="add" value="603"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSkullCrushersDuration" operation="set" value="1803">
-			<requirement name="CVarCompare" cvar="$buffDrugSkullCrushersDuration" operation="GT" value="903"/></triggered_effect>
+			<requirement name="CVarCompare" cvar="$buffDrugSkullCrushersDuration" operation="GT" value="1803"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugSkullCrushers"/>
 
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
