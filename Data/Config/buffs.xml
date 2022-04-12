@@ -6625,7 +6625,28 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffDrugSkullCrushersDuration" operation="set" value="0"/>
 		</effect_group>
 		<effect_group>
-				<passive_effect name="EntityDamage" operation="perc_add" value=".5" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler"/>
+		</effect_group>
+	</buff>
+
+	<buff name="buffDrugBoulderBusters" name_key="drugRockBusters" description_key="drugBoulderBustersDesc" icon="ui_game_symbol_candy_skull_crushers">
+		<stack_type value="replace"/><duration value="0"/>
+		<display_value value=".buffDrugBoulderBustersDisplay"/><display_value_format value="time"/>
+		<!-- Rock hard candy that gives you a rock hard punch. Increases melee damage 50% for 2 minutes. -->
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugBoulderBustersDuration" operation="subtract" value="@$MetabolismDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrugBoulderBustersDisplay" operation="set" value="@$buffDrugBoulderBustersDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrugBoulderBustersDisplay" operation="divide" value="@$MetabolismDuration"/>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffDrugBoulderBusters">
+				<requirement name="CVarCompare" cvar="$buffDrugBoulderBustersDuration" operation="LTE" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffDrugBoulderBustersDisplay" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffDrugBoulderBustersDuration" operation="set" value="0"/>
+		</effect_group>
+		<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value="4" tags="perkBrawler"/>
 		</effect_group>
 	</buff>
 
