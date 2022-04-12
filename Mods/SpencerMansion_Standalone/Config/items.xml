@@ -1136,7 +1136,7 @@
 </item>
 
 <item name="meleeWpnKnucklesT0LeatherKnuckles">
-	<property name="Tags" value="blunt,melee,grunting,light,perkFlurryOfBlows,weapon,attFortitude,perkBrawler,noBlades,canHaveCosmetic"/>
+	<property name="Tags" value="blunt,melee,grunting,light,perkFlurryOfBlows,weapon,attStrength,perkBrawler,noBlades,canHaveCosmetic"/>
 	<property name="Material" value="MleatherKnuckles"/>
 	<property name="Meshfile" value="#Other/Items?Weapons/Melee/KnuckleWraps/knuckleWrapsRight_Prefab.prefab"/>
 	<property name="HoldType" value="70"/>
