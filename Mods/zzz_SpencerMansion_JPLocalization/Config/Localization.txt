@@ -329,6 +329,9 @@ MuzzleBreakDesc,アサルトライフルの命中精度とハンドリングを�
 "Athletic Jacket Mod",アスリートジャケット改造パーツ
 "High Permormance Running Soles",高パフォーマンス靴底
 modGunMeleeBlessedMetalDesc,タイラントに与えるダメージ量が大幅に上がります。\n\nナイフにセット可能。
+drugBoulderBusters,"クリス・レッドフィールドは彼のプロテインシェイクで密かにこれらを持っています.\n\nナックルのダメージが400％増加します.\nスカルクラッシャーとビールで使用できます!"
+drugBoulderBustersDesc,"ナックルのダメージが400％増加します.\nスカルクラッシャーとビールで使用できます!"
+drugRockBusters,ボルダーバスター!
 SuperGogglesDesc,これをかけるとジル・サンドイッチにならずに済みます。\n\n\n忍耐 +2\n素早さ +2.\nクラフト時間 -40%
 Note from Barry,バリーからのメモ
 BarryNote,"ジル、 物資をいくつか置いておく。\n\nバリー"
