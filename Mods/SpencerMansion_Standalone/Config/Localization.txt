@@ -440,8 +440,8 @@ Nurse Crawler,Crippled Umbrella Surgeon
 Hazmat Crawler,Crippled Umbrella Hazmat Technician
 Skateboarder Crawler,Crippled DoctorBest85
 zombieMarleneRadiated,Misterri
-zombieJoeRadiated,
-zombieJanitorRadiated,
+zombieJoeRadiated,Glock9's Dealer
+zombieJanitorRadiated,HellsJanitorTV
 zombieYoRadiated,NotOnly25
 
 
