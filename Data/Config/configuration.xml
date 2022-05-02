@@ -4,10 +4,10 @@
 
        <ServerGroup Name="Spencer Mansion Incident - Resident Evil" Logo="" Description="">
 
-               <Server Name="Jill Valentines Story v1.02" Logo="">
+               <Server Name="Jill Valentines Story v1.03" Logo="">
 
                        <Description>
-** Requires A20.2 (b2) **
+** Requires A20.4 (b42) **
 
 
 Have you ever wanted to play Resident Evil in first person? Well now you can!
@@ -23,10 +23,13 @@ DO NOT ALT+F4 AS YOUR CHARACTER WILL RESET!
 2) In Multiplayer, when accessing an Untouched Vault, *ALL* players need to open the Untouched Vault *BEFORE* anyone adds or removes items.
 Otherwise, ITEMS WILL DISAPPEAR!!!
 
+3) Unconfirmed on what the cause is, it may be due to trying to load into the game while you're not logged into steam, or playing a different save, vanilla or another mod.
+The entire contents of 'The Vault' can get deleted.
+My advice is to commit to a playthrough before playing other 7 Days to Die playthroughs elsewhere.
 
 
 Setup:
-1) Requires A20.2 (b2)
+1) Requires A20.4 (b42)
 2) When starting a new game, make sure to select the 'Spencer Mansion Incident' world.
 3) I've made setup easy to follow by making the text orange for all settings you'll need to manually change for the intended Resident Evil experience.
 4) It will always be night, so be sure to change the Zombie Night Speed to your liking. (Walk is recommended)
@@ -60,7 +63,7 @@ You'll have to manually save BEFORE you exit your game session.
 Ink Ribbons will be very limited, and will allow you to continue your save if you die, by simply exiting the game and reloading your save to revert back to your last manual save.
 
 
-
+Wanna join the Discord? - https://discord.gg/4A5MF8GHM5
 
 7 Days to Die Forum Thread - https://community.7daystodie.com/topic/27467-the-spencer-mansion-incident-resident-evil-a201/
 
@@ -77,7 +80,15 @@ v1.02
 - Linked Storage 'The Vault' now works in multiplayer
 - Bug with 'The Vault' is now fixed
 
+v1.03 (Alpha 20.4)
+- Added a 6th Difficulty, Z: Deal 80% damage and Take 700% damage.
+- Added a secret loot room. Can you find it?
+- Doubled the thickness and the XP, Food and Water bars on the HUD.
+- Increased entity damage of the Makeshift Mine from 160 to 180.
+- Wild crops now give 2 harvest instead of 1, may help with speed running.
+- Pop-up text for entity names is now green instead of white.
 
+ 
 
 			Weapons, Armour, Recovery Items and Hostiles
 
@@ -146,7 +157,7 @@ Duration	: 15 seconds
 
 
 Makeshift Mine
-Central Damage	: 160
+Central Damage	: 180
 Delay		: 0.5 seconds
 
 
