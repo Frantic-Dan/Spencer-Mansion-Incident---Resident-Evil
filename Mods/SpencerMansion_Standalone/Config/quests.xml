@@ -42,7 +42,7 @@
 		<property name="difficulty" value="medium"/>
 		<!-- <property name="completiontype" value="TurnIn"/> -->
 
-		<objective type="RandomGoto" value="50-51" phase="1">
+		<objective type="RandomGoto" value="35-36" phase="1">
 			<property name="completion_distance" value="30"/>
 			<property name="nav_object" value="quest" />
 		</objective>
