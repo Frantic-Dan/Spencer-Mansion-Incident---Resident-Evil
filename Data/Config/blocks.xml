@@ -43,7 +43,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceCobblestones" value="6"/>
 	</property>
 	<!-- <property name="HarvestOverdamage" value="true"/>  default=false; that was a super terrible idea. If a tool does 500 damage to a 100 HP block you get 5x the assigned harvest amount.  -->
-	<drop event="Harvest" name="resourceRockSmall" count="33" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
 	<!-- <drop event="Harvest" name="resourceScrapIron" count="10" tag="oreWoodHarvest"/> -->
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
@@ -115,7 +115,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="resourceClayLump" value="14"/>
 	</property>
-	<drop event="Harvest" name="resourceClayLump" count="8" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceClayLump" count="10" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrDirt" count="1" prob="0.25" stick_chance="1"/>
 	<drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
@@ -144,7 +144,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="resourceClayLump" value="14"/>
 	</property>
-	<drop event="Harvest" name="resourceClayLump" count="10" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceClayLump" count="12" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrForestGround" count="1" prob="0.25" stick_chance="1"/>
 	<drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
@@ -175,7 +175,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceClayLump" value="14"/>
 	</property>
 	<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest"/>
-	<drop event="Destroy" count="0" prob="0.25"/>
+	<drop event="Destroy" name="resourceYuccaFibers" count="1" prob="0.25"/>
 	<drop event="Fall" name="terrBurntForestGround" count="1" prob="0.25" stick_chance="1"/>
 	<drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
@@ -331,7 +331,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ImposterExclude" value="true"/>
 	<drop event="Harvest" name="resourceCrushedSand" count="0" tag="oreWoodHarvest"/>
 	<drop event="Harvest" name="resourceRockSmall" count="0" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourceWood" count="3" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="1,2" tag="oreWoodHarvest"/>
 	<property name="Map.Color" value="110,95,49"/>
 	<property name="CanMobsSpawnOn" value="true"/>
 	<property name="FilterTags" value="MC_outdoor,SC_terrain,MC_building,SC_destruction"/>
@@ -358,7 +358,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="resourceCrushedSand" count="23" prob="0.16" stick_chance="0"/>
 	<drop event="Fall" name="resourceRockSmall" count="26" prob="0.16" stick_chance="0"/>
-	<property name="CanMobsSpawnOn" value="false"/>
+	<property name="CanMobsSpawnOn" value="true"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
@@ -837,9 +837,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Texture" value="7"/>
 	<property name="UiBackgroundTexture" value="7"/>
 	<property name="CreativeMode" value="None"/>
-	<!-- <property class="RepairItems">
+	<property class="RepairItems">
 		<property name="resourceCobblestones" value="5"/>
-	</property> -->
+	</property>
 	<drop event="Harvest" name="resourceRockSmall" count="0" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
@@ -847,12 +847,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="FilterTags" value="MC_Shapes"/>
 	<property name="SortOrder1" value="0007"/>
-	<!-- <property class="UpgradeBlock">
+	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cobblestoneShapes"/>
 		<property name="Item" value="resourceCobblestones"/>
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
-	</property> -->
+	</property>
 	<property name="CustomUpgradeSound" value="place_block_concrete"/>
 </block>
 
@@ -889,9 +889,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Mconcrete_shapes"/>
 	<property name="Texture" value="8"/>
 	<property name="UiBackgroundTexture" value="8"/>
-	<!-- <property class="RepairItems">
+	<property class="RepairItems">
 		<property name="resourceConcreteMix" value="8"/>
-	</property> -->
+	</property>
 	<drop event="Harvest" name="resourceRockSmall" count="0" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
@@ -899,12 +899,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="FilterTags" value="MC_Shapes"/>
 	<property name="SortOrder1" value="0009"/>
-	<!-- <property class="UpgradeBlock">
+	<property class="UpgradeBlock">
 		<property name="ToBlock" value="steelShapes"/>
 		<property name="Item" value="resourceForgedSteel"/>
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
-	</property> -->
+	</property>
 	<property name="CustomUpgradeSound" value="place_block_concrete"/>
 </block>
 
@@ -916,9 +916,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="PassThroughDamage" value="true"/>
 	<property name="Texture" value="356"/>
 	<property name="UiBackgroundTexture" value="356"/>
-	<!-- <property class="RepairItems">
+	<property class="RepairItems">
 		<property name="resourceForgedSteel" value="8"/>
-	</property> -->
+	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
@@ -952,7 +952,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="corrugatedMetalShapes" shapes="All">
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="DescriptionKey" value="scrapIronGroupDesc"/>
-	<property name="Material" value="Mbedrock"/>
+	<property name="Material" value="Mmetal_shapes"/>
 	<property name="Texture" value="194"/>
 	<property name="UiBackgroundTexture" value="194"/>
 	<drop event="Harvest" name="resourceScrapIron" count="0" tag="allHarvest"/>
@@ -962,14 +962,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="FilterTags" value="MC_Shapes"/>
 	<property name="SortOrder1" value="0013"/>
 	<property class="RepairItems">
-		<property name="resourceWood" value="1"/>
+		<property name="resourceScrapIron" value="12"/>
 	</property>
-	<!-- <property class="UpgradeBlock">
+	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cobblestoneShapes"/>
 		<property name="Item" value="resourceCobblestones"/>
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
-	</property> -->
+	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="EconomicValue" value="15"/>
 	<property name="EconomicBundleSize" value="2"/>
@@ -1444,7 +1444,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="Class" value="PlantGrowing"/>
 	<property name="PlantGrowing.Next" value="cropsHarvestableMaster"/>
-	<property name="PlantGrowing.GrowthRate" value="105.0"/> <!-- For testing, this rate (in minutes) should be set no lower than 2 -->
+	<property name="PlantGrowing.GrowthRate" value="100.0"/> <!-- For testing, this rate (in minutes) should be set no lower than 2 -->
 	<property name="PlantGrowing.FertileLevel" value="15"/>
 	<property name="PlantGrowing.IsRandom" value="false"/>
 	<!--
@@ -1655,7 +1655,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Texture" value="282"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Destroy" name="resourceBrokenGlass" count="1,3"/>
+	<drop event="Destroy" name="resourceBrokenGlass" count="2"/>
 	<drop event="Fall" count="0" prob="0"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="EconomicValue" value="5"/>
@@ -4721,7 +4721,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="ladderMetal">
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" param1="DescriptionKey,SortOrder1,SortOrder2"/>
 	<!-- <property name="CreativeMode" value="Dev"/> -->
-	<property name="MaxDamage" value="500"/>
+	<property name="MaxDamage" value="50000"/>
 	<property name="Class" value="Ladder"/>
 	<property name="Shape" value="New"/>
 	<property name="LightOpacity" value="0"/>
@@ -5126,6 +5126,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
 <block name="metalStairsSpiralLeft">
 	<property name="Extends" value="metalCatwalk"/>
+	<property name="Material" value="Mbedrock"/>
 	<property name="Model" value="stairs_spiral_metal_left"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Class" value="Stairs"/>
@@ -5140,6 +5141,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
 <block name="metalStairsSpiralRight">
 	<property name="Extends" value="metalCatwalk"/>
+	<property name="Material" value="Mbedrock"/>
 	<property name="Model" value="stairs_spiral_metal_right"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Class" value="Stairs"/>
@@ -5804,9 +5806,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 </block>
 
 <!-- Level Design Chain Link with AllowAllRotations = True -->
+	<property name="MaxDamage" value="50000"/>
 <block name="chainlinkFenceBottomPlainCornerPOI">
 	<property name="Extends" value="chainlinkFencePolePOI"/>
-	<property name="MaxDamage" value="50000"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="chainlinkFenceBottomPlainCorner"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -5814,9 +5816,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 </block>
 
 <!-- Level Design Chain Link with AllowAllRotations = True -->
+	<property name="MaxDamage" value="50000"/>
 <block name="chainlinkFenceTopPlainRailPOI">
 	<property name="Extends" value="chainlinkFencePolePOI"/>
-	<property name="MaxDamage" value="50000"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="chainlinkFenceTopPlainRail"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -6012,7 +6014,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="metalIndustrialFenceBottom">
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="MaxDamage" value="50000"/>
+	<property name="Material" value="Mbedrock"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="industrial_fence_bottom"/>
 	<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
@@ -6025,7 +6027,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="metalIndustrialFenceTop">
 	<property name="Extends" value="metalIndustrialFenceBottom"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="MaxDamage" value="50000"/>
+	<property name="Material" value="Mbedrock"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="industrial_fence_top"/>
 </block>
@@ -6219,7 +6221,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="ParticleOnDeath" value="treeGib_dead_01"/>
 	<drop event="Harvest" name="resourceWood" count="400" tag="oreWoodHarvest"/>
-	<drop event="Destroy" name="treePlantedOak1m" count="1"/>
+	<drop event="Destroy" name="treePlantedOak1m" count="2"/>
 	<property name="SortOrder2" value="0140"/>
 </block>
 
@@ -6234,7 +6236,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="ParticleOnDeath" value="treeGib_dead_01"/>
 	<drop event="Harvest" name="resourceWood" count="600" tag="oreWoodHarvest"/>
-	<drop event="Destroy" name="treePlantedOak1m" count="1"/>
+	<drop event="Destroy" name="treePlantedOak1m" count="2"/>
 	<property name="SortOrder2" value="0140"/>
 </block>
 
@@ -6249,7 +6251,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="ParticleOnDeath" value="treeGib_dead_01"/>
 	<drop event="Harvest" name="resourceWood" count="800" tag="oreWoodHarvest"/>
-	<drop event="Destroy" name="treePlantedOak1m" count="1"/>
+	<drop event="Destroy" name="treePlantedOak1m" count="2"/>
 	<property name="SortOrder2" value="0140"/>
 </block>
 
@@ -6538,9 +6540,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MultiBlockDim" value="1,21,1"/>
 	<property name="BigDecorationRadius" value="6"/>
 	<property name="ModelOffset" value="0,-0.5,0"/>
-	<drop event="Harvest" name="resourceWood" count="800" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourceCoal" count="400" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourceCoal" count="400" tag="coalHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="150" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="15,30" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="15,30" tag="coalHarvest"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 	<property name="SortOrder2" value="0300"/>
@@ -6554,9 +6556,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MultiBlockDim" value="1,21,1"/>
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="ModelOffset" value="0,-0.5,0"/>
-	<drop event="Harvest" name="resourceWood" count="600" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourceCoal" count="300" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourceCoal" count="300" tag="coalHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="110" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="11,22" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="11,22" tag="coalHarvest"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 	<property name="SortOrder2" value="0300"/>
@@ -6570,9 +6572,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="MultiBlockDim" value="1,21,1"/>
     <property name="BigDecorationRadius" value="5"/>
     <property name="ModelOffset" value="0,-0.5,0"/>
-	<drop event="Harvest" name="resourceWood" count="600" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourceCoal" count="300" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourceCoal" count="300" tag="coalHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="110" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="11,22" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="11,22" tag="coalHarvest"/>
     <property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
     <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
     <property name="SortOrder2" value="0300"/>
@@ -6998,9 +7000,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ModelOffset" value="0,-.4,0"/>
 	<property name="MultiBlockDim" value="1,5,1"/>
 	<property name="BigDecorationRadius" value="5"/>
-	<drop event="Harvest" name="resourceWood" count="600" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourceCoal" count="300" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourceCoal" count="300" tag="coalHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="110" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="11,22" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="11,22" tag="coalHarvest"/>
 	<!-- <drop event="Destroy" name="treePlantedMaple1m" count="x"/> -->
 	<property name="SortOrder2" value="0133"/>
 </block>
@@ -7015,9 +7017,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ModelOffset" value="0,-.6,0"/>
 	<property name="MultiBlockDim" value="2,9,2"/>
 	<property name="BigDecorationRadius" value="5"/>
-	<drop event="Harvest" name="resourceWood" count="800" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourceCoal" count="400" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourceCoal" count="400" tag="coalHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="150" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="15,30" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="15,30" tag="coalHarvest"/>
 	<!-- <drop event="Destroy" name="treePlantedMaple1m" count="x"/> -->
 	<property name="SortOrder2" value="0136"/>
 	<property name="ActivationDistance" value="14"/>
@@ -7183,7 +7185,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Player"/>
 	<property name="Texture" value="350,368,369,370,350,368"/>
 	<!-- this WOULD be affected by the crop harvest bonus to playerHand
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceYuccaFibers" count="2"/>
 	<drop event="Harvest" name="foodCropMushrooms" count="1" prob=".2" tag="cropHarvest"/>
 	-->
 </block>
@@ -7358,7 +7360,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="None"/>
 	<property name="Model" value="OutdoorDecor/mushroom_growth" param1="main_mesh"/>
 	<property name="PlantGrowing.Next" value="plantedMushroom3HarvestPlayer"/>
-	<drop event="Destroy" name="plantedMushroom1" count="1"/>
 	<property name="Collide" value="melee"/>
 </block>
 
@@ -7378,7 +7379,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="PlantGrowing.FertileLevel" value="0"/>
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
-	<drop event="Harvest" name="foodCropMushrooms" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropMushrooms" count="2" tag="wildCropsHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="resourceYuccaFibers" count="0" prob="1" stick_chance="0"/>
 	<property name="FilterTags" value="MC_outdoor,SC_crops"/>
@@ -7423,7 +7424,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Mcorn"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/plant_yucca_harvestPrefab"/>
-	<drop event="Harvest" name="foodCropYuccaFruit" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropYuccaFruit" count="2" tag="wildCropsHarvest"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -7473,7 +7474,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="CustomIcon" value="plantedCotton3Harvest"/>
 	<property name="Texture" value="363"/>
-	<drop event="Harvest" name="resourceCropCottonPlant" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="resourceCropCottonPlant" count="2" tag="wildCropsHarvest"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -7493,7 +7494,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="plantedCotton3HarvestDesc"/>
 	<property name="CustomIcon" value="plantedCotton1"/>
 	<property name="CreativeMode" value="None"/>
-	<drop event="Harvest" name="resourceCropCottonPlant" count="1" tag="cropHarvest"/>
+	<drop event="Harvest" name="resourceCropCottonPlant" count="2" tag="cropHarvest"/>
 	<property name="DowngradeBlock" value="plantedCotton1"/>
 </block>
 
@@ -7523,7 +7524,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedCoffee3Harvest">
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="Texture" value="395"/>
-	<drop event="Harvest" name="resourceCropCoffeeBeans" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="resourceCropCoffeeBeans" count="2" tag="wildCropsHarvest"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -7574,7 +7575,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="CustomIcon" value="plantedGoldenrod3HarvestPlayer"/>
 	<property name="Texture" value="362"/>
-	<drop event="Harvest" name="resourceCropGoldenrodPlant" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="resourceCropGoldenrodPlant" count="2" tag="wildCropsHarvest"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -7683,7 +7684,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/blueberry_plant_harvestPrefab"/>
-	<drop event="Harvest" name="foodCropBlueberries" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropBlueberries" count="2" tag="wildCropsHarvest"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -7735,7 +7736,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
-	<drop event="Harvest" name="foodCropPotato" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropPotato" count="2" tag="wildCropsHarvest"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -7784,7 +7785,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedChrysanthemum3Harvest">
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="Texture" value="244"/>
-	<drop event="Harvest" name="resourceCropChrysanthemumPlant" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="resourceCropChrysanthemumPlant" count="2" tag="wildCropsHarvest"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -7851,7 +7852,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Mesh" value="cutoutmoveable"/>
 	<property name="MultiBlockDim" value="1,3,1"/>
 	<property name="Texture" value="529"/>
-	<drop event="Harvest" name="foodCropCorn" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropCorn" count="2" tag="wildCropsHarvest"/>
 </block>
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
@@ -7957,6 +7958,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MultiBlockDim" value="1,3,1"/>
 	<property name="Texture" value="529"/>
 	<drop event="Harvest" name="foodCropGraceCorn" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropGraceCorn" prob="0.5" count="1" tag="bonusCropHarvest"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -8005,7 +8007,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedHop3Harvest">
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="Texture" value="449"/>
-	<drop event="Harvest" name="resourceCropHopsFlower" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="resourceCropHopsFlower" count="2" tag="wildCropsHarvest"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -8029,6 +8031,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DowngradeBlock" value="plantedHop1"/>
 </block>
 
+<!-- NOT_A_SHAPE -->
 <block name="plantedSnowberry1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Dev"/>
@@ -8093,7 +8096,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Mcorn"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/pumpkinHarvestPrefab"/>
-	<drop event="Harvest" name="foodCropPumpkin" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="foodCropPumpkin" count="2" tag="wildCropsHarvest"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -8150,7 +8153,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<property name="EconomicValue" value="50"/>
 	<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest"/>
-	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="20" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="30" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrDirt" count="1" prob="0.25" stick_chance="1"/>
 	<drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
@@ -8451,6 +8454,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="ModelEntity"/>
 	<property name="LightOpacity" value="4"/>
 	<property name="Model" value="Entities/Plumbing/pipe_valvePrefab"/>
+	<property name="LODCullMin" value=".1"/>
 	<property name="ImposterExchange" value="imposterCTREighth" param1="144"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="EconomicValue" value="30"/> <!-- disassemble value -->
@@ -8650,7 +8654,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="1" prob="0.1" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceSpring" count="1" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="1,7" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="3" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="20" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -9338,7 +9342,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="LightOpacity" value="0"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="3" tag="salvageHarvest"/>
 	<property name="EconomicValue" value="150"/> <!-- disassemble value -->
 	<property name="FilterTags" value="MC_building,SC_electrical"/>
 	<property name="SortOrder1" value="70e0"/>
@@ -9364,7 +9368,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="1" prob="0.1" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceSpring" count="1" prob="0.1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="1,7" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="3" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="20" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -9459,8 +9463,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceElectricParts" count="0,1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="2,6" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="salvageHarvest"/>
 	<drop event="Fall" count="0" prob="0"/>
 	<property name="FilterTags" value="MC_building,SC_electrical"/>
 	<property name="SortOrder1" value="70e1"/>
@@ -9545,7 +9549,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Powered" value="true"/>
 	<property name="SingleUse" value="true"/>
 	<property name="Material" value="Msteel"/>
-	<property name="MaxDamage" value="50000"/>
 	<property name="LightOpacity" value="2"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Industrial/powerSwitchOff_01Prefab"/>
@@ -9573,8 +9576,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="Activate"/>
 	<property name="CreativeMode" value="Dev"/>
 	<property name="ActivateSound" value="button4"/>
-	<property name="Material" value="Msteel"/>
-	<property name="MaxDamage" value="50000"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Industrial/powerSwitchButton_01Prefab"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
@@ -9594,8 +9596,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="pushButtonSwitch02">
 	<property name="Extends" value="pushButtonSwitch01"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Material" value="Msteel"/>
-	<property name="MaxDamage" value="50000"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Industrial/powerSwitchButton_02Prefab"/>
 </block>
@@ -10938,12 +10939,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="signPosterMovieTheater2159">
-	<property name="Material" value="Mglass"/>
+	<property name="Material" value="Mwood"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Commercial/posterMovieTheater2159Prefab"/>
 	<property name="ImposterDontBlock" value="true"/>
-	<drop event="Destroy" name="resourceWood" count="1,2"/>
+	<drop event="Destroy" name="resourceWood" count="2"/>
 	<property name="FilterTags" value="MC_outdoor,SC_signs"/>
 	<property name="SortOrder1" value="7000"/>
 	<property name="SortOrder2" value="0002"/>
@@ -11306,7 +11307,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="resourceWood" value="10"/>
 	</property>
-	<drop event="Destroy" name="resourceWood" count="1,5"/>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="FilterTags" value="MC_building,SC_loot"/>
 </block>
@@ -11393,7 +11394,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceWood" value="10"/>
 	</property>
 	<property name="DowngradeBlock" value="cntStorageGenericInsecure"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="EconomicValue" value="6"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
@@ -11413,7 +11415,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="resourceWood" value="10"/>
 	</property>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 </block>
 
@@ -11430,7 +11433,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="resourceWood" value="10"/>
 	</property>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="FilterTags" value="MC_building,SC_loot"/>
 </block>
@@ -11456,7 +11460,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceWood" value="10"/>
 	</property>
 	<property name="DowngradeBlock" value="cntStorageGenericSignedInsecure"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="EconomicValue" value="6"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
@@ -11478,7 +11483,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="resourceWood" value="10"/>
 	</property>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 </block>
 
@@ -11505,8 +11511,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="108"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_residential"/>
-	<property name="AllowAllRotations" value="true"/> <!-- enables the 45 degree rotations -->
-
+	<property name="SortOrder1" value="cb01"/>
 </block>
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
@@ -11533,16 +11538,17 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="cabinet_ajar"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="cb03"/>
 </block>
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
 <block name="cntCabinetBottom">
 	<property name="Extends" value="cntCabinetBottomRandomLootHelper" param1="CustomIconTint,DisplayInfo"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mfurniture"/>
 	<property name="CustomIcon" value="cntCabinetBottomFiller"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="cb02"/>
 	<property name="DowngradeBlock" value="cntCabinetBottomOpen"/>
 </block>
 
@@ -11609,16 +11615,17 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="cupboard_ajar"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="cb04"/>
 </block>
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
 <block name="cntCupboardCabinetRedTopClosed">
 	<property name="Extends" value="cntCupboardCabinetRedTopLootHelper" param1="CustomIconTint"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mfurniture"/>
 	<property name="CustomIcon" value="cntCupboardCabinetRedTopLootHelper"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="cb05"/>
 	<property name="DowngradeBlock" value="cntCupboardCabinetRedTopOpen"/>
 </block>
 
@@ -11627,12 +11634,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cntCupboardCabinetRedTopClosed" param1="CustomIcon,Place"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="cupboard_corner"/>
+	<property name="SortOrder1" value="cb06"/>
 </block>
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
 <block name="cntCupboardCabinetFullRedTopClosed">
 	<property name="Extends" value="cntCupboardCabinetRedTopClosed" param1="CustomIcon"/>
 	<property name="Model" value="cube"/>
+	<property name="SortOrder1" value="cb07"/>
 </block>
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
@@ -11642,6 +11651,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="cabinet_broken_door"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="79"/>
+	<property name="SortOrder1" value="cb08"/>
 </block>
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
@@ -11665,16 +11675,17 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="cabinet_ajar"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="cb09"/>
 </block>
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
 <block name="cntCabinetOldBottom">
 	<property name="Extends" value="cntCabinetOldBottomLootHelper" param1="CustomIconTint"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mfurniture"/>
 	<property name="CustomIcon" value="cntCabinetOldBottomLootHelper"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="cb10"/>
 	<property name="DowngradeBlock" value="cntCabinetOldBottomOpen"/>
 </block>
 
@@ -11690,6 +11701,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ImposterExchange" value="imposterBlock" param1="43"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_residential"/>
 	<drop event="Fall" count="0" prob="0"/>
+	<property name="SortOrder1" value="cb11"/>
 </block>
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
@@ -11739,16 +11751,17 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="SortOrder1" value="cb12"/>
 </block>
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
 <block name="cntCupboardCabinetOldTopClosed">
 	<property name="Extends" value="cntCupboardCabinetOldTopLootHelper" param1="CustomIconTint"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mfurniture"/>
 	<property name="CustomIcon" value="cntCupboardCabinetOldTopLootHelper"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="cb13"/>
 	<property name="DowngradeBlock" value="cntCupboardCabinetOldTopOpen"/>
 </block>
 
@@ -11757,12 +11770,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cntCupboardCabinetOldTopClosed" param1="CustomIcon,Place"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="cupboard_corner"/>
+	<property name="SortOrder1" value="cb14"/>
 </block>
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
 <block name="cntCupboardCabinetFullOldTopClosed">
 	<property name="Extends" value="cntCupboardCabinetOldTopClosed" param1="CustomIcon"/>
 	<property name="Model" value="cube"/>
+	<property name="SortOrder1" value="cb15"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -11779,7 +11794,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,15"/>
+	<drop event="Destroy" name="resourceScrapIron" count="15"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="156"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_electrical"/>
@@ -11789,7 +11804,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntStoveOldVer1Closed">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="Loot"/>
-	<property name="Material" value="Mmetal_weak"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="#Entities/LootContainers?stoveElectricRetro_01Prefab.prefab"/>
@@ -11929,8 +11944,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceCoal" value="10"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceCoal" count="25" tag="allHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5"/>
+	<drop event="Harvest" name="resourceCoal" count="30" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="15"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
 	<property name="Class" value="Light"/>
 	<property name="Light" value="0.5"/>
@@ -11960,10 +11975,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntMicrowaveOvenVer1Closed">
 	<property name="Extends" value="cntMicrowaveOvenVer1Open"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mfurniture"/>
 	<property name="Model" value="#Entities/LootContainers?microwaveElectricModern_01Prefab.prefab"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_electrical"/>
-	<property name="DowngradeBlock" value="cntMicrowaveOvenVer1Open"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -11978,10 +11991,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntMicrowaveOvenVer2Closed">
 	<property name="Extends" value="cntMicrowaveOvenVer1Open"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mfurniture"/>
 	<property name="Model" value="#Entities/LootContainers?microwaveElectricRetro_01Prefab.prefab"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_electrical"/>
-	<property name="DowngradeBlock" value="cntMicrowaveOvenVer2Open"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -12006,7 +12017,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,12"/>
+	<drop event="Destroy" name="resourceScrapIron" count="12"/>
 	<property name="FilterTags" value="MC_building,SC_electrical"/>
 </block>
 
@@ -12023,7 +12034,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,12"/>
+	<drop event="Destroy" name="resourceScrapIron" count="12"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_electrical"/>
 </block>
 
@@ -12106,8 +12117,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntRetroFridgeVer2Open">
 	<property name="CreativeMode" value="Player"/>
 	<property name="Material" value="Mmetal"/>
-	<!-- <property name="Class" value="Loot"/>
-	<property name="LootList" value="refrigerator"/> -->
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Mesh" value="models"/>
 	<property name="Path" value="solid"/>
@@ -12125,11 +12134,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceElectricParts" value="10"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.4" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="1,8" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="2" prob="0.4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="3" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapPolymers" count="0,3" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,20"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="3" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="20"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="192"/>
 	<!-- <property name="Extends" value="cntRetroFridgeVer1Closed" param1="Class,LootList"/> -->
@@ -12140,7 +12149,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- NOT_A_SHAPE -->
 <block name="cntRetroFridgeVer1Closed">
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mfurniture"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="refrigerator"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -12192,7 +12201,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- NOT_A_SHAPE -->
 <block name="cntFridgeStainlessSteel">
 	<property name="Extends" value="cntRetroFridgeVer1Closed"/>
-	<property name="Material" value="Mfurniture"/>
 	<property name="Model" value="Entities/Appliances/fridgeStainlessSteelClosedPrefab" param1="main_mesh"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="DowngradeBlock" value="cntFridgeStainlessSteelVer2Open"/>
@@ -12296,21 +12304,19 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
 <block name="cntBeerCooler">
-	<!-- <property name="Class" value="Loot"/> -->
 	<property name="Stacknumber" value="3"/>
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="Texture" value="191,191,190,191,191,191"/>
 	<property name="Place" value="TowardsPlacer90"/>
-	<!-- <property name="LootList" value="beerCooler"/> -->
 	<property class="RepairItems">
 		<property name="resourceElectricParts" value="6"/>
 		<property name="resourceMetalPipe" value="3"/>
 		<property name="resourceForgedIron" value="1"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceElectricParts" count="1,5" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceMetalPipe" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,12"/>
+	<drop event="Harvest" name="resourceElectricParts" count="2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="12"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
@@ -12613,7 +12619,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="resourceMetalPipe" count="4" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceScrapBrass" count="1,5" tag="WasteTreasuresSinkHarvest"/>
 	<drop event="Harvest" name="resourceScrapLead" count="1,5" tag="WasteTreasuresSinkHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,10"/>
+	<drop event="Destroy" name="resourceScrapIron" count="20"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
@@ -13104,7 +13110,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
 <block name="cntTrashCompactor">
-	<!-- <property name="Class" value="Loot"/> -->
 	<property name="Shape" value="New"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="counter"/>
@@ -13112,7 +13117,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="IsDecoration" value="true"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="Texture" value="191,191,60,191,191,191"/>
-	<!-- <property name="LootList" value="trashCompactor"/> -->
 	<property class="RepairItems">
 		<property name="resourceForgedIron" value="5"/>
 		<property name="resourceMechanicalParts" value="2"/>
@@ -13140,8 +13144,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="VehicleHitScale" value="999"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<!-- <property name="Class" value="Loot"/>
-	<property name="LootList" value="junk"/> -->
 	<drop event="Harvest" name="resourcePaper" count="2" tag="allHarvest"/>
 	<drop event="Destroy" name="resourceScrapPolymers" count="2" tag="allHarvest"/>
 	<property name="ShowModelOnFall" value="false"/>
@@ -13216,7 +13218,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="VehicleHitScale" value="999"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<drop event="Destroy" name="resourcePaper" count="1"/>
-	<drop event="Destroy" name="resourceMilitaryFiber" prob="0.02" count="1,2" tag="WasteTreasuresCompleteHarvest"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="FilterTags" value="MC_building,SC_loot"/>
 </block>
@@ -13653,16 +13654,17 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="#Entities/LootContainers?nightStand_emptyPrefab.prefab"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_helperResidential"/>
+	<property name="SortOrder1" value="fh01"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntNightstandClosed">
 	<property name="Extends" value="cntNightstandOpen"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mfurniture"/>
 	<property name="Model" value="#Entities/LootContainers?nightStand_closedPrefab.prefab"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="nightstand"/>
+	<property name="SortOrder1" value="fh02"/>
 	<property name="DowngradeBlock" value="cntNightstandOpen"/>
 </block>
 
@@ -14227,8 +14229,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="#Entities/LootContainers?medic_loot_pile_APrefab.prefab"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="medicalPileSmall"/>
 	<drop event="Destroy" name="resourceScrapPolymers" count="1,4"/>
-	<drop event="Harvest" name="resourceAcid" prob="1" count="1" tag="WasteTreasuresAcidHarvest"/>
+	<drop event="Harvest" name="resourceAcid" prob=".05" count="1" tag="WasteTreasuresAcidHarvest"/>
 	<property name="FilterTags" value="MC_building,SC_loot,MC_helpers,SC_treasureRoom"/>
 	<property name="DescriptionKey" value="cntLootPileGroupDesc"/>
 	<property name="ModelOffset" value="0,0,0"/>
@@ -14451,6 +14455,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MultiBlockDim" value="2,1,1"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="FilterTags" value="MC_building,SC_loot"/>
+	<property name="SortOrder1" value="fh26"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -14460,7 +14465,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Furniture/desk01" param1="main_mesh"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="woodenDesk"/>
-	<property name="DowngradeBlock" value="cntWoodDesk01Open"/>
+	<property name="SortOrder1" value="fh27"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -14581,14 +14586,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MultiBlockDim" value="3,1,3"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceWood" count="10" tag="allHarvest"/>
+  	<drop event="Destroy" name="resourceWood" count="2,5"/>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
-  	<drop event="Destroy" name="resourceScrapIron" count="10"/>
-  	<drop event="Destroy" name="resourceWood" count="5"/>
 	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
+	<property name="SortOrder1" value="fh38"/>
 </block>
 
 <!-- Grey -->
@@ -14766,6 +14769,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="FilterTags" value="MC_building,SC_decor,SC_industrial,SC_commercial,SC_residential"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<drop event="Fall" count="0" prob="0"/>
+	<property name="SortOrder1" value="fh03"/>
 </block>
 
 <block name="woodChair1Broken">
@@ -14956,7 +14960,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceScrapIron" value="20"/>
 	</property>
 	<drop event="Destroy" name="resourceCloth" count="3"/>
-	<drop event="Destroy" name="resourceScrapIron" count="10"/>
+	<drop event="Destroy" name="resourceScrapIron" count="15"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Fall" count="0"/>
 	<property name="FilterTags" value="MC_building,MC_outdoor,SC_decor,SC_industrial,SC_commercial,SC_residential"/>
@@ -15075,10 +15079,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceWood" value="6"/>
 		<property name="resourceCloth" value="4"/>
 	</property>
-	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceCloth" count="2" tag="allHarvest"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceCloth" count="2" tag="allHarvest"/>
 	<property name="EconomicValue" value="18"/>
 	<property name="FilterTags" value="MC_building,SC_decor,SC_commercial,SC_residential"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
@@ -15116,10 +15119,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceWood" value="6"/>
 		<property name="resourceLeather" value="4"/>
 	</property>
-	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceLeather" count="1" tag="allHarvest"/>
-	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceLeather" count="2" tag="allHarvest"/>
 	<property name="EconomicValue" value="18"/>
 	<property name="FilterTags" value="MC_building,SC_decor,SC_commercial,SC_residential"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
@@ -15179,7 +15181,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MultiBlockDim" value="3,1,1"/>
 	<property name="ImposterExchange" value="imposterRamp" param1="43"/>
 	<drop event="Harvest" name="resourceWood" count="6" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceLeather" count="2" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="1,3" tag="allHarvest"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -15206,18 +15208,21 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
+	<property name="SortOrder1" value="fh11"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="pew_segment02">
 	<property name="Extends" value="pew_segment01"/>
 	<property name="Model" value="Furniture/pew_segment02" param1="main_mesh"/>
+	<property name="SortOrder1" value="fh12"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="pew_segment03">
 	<property name="Extends" value="pew_segment01"/>
 	<property name="Model" value="Furniture/pew_segment03" param1="main_mesh"/>
+	<property name="SortOrder1" value="fh13"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -15280,18 +15285,18 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="UseGlobalUV" value="Local"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="2,1,1"/>
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
 	<drop event="Destroy" name="resourceWood" count="4,8"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
+	<property name="SortOrder1" value="fh36"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="parkBenchB">
 	<property name="Extends" value="parkBenchA" param1="Path"/>
 	<property name="Model" value="Entities/Furniture/parkBenchBPrefab" param1="main_mesh"/>
+	<property name="SortOrder1" value="fh37"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -15333,7 +15338,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="waterCooler"/>
-	<drop event="Destroy" name="resourceScrapPolymers" count="2"/>
+	<drop event="Destroy" name="resourceScrapPolymers" count="1,3"/>
 	<drop event="Fall" count="0"/>
 	<property name="FilterTags" value="MC_building,SC_loot"/>
 </block>
@@ -15394,6 +15399,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="SecureLoot"/>
 	<property name="Tags" value="door"/>
 	<property name="DowngradeBlock" value="wineBarrelPlayer"/>
+	<property name="SortOrder1" value="fh08"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -15412,6 +15418,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="SecureLoot"/>
 	<property name="Tags" value="door"/>
 	<property name="DowngradeBlock" value="wineBarrelSetPlayer"/>
+	<property name="SortOrder1" value="fh09"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -15430,6 +15437,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="SecureLoot"/>
 	<property name="Tags" value="door"/>
 	<property name="DowngradeBlock" value="wineBarrelPlainPlayer"/>
+	<property name="SortOrder1" value="fh10"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -15599,6 +15607,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceWood" value="10"/>
 	</property>
 	<property name="FilterTags" value="MC_building,SC_decor,SC_residential"/>
+	<property name="SortOrder1" value="fh07"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -15624,7 +15633,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="10"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,10"/>
 	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 </block>
@@ -16008,7 +16017,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="1,1,2"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Collide" value="movement,melee,rocket"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceSpring" count="3" tag="salvageHarvest"/>
@@ -16298,8 +16307,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceMechanicalParts" value="1"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="15"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="60"/>
 	<property name="DescriptionKey" value="cntFileCabinetRandomLootHelperGroupDesc"/>
@@ -16310,7 +16319,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntFileCabinetShortOpen">
 	<property name="Extends" value="cntFileCabinetShortRandomLootHelper" param1="DisplayInfo,CustomIcon,CustomIconTint"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mmetal"/>
 	<property name="Model" value="#Entities/LootContainers?filecabinet_short_emptyPrefab.prefab"/>
 	<property name="ModelOffset" value="0,0,0"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
@@ -16324,7 +16332,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="#Entities/LootContainers?filecabinet_short_closedPrefab.prefab"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="fileCabinet"/>
-	<property name="DowngradeBlock" value="cntFileCabinetShortOpen"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -16350,12 +16357,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntFileCabinetTallClosed">
 	<property name="Extends" value="cntFileCabinetShortClosed"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mfurniture"/>
 	<property name="Model" value="#Entities/LootContainers?filecabinet_tall_closedPrefab.prefab"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="1,2,1"/>
 	<property name="ModelOffset" value="0,0,0"/>
-	<property name="DowngradeBlock" value="cntFileCabinetTallOpen"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -16382,8 +16387,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cntLockersShortOpen"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="Model" value="#Entities/LootContainers?locker_ver3_lootPrefab.prefab"/>
-	<!-- <property name="Class" value="Loot"/>
-	<property name="LootList" value="lockers"/> -->
 	<property name="OnlySimpleRotations" value="true"/>
 </block>
 
@@ -16414,8 +16417,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cntLockersTallOpen"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="Model" value="#Entities/LootContainers?locker_ver1_lootPrefab.prefab"/>
-	<!-- <property name="Class" value="Loot"/>
-	<property name="LootList" value="lockers"/> -->
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="1,2,1"/>
 	<property name="OnlySimpleRotations" value="true"/>
@@ -16547,7 +16548,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="resourceRawDiamond" prob=".05" count="1" tag="WasteTreasuresCoffinHarvest"/>
 	<drop event="Harvest" name="resourceSilverNugget" prob=".05" count="1" tag="WasteTreasuresCoffinHarvest"/>
 	<drop event="Harvest" name="resourceGoldNugget" prob=".05" count="1" tag="WasteTreasuresCoffinHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,3"/>
+	<drop event="Destroy" name="resourceScrapIron" count="10"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -16627,8 +16628,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- NOT_A_SHAPE -->
 <block name="cntCasketModernClosedTan"> <!-- Tan-->
 	<property name="Extends" value="cntCasketModernOpenTan"/>
-	<!-- <property name="Class" value="Loot"/>
-	<property name="LootList" value="caskets"/> -->
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#Entities/LootContainers?casketModernClosePrefab.prefab"/>
 </block>
@@ -16824,7 +16823,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MultiBlockDim" value="1,1,2"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<property class="RepairItems">
-		<property name="resourceForgedIronIron" value="2"/>
+		<property name="resourceForgedIron" value="2"/>
 		<property name="resourceMechanicalParts" value="2"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
@@ -16848,7 +16847,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ImposterDontBlock" value="true"/>
 	<property class="RepairItems">
 		<property name="resourceElectricParts" value="2"/>
-		<property name="resourceForgedIronIron" value="1"/>
+		<property name="resourceForgedIron" value="1"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="2" tag="salvageHarvest"/>
@@ -16861,7 +16860,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntCashRegister">
 	<property name="Extends" value="cntCashRegisterEmpty"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mfurniture"/>
 	<property name="Class" value="Loot"/>
 	<property name="Model" value="#Entities/LootContainers?cashRegisterClosedPrefab.prefab"/>
 	<property name="LootList" value="cashRegister"/>
@@ -16893,7 +16891,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="resourceElectricParts" value="2"/>
 		<property name="resourceMechanicalParts" value="3"/>
-		<property name="resourceForgedIronIron" value="1"/>
+		<property name="resourceForgedIron" value="1"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
@@ -17122,7 +17120,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems">
 		<property name="resourceMechanicalParts" value="2"/>
-		<property name="resourceForgedIronIron" value="1"/>
+		<property name="resourceForgedIron" value="1"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="2" tag="salvageHarvest"/>
@@ -17134,11 +17132,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntToolBoxClosed">
 	<property name="Extends" value="cntToolBoxOpen"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mfurniture"/>
 	<property name="Model" value="#Entities/LootContainers?metalToolBoxClosedPrefab.prefab"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="toolBox"/>
-	<property name="DowngradeBlock" value="cntToolBoxOpen"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -17167,7 +17163,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems">
 		<property name="resourceMechanicalParts" value="2"/>
-		<property name="resourceForgedIronIron" value="1"/>
+		<property name="resourceForgedIron" value="1"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="2" tag="salvageHarvest"/>
@@ -17179,13 +17175,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntToolBoxOffsetClosed">
 	<property name="Extends" value="cntToolBoxOffsetOpen"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mfurniture"/>
 	<property name="CustomIcon" value="cntToolBoxClosed"/>
 	<property name="Model" value="#Entities/LootContainers?metalToolBoxClosedPrefab.prefab"/>
 	<property name="ModelOffset" value="0,0.5,-0.25"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="toolBox"/>
-	<property name="DowngradeBlock" value="cntToolBoxOffsetOpen"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -17213,10 +17207,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntRollingToolBoxClosed">
 	<property name="Extends" value="cntToolBoxClosed"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mfurniture"/>
 	<property name="Model" value="#Entities/LootContainers?rollingToolChestClosedPrefab.prefab"/>
-	<property name="LootList" value="toolBox"/>
-	<property name="DowngradeBlock" value="cntRollingToolBoxOpen"/>
+	<property name="LootList" value="rollingToolBox"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -17323,8 +17315,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntStoreShelfSingleBottomFood01">
 	<property name="Extends" value="cntStoreShelfSingleBottomEmpty"/>
 	<property name="Model" value="Entities/Commercial/storeShelfBottomGoodsPrefab"/>
-	<!-- <property name="Class" value="Loot"/>
-	<property name="LootList" value="shamwayShelves"/> -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -17409,8 +17399,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntStoreShelfSingleBottomHardware01">
 	<property name="Extends" value="cntStoreShelfSingleBottomEmpty"/>
 	<property name="Model" value="Entities/Commercial/storeShelfBottomHardwareGoods01Prefab"/>
-	<!-- <property name="Class" value="Loot"/>
-	<property name="LootList" value="toolBox"/> -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -17519,8 +17507,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntStoreShelfSingleBottomPharmaGoods01">
 	<property name="Extends" value="cntStoreShelfSingleBottomEmpty"/>
 	<property name="Model" value="Entities/Commercial/ShelfPharmaGoods01Prefab"/>
-	<!-- <property name="Class" value="Loot"/>
-	<property name="LootList" value="popnpillsShelves"/> -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -17615,31 +17601,43 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketCornerRandomLootHelper">
-	<property name="Extends" value="cntStoreShelfSingleBottomEmpty"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Model" value="Entities/Commercial/ProduceBasketEmptyCorner2Prefab"/>
+	<property name="DescriptionKey" value="furnitureGroupDesc"/>
+	<!-- <property name="DescriptionKey" value="cntStoreShelfRandomLootHelperGroupDesc"/> -->
 	<property name="CustomIcon" value="cntStoreProduceBasketEmpty2"/>
 	<property name="CustomIconTint" value="ff8080"/>
 	<property name="DisplayInfo" value="Name"/>
-	<property name="DescriptionKey" value="cntStoreShelfRandomLootHelperGroupDesc"/>
+	<property name="Material" value="Mwood_weak"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Commercial/ProduceBasketEmptyCorner2Prefab"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="3"/>
+	</property>
+	<drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="18"/>
 	<property name="FilterTags" value="MC_helpers,SC_loot,SC_helperCommercial"/>
+	<property name="Group" value="Decor/Miscellaneous"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketCornerEmpty1">
-	<property name="Extends" value="cntStoreShelfSingleBottomEmpty" param1="Path"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint,DisplayInfo"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketEmptyCornerPrefab"/>
+	<property name="SortOrder1" value="fh14"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketCornerEmpty2">
-	<property name="Extends" value="cntStoreShelfSingleBottomEmpty" param1="Path"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint,DisplayInfo"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketEmptyCorner2Prefab"/>
+	<property name="SortOrder1" value="fh15"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketRandomLootHelper">
-	<property name="Extends" value="cntStoreShelfSingleBottomEmpty"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper"/>
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketEmptyPrefab"/>
 	<property name="CustomIcon" value="cntStoreProduceBasketEmpty2"/>
@@ -17651,78 +17649,88 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketEmpty1">
-	<property name="Extends" value="cntStoreShelfSingleBottomEmpty" param1="Path"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint,DisplayInfo"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketEmpty2Prefab"/>
+	<property name="SortOrder1" value="fh16"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketEmpty2">
-	<property name="Extends" value="cntStoreShelfSingleBottomEmpty" param1="Path"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint,DisplayInfo"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketEmptyPrefab"/>
+	<property name="SortOrder1" value="fh17"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketApples1">
-	<property name="Extends" value="cntStoreShelfSingleBottomEmpty" param1="Path"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketApples1Prefab"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="shamwayProduce"/>
+	<property name="SortOrder1" value="fh18"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketApples2">
-	<property name="Extends" value="cntStoreShelfSingleBottomEmpty" param1="Path"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketApples2Prefab"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="shamwayProduce"/>
+	<property name="SortOrder1" value="fh19"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketGourds1">
-	<property name="Extends" value="cntStoreShelfSingleBottomEmpty" param1="Path"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketGourds1Prefab"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="shamwayProduce"/>
+	<property name="SortOrder1" value="fh20"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketGourds2">
-	<property name="Extends" value="cntStoreShelfSingleBottomEmpty" param1="Path"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketGourds2Prefab"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="shamwayProduce"/>
+	<property name="SortOrder1" value="fh21"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketLettuce1">
-	<property name="Extends" value="cntStoreShelfSingleBottomEmpty" param1="Path"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketlettuce1Prefab"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="shamwayProduce"/>
+	<property name="SortOrder1" value="fh22"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketLettuce2">
-	<property name="Extends" value="cntStoreShelfSingleBottomEmpty" param1="Path"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketLettuce2Prefab"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="shamwayProduce"/>
+	<property name="SortOrder1" value="fh23"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketMelons1">
-	<property name="Extends" value="cntStoreShelfSingleBottomEmpty" param1="Path"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketMelons1Prefab"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="shamwayProduce"/>
+	<property name="SortOrder1" value="fh24"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketMelons2">
-	<property name="Extends" value="cntStoreShelfSingleBottomEmpty" param1="Path"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketMelons2Prefab"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="shamwayProduce"/>
+	<property name="SortOrder1" value="fh25"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -17920,8 +17928,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntStoreShelfElectronicsSingleBottomPC">
 	<property name="Extends" value="cntStoreShelfSingleBottomEmpty"/>
 	<property name="Model" value="Entities/Commercial/electronicsShelfPCPrefab"/>
-	<!--<property name="Class" value="Loot"/>
-	<property name="LootList" value="mopowerShelves"/> -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -18042,8 +18048,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceElectricParts" count="3" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapPolymers" count="3"/>
+	<drop event="Harvest" name="resourceElectricParts" count="2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapPolymers" count="2"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_commercial"/>
 </block>
 
@@ -18092,7 +18098,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Path" value="solid"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="1,2,1"/>
-	<drop event="Harvest" name="resourceCloth" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCloth" count="10" tag="allHarvest"/>
 	<property name="DowngradeBlock" value="cntClothesRackRoundEmpty"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="pants"/>
@@ -18239,6 +18245,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_commercial"/>
+	<property name="SortOrder1" value="fh34"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -18247,7 +18254,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Entities/Commercial/ShelfClothsJeans01Prefab"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="pantsShelves"/>
-	<property name="DowngradeBlock" value="cntClothesShelfHalfEmpty"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -18261,7 +18267,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cntClothesShelfHalfJeans01"/>
 	<property name="Model" value="Entities/Commercial/ShelfClothsShirts01Prefab"/>
 	<property name="LootList" value="shirtsShelves"/>
-	<property name="DowngradeBlock" value="cntClothesShelfHalfEmpty"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -18269,7 +18274,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cntClothesShelfHalfJeans01"/>
 	<property name="Model" value="Entities/Commercial/ShelfClothsShirts02Prefab"/>
 	<property name="LootList" value="shirtsShelves"/>
-	<property name="DowngradeBlock" value="cntClothesShelfHalfEmpty"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -18277,7 +18281,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cntClothesShelfHalfJeans01"/>
 	<property name="Model" value="Entities/Commercial/ShelfClothsSweaters01Prefab"/>
 	<property name="LootList" value="shirtsShelves"/>
-	<property name="DowngradeBlock" value="cntClothesShelfHalfEmpty"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -18296,6 +18299,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cntClothesShelfHalfEmpty"/>
 	<property name="StabilitySupport" value="true"/>
 	<property name="Model" value="Entities/Commercial/ShelfClothsStackEmptyPrefab"/>
+	<property name="SortOrder1" value="fh35"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -18349,10 +18353,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="IsTerrainDecoration" value="true"/>
 	<drop event="Destroy" name="resourceScrapPolymers" count="0"/>
-	<drop event="Harvest" name="resourceCloth" count="3" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCloth" count="1,3" tag="allHarvest"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_commercial,SC_residential"/>
 	<property name="DescriptionKey" value="cntLootPileGroupDesc"/>
-	<property name="LootList" value="nightstand"/>
+	<property name="LootList" value="closet"/>
 	<property name="Class" value="Loot"/>
 </block>
 
@@ -18364,7 +18368,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="IsTerrainDecoration" value="true"/>
 	<drop event="Destroy" name="resourceScrapPolymers" count="0"/>
-	<drop event="Harvest" name="resourceCloth" count="3" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCloth" count="1,3" tag="allHarvest"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="FilterTags" value="MC_building,SC_commercial"/>
 </block>
@@ -18512,7 +18516,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="decoEntityClothMaster"/>
 	<property name="Model" value="Entities/Commercial/shoeSandalPairPrefab"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
-	<drop event="Destroy" name="resourceLeather" count="1"/>
+	<drop event="Destroy" name="resourceLeather" count="1,2"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_residential"/>
 </block>
 
@@ -18577,8 +18581,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="resourceWood" value="10"/>
 	</property>
-	<drop event="Destroy" name="resourceWood" count="3"/>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
 	<property name="FilterTags" value="MC_building,SC_loot"/>
+	<property name="SortOrder1" value="cb16"/>
 	<property name="SortOrder2" value="0060"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 </block>
@@ -18586,7 +18591,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
 <block name="cntBookcaseFull">
 	<property name="CreativeMode" value="Player"/>
-	<property name="Material" value="Mfurniture"/>
+	<property name="Material" value="Mwood_weak"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="bookcase_full"/>
 	<property name="Place" value="TowardsPlacer90"/>
@@ -18597,8 +18602,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="resourceWood" value="10"/>
 	</property>
-	<drop event="Destroy" name="resourceWood" count="3"/>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
 	<property name="FilterTags" value="MC_building,SC_loot"/>
+	<property name="SortOrder1" value="cb17"/>
 	<property name="SortOrder2" value="0060"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="DowngradeBlock" value="cntBookcaseEmpty"/>
@@ -18627,6 +18633,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Entities/Commercial/bookshelfBottomEmptyPrefab"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_commercial"/>
+	<property name="SortOrder1" value="fh28"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -18659,6 +18666,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntBookShelfSingleTopEmpty">
 	<property name="Extends" value="cntBookShelfSingleBottomEmpty"/>
 	<property name="Model" value="Entities/Commercial/bookshelfTopEmptyPrefab"/>
+	<property name="SortOrder1" value="fh29"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -18685,6 +18693,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntBookShelfDoubleBottomEmpty">
 	<property name="Extends" value="cntBookShelfSingleBottomEmpty"/>
 	<property name="Model" value="Entities/Commercial/bookshelfBottomDoubleEmptyPrefab"/>
+	<property name="SortOrder1" value="fh30"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -18711,6 +18720,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntBookShelfDoubleTopEmpty">
 	<property name="Extends" value="cntBookShelfSingleBottomEmpty"/>
 	<property name="Model" value="Entities/Commercial/bookshelfTopDoubleEmptyPrefab"/>
+	<property name="SortOrder1" value="fh31"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -18842,7 +18852,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Player"/>
 	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
 	<property name="DisplayType" value="blockHardenedMulti"/>
-	<property name="Material" value="Mmetal_medium"/>
+	<property name="Material" value="Mbedrock"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Class" value="VendingMachine"/>
@@ -19555,9 +19565,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- NOT_A_SHAPE -->
 <block name="cntBackpack01">
 	<property name="CreativeMode" value="Player"/>
-	<!-- <property name="Class" value="Loot"/> -->
 	<property name="DisplayType" value="blockHardened"/>
 	<property name="Material" value="Mcloth"/>
+	<property name="MaxDamage" value="5"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="Ext3dModel"/>
@@ -19567,7 +19577,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="GndAlign" value="1"/>
-	<!-- <property name="LootList" value="cntBackpack"/> -->
 	<drop event="Harvest" name="resourceCloth" count="2" tag="allHarvest"/>
 	<drop event="Destroy" name="resourceCloth" count="1"/>
 	<property name="FilterTags" value="MC_building,SC_loot"/>
@@ -19621,14 +19630,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cntBackpack01"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="Model" value="#Entities/LootContainers?pursePrefab.prefab"/>
-	<!-- <property name="LootList" value="purse"/> -->
 	<drop event="Destroy" count="0"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntSuitcase">
 	<property name="CreativeMode" value="Player"/>
-	<!-- <property name="Class" value="Loot"/> -->
 	<property name="DisplayType" value="blockHardened"/>
 	<property name="Material" value="Mcloth"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
@@ -19636,10 +19643,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<!-- <property name="LootList" value="luggage"/> -->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceScrapPolymers" count="4" tag="allHarvest"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapPolymers" count="2"/>
 	<property name="FilterTags" value="MC_building,SC_loot"/>
 </block>
 
@@ -19773,9 +19779,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/plantCeramicDecorPrefab"/>
-	<!-- <property name="Path" value="solid"/> -->
+	<property name="Path" value="solid"/>
 	<drop event="Destroy" name="resourceClayLump" count="12"/>
-	<drop event="Fall" name="resourceClayLump" count="12" prob="1.0" stick_chance="0"/>
+	<drop event="Fall" name="resourceClayLump" count="6" prob="1.0" stick_chance="0"/>
 	<property name="EconomicValue" value="6"/>
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
@@ -19922,12 +19928,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<drop event="Harvest" name="resourceWood" count="4" tag="allHarvest"/>
 	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	<property name="SortOrder1" value="fh05"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="decoWildWestWagonWheelFront">
 	<property name="Extends" value="decoWildWestWagonWheelBack"/>
 	<property name="Model" value="Entities/OutdoorDecor/wildWestWagonWheelFrontPrefab"/>
+	<property name="SortOrder1" value="fh06"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -19947,7 +19955,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="MclothStable"/>
 	<property name="Model" value="Entities/OutdoorDecor/modularRopeTiledPrefab"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
-	<drop event="Harvest" count="0" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="4" tag="allHarvest"/>
 	<drop event="Fall" count="0"/>
 </block>
 
@@ -20507,10 +20515,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MultiBlockDim" value="2,1,1"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceElectricParts" count="3" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="3" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceMetalPipe" count="3" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="20"/>
+	<drop event="Harvest" name="resourceElectricParts" count="3,12" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="1,5" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,20"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -20658,7 +20666,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="decoHoistChain"/>
 	<property name="Model" value="Entities/Industrial/hoistMagnetPrefab"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceElectricParts" count="2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -20674,7 +20682,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Entities/Commercial/handTruckPrefab"/>
 	<property class="RepairItems">
 		<property name="resourceMechanicalParts" value="2"/>
-		<property name="resourceForgedIronIron" value="1"/>
+		<property name="resourceForgedIron" value="1"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="2" tag="salvageHarvest"/>
@@ -20887,7 +20895,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ImposterExchange" value="imposterBlock" param1="139"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
-	<drop event="Harvest" name="resourceScrapIron" count="75" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="25" tag="allHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor"/>
 </block>
@@ -20900,6 +20908,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor"/>
+	<property name="SortOrder1" value="fh32"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -20911,6 +20920,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor"/>
+	<property name="SortOrder1" value="fh33"/>
 </block>
 
 <block name="OSBWoodStack">
@@ -21009,7 +21019,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ParticleName" value="campfire"/>
 	<property name="ParticleOffset" value="0.5,0,0.5"/>
 	<property name="Stacknumber" value="1"/>
-	<property name="HeatMapStrength" value="1"/>
+	<property name="HeatMapStrength" value="5"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
@@ -21025,6 +21035,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CloseSound" value="campfire_close"/>
 	<property name="CraftSound" value="campfire_cook_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
 	<property class="RepairItems">
 		<property name="resourceRockSmall" value="5"/>
 	</property>
@@ -21040,7 +21052,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="forge">
-	<property name="CreativeMode" value="None"/>
 	<property name="Class" value="Forge"/>
 	<property name="UnlockedBy" value="perkAdvancedEngineering,forgeSchematic"/>
 	<property name="Material" value="Mbedrock"/>
@@ -21057,7 +21068,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ParticleOffset" value="0.5,0,0.5"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1"/>
-	<property name="HeatMapStrength" value="1"/>
+	<property name="HeatMapStrength" value="6"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
@@ -21072,6 +21083,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CloseSound" value="forge_close"/>
 	<property name="CraftSound" value="forge_smelt_click"/>
 	<property name="CraftCompleteSound" value="forge_item_complete"/>
+	<property name="WorkstationJournalTip" value="forgeTip"/>
 	<property class="RepairItems">
 		<property name="resourceRockSmall" value="50"/>
 		<property name="resourceClayLump" value="60"/>
@@ -21093,10 +21105,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- NOT_A_SHAPE -->
 <block name="cntCollapsedForge">
 	<property name="CreativeMode" value="Dev"/>
-	<!-- <property name="Class" value="Loot"/>
-	<property name="LootList" value="collapsedForge"/> -->
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="collapsedForge"/>
 	<property name="CustomIcon" value="forge"/>
-	<property name="Material" value="Mbedrock"/>
+	<property name="Material" value="Mstone_scrap"/>
 	<property name="MaxDamage" value="500"/>
 	<property name="StabilitySupport" value="true"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -21125,7 +21137,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="workbench">
-	<property name="CreativeMode" value="None"/>
 	<property name="Class" value="Workstation"/>
 	<property name="Material" value="Mbedrock"/>
 	<property name="MaxDamage" value="800"/>
@@ -21154,6 +21165,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
 	<property name="OpenSound" value="open_workbench"/>
 	<property name="CloseSound" value="close_workbench"/>
+	<property name="WorkstationJournalTip" value="workbenchTip"/>
 	<property class="RepairItems">
 		<property name="resourceForgedIron" value="25"/>
 		<property name="resourceMechanicalParts" value="20"/>
@@ -21178,8 +21190,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- NOT_A_SHAPE -->
 <block name="cntCollapsedWorkbench">
 	<property name="CreativeMode" value="Dev"/>
-	<!-- <property name="Class" value="Loot"/>
-	<property name="LootList" value="collapsedWorkbench"/> -->
 	<property name="CustomIcon" value="workbench"/>
 	<property name="Material" value="Mbedrock"/>
 	<property name="MaxDamage" value="500"/>
@@ -21216,7 +21226,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="cementMixer">
-	<property name="CreativeMode" value="None"/>
 	<property name="Class" value="Workstation"/>
 	<property name="Material" value="Mbedrock"/>
 	<property name="MaxDamage" value="800"/>
@@ -21245,6 +21254,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CloseSound" value="cement_mixer_close"/>
 	<property name="CraftSound" value="cement_mixer_start_click"/>
 	<property name="CraftCompleteSound" value="cement_mixer_complete"/>
+	<property name="WorkstationJournalTip" value="cementMixerTip"/>
 	<property class="RepairItems">
 		<property name="resourceForgedIron" value="25"/>
 		<property name="resourceSpring" value="4"/>
@@ -21302,9 +21312,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="chemistryStation">
-	<property name="CreativeMode" value="None"/>
 	<property name="Class" value="Campfire"/>
-	<property name="Material" value="Mbedrock"/>
+	<property name="Material" value="Miron_scrap"/>
 	<property name="MaxDamage" value="800"/>
 	<property name="Weight" value="0"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -21335,6 +21344,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CloseSound" value="chem_station_close"/>
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="chem_station_complete_item"/>
+	<property name="WorkstationJournalTip" value="chemistryStationTip"/>
 	<property class="RepairItems">
 		<property name="resourceForgedIron" value="10"/>
 		<property name="resourceMetalPipe" value="10"/>
@@ -21524,7 +21534,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourcePaper" value="10"/>
 		<property name="resourceWood" value="4"/>
 	</property>
-	<drop event="Destroy" name="resourcePaper" count="4"/>
+	<drop event="Destroy" name="resourcePaper" count="2,8"/>
 	<property name="FilterTags" value="MC_building,SC_loot"/>
 </block>
 
@@ -21550,7 +21560,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
 <block name="cntCardboardBox">
 	<property name="Extends" value="cntGarageStorage"/>
-	<!-- <property name="LootList" value="cardboardBox"/> -->
+	<property name="LootList" value="cardboardBox"/>
 </block>
 
 <!-- Pop-N-Pills_Opened_Crate-->
@@ -21625,7 +21635,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="Loot"/>
 	<property name="Tags" value="door"/>
 	<property name="Material" value="Mleather"/>
-	<property name="MaxDamage" value="300"/>
+	<property name="MaxDamage" value="2000"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="#Entities/LootContainers?tier2LootChestPrefab.prefab"/>
@@ -21633,7 +21643,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<!-- <property name="CustomIcon" value="cntLootChestHero"/> -->
 	<!-- <property name="CustomIconTint" value="FF8000"/> -->
 	<!-- <property name="ItemTypeIcon" value="unlock"/> -->
-	<property name="LootList" value="doorNest"/>
+	<property name="LootList" value="reinforcedChestT2"/>
 	<property class="RepairItems">
 		<property name="resourceLeather" value="10"/>
 	</property>
@@ -21648,7 +21658,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="SecureLoot"/>
 	<property name="Tags" value="door"/>
 	<property name="Material" value="Mmetal_weak"/>
-	<property name="MaxDamage" value="7000"/>
+	<property name="MaxDamage" value="50000"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="#Entities/LootContainers?tier3LootChestPrefab.prefab"/>
@@ -21718,7 +21728,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CustomIcon" value="cntHardenedChestSecure"/>
 	<property name="CustomIconTint" value="00FF00"/>
 	<property name="DisplayType" value="blockHardenedMulti"/>
-	<property name="Material" value="Mbedrock"/>
+	<property name="Material" value="Mmetal_hard"/>
 	<property name="MaxDamage" value="10000"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#Entities/LootContainers?tier4LootChestPrefab.prefab"/>
@@ -23563,6 +23573,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="Light" param1="HandleFace"/>
 	<property name="CreativeMode" value="Dev"/>
 	<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+	<property name="IndexName" value="POILight"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="ImposterExchange" value="streetLightImposter"/>
@@ -23575,8 +23586,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ActivationDistance" value="6"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="4,8" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceForgedSteel" count="2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+	<drop event="Destroy" name="resourceScrapIron" count="50"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="-1"/>
 	<property name="Group" value="Science,Decor/Miscellaneous"/>
@@ -23586,7 +23596,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="candelabraLight">
-	<property name="Extends" value="decoEntityMetalMaster" param1="Harvest,RepairItems"/>
+	<property name="Extends" value="decoEntityMetalMaster" param1="RepairItems"/>
 	<property name="Material" value="Mbrass"/>
 	<property name="MeltTimePerUnit" value=".4"/>
 	<property name="Weight" value="83"/>
@@ -23598,6 +23608,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="resourceScrapBrass" value="50"/>
 	</property>
+	<dropextendsoff/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Destroy" name="resourceScrapBrass" count="20"/>
 	<property name="TakeDelay" value="-1"/>
@@ -23617,6 +23628,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
+	<property name="SortOrder1" value="fh04"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -23997,6 +24009,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<!--<property name="ParticleName" value="candleWall_flame"/>-->
+	<property name="CanPickup" value="true" param1="candle"/>
 	<property class="RepairItems">
 		<property name="resourceYuccaFibers" value="1"/>
 	</property>
@@ -24053,6 +24066,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="candleTableLight"/>
 	<property name="Model" value="Entities/Lighting/candle_table_playerPrefab"/>
+	<property name="CanPickup" value="true" param1="candleTableLightPlayer"/>
 	<!--<property name="ParticleName" value="candle_flame"/>-->
 	<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
 </block>
@@ -24114,7 +24128,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- NOT_A_SHAPE -->
 <block name="keystoneBlock"> <!-- landclaim -->
 	<property name="Class" value="LandClaim"/>
-	<property name="CreativeMode" value="None"/>
+	<property name="CreativeMode" value="Player"/>
 	<property name="Material" value="Msteel"/>
 	<property name="DisplayType" value="blockHardened"/>
 	<property name="Texture" value="189"/>
@@ -24709,8 +24723,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceElectricParts" value="2"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceElectricParts" count="2" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5,10" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="5"/>
@@ -25049,6 +25063,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="IsTerrainDecoration" value="true"/>
+	<drop event="Harvest" count="0" tag="butcherHarvest" tool_category="Butcher"/>
 	<drop event="Destroy" name="resourceBone" count="4" tag="butcherHarvest"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
@@ -25328,8 +25343,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="20,60" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceSpring" count="2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="0,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -25476,7 +25491,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="ironDoor1_v1">
 	<property name="Class" value="DoorSecure"/>
 	<property name="DisplayType" value="blockHardenedMulti"/>
-	<property name="Material" value="Mbedrock"/> <!-- 2500 -->
+	<property name="Material" value="Mmetal_hard"/> <!-- 2500 -->
 	<property name="StabilitySupport" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
 	<property name="LightOpacity" value="1"/>
@@ -25706,7 +25721,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <block name="cellarDoorDoubleIron">
 	<property name="Class" value="DoorSecure"/>
-	<property name="Material" value="Mbedrock"/>
+	<property name="Material" value="Mmetal_hard"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
 	<property name="LightOpacity" value="1"/>
@@ -25749,7 +25764,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <block name="cellarDoorDoubleSteel">
 	<property name="Class" value="DoorSecure"/>
-	<property name="Material" value="Msteel"/>
+	<property name="Material" value="Mbedrock"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
 	<property name="LightOpacity" value="1"/>
@@ -25777,8 +25792,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceScrapIron" count="96" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceSpring" count="2" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="2" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceSpring" count="1,2" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="432"/>
@@ -26193,7 +26208,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="garageDoorMetal_v1">
 	<property name="Class" value="DoorSecure"/>
 	<!-- <property name="Class" value="PoweredDoor"/> -->
-	<property name="Material" value="Mbedrock"/> <!-- hidden explosion resist to account for multiblock area -->
+	<property name="Material" value="MmetalGarageDoor3x2x2"/> <!-- hidden explosion resist to account for multiblock area -->
 	<property name="StabilitySupport" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
 	<property name="LightOpacity" value="1"/>
@@ -26231,8 +26246,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="100" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="2" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="DescriptionKey" value="garageDoorMetalGroupDesc"/>
@@ -26265,7 +26280,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="DoorSecure"/>
 	<!-- <property name="Class" value="PoweredDoor"/> -->
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Material" value="Mbedrock"/>
+	<property name="Material" value="MmetalGarageDoor3x2x2"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
 	<property name="LightOpacity" value="1"/>
@@ -26376,8 +26391,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceSpring" count="4,8" tag="allHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="4,8" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="2" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="2" tag="allHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="DescriptionKey" value="garageDoorHousePlayerDesc"/>
@@ -26400,8 +26415,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="resourceScrapIron" count="30" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceForgedIron" count="4,8" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="2" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
@@ -26445,8 +26460,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="90" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="2" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="DescriptionKey" value="garageDoorMetalGroupDesc"/>
@@ -26460,7 +26475,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="DoorSecure"/>
 	<!-- <property name="Class" value="PoweredDoor"/> -->
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Material" value="Mbedrock"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="PassThroughDamage" value="true"/>
 	<property name="LightOpacity" value="1"/>
 	<property name="MaxDamage" value="2000"/>
@@ -26495,8 +26510,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="90" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="2" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="DescriptionKey" value="garageDoorMetalGroupDesc"/>
@@ -26696,7 +26711,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <block name="rollUpDoor5x4White">
 	<property name="Class" value="DoorSecure"/>
-	<property name="Material" value="Mbedrock"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="StabilitySupport" value="false"/>
 	<!-- todo: set for where we start on the new all in one doors -->
 	<property name="StartDamage" value="0"/>
@@ -27261,9 +27276,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceForgedIron" value="5"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceScrapIron" count="30" tag="allHarvest"/>
-	<drop event="Destroy" name="resourceSpring" count="2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="20,30" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="0,2" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="DescriptionKey" value="doorGroupDesc"/>
@@ -29387,6 +29402,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="SortOrder1" value="70g0"/>
 </block>
 
+<!-- NOT_A_SHAPE -->
 <block name="mineCandyTinRE">
 	<property name="Class" value="Mine"/> <!-- a mine destroyed by an *explosion* only has a 33% chance to detonate -->
 	<property name="Tags" value="Mine"/>
@@ -29395,20 +29411,21 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="MLandMine"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#Other/Items?Weapons/Explosive/trapMineTinCan_01Prefab.prefab"/>
+	<property name="LODCullMin" value=".1"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Stacknumber" value="3"/> <!-- STK explosives -->
-	<property name="MaxDamage" value="4"/>
+	<property name="MaxDamage" value="1"/>
 	<property name="TriggerDelay" value="1"/>
 	<property name="TriggerSound" value="landmine_trigger"/>
 	<property name="Explosion.ParticleIndex" value="11"/>
 	<property name="Explosion.RadiusBlocks" value="2"/>
 	<property name="Explosion.RadiusEntities" value="5"/>
-	<property name="Explosion.BlockDamage" value="1"/>
-	<property name="Explosion.EntityDamage" value="160"/> <!-- damage for entities in the center of the explosion. -->
-	<property name="Explosion.DamageBonus.stone" value="0"/>
-	<property name="Explosion.DamageBonus.metal" value="0"/>
+	<property name="Explosion.BlockDamage" value="10"/>
+	<property name="Explosion.EntityDamage" value="180"/> <!-- damage for entities in the center of the explosion. -->
+	<property name="Explosion.DamageBonus.stone" value="0.1"/>
+	<property name="Explosion.DamageBonus.metal" value="0.1"/>
 	<property name="Explosion.DamageBonus.earth" value="0"/>
 	<property name="Explosion.DamageBonus.wood" value="0"/>
 	<property name="Explosion.DamageBonus.water" value="0"/>
@@ -29416,8 +29433,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<!-- <property name="DropScale" value="3"/>  SUPPOSEDLY works (again) but since all blocks use the bag as a drop mesh by default...
 	it  won't do anything interesting unless a specific drop mesh is declared. -->
 	<drop event="Destroy" count="0"/>
-	<property name="Group" value="Tools/Traps,Basics"/>
-	<property name="EconomicValue" value="0"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="EconomicValue" value="97"/>
 	<property name="FilterTags" value="MC_building,SC_traps"/>
 	<property name="SortOrder1" value="70g0"/>
 	<!--
@@ -29445,7 +29462,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="TriggerSound" value="landmine_trigger"/>
 	<property name="Explosion.ParticleIndex" value="11"/>
 	<property name="Explosion.RadiusBlocks" value="2"/>
-	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.RadiusEntities" value="8"/>
 	<property name="Explosion.BlockDamage" value="10"/>
 	<property name="Explosion.EntityDamage" value="276"/> <!-- damage for entities in the center of the explosion.  -->
 	<property name="Explosion.DamageBonus.stone" value="0.1"/>
@@ -29467,6 +29484,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#Other/Items?Weapons/Explosive/trapMineCookingPot_01Prefab.prefab"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="UnlockedBy" value="perkDemolitionsExpert"/>
 	<property name="Stacknumber" value="25"/> <!-- STK explosives -->
 	<property name="Explosion.RadiusBlocks" value="2"/>
 	<property name="Explosion.RadiusEntities" value="3"/>
@@ -29481,6 +29499,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#Other/Items?Weapons/Explosive/trapMineHubCap_01Prefab.prefab"/>
 	<property name="Stacknumber" value="20"/> <!-- STK explosives -->
+	<property name="UnlockedBy" value="perkDemolitionsExpert"/>
 	<property name="MaxDamage" value="5"/>
 	<property name="Explosion.RadiusBlocks" value="3"/>
 	<property name="Explosion.RadiusEntities" value="5"/>
@@ -29496,6 +29515,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="#Other/Items?Weapons/Explosive/trapMineAirFilter_01Prefab.prefab"/>
 	<property name="Stacknumber" value="10"/> <!-- STK explosives -->
 	<property name="MaxDamage" value="6"/>
+	<property name="UnlockedBy" value="perkDemolitionsExpert"/>
 	<property name="Explosion.RadiusBlocks" value="4"/>
 	<property name="Explosion.RadiusEntities" value="5"/>
 	<property name="Explosion.BlockDamage" value="10"/>
@@ -29518,13 +29538,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Path" value="solid"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
-	<!-- <property class="Explosion">
-		<property name="ParticleIndex" value="14"/>
-		<property name="RadiusBlocks" value="5"/>
-		<property name="BlockDamage" value="500"/>
-		<property name="RadiusEntities" value="5"/>
-		<property name="EntityDamage" value="250"/>
-	</property> -->
 	<property name="DescriptionKey" value="cntBarrelGroupDesc"/>
 	<drop event="Harvest" name="resourceScrapIron" count="3,6" tag="allToolsHarvest"/>
 	<drop event="Destroy" count="0"/>
@@ -29544,17 +29557,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ItemTypeIcon" value="explosion"/>
 	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
 	<property name="Material" value="MFuelBarrelPolymer"/>
-
 	<property name="Path" value="solid"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
-	<!-- <property class="Explosion">
-		<property name="ParticleIndex" value="13"/>
-		<property name="RadiusBlocks" value="5"/>
-		<property name="BlockDamage" value="500"/>
-		<property name="RadiusEntities" value="5"/>
-		<property name="EntityDamage" value="250"/>
-	</property> -->
 	<property name="DescriptionKey" value="cntBarrelGroupDesc"/>
 	<drop event="Harvest" name="resourceScrapPolymers" count="2,5" tag="allToolsHarvest"/>
 	<drop event="Destroy" count="0"/>
@@ -29928,8 +29933,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- NOT_A_SHAPE -->
 <block name="decoCarMotorFlipped">
 	<property name="Extends" value="decoCarMotorFlat"/>
-	<property name="Material" value="Mbedrock"/>
-	<property name="CanPickup" value="true" param1="smallEngine"/>
 	<property name="Model" value="#Entities/Vehicles?Car/motor_flippedPrefab.prefab"/>
 </block>
 
@@ -30140,15 +30143,30 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 </block>
 
 <block name="cntWoodFurnitureBlockVariantHelper">
-	<property name="Extends" value="cntStorageGenericSigned" param1="Place"/>
-	<property name="CustomIcon" value="cntStorageGenericSigned"/>
+	<property name="Extends" value="cntNightstandOpen" param1="Place"/>
+	<property name="CustomIcon" value="cntNightstandOpen"/>
 	<property name="CreativeMode" value="Player"/>
 	<!-- Can not use Place as all blocks in list will not place the same way -->
 	<!-- <property name="Place" value="TowardsPlacerInverted"/> -->
 	<property name="DescriptionKey" value="cntWoodFurnitureBlockVariantHelperDesc"/>
 	<property name="ItemTypeIcon" value="all_blocks"/>
 	<property name="SelectAlternates" value="true"/>
-	<property name="PlaceAltBlockValue" value="cntStorageGenericSigned,cntStorageGeneric,cntCabinetBottomFiller,cntCabinetBottom,cntCabinetBottomOpen,cntCupboardCabinetRedTopOpen,cntCupboardCabinetRedTopClosed,cntCupboardCornerCNRRed,cntCupboardCabinetFullRedTopClosed,cntCabinetBottomBrokenDoor,cntCabinetOldBottomOpen,cntCabinetOldBottom,cntCabinetOldCNRRoundFiller,cntCupboardCabinetOldTopOpen,cntCupboardCabinetOldTopClosed,cntCupboardCornerCNROld,cntCupboardCabinetFullOldTopClosed,cntBookcaseEmpty,cntBookcaseFull,cntNightstandOpen,cntNightstandClosed,cntWoodDesk01Open,cntWoodDesk01Closed,woodChair1,oldChair1,decoPicnicTable,endTable,decoWildWestWagonWheelBack,decoWildWestWagonWheelFront,decoClassicDogHouse,wineBarrelPlayerSecure,wineBarrelSetPlayerSecure,wineBarrelPlainPlayerSecure,parkBenchA,parkBenchB,pew_segment01,pew_segment02,pew_segment03"/>
+	<property name="PlaceAltBlockValue" value="cntNightstandOpen,cntNightstandClosed,woodChair1,endTable,decoWildWestWagonWheelBack,decoWildWestWagonWheelFront,decoClassicDogHouse,wineBarrelPlayerSecure,wineBarrelSetPlayerSecure,wineBarrelPlainPlayerSecure,pew_segment01,pew_segment02,pew_segment03,cntStoreProduceBasketCornerEmpty1,cntStoreProduceBasketCornerEmpty2,cntStoreProduceBasketEmpty1,cntStoreProduceBasketEmpty2,cntStoreProduceBasketApples1,cntStoreProduceBasketApples2,cntStoreProduceBasketGourds1,cntStoreProduceBasketGourds2,cntStoreProduceBasketLettuce1,cntStoreProduceBasketLettuce2,cntStoreProduceBasketMelons1,cntStoreProduceBasketMelons2,cntWoodDesk01Open,cntWoodDesk01Closed,cntBookShelfSingleBottomEmpty,cntBookShelfSingleTopEmpty,cntBookShelfDoubleBottomEmpty,cntBookShelfDoubleTopEmpty,palletEmpty,palletEmptyStack,cntClothesShelfHalfEmpty,cntClothesShelfStackEmpty,parkBenchA,parkBenchB,decoPicnicTable"/>
+	<property name="EconomicValue" value="8"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+</block>
+
+<block name="cntWoodFurnitureBlockVariantHelper2">
+	<property name="Extends" value="cntCabinetBottomFiller" param1="Place"/>
+	<property name="CustomIcon" value="cntCabinetBottomFiller"/>
+	<property name="CreativeMode" value="Player"/>
+	<!-- Can not use Place as all blocks in list will not place the same way -->
+	<!-- <property name="Place" value="TowardsPlacerInverted"/> -->
+	<property name="DescriptionKey" value="cntWoodFurnitureBlockVariantHelper2Desc"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="cntCabinetBottomFiller,cntCabinetBottom,cntCabinetBottomOpen,cntCupboardCabinetRedTopOpen,cntCupboardCabinetRedTopClosed,cntCupboardCornerCNRRed,cntCupboardCabinetFullRedTopClosed,cntCabinetBottomBrokenDoor,cntCabinetOldBottomOpen,cntCabinetOldBottom,cntCabinetOldCNRRoundFiller,cntCupboardCabinetOldTopOpen,cntCupboardCabinetOldTopClosed,cntCupboardCornerCNROld,cntCupboardCabinetFullOldTopClosed,cntBookcaseEmpty,cntBookcaseFull"/>
 	<property name="EconomicValue" value="8"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
@@ -31407,9 +31425,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceWood" value="6"/>
 		<property name="resourceCloth" value="4"/>
 	</property>
-	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceCloth" count="2" tag="allHarvest"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="oldCash" count="1,3" prob="0.05" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceCloth" count="2" tag="allHarvest"/>
 	<property name="EconomicValue" value="18"/>
 	<property name="FilterTags" value="MC_building,SC_residential"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
@@ -31701,7 +31720,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Dev"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
-	<drop event="Destroy" name="resourceScrapPolymers" count="2,5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapPolymers" count="6" tag="oreWoodHarvest"/>
 	<property name="FilterTags" value="MC_building,SC_decor,SC_construction"/>
 </block>
 
