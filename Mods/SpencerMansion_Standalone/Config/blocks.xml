@@ -50,7 +50,6 @@
 <block name="TheVault">
 	<property name="Extends" value="cntHardenedChestInsecure" param1="ItemTypeIcon"/>
 	<property name="CreativeMode" value="None"/>
-	<property name="Material" value="Mbedrock"/>
 	<property name="CustomIcon" value="cntHardenedChestSecureT5"/>
 	<property name="CustomIconTint" value="0080FF"/>
 	<property name="Model" value="#Entities/LootContainers?tier5LootChestPrefab.prefab"/>
