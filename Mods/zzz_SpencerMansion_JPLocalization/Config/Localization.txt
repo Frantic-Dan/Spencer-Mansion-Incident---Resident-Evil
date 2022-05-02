@@ -1,6 +1,6 @@
 Key,japanese
 goDifficultyRE,[FF4F00]難易度(お読みください)[-]
-goDifficultyREDesc,"C - 与ダメ 100%/受ダメ 100%\n\nB - 与ダメ 80%/受ダメ 150%\n\nA - 与ダメ 67%/受ダメ 200%\n\nS - 与ダメ 50%/受ダメ 250%\n\nX - 与ダメ 40%/受ダメ 350%\n[FF4F00](最初は低めの難易度をお選びください)"
+goDifficultyREDesc,"C - 与ダメ 100%/受ダメ 100%\n\nB - 与ダメ 80%/受ダメ 150%\n\nA - 与ダメ 67%/受ダメ 200%\n\nS - 与ダメ 50%/受ダメ 250%\n\nX - 与ダメ 40%/受ダメ 350%\n[FF4F00](最初は低めの難易度をお選びください)[-]\n\nZ - 与ダメ 80%/受ダメ 700%\n[FF4F00](最初は低めの難易度をお選びください)[-]"
 goDifficulty1RE,C
 goDifficulty2RE,B
 goDifficulty3RE,A
@@ -38,7 +38,7 @@ loadingTipRE5,"動物の骨や皮は忘れず入手しましょう。\nジャイ
 loadingTipRE5_title,骨や皮：
 loadingTipRE6,"本家と同じように、ゾンビは痛みを感じません。\n攻撃を受けても、痛みを感じる動作をまったくしません。"
 loadingTipRE6_title,ゾンビは痛みを感じない：
-loadingTipRE7,"次の方達に大きな感謝： AuroraGiggleFairy, wOOkie nOOkie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake"
+loadingTipRE7,"次の方達に大きな感謝： Mythix, AuroraGiggleFairy, wOOkie nOOkie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake"
 loadingTipRE7_title,スペシャルサンクス！
 tutorialTipQuest01,"あなたはこれからスペンサー邸での出来事を一人称視点で体験する事になります。\n\n[FF4F00]チャレンジ中はずっと夜なため、　夜間のゾンビの移動速度を、自分の好みに合わせて設定する事をお勧めします。[-]\n\nバイオハザードらしいチャレンジにするために使用が変更されています。\n1) 所持品は12スロットのみになるので、館内のアイテムボックス(The Vault)をご利用ください。\nThe Vaultは館内の何カ所かに設置してありますが、中身は、館内のどこからアクセスしても同じ内容になります。\n2) ジャンプをする事は出来ません。\n3) ほとんどの敵は痛みを感じないため、いつもの戦い方では難しいかもしれません。\n\nより楽しいチャレンジになる用、ダイナミック音楽の設定は、100%にする事をお勧めします。\n\nこのModとは関連性のないモドレットの導入はせず、オレンジ色になっているゲーム設定を修正してください。"
 buffNewbieCoatNameRE,減らない食料値と水分値
