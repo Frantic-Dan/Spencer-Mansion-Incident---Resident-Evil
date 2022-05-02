@@ -1,6 +1,6 @@
 Key,english
 goDifficultyRE,[FF4F00]Difficulty (Read me)[-]
-goDifficultyREDesc,C - You deal 100% Damage and take 100% damage.\n\nB - You deal 80% Damage and take 150% damage.\n\nA - You deal 67% Damage and take 200% damage.\n\nS - You deal 50% Damage and take 250% damage.\n\nX - You deal 40% Damage and take 350% damage.\n[FF4F00](DO NOT try this on your first completion)[-]
+goDifficultyREDesc,C - You deal 100% Damage and take 100% damage.\n\nB - You deal 80% Damage and take 150% damage.\n\nA - You deal 67% Damage and take 200% damage.\n\nS - You deal 50% Damage and take 250% damage.\n\nX - You deal 40% Damage and take 350% damage.\n[FF4F00](DO NOT try this on your first completion)[-]\n\nZ - You deal 80% Damage and take 700% damage.\n[FF4F00](DO NOT try this on your first completion)[-]
 goDifficulty1RE,C
 goDifficulty2RE,B
 goDifficulty3RE,A
@@ -29,7 +29,7 @@ loadingTipRE5,"Gather bones and leather along the way, you'll be needing them la
 loadingTipRE5_title,Bones and Leather:
 loadingTipRE6,"Zombies don't feel pain, just like in Resident Evil, so they won't even flinch when attacked."
 loadingTipRE6_title,Zombies Feel No Pain:
-loadingTipRE7,"A huge thank you to the following people: AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake."
+loadingTipRE7,"A huge thank you to the following people: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake."
 loadingTipRE7_title,Special Thanks!
 tutorialTipQuest01,"You're about to experience the Spencer Mansion Incident in a first person perspective.\n\n[FF4F00]In this challenge, it will always be night, so it is recommended you set the zombie speed for night to your preference.[-]\n\nTo keep the challenge true to Resident Evil, please note the following.\n1) You have limited inventory space of 12 slots. There are Item Storage Boxes to store your items.\n2) You cannot jump.\n3) Most enemies don't feel pain, so fighting them will be different to what you're used to.\n\nFor an immersive experience, I'd recommend setting your music to play all the time.\n\nFor the intended experience, be sure to remove any non-related modlets and your orange game settings are correct."
 buffNewbieCoatNameRE,Infinite food and water
