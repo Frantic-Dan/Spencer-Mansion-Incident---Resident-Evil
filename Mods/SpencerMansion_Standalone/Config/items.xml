@@ -11093,7 +11093,7 @@ add knockdown resist to armor
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="CustomIcon" value="resourcePaper"/>
 	<property name="Material" value="Mpaper"/>
-	<property name="Weight" value="0"/>
+	<property name="Weight" value="1"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="EconomicValue" value="0"/>
@@ -11108,7 +11108,7 @@ add knockdown resist to armor
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="CustomIcon" value="resourcePaper"/>
 	<property name="Material" value="Mpaper"/>
-	<property name="Weight" value="0"/>
+	<property name="Weight" value="1"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="EconomicValue" value="0"/>
@@ -11123,7 +11123,7 @@ add knockdown resist to armor
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="CustomIcon" value="resourcePaper"/>
 	<property name="Material" value="Mpaper"/>
-	<property name="Weight" value="0"/>
+	<property name="Weight" value="1"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="EconomicValue" value="0"/>
