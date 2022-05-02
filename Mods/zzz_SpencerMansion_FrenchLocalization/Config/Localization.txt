@@ -1,0 +1,510 @@
+Key,french
+goDifficultyRE,[FF4F00]Difficulté (Lisez-moi)[-]
+goDifficultyREDesc,"C - Vous infligez 100 % de dégâts et subissez 100 % de dégâts.\n\nB - Vous infligez 80 % de dégâts et subissez 150 % de dégâts.\n\nA - Vous infligez 67 % de dégâts et subissez 200 % de dégâts.\n\nS - Vous infligez 50 % de dégâts et subissez 250 % de dégâts.\n\nX - Vous infligez 40 % de dégâts et subissez 350 % de dégâts.\n[FF4F00](NE PAS essayer lors de votre première réalisation)[-]\n\nZ - Vous infligez 80 % de dégâts et subissez 700 % de dégâts.\n[FF4F00](NE PAS essayer lors de votre première réalisation)[-]"
+goDifficulty1RE,C
+goDifficulty2RE,B
+goDifficulty3RE,A
+goDifficulty4RE,S
+goDifficulty5RE,X
+goDifficulty6RE,Z
+goDayLengthRE,[FF4F00]Sélectionner 150[-]
+goDayLightLengthRE,[FF4F00]Sélectionner 0[-]
+goBloodMoonFrequencyRE,[FF4F00]Sélectionner 0[-]
+goXPMultiplierRE,[FF4F00]Sélectionner 100[-]
+goBlockDamagePlayerRE,[FF4F00]Select 100[-]
+goBlockDamageAIRE,[FF4F00]Sélectionner 100[-]
+goLootAbundanceRE,[FF4F00]Sélectionner 100[-]
+goLootRespawnDaysRE,[FF4F00]Sélectionner 1[-]
+goZombieMoveNight,[FF4F00]Vitesse nocturne des zombies\n(Toujours la nuit)[-]
+tutorialTipQuest01_title,Bienvenue au défi du manoir Spencer
+loadingTipRE1,Vous êtes piégé à l'intérieur de Spencer Mansion. Les fournitures de guérison et les munitions sont rares. Pouvez-vous échapper à votre vie? Ou devenir une Jill Sandwich ?
+loadingTipRE1_title,Bienvenue dans Resident Evil !
+loadingTipRE2,"Il n'y a pas de qualité d'objet, pas de dégradation d'équipement ou de statistiques aléatoires. Tout est prédéfini pour être identique.\nLoot RNG est réduit au minimum pour un défi équitable entre les différentes parties."
+loadingTipRE2_title,"Qualité des objets, réparations, statistiques aléatoires et butin:"
+loadingTipRE3,Tout comme dans Resident Evil votre inventaire sera limité (12 slots). Vous devrez choisir ce que vous emportez avec vous.
+loadingTipRE3_title,Inventaire:
+loadingTipRE4,Les portes sont votre principal moyen de défense pour vous aider à séparer les zombies afin de faciliter les combats. Fermer les portes empêchera les zombies de se faufiler derrière vous.
+loadingTipRE4_title,Des portes:
+loadingTipRE5,"Rassemblez des os et du cuir en cours de route, vous en aurez besoin plus tard lors de la construction du gyrocoptère."
+loadingTipRE5_title,Os et cuir:
+loadingTipRE6,"Les zombies ne ressentent pas la douleur, tout comme dans Resident Evil, donc ils ne broncheront même pas lorsqu'ils sont attaqués."
+loadingTipRE6_title,Les zombies ne ressentent aucune douleur:
+loadingTipRE7,"Un immense merci aux personnes suivantes: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake."
+loadingTipRE7_title,Remerciement spécial!
+tutorialTipQuest01,"Vous êtes sur le point de vivre l'incident du manoir Spencer dans une perspective à la première personne.\n\n[FF4F00]Dans ce défi, il fera toujours nuit, il est donc recommandé de régler la vitesse du zombie pour la nuit selon vos préférences.[-]\n\nPour que le défi reste fidèle à Resident Evil, veuillez noter ce qui suit.\n1) Votre espace d'inventaire est limité à 12 emplacements. Il existe des boîtes de stockage d'objets pour stocker vos objets.\n2) Vous ne pouvez pas sauter.\n3) La plupart des ennemis ne ressentent pas la douleur, donc les combattre sera différent de ce à quoi vous êtes habitué.\n\nPour une expérience immersive, Je vous recommande de configurer votre musique pour qu'elle soit lue en permanence.\n\nPour l'expérience souhaitée, assurez-vous de supprimer tous les modlets non liés et que vos paramètres de jeu orange sont corrects."
+buffNewbieCoatNameRE,Nourriture et eau infinies
+buffNewbieCoatDescRE,"Tant que vous avez ce buff, votre nourriture et votre eau resteront pleines.\n\nUne fois que vous aurez atteint le niveau 10, votre nourriture et votre eau s'épuiseront à 60 % du taux standard."
+xuiInventory,Inventaire de Jill Valentine
+cntCashRegister,Machine à écrire
+TheVault,The Vault
+Reloading_Tool,Outil de rechargement
+Reloading_Tooldesc,"Un outil utile avec lequel vous pouvez fabriquer des munitions.\n\nAssurez-vous d'avoir suffisamment d'emplacements d'inventaire vides lors de la fabrication."
+DeathMaskDesc,Ce Masque Mortuaire est utilisé sur la Porte du Mal.\n\nÀ utiliser avec l'action secondaire.
+MansionBattery,"Cela alimentera la porte dans la cour."
+GreenHerbDesc,"Vous soigne légèrement.\n\nMédecin 0 soigne 8.\nMédecin 1 soigne 10.\nMédecin 2 soigne 12.\nMédecin 3 soigne 14."
+RedHerbdesc,"Amplifie l'effet des herbes vertes.\n\nNe peut pas être utilisé seul."
+GreenHerbCreamDesc,"Vous soigne modérément.\n\nLe médecin 0 en soigne 20.\nLe médecin 1 en soigne 25.\nLe médecin 2 en soigne 30.\nLe médecin 3 en soigne 35."
+Green+RedHerbCreamDesc,"Vous soigne considérablement.\n\nLe médecin 0 en soigne 36.\nLe médecin 1 en soigne 45.\nLe médecin 2 en soigne 54.\nLe médecin 3 en soigne 63."
+BlueHerbDesc,"Guérit du poison"
+Green+BlueHerbCreamDesc,"Vous soigne légèrement et guérit le poison.\n\nMédecin 0 soigne 12.\nMédecin 1 soigne 15.\nMédecin 2 soigne 18.\nMédecin 3 soigne 21."
+Green2+BlueHerbCreamDesc,"Vous soigne modérément et guérit le poison.\n\nLe médecin 0 en soigne 24.\nLe médecin 1 en soigne 30.\nLe médecin 2 en soigne 36.\nLe médecin 3 en soigne 42."
+Green+Red+BlueHerbCreamDesc,"Vous soigne considérablement et guérit le poison.\n\nLe médecin 0 en soigne 40.\nLe médecin 1 en soigne 50.\nLe médecin 2 en soigne 60.\nLe médecin 3 en soigne 70."
+FirstAidSprayDesc,"Vous soigne complètement.\n\nLe médecin 0 en soigne 120.\nLe médecin 1 en soigne 150.\nLe médecin 2 en soigne 180.\nLe médecin 3 en soigne 210."
+WolfBook,Un livre de couleur bleue sur un loup.
+WolfMedal,Une médaille de loup.\n\nÀ utiliser avec l'action secondaire.
+EagleBook,Un livre de couleur rouge sur un aigle.
+EagleMedal,Une médaille d'aigle.\n\nÀ utiliser avec l'action secondaire.
+Book of Curses,Livre des malédictions
+BookOfCursesdesc,Un livre effrayant que vous avez trouvé par terre au 3ème étage.
+Dog Whistle,Chien Sifflet
+DogWhistledesc,Un sifflet utilisé pour attirer l'attention des chiens.
+Dog Collar,Collier de chien
+DogCollardesc,Est-ce que ce collier a une certaine importance?
+Coin,Pièce de monnaie
+
+
+
+
+Coindesc,Une pièce trouvée dans le collier d'un chien.
+Lighterdesc,Vous en aurez besoin sur vous pour allumer des molotovs.
+EmptyBottledesc,Un récipient utilisé pour mélanger des produits chimiques.\n\nRemplir en utilisant l'action secondaire.
+FilledBottledesc,Une bouteille remplie de liquide
+MixingBottledesc,Deux types de liquide se mélangeant.
+VJoltdesc,Un produit chimique puissant qui peut affaiblir la plante 42.
+Crestdesc,Une crête de forme hexagonale.\n\nÀ utiliser avec l'action secondaire.
+BrokenShotgundesc,Un fusil de chasse endommagé de façon irréparable.\n\nUtiliser avec l'action secondaire.
+Herbicidedesc,Un produit chimique utilisé pour tuer la vie végétale.
+MetalObjectdesc,Un objet octogonal qui déverrouillera la porte de la cour.\n\nÀ utiliser avec l'action secondaire.
+StoneRingdesc,Une bague en pierre de forme octogonale
+MetalObject2desc,Un objet octogonal en métal.
+StoneMetalObjectdesc,Cela déverrouillera la porte derrière les escaliers du hall principal du manoir.\n\nÀ utiliser avec l'action secondaire.
+Cylinderdesc,On dirait que quelque chose appartient à l'intérieur du trou.
+Shaftdesc,On dirait qu'il manque une sorte de bague.
+CylinderShaftdesc,Cela alimentera le générateur dans la mine.\n\nÀ utiliser avec l'action secondaire.
+FuelSupplyEmptydesc,Une capsule vide conçue pour alimenter une source d'alimentation.\n\nRemplissez-la avec quelque chose de glacé.
+FuelSupplydesc,Profitez-en pour ravitailler le volet roulant.
+JewelryBoxdesc,"C'est déverrouillé maintenant, ce qu'il y a à l'intérieur?"
+RedGemstonedesc,Ce petit rocher vaudrait une fortune...
+LockedBoxdesc,Bien verrouillé
+PrisonKey,Une disquette avec le mot 'MO' dessus.\n\nInsérez en utilisant l'action secondaire.
+REkeys,À utiliser en maintenant le bouton [Interagir] enfoncé tout en regardant une porte et en sélectionnant [crochet].
+Jill's_LockPick,LockPick de Jill
+Sword Key,Clé d'épée
+Armour Key,Clé d'armure
+Shield Key,Clé de bouclier
+Helmet Key,Clé de casque
+Emblem Key,Clé de l'emblème
+Wolf Book,Livre de loup
+Wolf_Medal,Médaille Loup
+Eagle Book,Livre d'aigle
+Eagle_Medal,Médaille Aigle
+Death Mask Without Eyes,Masque mortuaire sans yeux
+Death Mask Without Mouth,Masque mortuaire sans bouche
+Death Mask Without Nose,Masque mortuaire sans nez
+Death Mask Without All Three,Masque de mort sans les trois
+Laboratory Key,Clé pour la zone de puissance
+Prison Key,Disque MO
+Empty_Bottle,Bouteille vide
+Empty Water Bottle,Bouteille d'eau vide
+Empty UMB-No3 Bottle,Bouteille UMB-No3 vide
+Empty Yellow-6 Bottle,Bouteille Yellow-6 vide
+Water_(Filled),Eau (Remplie)
+UMB-No3_(Filled),UMB-No3 (Remplie)
+Yellow-6_(Filled),Yellow-6 (Remplie)
+NP-004_(Filled),NP-004 (Remplie)
+UMB-No7_(Filled),UMB-No7 (Remplie)
+UMB-No10_(Filled),UMB-No10 (Remplie)
+VP-017_(Filled),VP-017 (Remplie)
+NP-004_(Mixing),NP-004 (Mélange)
+UMB-No7_(Mixing),UMB-No7 (Mélange)
+UMB-No10_(Mixing),UMB-No10 (Mélange)
+VP-014_(Mixing),VP-017 (Mélange)
+V-Jolt,V-Jolt
+Wind Crest,Crête du vent
+Moon Crest,Crête de lune
+Star Crest,Crête d'étoile
+Sun Crest,Crête du soleil
+Broken Shotgun,Fusil de chasse cassé
+Herbicide,Herbicide
+Metal_Object,Objet en métal
+Stone_Ring,Anneau de pierre
+Metal_Object2,Objet en métal
+Stone and Metal Object,Objet en pierre et métal
+WD-40 Spray,Aérosol WD-40
+Unprinted Book,Livre non imprimé
+Battery,Batterie
+Spraydesc,Un liquide lubrifiant utilisé pour desserrer les joints d'objets métalliques.
+Cylinder,Cylindre
+Shaft,Arbre
+Cylinder Shaft,Arbre de cylindre
+Fuel Supply Capsule (Empty),Capsule d'alimentation en carburant (Vide)
+Fuel Supply Capsule,Capsule d'alimentation en carburant
+Green Herb,Herbe verte
+Mixed Green Herb,Mélange d'herbes vertes
+Mixed 3 Green Herbs,Mix 3 Herbes Vertes
+Mixed Green+Red Herb,Herbe verte + rouge mélangée
+Mixed Green+Blue Herb,Herbe verte + bleue mélangée
+Mixed 2 Green+Blue Herb,Mélange 2 Herbe Verte + Bleue
+Mixed Green+Red+Blue Herb,Mélange d'herbes vertes + rouges + bleues
+Red Herb,Herbe rouge
+Blue Herb,Herbe bleue
+FirstAidSpray,Vaporisateur de premiers soins
+Super Corn Bread,Super pain de maïs
+Super Corn Meal,Super farine de maïs
+Snowberry Juice,Jus de Symphorine
+foodShamChowder,Chaudrée factice (Courage)
+foodGumboStew,Ragoût de gombo (Vitesse de mêlée)
+foodShepardsPie,Tarte aux bergers (Force)
+foodSpaghetti,Spaghetti (Agilité)
+foodTunaFishGravyToast,Toast à la sauce au thon (La vitesse de rechargement)
+modArmorBandolierDesc,Rechargez 10 % plus rapidement.\nL'effet ne se cumule pas, mais il peut être installé sur n'importe quelle armure de poitrine ou de jambe.
+Athletic Jacket Mod Schematic,Schéma du mod de la veste athlétique
+High Permormance Running Soles Schematic,Schéma des semelles de course à haute performance
+drinkCanMegaCrushSchematic,Schéma Mega Crush
+Military-Grade Duct Tape,Ruban adhésif de qualité militaire
+Jewelry Box,Boîte à bijoux
+Key to Room 001,Clé de la chambre 001
+Key to Room 003,Clé de la chambre 003
+Gallery Key,Clé de la galerie
+Control Room Key,Clé de la salle de contrôle
+Red Gemstone,Pierre précieuse rouge
+Locked Jewelry Box,Boîte à bijoux verrouillée
+Master Key,La clef maitresse
+Sword Door,Porte épée
+Sword Iron Door,Porte en fer épée
+Armour Door,Porte blindée
+Armour Iron Door,Porte en fer blindé
+Shield Door,Porte blindée
+Helmet Door,Porte casque
+Helmet Iron Door,Casque Fer Porte
+Emblem Door,Emblème Porte
+Wolf and Eagle Door,Porte Loup et Aigle
+Door That Sees No Evil,Porte qui ne voit pas le mal
+Door That Speaks No Evil,Porte qui ne dit rien de mal
+Door That Smells No Evil,Porte qui ne sent pas le mal
+Door That Sees Speaks Smells No Evil,La porte qui voit parle ne sent pas le mal
+Door Of No Evil,Porte du non mal
+Door with an old lock,Porte avec une vieille serrure
+Plant Room Door (Insert Herbicide),Porte de la salle des plantes (Insérer l'herbicide)
+Insert Wind Crest,Insérer la crête du vent
+Insert Moon Crest,Insérer la crête de la lune
+Insert Star Crest,Insérer la crête de l'étoile
+Insert Sun Crest,Insérer la crête du soleil
+Insert Broken Shotgun,Insérer un fusil de chasse cassé
+Room 001,Chambre 001
+Room 003,Chambre 003
+Gallery,Galerie
+Control Room,Salle de contrôle
+Door (Insert Unprinted Book),Porte (Insérer un livre non imprimé)
+Power Area Door,Porte de la zone électrique
+Sturdy Door (Insert Metal Object),Porte robuste (Insérer un objet métallique)
+Unpowered Door,Porte non alimentée
+Sturdy Door (Insert Stone and Metal Object),Porte robuste (Insérer un objet en pierre et en métal)
+Master Door,Porte principale
+Sturdy Door,Porte robuste
+Rusted Sturdy Door,Porte robuste rouillée
+Plant 42's Roots,Plantez les racines de 42
+Plant 42's Poisoned Roots (Hit to Destroy),Plantez les racines empoisonnées de 42 (Frapper pour détruire)
+Mineshaft Hatch Control (Insert Cylinder Shaft),Contrôle de la trappe du puits de mine (Insérer l'arbre du cylindre)
+Mineshaft Hatch Control,Contrôle de la trappe du puits de mine
+Laboratory Computer,Ordinateur de laboratoire
+Unpowered Roller Shutter (Needs refueling),Volet roulant non motorisé (A besoin de faire le plein)
+Powered Roller Shutter,Volet roulant motorisé
+Box of Sewing Kits (Hit to Pickup),Boîte de kits de couture (Frapper pour ramasser)
+Jill's Lunch and Lockpick (Hit to Pickup),Le déjeuner et le crochetage de Jill (Frapper pour ramasser)
+AK-47 (Hit to Pickup),AK-47 (Frapper pour ramasser)
+Anti-Tyrant Rocket Launcher (Hit to Pickup),Lance-roquettes anti-tyran (Frapper pour ramasser)
+Anti-Tyrant Rocket (Hit to Pickup),Fusée anti-tyran (Frapper pour ramasser)
+Laboratory Prison Door (Requires 3 MO Discs),Porte de prison de laboratoire (Nécessite 3 disques MO)
+Laboratory Prison Door (Requires 2 MO Discs),Porte de prison de laboratoire (Nécessite 2 disques MO)
+Laboratory Prison Door (Requires 1 MO Disc),Porte de prison de laboratoire (Nécessite 1 disque MO)
+Mansion Wood Door,Porte en bois de manoir
+Mansion Iron Door,Porte de fer de manoir
+HiPower Leather Trunk,Coffre en cuir HiPower
+Special Clothing Leather Trunk,Malle en cuir pour vêtements spéciaux
+Pump Shotgun (Hit to Pickup),Fusil à pompe (Frapper pour ramasser)
+Magnum Revolver (Hit to Pickup),Revolver Magnum (Frapper pour ramasser)
+Rocket Launcher (Hit to Pickup),Lance-roquettes (Frapper pour ramasser)
+Handgun Ammo (Hit to Pickup),Munitions pour armes de poing (Frapper pour ramasser)
+Shotgun Ammo (Hit to Pickup),Munitions de fusil de chasse (Frapper pour ramasser)
+Magnum Ammo (Hit to Pickup),Munitions Magnum (Frapper pour ramasser)
+Rocket Ammo (Hit to Pickup),Munitions de fusée (Frapper pour ramasser)
+Assault Rifle Ammo (Hit to Pickup),Munitions pour fusil d'assaut (Frapper pour ramasser)
+Hand Grenade (Hit to Pickup),Hand Grenade (Frapper pour ramasser)
+9mm Bullet,Rond Parabellum 9 × 19 mm
+Dismantle 9mm Ammo,Démonter la ronde Parabellum 9 × 19 mm
+9mm HP Bullet,Ronde Parabellum HiPower 9 × 19 mm
+44Magnum Bullet,Ronde Magnum .357
+Dismantle .44 Ammo,Démonter la cartouche .357 Magnum
+44Magnum HP Bullet,Ronde HiPower .357 Magnum
+762 Bullet,7.62 Carabine Ronde
+Dismantle 7.62 Ammo,Démonter la cartouche de fusil 7.62
+762 HP Bullet,Carabine ronde HiPower 7.62
+Shotgun Shell,Cartouche de fusil de chasse de calibre 12
+Dismantle Shotgun Shells,Démonter la cartouche de fusil de chasse de calibre 12
+Shotgun Slug,Limace de fusil de chasse
+Workbench Repair Kit,Kit de réparation d'établi
+Lighter,Briquet
+
+Survival_Knife,Couteau de survie
+Knifedesc,"Couteau sur mesure de Jill, idéal pour le combat rapproché et la récolte d'animaux."
+S.T.A.R.S_Handgun,S.T.A.R.S Pistolet
+Handgundesc,"Un S.T.A.R.S personnalisé Arme de poing standard, tire des obus parabellum 9 × 19 mm."
+Magnum Revolver,Revolver Magnum
+Magnumdesc,"Un revolver magnum lourd, une arme de poing extrêmement puissante. Il tire des cartouches .357 magnum"
+Pump Shotgun,Fusil à pompe
+Shotgundesc,Tire des obus de calibre 12. Une arme capable de tirer à grande portée.
+AK-47,Fusil d'assaut AK-47
+Rifledesc,Un fusil d'assaut automatique qui peut vous aider dans des situations désespérées.
+Rocket Launcher,Lance-roquettes
+Launcherdesc,"Une arme destructrice, essayez de ne pas vous faire exploser, d'accord!"
+Anti-Tyrant Rocket Launcher,Lance-roquettes anti-tyran
+apparelToughGuySunglasses,Lunettes de soleil de Wesker
+ammo9mmBulletBallRE,Balle Parabellum 9x19mm
+ammo9mmBulletHPRE,Balle HiPower 9x19mm Parabellum
+ammo44MagnumBulletBallRE,Balle Magnum .357
+ammo44MagnumBulletHPRE,Balle HiPower .357 Magnum
+ammo762mmBulletBallRE,7.62 Balle de fusil
+ammo762mmBulletHPRE,Balle de fusil HiPower 7.62
+ammoShotgunShellRE,Cartouche de fusil de chasse de calibre 12
+ammoShotgunSlugRE,Limace de fusil de chasse
+ammoRocketHERE,Fusée à fragmentation anti-tyran
+ammoRocketFragRE,Fusée à fragmentation
+thrownGrenadeRE,Hand Grenage
+thrownAmmoMolotovCocktailRE,Cocktail Molotov
+mineCandyTinRE,Mine de fortune
+perkEnforcerDamageDesc,Faites 10% de dégâts supplémentaires avec le Magnum.
+perkEnforcerDamageLongDesc,Dégâts : Le Magnum est l'arme de poing la plus puissante au monde. Faites 10% de dégâts supplémentaires avec le Magnum.
+perkEnforcerHPAmmoDesc,Vous pouvez fabriquer des munitions HiPower .357 Magnum.
+perkEnforcerHPAmmoLongDesc,L'arme de poing la plus puissante du monde est devenue encore plus puissante. Vous pouvez fabriquer des munitions HiPower .357 Magnum.
+perkEnforcerCriminalPursuitDesc,Courir avec le Magnum en combat consomme 20 % d'endurance en moins.
+perkEnforcerCriminalPursuitLongDesc,Criminal Pursuit : L'adrénaline de la chasse aux scumbags dans le feu de l'action augmente votre endurance. Courir avec le Magnum tiré au combat utilise 20 % d'endurance en moins.
+
+buffPoisonedName,Empoisonné!
+buffPoisonedDesc,Vous êtes empoisonné et subissez lentement des dégâts.\n\nUtilisez une crème aux herbes bleues pour soigner votre poison.
+buffPoisonedTooltip,Vous avez été empoisonné!
+questStartup_offer,Quête
+questStartup_desc,"Nous sommes en juillet 1998, vous êtes Jill Valentine, membre de l'équipe Alpha S.T.A.R.S. Votre équipe a été envoyée pour enquêter sur la disparition de vos collègues de l'équipe Bravo après que vous ayez perdu le contact avec eux.\n\nVotre équipe a survolé la zone forestière des montagnes d'Arklay et a découvert un hélicoptère écrasé.\nL'hélicoptère appartient à l'équipe Bravo et à tout le monde est mort. Votre équipe est attaquée par des chiens vicieux et est poursuivie à travers la forêt, vous voyez un manoir au loin et l'appelez à votre équipe et vous faites tous une pause !\n\nVous êtes maintenant piégé à l'intérieur, c'est trop dangereux là-bas!"
+BookOfCurses_offer,"Les quatre masques.\n\nUn masque qui ne dit pas le mal...\nUn masque qui ne sent pas le mal...\nUn masque qui ne voit pas le mal...\nUn masque qui ne peut pas parler. sentir. ou voir le mal...\n\nQuand les quatre se mettront en place. le mal se réveillera.\n\n\nVous voyez une clé incrustée au dos. allez-vous l'enlever ?"
+DogWhistle_offer,"Aujourd'hui. Sir Spencer m'a dit de cacher quelque chose là où personne ne pourrait le trouver.\n\nEh bien. J'ai eu cette idée. Je me suis dit si je pouvais en quelque sorte le faire protéger par un animal dangereux comme le chien vicieux qui vit ici. personne ne pourrait s'en approcher !\n\nPour autant que je sache. le cabot traîne toujours autour du balcon du deuxième étage du côté ouest de la terrasse. et il devrait accourir au son d'un sifflet de chien.\n\nC'est ici que vous entrez en jeu. La chose est. Je pense que tu es la seule personne qui peut s'approcher de ce satané chien sans risquer de le blesser sérieusement.\n\nCe qui veut dire que toi seul peux lui mettre ce collier. L'objet que Sir Spencer veut cacher est dissimulé à l'intérieur.\n\nVous êtes la seule personne en qui je peux avoir confiance. Bien sûr. vous en tirerez quelque chose aussi. Vous souvenez-vous de cet objet dont vous avez toujours rêvé ?\n\nEh bien. en échange de vos services. Je pourrais juste être en mesure de l'obtenir pour vous. Cela pourrait bien fonctionner pour nous deux...\n\nJon Toleman."
+JillLockpick,Avec son ensemble de crochets, Jill est le maître du déverrouillage.
+FilesDesc,Vous pouvez lire cette note depuis votre Journal.
+modMeleeWeightedHeadDesc,Une modification pour votre couteau.\nAjoute 15 % de chances d'étourdir et de ralentir les victimes.
+Samurai Edge Parts,Pièces de bord de samouraï
+SamuraiEdgeDesc,Pièces personnalisées spéciales qui augmentent considérablement la cadence de tir et permettent une rafale de 3 coups.\n\nEn général, votre arme de poing est plus facile à manier.
+Assault Shotgun Parts,Pièces de fusil d'assaut
+AssaultShotgunDesc,Un S.T.A.R.S. arsenal personnalisé et également le favori de Richard.\n\nContient 10 tours. A une propagation plus serrée. Portée plus longue et cadence de tir plus rapide. Mais vitesse de rechargement plus lente.
+Magnum Speedloader,Chargeur rapide Magnum
+MagnumSpeedloaderDesc,Cela aide à un rechargement 25% plus rapide et, dans l'ensemble, il est plus facile de manier le revolver.
+AK-47 Muzzle Brake,Frein de bouche AK-47
+MuzzleBreakDesc,Rend le fusil d'assaut plus précis et globalement plus facile à manier.
+Athletic Jacket Mod,Veste athlétique Mod
+High Permormance Running Soles,Semelles de course à haute performance
+modGunMeleeBlessedMetalDesc,Augmente considérablement les dégâts infligés au tyran\n\nCouteau uniquement.
+drugBoulderBusters,"Chris Redfield en a secrètement dans son shake protéiné.\n\nAugmente les dégâts de bagarre de 400%.\nPiles avec des broyeurs de crânes et de la bière!"
+drugBoulderBustersDesc,"Vos dégâts de bagarre sont augmentés de 400 %.\nPiles avec des broyeurs de crânes et de la bière!"
+drugRockBusters,Casseur de rochers!
+SuperGogglesDesc,Ces mauvais garçons vous empêcheront de devenir un Jill Sandwich.\n\n\nFortitude +2\nAgilité +2.\nTemps de fabrication -40 %.
+Note from Barry,Remarque de Barry
+BarryNote,"Jill, je t'ai laissé des fournitures.\n\nBarry"
+Jill Sandwich,Jill Sandwich
+JillSandwichDesc,Tu étais presque une Jill Sandwich
+Watch your step,attention a la marche
+PuzzleDesc,Faire face au sud.\n\nCôte à côte est sûr.\n\nLe haut et le bas sont explosifs!
+Researcher's Will,Volonté du chercheur
+ResearcherWillTip_title,Volonté du chercheur
+ResearcherWillTip,"Une lettre est glissée à l'intérieur.\n3 juin 1998\nMa très chère Alma,\n\nPermettez-moi d'abord de m'excuser de ne pouvoir vous appeler. Un homme portant des lunettes de soleil n'autorisait aucun appel téléphonique. Désolé Alma.\n\nJe suis assis ici en essayant de penser par où commencer, comment expliquer en quelques mots simples tout ce qui s'est passé dans ma vie depuis notre dernière conversation, et déjà j'échoue. J'espère que cette lettre te trouvera bien, et que tu pardonneras les tangentes de ma plume ; ce n'est pas facile pour moi.\n\nMême au moment où j'écris, je peux sentir le plus simple des concepts m'échapper, perdu dans des sentiments de désespoir et de confusion - mais je dois vous dire ce que j'ai sur le cœur avant de pouvoir me reposer. Alma, je t'en prie, crois que ce que je te dis est la vérité. Il me faudrait des heures pour raconter toute l'histoire, et le temps est court, alors acceptez ces choses comme des faits : le mois dernier, il y a eu un accident dans le laboratoire et le virus que nous étudiions a fuité.\n\nTous mes collègues qui ont été infectés sont morts ou mourants, et la nature de la maladie est telle que ceux qui sont encore vivants ont perdu la raison. Ce virus prive ses victimes de leur humanité, les forçant dans leur maladie à rechercher et à détruire la vie. Alors même que j'écris ces mots, je peux les entendre, se pressant contre ma porte comme des animaux affamés et stupides.\n\nAlma, j'ai essayé de survivre seulement pour te revoir. Mais mes efforts n'ont fait que retarder l'inévitable ; Je suis infecté, et il n'y a pas de remède à ce qui va suivre - sauf mettre fin à mes jours avant de perdre la seule chose qui me sépare d'eux.\n\nMon amour pour toi.\n\nDans une heure, je serai entré mon sommeil éternel où règne la paix. Essaye de comprendre. Sachez que je suis désolé.\nMartin Crackhorn"
+Trevor's Diary,Journal de Trevor
+TrevorDiaryTip_title,Journal de Trevor
+TrevorDiaryTip,"24 novembre 1967\nOnze jours se sont écoulés depuis son arrivée sur ce domaine. Comment ai-je fini comme ça ? Un gars en blouse de laboratoire est venu avec une assiette de maigre repas et m'a dit : "Désolé de vous faire subir ça, mais c'est pour des raisons de sécurité". C'est alors que ça m'a frappé. Tout s'explique maintenant. Il n'y a que deux personnes qui connaissent le secret de ce manoir, Sir Spencer et moi-même. S'ils me tuent, Sir Spencer sera la seule personne à connaître le secret. Mais dans quel but ? Ça n'a plus d'importance maintenant. C'est trop dangereux ici. Ma famille... J'espère qu'ils vont bien. J'ai décidé de m'échapper... Jessica, Lisa, je prie pour que vous soyez en sécurité.\n\nNov. 26 juillet 1967\nComment ai-je pu être si négligent ? J'ai perdu mon briquet préféré - celui que Jessica m'a offert pour mon anniversaire. Maintenant, il va être beaucoup plus difficile de sortir de cet endroit sombre.\nNov. Le 13, date à laquelle mon sort a été scellé. Ma tante a été hospitalisée seulement trois jours avant cela. Jessica et Lisa ont dit qu'elles allaient lui rendre visite. J'aimerais pouvoir être là avec eux. Mais attendez, alors même que j'écris, ma mémoire me revient plus vivement. Juste avant de m'évanouir, je me souviens que les hommes en blouse de laboratoire ont dit quelque chose comme : "Il est fort probable que votre famille soit déjà..." Je prie pour leur sécurité.\n\nNov. 27 1967\nJ'ai réussi à sortir de cette pièce. Mais sortir de ce manoir ne sera pas aussi facile. Je dois passer outre tous les pièges. Tiger Eyes, Gold Emblem... Je dois essayer de m'en souvenir pour mon propre bien..."
+Trevor's Diary2,Journal de Trevor
+TrevorDiaryTip2_title,Journal de Trevor
+TrevorDiaryTip2,"Il y a quelque chose d'écrit à la main. il n'est pas daté.\n\nRien n'a changé. Je n'aurais jamais pensé que cette pièce que j'ai conçue comme une expérience serait aussi payante.\n\nJe peux me cacher ici en toute sécurité pendant un certain temps, car personne ne connaît le secret de cette peinture. Pas même Sir Spencer.\n\nPeinture d'un manoir... au fond de la salle d'art."
+Trevor's Diary3,Journal de Trevor
+TrevorDiaryTip3_title,Journal de Trevor
+TrevorDiaryTip3,"29 novembre 1967\nJe ne peux pas sortir. J'ai essayé par tous les moyens de m'échapper, mais seulement pour être confronté à la réalité que je suis pris au piège. J'ai été partout. Le laboratoire avec les grands tubes de verre remplis de formaldéhyde et ces grottes sombres, humides et étranges... Que puis-je faire ?\nAu début, je ne voulais pas en croire mes yeux. Mais cette chaussure à talons hauts familière dans le couloir... C'était comme un réflexe. Un nom m'est venu à l'esprit, Jessica !\nJe ne veux pas croire qu'ils partagent le même sort que moi. Non! Je ne peux pas perdre espoir. Je dois espérer qu'ils sont vivants.\n\nNov. 30 juillet 1967\nJe n'ai rien mangé ni bu ces derniers jours. J'ai l'impression de devenir fou. Pourquoi cela m'arrive-t-il ? Pourquoi dois-je mourir ainsi ? J'étais trop obsédé par la conception de cet horrible manoir. J'aurais dû savoir mieux.\n\nNov. 31 juillet 1967\nC'était un tunnel souterrain sombre et humide. Et une autre impasse. Mais même dans l'obscurité, quelque chose a attiré mon attention. Soigneusement, j'ai allumé la dernière allumette, il fallait que je voie ce que c'était. Une tombe! Mais profondément gravé dans la pierre était mon nom ! 'Georges Trevor'. À cet instant, tout est devenu clair pour moi. Ces salauds savaient depuis le début que j'allais mourir ici et je suis tombé dans leur piège. Mais il est trop tard maintenant. Je suis en train de le perdre. Tout devient si loin. Jessica... Lisa... Pardonne-moi. A cause de mon ego, je vous ai tous les deux impliqués dans cette putain de conspiration. Pardonne-moi. Que Dieu justifie ma mort en échange de votre sécurité.\n\nGeorge Trevor"
+Botany Book,Livre de botanique
+BotanyBookTip_title,Livre de botanique
+BotanyBookTip,"Utilisations des herbes médicinales\n\nC'est un fait bien connu qu'il existe de nombreuses plantes qui sont créditées de pouvoirs de guérison médicinaux. Depuis l'Antiquité, l'humanité guérit les blessures et les maladies à l'aide de diverses plantes.\n\nDans ce livre, nous échantillonnerons trois herbes originaires des montagnes d'Arklay et décrirons brièvement chacune de leurs qualités médicinales. Chaque herbe a une couleur distincte et une qualité médicinale distincte.\n\nL'herbe verte récupère la force physique. L'herbe bleue neutralise les toxines naturelles. Cependant, l'herbe rouge n'a pas d'effet réel par elle-même. Nous avons constaté que le mélange d'herbes vertes et rouges produit un effet amplifié.\n\nNous décrirons les effets des herbes rouges lorsqu'elles sont mélangées à d'autres herbes lorsque nous aurons plus de données. En attendant, n'hésitez pas à expérimenter par vous-même, car la vraie connaissance s'acquiert mieux par sa propre expérience."
+Keeper's Diary,Journal du gardien
+KeeperDiaryTip_title,Journal du gardien
+KeeperDiaryTip,"9 mai 1998\nJ'ai joué au poker ce soir avec Scott et Alias ​​de la sécurité et Steve de la recherche. Steve était le grand gagnant, mais je pense qu'il trichait. Scumbag.\n\n10 mai 1998\nL'un des supérieurs m'a chargé de m'occuper d'une nouvelle créature. Il ressemble à un gorille écorché. Les instructions d'alimentation étaient de lui donner des animaux vivants. Quand j'ai lancé un cochon, la créature a semblé jouer avec... arrachant les pattes du cochon et lui arrachant les tripes avant qu'il ne commence à manger.\n\n11 mai 1998\nVers 5 h du matin, Scott m'a réveillé . Ça m'a fait peur aussi. Il portait une combinaison de protection. Il m'en a tendu un autre et m'a dit de le mettre. Il a dit qu'il y avait eu un accident dans le labo du sous-sol. Je savais juste que quelque chose comme ça arriverait. Ces salauds de la Recherche ne dorment jamais, même en vacances\n\n12 mai 1998\nJe porte cette maudite combinaison spatiale depuis hier. Ma peau devient sale et me démange partout. Ces putains de chiens me regardaient bizarrement, alors j'ai décidé de ne pas les nourrir aujourd'hui. Baise-les.\n\n13 mai 1998\nJe suis allé à l'infirmerie parce que mon dos est tout enflé et que ça me démange. Ils ont mis un gros pansement dessus et m'ont dit que je n'avais plus besoin de porter le costume. Tout ce que je veux, c'est dormir.\n\n14 mai 1998\nJ'ai trouvé une autre grosse ampoule au pied ce matin. J'ai fini par traîner mon pied jusqu'à l'enclos du chien. Ils étaient silencieux toute la journée, ce qui est bizarre. Puis j'ai réalisé que certains d'entre eux s'étaient échappés. C'est peut-être leur façon de se venger de moi pour ne pas les avoir nourris ces trois derniers jours. Si quelqu'un le découvre, je me ferai remettre ma tête.\n\n16 mai 1998\nDes rumeurs circulent selon lesquelles un chercheur qui a tenté de s'échapper du domaine la nuit dernière a été abattu. Tout mon corps est chaud et me démange et je transpire tout le temps maintenant. J'ai gratté l'enflure de mon bras et un morceau de chair pourrie est tombé. Que diable m'arrive-t-il ?\n\n19 mai 1998\nFièvre partie mais démangeaisons. Aujourd'hui, j'ai faim et je mange de la nourriture pour chien.\n\n21 mai 1998\n Scott, qui démange, a un visage laid et l'a tué. Délicieux. 4//Démangeaisons. Délicieux."
+Mail to the Chief of Security,Courrier au chef de la sécurité
+MailToTheChiefOfSecurityTip_title,Courrier au chef de la sécurité
+MailToTheChiefOfSecurityTip,"CONFIDENTIEL\n\nAttn : Chef de la sécurité\n\nDate : 22 juillet 1998, 2 h 13\n\nLe X jour s'appuie sur nous. Exécutez les procédures suivantes dans un délai d'une semaine. Des actions rapides sont exigées.\n\nLure S.T.A.R.S. au domaine et obtenez les données de combat brutes de B.O.W. contre le S.T.A.R.S.\n\nCollectez deux embryons de chaque spécimen muté comme échantillons, à l'exception du Tyran. Éliminez le Tyrant.\n\nAssurez-vous de l'élimination complète du Laboratoire d'Arklay, y compris de tout le personnel et des animaux de test. Déguisez leur mort en accident.
+Lorsque les procédures ci-dessus sont exécutées, signalez-vous au siège pour obtenir des instructions supplémentaires.\n\nSi, pour une raison quelconque, vous n'êtes pas en mesure d'exécuter la procédure avant la date limite, signalez-le immédiatement. En cas de situation d'urgence, signalez-vous directement au numéro de poste 5691.\n\nBonne chance.\nUmbrella Headquarters,\nUmbrella Inc."
+Researcher's Letter,Lettre du chercheur
+ResearcherLetterTip_title,Lettre du chercheur
+ResearcherLetterTip,"8 juin 1998\nMa très chère Ada.\n\nAu moment où vous lirez cette lettre, je ne serai plus la personne que vous avez connue. Les résultats de mon test sont sortis aujourd'hui, et comme je m'en doutais, ils se sont révélés positifs.\n\nJ'ai l'impression d'être à la limite de la raison rien qu'en pensant à ma perte imminente. Je donnerais n'importe quoi pour ne pas devenir l'un d'entre eux.\n\nPour autant que je sache, vous n'êtes pas infecté. J'espère sincèrement que les choses n'atteindront pas une passe aussi désespérée, mais s'il s'avère que vous êtes maintenant la dernière personne encore en vie, je veux que vous récupériez le matériel de la salle de données visuelles.\n\nEnsuite, activez l'auto- Détruisez le système dans la salle d'alimentation et échappez-vous d'ici. Veuillez faire tout ce qui est en votre pouvoir pour rendre public tout cet accident.\n\nSi tout fonctionne toujours normalement, vous devriez pouvoir déverrouiller toutes les serrures à l'aide du système de sécurité.\n\nJ'ai configuré le terminal dans la petite sécurité salle afin que vous puissiez vous connecter au système en utilisant mon nom et votre nom comme mot de passe.\n\nVous aurez besoin d'un autre mot de passe pour déverrouiller la porte du sous-sol niveau deux où se trouve la salle de données visuelles.\n\ nPar mesure de sécurité, j'ai codé ce mot de passe dans une image radiographique ; un radiogramme. Je vous connais, et je suis sûr que vous serez en mesure de résoudre ce problème sans aucun problème.\n\nIl reste juste une chose... et c'est ma dernière requête. J'espère que vous n'aurez jamais à me voir dans cet état, mais s'il vous arrive de me rencontrer sous ma forme hideuse, je vous prie de me sortir de ma misère. J'espère que vous comprenez.\n\nMerci, Ada.\nSincèrement,\nJohn"
+Observation Note,Note d'observation
+ObservationNoteTip_title,Note d'observation
+ObservationNoteTip,"La découverte du G-Virus a en fait eu lieu 21 ans après l'administration du virus progéniteur.\n\nLe 'Prototype Parasite' que nous avions livré d'un laboratoire en France a été administré à l'échantillon échantillon. Le spécimen de l'échantillon a absorbé le parasite sans montrer aucun signe de réaction indésirable.\n\nL'absence de réaction était un mystère non résolu. Mais maintenant tout est clair pour moi maintenant.\n\nLe 'Prototype Parasite' a incubé dans le corps de l'échantillon pendant 21 ans. Puis, à partir de cet état d'incubation, le prototype a subitement muté. ("Évolué" est peut-être un mot plus approprié pour le décrire.)\n\nCette observation m'a donné plus de perspicacité dans mes recherches. Grâce à d'autres modifications et tests, j'ai pu dériver une méthode pour créer le 'G' qui surpasse les performances du 'T'.\n\nC'était la percée qui allait changer l'avenir de l'histoire du BOW.\n \nJ'ai hâte de voir l'expression agaçante d'Alexia lorsque j'annoncerai enfin mes recherches. Mais malheureusement, je devrai attendre encore quelques années pour vérifier complètement mes découvertes.\n\nWilliam Birkin"
+Suicide Note,Note de suicide
+SuicideNoteTip_title,Note de suicide
+SuicideNoteTip,"22 juin 1998\n\nJe devais le faire. Nous avons fui ces choses - nous entraidant pour survivre. Mais Robert a commencé à montrer les symptômes. Je devais le faire. Ces fichues choses sont purement diaboliques.\n\nIl n'y avait pas d'autre moyen. Il aurait fait la même chose si c'était l'inverse. Après l'avoir sorti de sa misère, je n'ai eu qu'à le mettre dans la salle de bain. Maintenant, je suis probablement le dernier...\n\nComment cela a-t-il pu arriver ? Je ne me pardonnerai jamais de faire partie de ce projet. Finalement, j'obtiendrai ce qui m'arrive, cependant. Il n'y a aucun moyen de s'échapper de cette maison de fous, ce n'est qu'une question de temps maintenant.\n\nTout est prêt. Tout ce dont j'ai besoin, c'est d'un peu de courage pour y arriver. Savoir que je laisserai beaucoup de choses inachevées est un regret au-delà des mots.\n\nMais, c'est mieux que d'attendre de devenir l'une d'entre elles. S'il vous plaît, comprenez et laissez-moi au moins mettre fin à ma vie en tant que personne.\n\nIl y a un message au dos.\n\nLinda, s'il vous plaît, pardonnez-moi..."
+Plant 42 Report,Rapport Usine 42
+Plant42ReportTip_title,Rapport Usine 42
+Plant42ReportTip,"Quatre jours se sont écoulés depuis l'accident. La plante du Point 42 pousse à une vitesse incroyable.\n\nBien qu'il y ait de nombreux aspects inconnus à propos de cette plante, nous savons qu'en comparaison avec l'autre groupe de plantes, le T-Virus a eu un effet beaucoup plus fort sur celle-ci .\n\nLe T-Virus a radicalement transformé l'anatomie de son hôte ainsi que sa taille. En regardant son état actuel, il est difficile d'imaginer son aspect d'origine. Nulle part sur Terre vous ne trouverez rien de tel.\n\nNous avons également découvert que PLANT 42 a deux sources principales pour acquérir ses nutriments nécessaires. Une source passe par sa racine. D'une manière ou d'une autre, il s'est enraciné dans le sous-sol.\n\nImmédiatement après l'accident, un scientifique est devenu fou et a détruit l'Aqua Ring. Depuis, le sous-sol est comme une piscine. Il est fort possible que ce soit l'un des produits chimiques présents dans l'eau qui favorise la croissance rapide du PLANT 42.\n\nCependant, nous n'avons pas encore déterminé le produit chimique spécifique.\n\nUn corps en forme de bulbe du PLANT 42 a été voyant suspendu au plafond du premier étage. Nous sommes sûrs qu'il a utilisé les conduits d'aération pour atteindre le premier étage. De nombreuses longues vignes ressemblant à des tentacules dépassent du bulbe.\n\nNous pensons que les vignes sont le deuxième moyen d'acquérir ses nutriments. Lorsque le PLANT 42 détecte une proie, il utilise les vignes en forme de tentacule pour capturer sa proie. Après cela, les ventouses de la vigne drainent la proie de son sang.\n\nNous avons également remarqué qu'elle est dotée d'une certaine intelligence. Lorsqu'il capture sa proie ou lorsqu'il est inactif, les lianes s'enroulent autour de la porte pour arrêter d'éventuels intrus.\n\nMalheureusement, plusieurs de nos scientifiques ont déjà été victimes de ce PLANT 42. Lorsque nous avons entendu les récits des survivants, ils ont tous a observé une chose en commun :\n\nLorsque les volets uniformes en forme de pétales s'ouvrent et révèlent ses organes vitaux, il a tendance à devenir plus agressif.\n\nUn témoin a rapporté que c'était comme s'il essayait de se protéger. Pourquoi il se comporte comme il le fait est encore inconnu.\n\n21 mai 1998\nHenry Sarton"
+Organic Chemistry Lab Experiment,Expérience de laboratoire de chimie organique
+OrganicChemistryLabExperimentTip_title,Expérience de laboratoire de chimie organique
+OrganicChemistryLabExperimentTip,"Les similitudes dans les caractéristiques cellulaires de la plante à croissance rapide infectée par le virus Tyrant ont été rapportées dans des articles antérieurs. Cependant, en répétant ces expériences, un nouveau fait intéressant est devenu clair.\n\nNous avons appris qu'un produit chimique de la famille UMB, l'UMB n° 20, contient un composé toxique pour les cellules de la plante.\n\nNous avons donné à l'UMB n°20 un nouveau nom : V-JOLT. Si les calculs s'avèrent corrects, lorsque V-JOLT est appliqué directement à la racine de la plante, la plante entière devrait être morte dans les 5 secondes.\n\nLe V-JOLT peut être réalisé en mélangeant simplement les produits chimiques VP et UMB dans un mélange spécifique rapport. Cependant, des précautions supplémentaires doivent être prises lors de la manipulation de ces produits chimiques UMB. Ils sont connus pour générer des gaz toxiques en cas de mauvaise manipulation.\n\nLes caractéristiques de chaque produit chimique UMB sont les suivantes :\n\nUMB n° 3 rouge\nJaune-6 jaune\nUMB n° 7 vert\nUMB n° 10 orange\ nVP-017 bleu\nV-JOLT marron foncé"
+Family Picture and Notes,Photo de famille et notes
+FamilyPicture1Tip_title,Photo de famille et notes
+FamilyPicture1Tip,"Il y a quelque chose d'écrit au dos\n\n\nNov. 10 1967\n-Virus progéniteur administré\n\nJessica\nVirus administré : Type-A\nPlasmolyse des tissus lors de l'activation cellulaire.\n\nFusion virale : Négative\n\nAction : Élimination\n\n\nLisa\n\ nVirus administré : Type-B\nPlasmolyse des tissus lors de l'activation cellulaire.\n\nFusion virale : Fusion positive mais retardée.\n\nModification corporelle : Résultats constants observés.\n\nStatut : Continuer l'observation protectrice.\n\n\nGeorge \nAction : terminée (30 novembre 1967)"
+Lisa's Journal,Journal de Lisa
+FamilyPicture2Tip_title,Journal de Lisa
+FamilyPicture2Tip,"14 novembre 1967\nJ'ai des vertiges après cette piqûre qu'ils m'ont donnée. Je ne vois pas maman. Où l'ont-ils emmené ?\nElle a promis que nous nous échapperions ensemble. S'est-elle échappée seule et m'a-t-elle laissé derrière ?\n\nNov. 15 1967\nJ'ai trouvé maman. Nous avons mangé ensemble. J'étais très content.\n\nMais c'était une fausse. Pas ma vraie maman. Même visage mais différent à l'intérieur.\n\nJe dois trouver maman. Je dois redonner le visage à maman.\n\nJ'ai retrouvé le visage de maman.\nPersonne ne peut avoir ma maman sauf moi. J'attache son visage à moi pour qu'elle ne s'en aille pas.\nParce que maman est triste quand je la rencontre sans son visage.\n\nNov. 17, 19 7\nà l'intérieur de la boîte, parfum de maman. peut-être la vraie mère là-bas.\nboîte en pierre dure. Ça fait mal. corde d'acier dans le chemin.\nne peut pas voir la mère parce que 4 pierres.\n\n19\ndaddy a attaché le premier\nmomm a attaché le second\n\nside rouge et slimy\nwhite and hard\n\nnot true moM where\n\ndunno papa\na retrouvé maman\n\nwhne atachd momMa\nelle n'a plus bougé\nelle crie\n\npourquoi ?\nJe veux être avec elle\n\n4\nmaman\noù ?\n\nje te trouve"
+Jessica's Letter,La lettre de Jessica
+FamilyPicture3Tip_title,La lettre de Jessica
+FamilyPicture3Tip,"À ma Lisa,\n\nJour après jour, je peux sentir ma conscience s'éloigner de plus en plus.\nLes injections que m'ont données des hommes en vêtements blancs ont fait disparaître certaines des démangeaisons de maman. Aujourd'hui, ils m'ont donné une autre piqûre en disant que c'était de la "nutrition".\n\nQuand ils me donnent les piqûres, maman peut penser correctement, mais maman est choquée et triste parce qu'elle est incapable de penser à toi tout le temps.\n\nMaman a peur. Peur de tout oublier, surtout les souvenirs de toi et de papa... À quoi ressemblent vos visages, comment nous étions ensemble... Ils commencent tous à disparaître dans un endroit sombre de mon esprit.\n\nOh Lisa, J'aimerais pouvoir toucher ton visage et te tenir dans mes bras maintenant, afin que je puisse garder nos merveilleux souvenirs de toi et de papa.\n\nLisa, nous ne pouvons plus rester ici. Nous devons nous échapper !\n\nÉcoutez-moi Lisa. Notre chance de nous échapper est la prochaine fois que nous irons ensemble dans ce labo. Nous ferons tous les deux semblant d'être tous les deux inconscients et lorsque cet homme en vêtements blancs sera au dépourvu, ce sera notre chance.\n\nQuand nous serons à l'extérieur, cherchons papa ensemble. OK chérie? Sois forte, Lisa.\n\nNov. 13 décembre 1967\nJessica Trevor"
+V-ACT,V-ACT
+VACTTip_title,V-ACT
+VACTTip,"Note du chercheur\n\nIl est maintenant prouvé que lorsque l'hôte perd connaissance, le corps entre dans un état de sommeil. Pendant ce temps, le virus devient actif et se transforme rapidement et reconstruit la composition de base du corps.\n\nL'hôte a finalement muté en une créature humanoïde. (Nous les appelons V-ACT)\n\nSa vitesse et son incroyable développement musculaire sont particulièrement remarquables. Après transformation, il devient plus agile et agressif.\n\nDéjà quatre de nos chercheurs sont morts en essayant de le nourrir, transformant l'endroit en un bain de sang instantané. (Depuis cet accident tragique et barbare, nous avons décidé d'appeler son genre "Crimson Heads")\n\nCe prototype dangereux et précieux ne peut pas être laissé là. Nous devons trouver un moyen d'y faire face. La résiliation n'est certainement pas une option.\n\nNous avons finalement décidé de geler le spécimen et de confiner le corps dans le sous-sol du cimetière de l'arrière-cour."
+FAX,FAX
+FAXTip_title,FAX
+FAXTip,"Destinataire : Division de l'assainissement\nAttn : Directeur de l'assainissement\nDe : Comité d'urgence en cas de catastrophe du raton laveur\n\nLe contenu de ce fax est confidentiel et destiné uniquement au destinataire désigné. Toute copie ou divulgation du contenu de ce fax à un tiers est strictement interdite par l'expéditeur.\n\nAprès avoir lu le contenu de ce fax, il doit être détruit immédiatement.\n\nNous nous attendons à une augmentation significative des dommages causés par la récente épidémie de T-Virus que prévu initialement. Il y a plusieurs préoccupations.\n\nPremière préoccupation\nPlus de la moitié des chercheurs ont été infectés par le T-Virus et sont décédés. Il a également été rapporté que presque tous les survivants de cet accident commencent à montrer des symptômes de l'infection par le virus T.\n\nDeuxième préoccupation\nNotre équipe de patrouille de sécurité secrète a également été complètement éradiquée. Par conséquent, nos recherches les plus secrètes risquent d'être rendues publiques. Des actions rapides sont exigées pour empêcher la couverture médiatique de masse.\n\nTroisième préoccupation\nIl y a une forte possibilité que la plupart des spécimens se détachent à l'intérieur de l'enceinte. Nous nous attendons à ce que de nombreuses victimes suivent.\n\nMême si malheureusement, ces pertes soulignent le succès de nos résultats de recherche. Des mesures doivent être prises pour empêcher que les résultats de nos recherches ne soient rendus publics.\n\nNous soupçonnons que la première intervention officielle viendra de la police d'État et du S.T.A.R.S. Nous vous recommandons fortement de prendre des mesures contre eux en premier."
+Security Protocols,Protocoles de sécurité
+SecurityProtocolsTip_title,Protocoles de sécurité
+SecurityProtocolsTip,"SOUS-SOL NIVEAU DEUX\n\nSalle de données visuelles/ À l'usage exclusif de la Division de la recherche spéciale. Tout autre accès à la salle de données visuelles doit être autorisé avec Keith Arving, responsable de la salle.\n\n\nNIVEAU TROIS DU SOUS-SOL\n\nPrison/Division de l'assainissement contrôle l'utilisation de la prison. Au moins un chercheur consultant (E. Smith, S. Ross, A. Wesker) doit être présent si l'utilisation virale est autorisée.\n\n\nPorte à triple verrouillage/L'entrée dans la salle est limitée à la seule personne qui désactive le verrou avec tous les codes d'accès. L'accès aux terminaux de sortie exclusifs situés dans chaque section des chercheurs principaux désactive le verrou.\n\nSalle d'alimentation/ Dans cette salle, le composé nitro est utilisé comme principale source d'énergie. L'accès est limité aux superviseurs du siège. Cette restriction peut ne pas s'appliquer aux chercheurs consultants disposant d'une autorisation spéciale.\n\nTerminaux de sortie à code d'accès/ L'utilisation et l'accès aux terminaux de sortie sont limités aux chercheurs seniors autorisés.\n\n\nNIVEAU QUATRE DU SOUS-SOL\n\nEn ce qui concerne la progression de ' Tyran' après l'administration de T- Virus...\n(Illisible ci-après...)"
+Quest_Completion_tip_title,Défi complété!
+Completion_desc,Félicitations !\nVous avez réussi le défi Spencer Mansion.\n\nJ'espère que vous vous amuserez autant à y jouer que moi à le créer !\n\nFrantic Dan
+Quest_Completion_tip,Félicitations !\nVous avez réussi le défi Spencer Mansion.\n\nJ'espère que vous vous amuserez autant à y jouer que moi à le créer !\n\nFrantic Dan
+zombieArlene,La fille de JaWoodle
+zombieMarlene,Misterri
+zombieNurse,Chirurgien Parapluie
+zombieJoe,Concessionnaire de Glock9
+zombieSteve,Draycko
+zombieBusinessMan,Aviose
+zombieBoe,DD1GG
+zombieJanitor,HellsJanitorTV
+zombieMoe,TheOrigamiGuru
+zombieLab,Scientifique parapluie
+zombieDarlene,Lois Griffin
+zombieYo,NotOnly25
+zombieUtilityWorker,Ouvrier d'aquarium
+zombieBiker,Games4Kickz
+zombieLumberjack,JonahBirch
+zombieFemaleFat,Big Red
+zombieFatHawaiian,Peter Griffin
+zombieMaleHazmat,Technicien Parapluie Hazmat
+zombieSkateboarder,DoctorBest85
+zombieSoldier,Agent du service de sécurité d'Umbrella
+animalZombieDog,Cerbère
+Zombie Dog,Cerbère
+animalZombieVulture,Baise Flappy
+animalSnake,Additionneur
+Web Spinner,Tourneur Web
+Crimson Head,Tête cramoisie
+Crimson Head Prototype,Prototype de tête cramoisie
+Crimson Head Prototype2,Prototype de tête cramoisie
+Forest Speyer,Forêt Speyer
+Forest Speyer2,Forêt Speyer
+Hunter,Chasseur
+Failed Test Subject,Échec du sujet de test
+Plant 42,Usine 42
+Yawn the Boar,Bâiller le sanglier
+Black Tiger Spider,Araignée tigrée noire
+Lisa Trevor,Lisa Trevor
+Tyrant,Tyran
+Super Tyrant,Super Tyran
+Boe Crawler,DD1GG paralysé
+Joe Crawler,Marchand paralysé de Glock9
+Janitor Crawler,HellsJanitorTV paralysé
+Arlene Crawler,La fille infirme de JaWoodle
+Lab Worker Crawler,Scientifique Parapluie Estropié
+Darlene Crawler,Lois Griffin estropiée
+Marlene Crawler,Misterri estropié
+Yo Crawler,Estropié NotOnly25
+Steve Crawler,Draycko estropié
+Business Man Crawler,Aviose estropié
+Burnt Crawler,Tête cramoisie estropiée
+Nurse Crawler,Chirurgien Umbrella Estropié
+Hazmat Crawler,Technicien Hazmat Parapluie Estropié
+Skateboarder Crawler,DoctorBest85 estropié
+zombieMarleneRadiated,Misterri
+zombieJoeRadiated,Concessionnaire de Glock9
+zombieJanitorRadiated,HellsJanitorTV
+zombieYoRadiated,NotOnly25
+
+
+attStrengthRank01LongDesc,"Tout le monde veut être culturiste mais personne ne veut soulever ces poids lourds. Infligez 215 % de dégâts par balle dans la tête et 3 % de chances supplémentaires de vous démembrer avec des fusils de chasse et des poings."
+attStrengthRank02LongDesc,"Vous êtes peut-être maigre, mais vous avez un feu à l'intérieur pour devenir grand et fort. Inflige 230 % de dégâts par balle dans la tête et a 6 % de chances de se démembrer avec des fusils de chasse et des poings."
+attStrengthRank03LongDesc,"Que fait un buveur de lait comme vous dans l'apocalypse zombie ? Infligez 245 % de dégâts par balle dans la tête et 9 % de chances en plus de vous démembrer avec des fusils de chasse et des poings."
+attStrengthRank04LongDesc,"Votre roue de secours peut vous empêcher de mourir de faim, mais ne vous aide pas à balancer un marteau. Infligez 260 % de dégâts par tir à la tête et 12 % de chances supplémentaires de vous démembrer avec des fusils de chasse et des poings."
+attStrengthRank05LongDesc,"Vous êtes en forme et capable d'infliger 275 % de dégâts par balle à la tête et avez 15 % de chances supplémentaires de vous démembrer avec des fusils de chasse et des poings."
+attStrengthRank06LongDesc,"Vous êtes très fort et tous les normands du gymnase vous envient. Inflige 290 % de dégâts par balle dans la tête et 18 % de chances supplémentaires de se démembrer avec des fusils de chasse et des poings."
+attStrengthRank07LongDesc,"Pomper des clubs et des marteaux vous a donné des gains, mon frère. Infligez 305 % de dégâts par balle à la tête et 21 % de chances supplémentaires de vous démembrer avec des fusils de chasse et des poings."
+attStrengthRank08LongDesc,"Votre force massive est légendaire. Infligez 320 % de dégâts par balle dans la tête et 24 % de chances supplémentaires de vous démembrer avec des fusils de chasse et des poings."
+attStrengthRank09LongDesc,"La taille, la force et la puissance sont désormais de niveau champion. Infligez 335 % de dégâts par balle dans la tête et 27 % de chances supplémentaires de vous démembrer avec des fusils de chasse et des poings."
+attStrengthRank10LongDesc,"Vous pourriez être un champion olympique si l'apocalypse n'avait pas anéanti ce rêve. Maintenant, vous pouvez simplement écraser les zombies. Infligez 350 % de dégâts par balle à la tête et 30 % de chances supplémentaires de vous démembrer avec des fusils de chasse et des poings."
+perkDemolitionsExpertRank1LongDescRE,"Vous êtes maintenant un grenadier initié, soyez prudent avec ces explosifs. Augmente les dégâts de 17 %, la vitesse de rechargement de 10 %, vise 15 % plus rapidement, 15 % de chances de démembrer en plus."
+perkDemolitionsExpertRank2LongDescRE,"Augmente les dégâts de 34 %, la vitesse de rechargement de 20 %, vise 30 % plus rapidement, 30 % de chances de démembrer en plus."
+perkDemolitionsExpertRank3LongDescRE,"Vous êtes maintenant manutentionnaire d'explosifs. Augmente les dégâts de 51 %, augmente la vitesse de rechargement de 30 %, vise 45 % plus vite, 45 % de chances de démembrer en plus."
+perkBoomstickRank1LongDescRE,"Infligez 17 % de dégâts supplémentaires, une cadence de tir 10 % plus rapide et un rechargement 10 % plus rapide. Étourdit les ennemis pendant 6 secondes.\nAugmente les chances de démembrer de 5 %."
+perkBoomstickRank3LongDescRE,"Infligez 34 % de dégâts supplémentaires, une cadence de tir 20 % plus rapide et un rechargement 20 % plus rapide. Étourdit les ennemis pendant 8 secondes.\nAugmente les chances de démembrer de 10 %."
+perkBoomstickRank5LongDescRE,"Inflige 51 % de dégâts supplémentaires, une cadence de tir 30 % plus rapide et un rechargement 30 % plus rapide.\nLes tirs dans les jambes paralysent les adversaires."
+perkBrawlerNameRE,Brawler (Slots 7 8 9 0)
+perkBrawlerRank1LongDescRE,Inflige 17 % de dégâts supplémentaires avec les poings. Les coups de poing à la tête annulent la capacité d'infection.
+perkBrawlerRank3LongDescRE,Infligez 34 % de dégâts supplémentaires avec les poings. Les attaques puissantes à la tête ont 20 % de chances d'abattre votre adversaire et 30 % de chances d'étourdir les adversaires avec des attaques puissantes.
+perkBrawlerRank5LongDescRE,Infligez 51% de dégâts supplémentaires. Les attaques puissantes à la tête ont 30 % de chances d'abattre votre adversaire et ont plus de chances d'exploser des têtes avec des coups de poing.
+perkSexualTrexRank1LongDescRE,Vous avez obtenu le diplôme de chauffe-banc. Réduit l'utilisation de l'endurance au corps à corps et des outils de 6 % et les attaques puissantes de 10 %.
+perkSexualTrexRank2LongDescRE,Vous êtes maintenant un athlète de bonne foi et être essoufflé à ne rien faire appartient au passé. Réduit l'utilisation de l'endurance de mêlée et des outils de 12 % et les attaques puissantes de 20 %.\nLes coups mortels confèrent 10 d'endurance.
+perkSexualTrexRank3LongDescRE,Personne ne manquera de respect à un guerrier. Réduit l'utilisation de l'endurance de mêlée et des outils de 18 % et les attaques puissantes de 30 %.\nLes coups mortels confèrent 15 d'endurance.
+perkSexualTrexRank4LongDescRE,Vous êtes maintenant un gladiateur en cage et vous avez atteint les plus hautes prouesses athlétiques possibles. Réduit l'utilisation de l'endurance de mêlée et des outils de 24 % et les attaques puissantes de 40 %.\nLes coups mortels confèrent 20 d'endurance.
+perkMiner69rNameRE,Miner 69'er (Couteau/Clé)
+perkMiner69rDescRE,Maximisez vos efforts miniers en augmentant les dégâts des outils pour faire tomber les roches et les arbres plus rapidement.
+perkMiner69rRank1LongDescRE,Augmente les dégâts des blocs de 50 % avec votre couteau et votre clé.
+perkMiner69rRank2LongDescRE,Augmente les dégâts des blocs de 100 % avec votre couteau et votre clé.
+perkMiner69rRank3LongDescRE,Augmente les dégâts des blocs de 150 % avec votre couteau et votre clé.
+attFortitudeRank01LongDesc,Vous n'êtes pas très résistant ou en bonne santé, mais au moins vous êtes en vie. Infligez 215 % de dégâts par balle dans la tête et 3 % de chances de vous démembrer avec des mitrailleuses.
+attFortitudeRank02LongDesc,"Vous vous sentez un peu mieux qu'avant. Infligez 230 % de dégâts par balle dans la tête et 6 % de chances de vous démembrer avec des mitrailleuses."
+attFortitudeRank03LongDesc,Vous continuez à défier la gravité et restez debout. Infligez 245 % de dégâts par balle dans la tête et 9 % de chances de vous démembrer avec des mitrailleuses.
+attFortitudeRank04LongDesc,"Vous commencez à vous sentir comme des gens normaux. Infligez 260 % de dégâts par balle dans la tête et 12 % de chances de vous démembrer avec des mitrailleuses."
+attFortitudeRank05LongDesc,Vous êtes en bonne santé. Infligez 275 % de dégâts par balle dans la tête et 15 % de chances de vous démembrer avec des mitrailleuses.
+attFortitudeRank06LongDesc,Vous êtes en très bonne santé. Infligez 290 % de dégâts par balle dans la tête et 18 % de chances de vous démembrer avec des mitrailleuses.
+attFortitudeRank07LongDesc,Vous avez une santé vigoureuse. Infligez 305 % de dégâts par balle dans la tête et 21 % de chances de vous démembrer avec des mitrailleuses.
+attFortitudeRank08LongDesc,Vous êtes aussi résilient qu'ils viennent. Infligez 320 % de dégâts par balle dans la tête et 24 % de chances de vous démembrer avec des mitrailleuses.
+attFortitudeRank09LongDesc,Vous avez une constitution incroyable. Infligez 335 % de dégâts par balle dans la tête et 27 % de chances de vous démembrer avec des mitrailleuses.
+attFortitudeRank10LongDesc,Vous avez un courage exubérant et pouvez abattre une tornade. Infligez 350 % de dégâts par balle dans la tête et 30 % de chances de vous démembrer avec des mitrailleuses.
+perkMachineGunnerRank3LongDescRE,"Tous les combats ont aiguisé vos compétences et vous êtes maintenant un soldat. Infligez 17 % de dégâts supplémentaires, une cadence de tir 8 % plus rapide et rechargez 10 % plus rapidement. Commando Adrénaline : Chaque tir marqué avec des armes automatiques vous donne 1 endurance."
+perkMachineGunnerRank4LongDescRE,"Votre compétence correspond maintenant aux forces spéciales. Infligez 34 % de dégâts supplémentaires, une cadence de tir 16 % plus rapide et rechargez 20 % plus rapidement. Commando Adrénaline : Chaque tir marqué avec des armes automatiques vous donne 2 points d'endurance."
+perkMachineGunnerRank5LongDescRE,"Vous êtes maintenant le mitrailleur ultime. Infligez 51 % de dégâts supplémentaires, une cadence de tir 24 % plus rapide et rechargez 30 % plus rapidement. Commando Adrénaline : Chaque tir marqué avec des armes automatiques vous donne 3 points d'endurance."
+perkPainToleranceRank1LongDescRE,Augmente votre cote d'armure de 1 pour chaque pièce d'armure que vous portez (l'écran du personnage s'affiche de manière inexacte) et réduit les chances d'être étourdi de 34 %.
+perkPainToleranceRank2LongDescRE,Augmente votre cote d'armure de 2 pour chaque pièce d'armure que vous portez (l'écran du personnage s'affiche de manière inexacte) et réduit les chances d'être étourdi de 67 %.
+perkPainToleranceRank3LongDescRE,Augmente votre cote d'armure de 3 pour chaque pièce d'armure que vous portez (l'écran du personnage s'affiche de manière inexacte) et ne vous étourdissez jamais.
+buffPerkCharismaticNatureDescRE,Vous utilisez votre instinct de survie!
+perkCharismaticNatureDescRE,Vous êtes un survivaliste.
+perkCharismaticNatureNameRE,L'instinct de survie
+perkCharismaticNatureRank1DescRE,En forme et en bonne santé
+perkCharismaticNatureRank2DescRE,Force brute
+perkCharismaticNatureRank3DescRE,Peau de fer
+perkCharismaticNatureRank1LongDescRE,Votre instinct de survie vous fait gagner 20 points de vie et d'endurance.
+perkCharismaticNatureRank2LongDescRE,Vos dégâts de blocage sont augmentés de 50 % et les dégâts d'entité de 8,5 %.
+perkCharismaticNatureRank3LongDescRE,Votre cote d'armure et votre résistance explosive sont augmentées de 1 pour chaque pièce d'armure portée et votre santé et votre endurance maximales augmentent de 10 autres.
+perkHealingFactorRank1LongDescRE,Vous devez avoir un métabolisme rapide. Gagnez 24 points de vie toutes les heures grâce à la guérison naturelle. Les blessures critiques guérissent 50 % plus vite.
+perkHealingFactorRank2LongDescRE,Vous devez avoir un métabolisme rapide. Gagnez 42 points de vie toutes les heures grâce à la guérison naturelle. Les blessures critiques guérissent 100 % plus rapidement.
+perkPhysicianRank1LongDescRE,Les objets de soins médicaux soignent 25% de santé en plus.
+perkPhysicianRank2LongDescRE,Les objets de soins médicaux soignent 50% de santé en plus.
+perkPhysicianRank3LongDescRE,Les objets de soins médicaux soignent 75% de santé en plus.
+attAgilityRank01LongDesc,"Vous êtes aussi maladroit que possible, mais vous infligez toujours 215 % de dégâts par balle dans la tête et avez 3 % de chances de vous démembrer avec des armes de poing et des couteaux."
+attAgilityRank02LongDesc,"Vous n'avez pas fait partie de l'équipe de football, mais cela ne vous a pas empêché de vous entraîner. Infligez 230 % de dégâts par balle dans la tête et 6 % de chances de vous démembrer avec des armes de poing et des couteaux."
+attAgilityRank03LongDesc,"Vous êtes toujours bruyant et maladroit, mais vous pouvez infliger 245 % de dégâts par balle dans la tête et avoir 9 % de chances de vous démembrer avec des armes de poing et des couteaux."
+attAgilityRank04LongDesc,"Votre dextérité est un peu inepte, mais vous pouvez infliger 260 % de dégâts par balle dans la tête et avoir 12 % de chances de vous démembrer avec des armes de poing et des couteaux."
+attAgilityRank05LongDesc,"Vous êtes maintenant agile et infligez 275 % de dégâts par balle dans la tête et avez 15 % de chances de vous démembrer avec des armes de poing et des couteaux."
+attAgilityRank06LongDesc,"Votre mouvement est maintenant très agile et inflige 290 % de dégâts par tir à la tête et a 18 % de chances de se démembrer avec des armes de poing et des couteaux."
+attAgilityRank07LongDesc,"Votre dextérité est très impressionnante. Inflige 305 % de dégâts par balle dans la tête et a 21 % de chances de se démembrer avec des armes de poing et des couteaux."
+attAgilityRank08LongDesc,"Déplacer des fluides et atterrir sur vos pieds sont une seconde nature pour vous. Inflige 320 % de dégâts par balle dans la tête et a 24 % de chances de se démembrer avec des armes de poing et des couteaux."
+attAgilityRank09LongDesc,"Votre agilité est suffisamment bonne pour devenir un athlète professionnel. Infligez 335 % de dégâts par balle dans la tête et 27 % de chances de vous démembrer avec des armes de poing et des couteaux."
+attAgilityRank10LongDesc,"Votre dextérité est inégalée. Infligez 350 % de dégâts par balle dans la tête et 30 % de chances de vous démembrer avec des armes de poing et des couteaux."
+perkGunslingerRank3LongDescRE,"Vous pouvez garder la plupart des situations sous contrôle, shérif. Infligez 17 % de dégâts supplémentaires, une cadence de tir 8 % plus rapide et rechargez 10 % plus rapidement. Dégâts critiques : 5 coups successifs en peu de temps causent des dégâts critiques."
+perkGunslingerRank4LongDescRE,"Vous êtes maintenant un tireur et pouvez nettoyer un saloon plein de bâtards tapageurs en un rien de temps. Infligez 34 % de dégâts supplémentaires, une cadence de tir 16 % plus rapide et rechargez 20 % plus rapidement. Dégâts critiques : 4 coups successifs en peu de temps font que le dernier coup inflige 100 % de dégâts supplémentaires."
+perkGunslingerRank5LongDescRE,"Vous êtes le pistolero le plus rapide de Navezgane. Infligez 51 % de dégâts supplémentaires, une cadence de tir 24 % plus rapide et un rechargement 30 % plus rapide avec des armes de poing. Dégâts critiques : 3 coups successifs en peu de temps font que le dernier coup inflige 100 % de dégâts supplémentaires."
+perkDeepCutsRank1LongDescRE,Vous avez peut-être une lame émoussée, mais vous savez comment l'utiliser. Infligez 17% de dégâts supplémentaires. Augmente les dégâts des blocs avec des couteaux de 50 %.
+perkDeepCutsRank2LongDescRE,Tes amis disent que tu es vraiment une fille au couteau. Infligez 34% de dégâts supplémentaires. Augmente les dégâts des blocs avec des couteaux de 100 %.
+perkDeepCutsRank3LongDescRE,Vous êtes un cran au-dessus du reste. Infligez 51% de dégâts supplémentaires. Augmente les dégâts des blocs avec des couteaux de 150 %.
+perkRunAndGunRank1LongDescRE,"Vaporiser et prier. La visée est surestimée, il suffit de tirer d'abord et de poser des questions plus tard. La précision du tir à la hanche est améliorée de 10 % et la pénalité de mouvement lors du rechargement est réduite de 20 %."
+perkRunAndGunRank2LongDescRE,Vos doigts contractés peuvent vous causer des ennuis, mais ils ont sauvé votre peau à de nombreuses reprises. La précision du tir à la hanche est améliorée de 20 % et la pénalité de mouvement lors du rechargement est réduite de 40 %.
+perkRunAndGunRank3LongDescRE,Vous êtes maintenant un homme à gâchette mortel et avez maîtrisé l'art de courir et de tirer. La précision du tir à la hanche est améliorée de 30 % et la pénalité de mouvement lors du rechargement est réduite de 60 %.
+perkFlurryOfBlowsRank1LongDescRE,Vous avez développé des mains rapides. Les vitesses d'attaque en mêlée à une main sont augmentées de 15 %. Chaque kill recharge l'endurance de 5 points.
+perkFlurryOfBlowsRank2LongDescRE,Vous avez développé la frappe soudaine. Les vitesses d'attaque en mêlée à une main sont augmentées de 30 %. Chaque kill recharge l'endurance de 10 points.
+perkFlurryOfBlowsRank3LongDescRE,Vous avez maîtrisé la rafale de coups. Les vitesses d'attaque en mêlée à une main sont augmentées de 45 %. Chaque kill recharge l'endurance de 15 points.
