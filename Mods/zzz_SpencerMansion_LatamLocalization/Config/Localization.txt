@@ -1,0 +1,509 @@
+Key,latam
+goDifficultyRE,[FF4F00]Difficultatem (Read me)[-]
+goDifficultyREDesc,"C - Facis C% Damnum et tolle damnum C\n\nB - LXXX% damnum facis et damnum tolle CL%.\n\nA - LXVII% Damnum facis et damnum tolle CC% damnum.\n\nS - Facis damnum% L et tolle damnum CCL%. \n\nX - XL% damnum facitis et tolle damnum CCCL%\n[FF4F00](Noli hanc primam perfectionem).[-]\n\nZ - LXXX% damnum facitis et tolle damnum DCC%.\n[FF4F00](Noli hanc primam perfectionem)[-]"
+goDifficulty1RE,C
+goDifficulty2RE,B
+goDifficulty3RE,A
+goDifficulty4RE,S
+goDifficulty5RE,X
+goDifficulty6RE,Z
+goDayLengthRE,[FF4F00]Lego 150[-]
+goDayLightLengthRE,[FF4F00]Lego 0[-]
+goBloodMoonFrequencyRE,[FF4F00]Lego 0[-]
+goXPMultiplierRE,[FF4F00]Lego 100[-]
+goBlockDamagePlayerRE,[FF4F00]Lego 100[-]
+goBlockDamageAIRE,[FF4F00]Lego 100[-]
+goLootAbundanceRE,[FF4F00]Lego 100[-]
+goLootRespawnDaysRE,[FF4F00]Lego 1[-]
+goZombieMoveNight,[FF4F00]Zombie noctem Volo\n(Semper noctem)[-]
+tutorialTipQuest01_title,Gratam Spencer mansionem provocare
+loadingTipRE1,Inclusus es Spencer mansione. Sanationis commeatus et munitionis copia in brevi sunt. Effugere potes cum vita tua? Aut Jill Sandwich?
+loadingTipRE1_title,Welcome to Residente Mali!
+loadingTipRE2,"Nulla Item Qualitas, nulla Equipment Degradatio vel Random Stats. Omnia praesto sunt ut idem sint. nLoot RNG ad minimum servatur pro aequa provocatione inter diversos scaenicos."
+loadingTipRE2_title,"Item Quality, Repairs, Random Stats et Looting:"
+loadingTipRE3,Sicut in Residens Mali inventarium tuum limitatur (12 foramina). Colligunt tibi et elige quod accipies tecum.
+loadingTipRE3_title,Inventarium:
+loadingTipRE4,Portae tuae principales defensionis sunt ut adiuvent immortuos separatos ad pugnam faciliorem. Claustrae fores immortui a furtim cessabunt post te.
+loadingTipRE4_title,Ianua:
+loadingTipRE5,"Ossa et corium collige in via, eis postea indigebis cum Gyrocopterum aedificas."
+loadingTipRE5_title,Ossa et Leather:
+loadingTipRE6,"Immortui dolorem non sentiunt, sicut in Malo Residente, ita ne oppugnati vacent."
+loadingTipRE6_title,Immortui sentio dolorem:
+loadingTipRE7,"Ingens gratias ad hoc populo: Mythix, AuroraGiggleFairy, wOOkie nOOkie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake."
+loadingTipRE7_title,Speciales gratias!
+tutorialTipQuest01,"Expertus es Spencer mansionem Incidentes in prima persona prospectu.\n\nIn hac provocatione semper erit nox, ita commendatur zombie velocitatem noctem tuam praeferendo. provoca verum ad Malum Residente, sequentia nota. Pyxidas Item Repono ut res tuas congregem.\n2) Salire non potes.\n3) Plurimi inimici dolorem non sentiunt, sic pugnando diversum erit quod usus es.\n\nPro immersive experientia, Suadeo musicam tuam ponere ad omne tempus ludere."
+buffNewbieCoatNameRE,Infinitus cibus et aqua
+buffNewbieCoatDescRE,"Dum hoc bubalinae habes, cibus et aqua plena manebunt.\n\num gradu X, cibus et aqua in 60% mensurae mensurae exhaurient."
+xuiInventory,Jill Valentini Inventarium
+cntCashRegister,Typewriter
+TheVault,The Vault
+Reloading_Tool,Reloading Mors Principium
+Reloading_Tooldesc,"Utile instrumentum quod cum munitione facere potes.\n\nfac tibi satis inanes foramina inventarii cum innectis."
+DeathMaskDesc,Mors haec Mask adhibetur ad ostium mali.\n\nse cum actione secundaria.
+MansionBattery,Hoc ostium in atrio potestatem habebit.
+GreenHerbDesc,Te leviter sanat.\n\nPhysician 0 sanat 8.\nPhysician 1 sanat 10.\nPhysician 2 sanat 12.\nPhysician 3 sanat 14.
+RedHerbdesc,Effectum amplificat herbae viridis.\n\n'non potest esse per se.
+GreenHerbCreamDesc,Medetur te mediocriter.\n\nPhysician 0 sanat 20.\nPhysician 1 sanat 25.\nPhysician 2 medetur 30.\nPhysician 3 medetur 35.
+Green+RedHerbCreamDesc,Sanat in substantia.\n\nPhysician 0 sanat 36.\nPhysician 1 sanat 45.\nPhysician 2 medet 54.\nPhysician 3 medetur 63.
+BlueHerbDesc,Cures Venenum
+Green+BlueHerbCreamDesc,Leniter te sanat et venenum.\n\nMedicus 0 sanat 12.\nPhysician 1 sanat 15.\nPhysician 2 sanat 18.\nPhysician 3 sanat 21.
+Green2+BlueHerbCreamDesc,Mediocriter sanat et venenum.\n\nMedicus 0 sanat 24. \nPysician 1 sanat 30. \nPysician 2 sanat 36. \nPysician 3 sanat 42.
+Green+Red+BlueHerbCreamDesc,"Sanat substantiam, et medetur venenum. \n\nPhysician 0 sanat 40. \nPhysician 1 medetur 50. \nPhysician 2 medetur 60.\nPhysician 3 medetur 70.
+FirstAidSprayDesc,Totum te sanat. \nPhysician 0 sanat 120. \nPhysician 1 medetur 150.\nPhysician 2 medetur 180\nPhysician 2 medetur 210.
+WolfBook,Librum caeruleum coloratum de Lupo.
+WolfMedal,Numisma Lupi.\n\nuse cum actione secundaria.
+EagleBook,Liber ruber coloratus de aquila.
+EagleMedal,Numisma aquilae.\n\nuse cum actione secundaria.
+Book of Curses,Liber de maledictionibus
+BookOfCursesdesc,"A libro creepy vultus invenisti in terra in area 3."
+Dog Whistle,Canem Whistle
+DogWhistledesc,"Sibilus intentus canum adhibebatur."
+Dog Collar,Canis Collarium
+DogCollardesc,Hoc torquem habet aliquid momenti?
+Coin,Nummum
+Coindesc,"Nummus qui intra torquem caninum repertus est."
+Lighterdesc,"Hoc tibi opus erit ut molotovs accendas."
+EmptyBottledesc,"Continens chemicals miscere solebat.\n\nFlle utendo actione secundario."
+FilledBottledesc,"Utrem liquore repleti."
+MixingBottledesc,"Duo genera liquoris permixtio."
+VJoltdesc,"Validum chemicum quod debilitare potest Plant XLII."
+Crestdesc,"Sexangulus crista informata.\n\nuse with the second action."
+BrokenShotgundesc,"A pyrobolus id est ultra reparationem laeditur."
+Herbicidedesc,"A chemica plantam vitam necare solebat."
+MetalObjectdesc,"Obiectum octagonale quod ianuam atrii reserabit.\n\nUsus cum actione secundaria."
+StoneRingdesc,"Annulus lapideus cum figura octogonum."
+MetalObject2desc,"Octogonale objectum e metallo factum."
+StoneMetalObjectdesc,"Hoc ostium post gradibus aulae maioris in mansione reserabit.\n\nUtere cum secunda actione."
+Cylinderdesc,"Similis res intra foramen pertinet."
+Shaftdesc,"Similis anulus quidam deest."
+CylinderShaftdesc,"Haec erit potentia generantis in mea.\n\n\use cum actione secundaria."
+FuelSupplyEmptydesc,"Capsula vacua destinatur ad nutriendum fontem potentiae.\n\n\nple illud aliquo gelu frigido."
+FuelSupplydesc,"Hoc utere ad cylindrum refuel ad Lorem."
+JewelryBoxdesc,"Nunc reserata, quid intus est?"
+RedGemstonedesc,"Haec parva saxum valere fortuna..."
+LockedBoxdesc,"Firmiter clausum"
+PrisonKey,"Discus floppy cum verbo 'MO' in eo.\n\nInsert utens actione secundaria."
+REkeys,"Utere tenendo bullam [Interact] dum ostium inspiciendo et eligendo [RAPIO]."
+Jill's_LockPick,Jill's LockPick
+Sword Key,Gladius Key
+Armour Key,Arma Key
+Shield Key,Clavis scutum
+Helmet Key,Galea Key
+Emblem Key,Emblema Key
+Wolf Book,Lupus Book
+Wolf_Medal,Lupus Medal
+Eagle Book,Aquila Book
+Eagle_Medal,Aquila Numisma
+Death Mask Without Eyes,Mors sine oculis larva
+Death Mask Without Mouth,Mors larva sine ore
+Death Mask Without Nose,Mors larva sine naso
+Death Mask Without All Three,Mors sine larva omnes tribus
+Laboratory Key,Key for the Power Area
+Prison Key,MO Orbis
+Empty_Bottle,inanis Bottle
+Empty Water Bottle,Inanis aqua utrem
+Empty UMB-No3 Bottle,Inanis UMB-No3 Utrem
+Empty Yellow-6 Bottle,Vana Yellow. VI Utrem
+Water_(Filled),Aqua (Repleti)
+UMB-No3_(Filled),UMB-No3 (Repleti)
+Yellow-6_(Filled),Flavo-VI (Repleti)
+NP-004_(Filled),NP-004 (Repleti)
+UMB-No7_(Filled),UMB-No7 (Repleti)
+UMB-No10_(Filled),UMB-No10 (Repleti)
+VP-017_(Filled),VP-017 (Repleti)
+NP-004_(Mixed),NP-004 (Mixtum)
+UMB-No7_(Mixed),UMB-No7 (Mixtum)
+UMB-No10_(Mixed),UMB-No10 (Mixtum)
+VP-014_(Mixed),VP-017 (Mixtum)
+V-Jolt,V-Jolt
+Wind Crest,Ventus Crest
+Moon Crest,Lunam Crest
+Star Crest,Stella Crest
+Sun Crest,Sol Crest
+Broken Shotgun,Fracti Shotgun
+Herbicide,Herbicide
+Metal_Object,HeMetal Objectrbicide
+Stone_Ring,Lapis Ring
+Metal_Object2,HeMetal Objectrbicide
+Stone and Metal Object,Lapis et Metal Object
+WD-40 Spray,WD-40 Spray
+Unprinted Book,Unprinted Book
+Battery,Pugna
+Spraydesc,"Liquor lubricans ad iuncturas metallorum obiectis solvendas usus est."
+Cylinder,Cylindrus
+Shaft,Shaft
+Cylinder Shaft,ShaftCylinder Shaft
+Fuel Supply Capsule (Empty),Cibus Supple Capsula vacua
+Fuel Supply Capsule,Cibus Supple Capsule
+Green Herb,Herba viridis
+Mixed Green Herb,Mixta Green Herba
+Mixed 3 Green Herbs,Mixta III Green Herbis
+Mixed Green+Red Herb,Mixta Viridis + Rubrum Herba
+Mixed Green+Blue Herb,Mixta Green+Blue Herba
+Mixed 2 Green+Blue Herb,Mixta 2 Green+Blue Herba
+Mixed Green+Red+Blue Herb,Mixta Viridis+Red+Blue Herba
+Red Herb,Red Herba
+Blue Herb,Blue Herba
+FirstAidSpray,Primum auxilium Spray
+Super Corn Bread,Super frumentum spicatum
+Super Corn Meal,Super Farinam Cornelii
+Snowberry Juice,Snowberry Succus
+foodShamChowder,Sham Chowder (fortitudo)
+foodGumboStew,Gumbo Stew (Melee Speed)
+foodShepardsPie,Pie pastores (Virtus)
+foodSpaghetti,Spaghetti (Agilitas)
+foodTunaFishGravyToast,Tuna Piscium Gravy Gerdrudis (Reload Volo)
+modArmorBandolierDesc,Reload 10% velocius.\nEffectus acervus non facit sed institui potest in armaturam quamlibet cistam vel crus.
+Athletic Jacket Mod Schematic,Athletica Jacket Mod Schematic
+High Permormance Running Soles Schematic,Princeps Permormance Thronus Plantarum Schematic
+drinkCanMegaCrushSchematic,Mega Crush Schematic
+Military-Grade Duct Tape,Gradus Duct Tape
+Jewelry Box,Jewelry Box
+Key to Room 001,Clavis ad volutpat 001
+Key to Room 003,Clavis ad volutpat 003
+Gallery Key,Gallery Key
+Control Room Key,Imperium locus Key
+Red Gemstone,Red Gemstone
+Locked Jewelry Box,Clausa Jewelry Box
+Master Key,Magister Key
+Sword Door,Gladius Door
+Sword Iron Door,Gladius Ferreus Porta
+Armour Door,Porta arma
+Armour Iron Door,Arma ferrea
+Shield Door,Scutum
+Helmet Door,Porta galea
+Helmet Iron Door,Porta ferrea galea
+Emblem Door,Porta Emblema
+Wolf and Eagle Door,Lupus et Aquila Door
+Laboratory Door,Laboratorium Door
+Laboratory Iron Door,Laboratorium Ferreus
+Door That Sees No Evil,Porta quod malum non videt
+Door That Speaks No Evil,Porta loquitur non malum
+Door That Smells No Evil,Ostium quod olet non malum
+Door That Sees Speaks Smells No Evil,Ostium quod videt odora non est malum
+Door Of No Evil,Ianua nulli mali
+Door with an old lock,Porta cum vetus cincinno
+Plant Room Door (Insert Herbicide),Planta volutpat Porta (insert Herbicide)
+Insert Wind Crest,Inserta Ventus Crest
+Insert Moon Crest,Lunam Crest inserta
+Insert Star Crest,Stella Crest inserta
+Insert Sun Crest,Solem inserere Crest
+Insert Broken Shotgun,Broken inserta Shotgun
+Room 001,Locus 001
+Room 003,Locus 003
+Gallery,Gallery
+Control Room,Imperium Room
+Door (Insert Unprinted Book),Porta (Insert Unprinted Book)
+Power Area Door,Potentia Area Door
+Sturdy Door (Insert Metal Object),Fortis Door (Insert Metal Object)
+Unpowered Door,Porta unpowered
+Sturdy Door (Insert Stone and Metal Object),Fortis Door (Insert Stone et Metal Object)
+Master Door,Magister Door
+Sturdy Door,Fortis Door
+Rusted Sturdy Door,Rubiginosa Fortis Door
+Plant 42's Roots,Planta 42's Roots
+Plant 42's Poisoned Roots (Hit to Destroy),Planta XLII 's Veneni Roots (Percute perdere)
+Mineshaft Hatch Control (Insert Cylinder Shaft),Mineshaft Excludunt Imperium (Insert Cylindri Shaft)
+Mineshaft Hatch Control,Mineshaft Excludunt Imperium
+Laboratory Computer,Laboratorium Computer
+Unpowered Roller Shutter (Needs refueling),Potentia Rollerus foriculae (necessitas refueling)
+Powered Roller Shutter,Powered Roller Shutter
+Box of Sewing Kits (Hit to Pickup),Arca Sutura Kits (Hit ad RAPINA)
+Jill's Lunch and Lockpick (Hit to Pickup),Jill prandium et Lockpick (Hit ad RAPINA)
+AK-47 (Hit to Pickup),AK-47 (Hit ad RAPINA)
+Anti-Tyrant Rocket Launcher (Hit to Pickup),Anti-Tyrannus erucae Launcher (Hit ad RAPINA)
+Anti-Tyrant Rocket (Hit to Pickup),Anti-Tyrannus erucae (Hit ad RAPINA)
+Laboratory Prison Door (Requires 3 MO Discs),Laboratorium Prison Door (Requires 3 MO Discs)
+Laboratory Prison Door (Requires 2 MO Discs),Laboratorium Prison Door (Requires 2 MO Discs)
+Laboratory Prison Door (Requires 1 MO Disc),Laboratorium Prison Door (Requires 1 MO Disc)
+Mansion Wood Door,Domus Wood Door
+Mansion Iron Door,Mansio Ferrea
+HiPower Leather Trunk,HiPower Leather Trunk
+Special Clothing Leather Trunk,Special Clothing Leather Trunk
+Pump Shotgun (Hit to Pickup),Sentinam Shotgun (Hit ad RAPINA)
+Magnum Revolver (Hit to Pickup),Magnum Revolver (Hit ad RAPINA)
+Rocket Launcher (Hit to Pickup),Eruca Launcher (Hit ad RAPINA)
+Handgun Ammo (Hit to Pickup),Handgun Ammo (Hit ad RAPINA)
+Shotgun Ammo (Hit to Pickup),Pyrobolum Ammo (Hit ad RAPINA)
+Magnum Ammo (Hit to Pickup),Magnum Ammo (Hit ad RAPINA)
+Rocket Ammo (Hit to Pickup),Eruca Ammo (Hit ad RAPINA)
+Assault Rifle Ammo (Hit to Pickup),Impetum Rifle Ammo (Hit ad RAPINA)
+Hand Grenade (Hit to Pickup),Grenade manu (Hit ad RAPINA)
+9mm Bullet,9×19mm Parabellum Round
+Dismantle 9mm Ammo,Dismantle 9×19mm Parabellum Round
+9mm HP Bullet,HiPower 9×19mm Parabellum Round
+44Magnum Bullet,.357 Magnum Round
+Dismantle .44 Ammo,Dismantle .357 Magnum Round
+44Magnum HP Bullet,HiPower .357 Magnum Round
+762 Bullet,7.62 Rifle circuitu
+Dismantle 7.62 Ammo,Dismantle 7.62 Rifle circuitu
+762 HP Bullet,HiPower 7.62 Rifle circuitu
+Shotgun Shell,XII gauge Shotgun Testa
+Dismantle Shotgun Shells,Dismantle XII Gauge Shotgun Testa
+Shotgun Slug,Shotgun Slug
+Workbench Repair Kit,Workbench Repair Kit
+Lighter,leviora
+
+Survival_Knife,Cultrum salvos
+Knifedesc,"Jill consuetudo ferro facta, magna ad comminus pugnae et animalia metis."
+S.T.A.R.S_Handgun,S.T.A.R.S Handgun
+Handgundesc,"CONSUETUDINIS S.T.A.R.S. Standard Handgun, ignes 9×19mm parabellum rounds."
+Magnum Revolver,Magnum Revolver
+Magnumdesc,"Magnum magnum revolver, handgun praepotens. Accendit magnum .357 rounds"
+Pump Shotgun,Sentinam Shotgun
+Shotgundesc,"Ignes 12 Cange Shells. Telum quod late-range potest accendi."
+AK-47,AK-47 Assault Rifle
+Rifledesc,"Automatic impetum diripiat qui potest adiuvare vos desperatis adiunctis."
+Rocket Launcher,Eruca Launchere
+Launcherdesc,"Perniciosum telum, ne te conflare conare, licet!"
+Anti-Tyrant Rocket Launcher,Anti-Tyrannus erucae Launchere
+apparelToughGuySunglasses,Wesker's Sunglasses
+ammo9mmBulletBallRE,9x19mm Parabellum Bullet
+ammo9mmBulletHPRE,HiPower 9x19mm Parabellum Bullet
+ammo44MagnumBulletBallRE,.357 Magnum Bullet
+ammo44MagnumBulletHPRE,HiPower .357 Magnum Bullet
+ammo762mmBulletBallRE,7.62 Rifle Bullet
+ammo762mmBulletHPRE,HiPower 7.62 Rifle Bullet
+ammoShotgunShellRE,XII gauge Shotgun Testa
+ammoShotgunSlugRE,Shotgun Slug
+ammoRocketHERE,Anti-Tyrannus Fragmentum erucae
+ammoRocketFragRE,Fragmentum erucae
+thrownGrenadeRE,Grenade manu
+thrownAmmoMolotovCocktailRE,Molotov Cocktail
+mineCandyTinRE,exstaret mea
+perkEnforcerDamageDesc,Fac 10% plus damni apud Magnum.
+perkEnforcerDamageLongDesc,Damnum: Magnum est potentissimum handgun in mundo. Fac 10% plus damni apud Magnum.
+perkEnforcerHPAmmoDesc,.357 Magnam munitionem potes astutia ib.
+perkEnforcerHPAmmoLongDesc,Validissima handgun in mundo potentior obtinuit. .357 Magnam munitionem potes astutia ib, .
+perkEnforcerCriminalPursuitDesc,Sprinting with the Magnum in certamine utitur 20% minus patientia.
+perkEnforcerCriminalPursuitLongDesc,Insecutio criminalis: Adrenaline ab persequendis scumbags descendit in ardore certaminis boosts tua patientia. Sprinting with the Magnum ducto in certamine utitur 20% minus stamina.
+
+buffPoisonedName,Venenatis!
+buffPoisonedDesc,Venenatum es et damnum lente capis.\n\ne Herba veneta ad venenum tuum sanandum.
+buffPoisonedTooltip,Venenatus es!
+questStartup_offer,Quest
+questStartup_desc,"Iulio anno 1998, tu Jill Valentine, sodalis S.T.A.R.S Alpha Team. Turma tua missa est ad investigandum discessum civium tuorum Bravo Team postquam contactum cum illis perdidisti. est mortuus. Turma tua a canibus vitiosis infestatur et per silvam consectatur, mansionem procul vides et eam ad equos tuos vocas et omnes continuas facis!\n\nTu iam inclusi, nimis periculosa est. sicco illic!"
+BookOfCurses_offer,Quattuor larvae. \n\nA larva nihil mali loquitur...\nA larva nihil mali olet...\nA larva quae nullum malum videt...\nA larva quae loqui non potest. olfactum. aut vide malum. malum excitabis.\n\n\nVides clavem in tergo infixam. auferes illud?
+DogWhistle_offer,Hodie. Sir Spencer dixit mihi aliquid celare ubi nemo id invenire potuit.\n\nWell. Hoc habui. Figuravi si possem aliquo modo eam munitam habere ab animali periculoso tanquam canino vitioso qui hic habitat. nemo prope accedere possit!\n\nAs quantum ego dico. the mutt is always pensilis circa secundam aream podio ab occidentali parte pensili. et debet currere ad sonum sibili canis.\n\nHic est ubi veneris. Sermo. Existimo te solum hominem esse qui canem illum damnare sine gravi discriminis periculo accedere potest.\n\nId tantum modo hunc torquem in eum imponere potes. Objectum quod Sir Spencer vult absconditum intus est absconditum.\n\n Tu solus es homo cui hoc confidere possum. Scilicet. ut aliquid ex te quoque. Memini item certum te semper velle excipere?\n\nWell. pro meritis tuis. Modo ut possim tibi. Hoc bene utrique nostrum \n\nJon Toleman elaborare potuit.
+JillLockpick,Cum cincinno paro Jill magister est reserationis.
+FilesDesc,Hanc paginam ex Acta tua legere potes.
+modMeleeWeightedHeadDesc,Modificatio pro cultro tuo.\nAddit 15% casum ad stupefaciendum et tardas victimas.
+Samurai Edge Parts,Samurai Edge Partibus
+SamuraiEdgeDesc,Praecipua consuetudo partium quae vehementius ignem rate auget et ad 3 rotundum erumpit patitur.\n\np> handgun faciliorem reddit.
+Assault Shotgun Parts,Impetum Shotgun Partibus
+AssaultShotgunDesc,A S.T.A.R.S. consuetudo armamentarium et etiam favoris Ricardi.\n\nHolds 10 rounds. Arctius babet. Longior et celerior ignis rate. Sed tardius reload celeritatem.
+Magnum Speedloader,Magnum Speedloader
+MagnumSpeedloaderDesc,Hoc adiuvat in 25% ocius reload et altiore faciliorem reddit revolventem.
+AK-47 Muzzle Brake,AK-47 Muzzle Brake
+MuzzleBreakDesc,Impugnatio diripiet accuratiorem et altiorem facilius gerendum.
+Athletic Jacket Mod,Curabitur Jacket Mod
+High Permormance Running Soles,Princeps Permormance Cursor Soles
+modGunMeleeBlessedMetalDesc,Magnopere auget damnum tyranno \n\nKnife Only.
+drugBoulderBusters,"Chris Redfield latenter has in his interdum quassum.\n\nAddit rixa damnum per CD%.\nStacks with Calvariae Crushers et Bersabee!"
+drugBoulderBustersDesc,"Tua rixa damnum augetur CD%.\nStacks with Calvariae Crushers et Bersabee!"
+drugRockBusters,Boulder Buster!
+SuperGogglesDesc,Pueri mali isti te impedient ne fiat Jill Sandwich.\n\nFortitude +2\nAgility +2.\nCrafting -40%.
+Note from Barry,Nota ex Barry
+BarryNote,"Jill, Ego commeatus quosdam reliqui.\n\nBarry"
+Jill Sandwich,Jill Sandwich
+JillSandwichDesc,Vos fere Jill Sandwico
+Watch your step,Vigilate vestri step
+PuzzleDesc,Contra meridiem.\n\nSide iuxta latus tutum est.\n\nUp et deorsum explosivae sunt!
+Researcher's Will,Inquisitorem voluntatem
+ResearcherWillTip_title,Inquisitorem voluntatem
+ResearcherWillTip,"Littera intus excisa est.\n June 3, 1998\nMe dilectissima Alma,\n\nMe primum veniam excusare non posse te appellare. Vir ocularia ocularia gerens nullum telephonicum vocat permisit. Dolemus Alma.\n\n hic sedeo cogitare de quo incipiam, quomodo paucis verbis simplicibus exponere omnia quae in vita mea facta sunt ex quo proxime locuti sumus et iam deficio. Spero te hae litterae bene reperire, teque tangentibus styli mei ignosces; hoc mihi non facile est. n\n\Scribo, conceptus simplicissimas notiones elapsas sentire possum, desperationis et confusionis animorum amissas — sed habeo tibi dicere quid in corde meo sit antequam quiescere queam. Alma, quaeso, crede verum esse quod dico tibi. Tota fabula horas mihi ferret tibi ut tibi dicerem, et tempus breve est, sic haec accipio ut res: mensem ultimum accidens in lab et virus discebamus emanasse. mortui sunt aut moriuntur, et natura morbi talis est, ut adhuc viventes sensus perdant. Hoc virus suas humanitatis victimas spoliat, eas in sua aegritudine ad vitam quaerendam et perdendam cogens. Si haec verba scribo, eos audire possum, instabant foribus meis quasi sine mente, animalia esurientia. Sed mea opera tantum distulit inevitabilis; Infectus sum, nec remedium est quod sequatur - nisi ut vitam finiam antequam amittam, nulla res est quae me ab illis separat. eternus meus somnus ubi pax est. Placet intelligere. Quaeso scire me paenitet. nMartin Crackhorn"
+Trevor's Diary,Trevor's Diarium
+TrevorDiaryTip_title,Trevor's Diarium
+TrevorDiaryTip,"24 Nov. 1967 n. Quomodo finiam sic? Vir in lab tunica cum lamina macri farinae venit et dixit ad me, "Ignosce te per hoc mittere, sed est causa securitatis." Id cum me percussit. Nunc omnia facit sensum. Duo tantum homines sunt qui secretum huius mansionis sciunt, domine Spencer et me. Si me occiderint, Sir Spencer solus erit homo qui secretum novit. Sed ad quid? Nunc non refert. Hic nimis periculosus est. Familia mea... Spero omnes recti sunt. Jessica, Lisa, salvum te oro.\n\nNov. 26, 1967 n Quomodo essem tam securus? Ego meum perdidi levius ventus - illa Jessica mihi natali meo dedit. Nunc multo difficilius futurum est hunc locum tenebrosum exire. 13th, diem quo mea fata signavit. Amita mea triduo ante nosocomium fuit. Jessica et Lisa dixerunt quod irent ad eam visitandam. Utinam cum illis essem. Sed expecta, dum ad me scribebam memoria mea vividius ad me revertitur. Modo antequam exirem, memini homines in braccis labrum aliquid simile dixisse, 'Fere familia tua iam est...' pro salute eorum precor.\n\nNov. 27, 1967n. Sed ex hac mansione exire non tam facile erit. Ego praeterire omnes ineptias-laqueis. Tigris Oculos, Aurum Emblema .... habeo pro mea causa experiri et meminisse."
+Trevor's Diary2,Trevor's Diarium
+TrevorDiaryTip2_title,Trevor's Diarium
+TrevorDiaryTip2,"Est aliquid manuscriptum. suus non datas. \n\nNihil mutatum est. Numquam putavi hanc cameram ut experimentum hoc simile reddere constitui.\n\n hic tuto ad tempus abscondi possum, quia nemo scit de secreto post hanc picturam. Not even Sir Spencer."
+Trevor's Diary3,Trevor's Diarium
+TrevorDiaryTip3_title,Trevor's Diarium
+TrevorDiaryTip3,"29 Nov. 1967 exire non possum. Omni modo effugere conatus sum, sed solum occurrere cum realitate quam capior. Ubique fui. Laboratorium cum magnis tubulis vitreis, formaldehyde repletis, et atris, humidis et superstitibus specubus... Quid facere possum?\nPm oculis meis credere nolui. Sed nota ille summus calceus in in ANDRON... erat quasi reflexus. Nomen unum mihi venit in mentem, Jessica!\nI non vis credere fatum eundem esse ac me. Minime! Desperare non possum. Spero me vivere.\n\nNov. 30, 1967, his paucis diebus nihil habeo quod edam vel bibam. Sentio sicut ego insanit. Quid hoc mihi evenit? Cur mori sic debeo? Nimis ego obsessus sum cum cogitans hanc luridam mansionem. Melius scirem.\n\nNov. 31, 1967 sub cuniculo obscuro et humido erat. Et alius mortuus finem. Sed etiam in tenebris oculus meus captus est aliquid. Diligenter incidi novissimum certamen, quid esset videre. Sepulchrum! Sed penitus insculptum in saxo nomen erat! 'Georgius Trevor'. Tum mihi omnia patuerunt. Nothi illi ab initio sciverunt quod hic moriar et in laqueos eorum incidi. Sed et tempus nunc. Proin ut ante. Omnia tam longe fiunt. Jessica... Lisa... Ignosce mihi. Quia ego, utrumque nactus sum in tota hac coniuratione damnatus. Ignosce me. Utinam Deus meam mortem pro salute vestra pro salute vestra justificet"
+Botany Book,Botany Book
+BotanyBookTip_title,Botany Book
+BotanyBookTip,"Usus herbarum medicinalium \n\n Notatum est quod multae plantae exstant quae virtutibus medicinalibus medendi attribuuntur. Cum antiquitus homines vulnera et morbos sanaverint variis plantis utentes.\n\n In hoc libro, tres herbas, quae ex Arklay Monte oriundae sunt, et singulas medicinales qualitates breviter adumbrabimus. Quaelibet herba distinctum colorem et distinctum medicinalem qualitatem habet. \n\n Herba viridis vires corporis recuperat. Caerulea herba toxins naturalem adversatur. Sed herba rubra nullum effectum per se habet. Invenimus miscere herbas virides et rubras effectus in effectu magnifico.\n\n, effectus herbarum rubearum cum aliis herbis mixtas cum plus notitiae habebimus, describimus. Interim libenter experimur in te ipso, nam vera cognitio per experientiam optime acquiritur."
+Keeper's Diary,Custos Diarium
+KeeperDiaryTip_title,Custos Diarium
+KeeperDiaryTip,"Die 9 Maii 1998 in hac nocte cum Scott et Alias ​​ab Securitate et Steve ab Investigatione lusi. Steve magnus victor fuit, sed fraudare puto. Scumbag.\n\n May 10, 1998\n nemo superiorum discursionum mihi ad curam novae creaturae deputavit. Album spectat sicut album. Pascendi mandatum est ut animalia vivant. Cum in porcum proieci, creatura visa est cum eo ludere... discerpens crura porcina et viscera evulsa priusquam actu comedere incepit.\n\nMaii XI 1998\nAt circa 5 AM, Scott me excitavit. . Me quoque vix cacas. Tutelam litem gerebat. alterum mihi tradidit et dixit mihi imposuit. Dictum essem accidens in FUNDAMENTUM lab. Modo aliquid scirem simile hoc futurum. Nothi illi in Investigatione numquam dormiunt, etiam die 12 mensis Maii anno 1998\n damni spatii litem ab heri gestavi. Cutis mea questus grimy et totum sentit itchy. Canes goddamn me spectaverunt ridiculam, itaque decrevi eos hodie non pascere. Screw 'em.\n\n\nMaii 13, 1998\nWent Infirmario quia dorsum meum totum tumidum est et scabiem sentit. Magnam fasciam in ea posuerunt et dixerunt mihi non opus esse iam litem uti. Omnia volo facere somno.\n\nMaii 14, 1998\nInveni aliam pustula magna super pede meo hoc mane. Finivi pedem meum usque ad calamum canis traho. Quieverunt tota die, quod est fatum. Tunc intellexi quosdam evasisse. Forsitan haec via est ad me recipiendi, quod triduum non pascit. Si quis invenerit, habebo caput meum mihi traditum. Totum corpus meum calidum et scabiosum sentit et omni tempore nunc sudor. Tumorem in bracchio scalpi et frustum putris carnis mox decidit. Quid mihi infernum evenit? Hodie esuriens et comedens cibum doggie.\n\n XXI, 1998\n SCABROSUS SCABROSUS Scott venit faciem deformis sic eum necavit. Suavia. 4/ / SCABROSUS. Suavia."
+Mail to the Chief of Security,Epistulam ad dux Securitatis
+MailToTheChiefOfSecurityTip_title,Epistulam ad dux Securitatis
+MailToTheChiefOfSecurityTip,"ARCANUS\n\nAttn: Dux Securitatis\n\nDate: Die 22 Iulii 1998 2:13\n\nX dies nobis trahit. Sequentes rationes infra unam septimanam faciunt. Actiones promptae exiguntur. \n\nLure S.T.A.R.S. ad praedium, et obtinet B.O.W. rudis certaminis notitias contra S.T.A.R.S.\n\n Colligite utriusque embryonis specimina mutata in exemplum, excluso tyranno. Disponere Tyranni.\n\nEnsura integram dispositionem Laboratorii Arklay comprehendentes omnes personas et animalia probata. Mortes dissimulant casus.
+Cum praedictae rationes exsecutioni sunt, renuntio ad praetorium ad ulteriores instructiones.\n\nSi rationem aliquam exsequi non potes per fatales rationes, statim renuntia. In casu tempori rerum, refero directe ad numerum extensio 5691.\n\nGomine.\nNumbrella Headquarters, \nNumbrella Inc."
+Researcher's Letter,Inquisitoris Epistulae
+ResearcherLetterTip_title,Inquisitoris Epistulae
+ResearcherLetterTip,"Die 8 Iunii 1998 \nMy Ada carissime.\n\nBy quo tempore has litteras legas, ego non amplius ero persona quam olim sciebam. Eventus probationis mei hodie exierunt, et sicut suspicatus sum, exivit affirmativus.\n\n Sentio sicut in extremis rationis in extremis cogitans de imminente exitio. nihil darem ne unum ex illis fieri. Sincere spero res non tam desperatas angustias attingere, sed si evaserit ut nunc ultimus homo manens vivit, materiam visualis Datae cubiculi obtinere te volo. Systema destrue in cella Power et hinc effugies. Quaeso fac omnia in tua potestate ut hoc totum accidens publicum facias.\n\nSi omnia normaliter adhuc currentes, omnes cincinnos emittere poteris utentes Systemate Securitatis. cella ut inire potes in systemate utens nomen meum et nomen tuum ut tesseram.\n\nVes alia password ut emittat clavem ostii in Basement Level Duo ubi Visual Data Locus sita est.\n\nAs mensura tuta me coded tesseram illam in imagine X-ray; a roentgenogram. Scio te, et certe sine omni molestia poteris illud operari.\n\nEst unum plus... et est ultima petitio mea. Spero te nunquam in hoc statu me aspicias, sed si in me deformia forma facias, quaeso, ut me exuat. Spero te intelligere"
+Observation Note,Observatio Nota
+ObservationNoteTip_title,Observatio Nota
+ObservationNoteTip,"Inventio G-Virum re vera viginti annis post viri progenitoris administrationem fuit.\n\nThe 'Prototypum Parasite' quod ex laboratorio in Gallia tradidimus, specimen specimen praebebatur. Specimen specimen specimen suscepit in parasito nulla signa reactionis adversae ostendens. Nunc autem omnia mihi nunc perspicua sunt. \n\nThe 'Prototypum Parasiteum' in specimen corpus specimen 21 annis incubabat. Deinde ab illo statu incubans prototypum subito mutatur. ('Evolved' verbum fortasse aptius est ad illud describendum.\n\nE haec animadversio mihi plus dedit in investigatione mea perspicientia. Per ulteriorem modificationem et probationem methodum haurire potui ut creare "G" quae observantiam "T'.\n\nt" superat \nI non possum exspectare ut aspectum molestus Alexiae facias cum investigationem meam tandem annuncio. Sed dolendum est quod paucos plus annos exspectem habebo ad inveniendas meas omnino verificandas."
+Suicide Note,Suicide Note
+SuicideNoteTip_title,Mortem notam
+SuicideNoteTip,"Die 22 Iunii 1998\nI facere debuit. Ex his rebus fugimus - invicem adiuvantes superesse. Sed Robertus signa ostendere incepit. Facere veniam ante eum. Illae res merae sunt malae. Idem fecisset si e converso. Postquam eum ex miseria sua posui, mox eum in balneo posui. Nunc sum probabiliter ultimus...\n\n Quomodo hoc fieri potuit? Numquam egomet mihi ignoscam quod huius propositi pars sit. Tandem id quod ad me venit licet impetrabo. Nullo modo est ut ex hac nuce domo effugias, nunc tempus est.\n\nOmne positum est. Tantum opus est animo ut fiat. Sciens me multa omittere, ultra verba poenitet.\n\nSed, hoc melius est quam modo exspectes vertere in unum. Quaeso comprehende et saltem permitte mihi vitam meam finire ut homo.\n\nNHest nuntius in tergo."
+Plant 42 Report,Plant 42 Report
+Plant42ReportTip_title,Plant 42 Report
+Plant42ReportTip,"Quattuor dies ex casu elapsi sunt. Et planta ad Point XLII crescentis an prodigiosus rate. \n\nAlthough multa sunt ignota facies super herba, scimus quia est per comparationem ad alios coetus in plantis, in T-Viris Illustribus habuit substantialiter fortius afficit in hac una .\n\nThe T-Virus suam anatomiam hospitii ac magnitudinem assimilem traxit. Respicis statum hodiernum, difficile est eius pristinam speciem fingere. Nusquam in terris quicquam simile invenies.\n\nReve etiam repperimus plantam 42 duos fontes praecipuas habere nutrimenta necessaria comparandi. Unus fons est per suam radicem. \n\nmmediate post casum, physicus insanum abiit et Aqua Ringo delevit. Nam ut lacus turpis. Magna possibilitas est ut sit unum e chemicis in aqua quod plantam 42 celeri incremento promovet.\n\nA tamen adhuc determinatum est determinare chemicum.\n\nA corpus bulbi plantae 42 fuit conspecti pendebant e lacunari primo tabulato. Scimus enim eum usum ductus aeris ad primum tabulatum perventurum. Multae vittae longae tentaculi instar prominentes e bulbo sunt.\n\nE credimus vites secundas medias alimenta acquirendi. Planta cum praeda sentit, tentaculo utitur quasi vites ad praedam capiendam. Hoc facto, acetabulis in vite praedam sanguinis hauriunt.\n\ni. Cum praedam capit vel cum otiosa est, vites circa ianuam plectere obturantes posse interpellatores.\n\nInfeliciter, plures phisici nostri iam ceciderant victimam huic Plant 42. Audivimus fabulas ex superstitibus omnes. Observatum unum in communi: \n\n cum uniformia petalorum similia lapsibus aperta et vitalia eius interna patefaciant, proclivis est ad ferociorem fieri. Cur ita se gerit, adhuc incognitus est"
+Organic Chemistry Lab Experiment,Organic Chemiae Lab Experiment
+OrganicChemistryLabExperimentTip_title,Organic Chemiae Lab Experiment
+OrganicChemistryLabExperimentTip,"Similitudines in notis cellularum plantae crescentis a Viro tyranno infectae in prioribus tabellis relatae sunt. Tamen, dum haec experimenta repetimus, novum factum interesting claruit.\n\n Nos chemicam in familia UMB No. 20 didicimus, compositionem toxicum ad cellulas plantae continere. datum UMB N. 20 novum nomen: V-JOLT. Si calculi recte probant, cum V-JOLT directe ad radicem plantae applicetur, tota planta mortua est intra 5 secundas.\n\nT V-JOLT fieri potest, permixtis VP et UMB oeconomiae specifice simpliciter. ratione. Nihilominus extra curandum est quando haec oeconomiae UMB tractatio est. Notae vapores toxici generandi si coortae sunt.\n\nThe notae cuiusque chemicae UMB sunt haec: \n\nUMB No. 3 rufus\nYellow-6 luteus \nUMB No. 7 viridis\nUMB No. 10 aurantiacus\nVP-017 hyacinthinum\nV-JOLT obscure brunneum"
+Family Picture and Notes,Familiae Picture et Notae
+FamilyPicture1Tip_title,Familiae Picture et Notae
+FamilyPicture1Tip,"In dorso scriptum est aliquid \n\nNov. 10, 1967 \n\nVirus progenitor\n\nJessica\nAdministratus virus: Type-A\nPlasmolyzing texti in activo \n\nVirus fusionis: Negativa\n\nAction: Disposita\n\nLisa\n\ virus nAdministratum: Type-B\nPlasmolyzing texti inter cellam activationem.\n\nVirus fusione: Positivae sed tardatae fusionis.\n\nBody modification: Constans eventus observatus.\n\nStatus: Perge observatione tutela.\n\nGeorge \nAction: Terminated (30 Nov. 1967)"
+Lisa's Journal,Lisa's Journal
+FamilyPicture2Tip_title,Lisa's Journal
+FamilyPicture2Tip,"14 novembris 1967 vertiginem sentio postquam iacula dederunt mihi. Non video datum. Ubi eam ceperunt? Promisit nos simul evadere. Sola illa fugit ac me relinquit?\n\nNov. 15. 1967nI invenimus Mom. simul edimus. Valde gavisus sum.\n\nBut she was a fake. Non mihi verum datum. Facies eadem, sed intus diversa.\n\nAve Mom. Faciem ad matrem mihi dare.\n\nI got tergum Mom faciem.\n Nemo potest habere mammam meam nisi me. Faciem ad me adiungo ne abeat.\nBecausa Mom tristis cum sine facie eius occurro.\n\nNov. 17, 19 7\n itam arca intus, odorem mammam. fortasse vera mater ibi.\nstone arca dura. Hoc malum. funem ferreum in via.\n'n't videre matrem becuz 4 lapidibus.\n\n19\ndadddy atched first\nmomm atched scond\nNside red and sLimy\nwhiTe and hard\nnnot true moM wheRe\n\ndunno dadd\nfound mum again\n\nwhne atachd momMy\nshe moved no more \nshe quiritare\n quare?\nJst want to b with her\n\n4\nmom\nwhere?\n\nI mis yuo"
+Jessica's Letter,Jessica Epistulae
+FamilyPicture3Tip_title,Jessica Epistulae
+FamilyPicture3Tip,"Meae Lisa, \n\nDay in die, conscientiam meam sentire possum longius et longius vagari.\nS offa mihi ab hominibus data in vestibus albis factis nonnulla de pruritu mammae abeunt. Hodie mihi aliam iactum dederunt dicentes eam esse 'nutritionem'.\n\n Cum mihi offa mammam dant recta cogitare possunt, sed mammae perculsa et tristis est quia mammam de te omni tempore cogitare non potuit.\n\nMommy timet. Timeo omnia oblivionis, praesertim tui et tata memoriarum ... Quae vultus tui similes sunt, quomodo simul esse consuevimus ... Omnes incipientes evanescunt in aliquo obscuro animo meo.\n\nOh Lisa, Faciem tuam vellem attingere et te in brachiis nunc tenere, ut admirabilem tui memoriam teneam et tata.\n\nLisa diutius hic manere non possumus. Fugere debemus!\n\n Audi me Lisa. Proxima nostra evadendi facultas ad istum lab simul itur. Ambas nos nescientes fingemus, et cum ille in vestibus albis abjectus est, casus noster erit. Bene sweetie? Vale, Lisa.\n\nNov. 13, 1967 nJessica Trevor"
+V-ACT,V-ACT
+VACTTip_title,V-ACT
+VACTTip,"Nota Investigatoris nota \n\n Nunc est testimonium quod hospes perdit conscientiam, corpus in quiescit statum. Hoc tempore virus activa et celeriter commutat ac fundamentalem compositionem corporis reficit. n\n Hostes tandem in creaturam humanoidem mutatur. (V-ACTS vocamus) celeritatem muscularem \n\nIta et mirabilem progressionem muscularem sunt maxime notabiles. Post transformationem, mobilior et ferocior fit.\n\nNiam investigatores iam quattuor mortui sunt quominus eam pasceret, locum in instanti sanguinis funditus convertens. (Ex quo casu hoc tragicum et barbaricum, genus purpureum Heads vocare decrevimus) \n\n Quod periculosum ac pretiosum specimen prototypum ibi relinqui non potest. Habemus ad instar sicco. Cessatio definite non est optio.\n\nE Tandem placuit specimen concrescere et corpus intra fundamentum coemeterii coemeterii cohibere."
+FAX,FAX
+FAXTip_title,FAX
+FAXTip,"Ad: Sanitation Division\nAttn: Procurator Sanitationis\nFrom: Raccoon Disaster Contingency Committee\n\nThe contenta huius fax secretiora sunt et destinata pro nomine inscriptionis tantum. Quodlibet exscribere, vel detegere contentorum huius fax in tertiam partem cuilibet a mittente stricte prohibetur.\n\nA lectio contenta huius fax, statim destruenda est. per recentem T-Viri tumultum quam initio aestimatum est. Plures sunt curas.\n\nPlus quam dimidia pars investigantium ab T-Virum infecta et mortua est. Etiam fere omnes superstites huius casus nuntiaverunt signa infectio T-Viri ostendere. \n\n Secunda cura Securitatis Secretae Patrol Team nostra etiam penitus exterminata est. Ideo investigatio secretissima nostra publica revelationis periclitatur. Celeres actiones postulantur ut instrumentorum communicationis socialis ne\n\nTterae sollicitudinis\nTerentia sit possibilitas alta, quae pleraque speciminum in medio composito laxa currunt. Multos casus sequi exspectamus. n\n\Namquam tamen infortunati sunt, haec eventus successum investigandi investigationis nostrae comprehendunt. Faciendum est, ne investigationes exitus publici fiant. Suspicamur primo interventus officialis Civitatis Vigilum et S.T.A.R.S. Consilia contra eos imprimis magnopere commendamus."
+Security Protocols,Security Protocols
+SecurityProtocolsTip_title,Security Protocols
+SecurityProtocolsTip,"BASIS GRADUS DUA\n\nVisual Data Cubiculi/ Ad usum in Division Speciali Research tantum. Omnes alii accessus ad Visual Data Cenaculi purgari debent Keith Arving, Cubiculi Procurator.\n\n\nBASEMENT LIBELLA TERTIUM\n\nPrison/ Sanitationis Divisio usum carceris moderatur. Saltem unus Investigator Consultor (E. Smith, S. Ross, A. Wesker) praesens esse debet si viralis usus est auctoritate. cum omnibus codicibus. Accessus exclusivus Output Terminales in unaquaque parte seniorum Inquisiriorum deactivates claudum.\n\n\nP Room/ In hoc conclavi nitro compositum adhibetur ut cibus fons potentiae primarius. Accessum solum ad Supervisores Headquarters. Haec restrictio non potest applicare ad Inquisitores Consultores speciali auctoritate.\n\nPass Code Output Terminal/Usus et accessus Output Terminalium limitantur ad auctoritatem Senior Inquisitores.\n\n\nBASEMENT LIBELLA QUARTA\n\nEad progressum Tyrannus post administrationem Viri T-\n(Illegibilis posthac....)"
+Quest_Completion_tip_title,Completur provocationem!
+Completion_desc,Gratulor!!\nVos Spencer mansionem provocare feliciter perfecisti.\n\nI spero te sonum ludere quantum ego creavi!\n\nFrantic Dan.
+Quest_Completion_tip,Gratulor!!\nVos Spencer mansionem provocare feliciter perfecisti.\n\nI spero te sonum ludere quantum ego creavi!\n\nFrantic Dan.
+zombieArlene,JaWoodle's Girl
+zombieMarlene,Misterri
+zombieNurse,Umbella chirurgus
+zombieJoe,Glock9's Dealer
+zombieSteve,Draycko
+zombieBusinessMan,Aviose
+zombieBoe,DD1GG
+zombieJanitor,HellsJanitorTV
+zombieMoe,TheOrigamiGuru
+zombieLab,Umbrella Scientist
+zombieDarlene,Lois Griffin
+zombieYo,NotOnly25
+zombieUtilityWorker,Aquarium opificem
+zombieBiker,Games4Kickz
+zombieLumberjack,JonahBirch
+zombieFemaleFat,Big Red
+zombieFatHawaiian,Peter Griffin
+zombieMaleHazmat,Umbrella Hazmat Technician
+zombieSkateboarder,DoctorBest85
+zombieSoldier,Umbrella Securitatis Muneris Muneris
+animalZombieDog,Cerberus
+Zombie Dog,Cerberus
+animalZombieVulture,Flappy Fortuna
+animalSnake,Adder
+animalChicken,Oskurd
+Web Spinner,Tela Spinner
+Crimson Head,Vermiculus caput
+Crimson Head Prototype,Vermiculus Caput Prototypum
+Crimson Head Prototype2,Vermiculus Caput Prototypum
+Forest Speyer,Saltus Spirensis
+Forest Speyer2,Saltus Spirensis
+Hunter,Venator
+Failed Test Subject,Deficio Test Subject
+Plant 42,Plant 42
+Yawn the Boar,Oscitatio Aper
+Black Tiger Spider,Niger Tigris Spider
+Lisa Trevor,Lisa Trevor
+Tyrant,tyrannus
+Super Tyrant,Super tyranno
+Boe Crawler,Crippled DD1GG
+Joe Crawler,Glock9's Crippled Dealer
+Janitor Crawler,Crippled HellsJanitorTV
+Arlene Crawler,JaWoodle's Crippled Girl
+Lab Worker Crawler,Claudus Umbrella Scientist
+Darlene Crawler,Crippled Lois Griffin
+Marlene Crawler,Crippled Misterri
+Yo Crawler,Crippled NotOnly25
+Steve Crawler,Crippled Draycko
+Business Man Crawler,Crippled Aviose
+Burnt Crawler,Crimson capite claudus
+Nurse Crawler,Debiles Umbrella chirurgi
+Hazmat Crawler,Debiles Umbrella Hazmat technicos
+Skateboarder Crawler,Crippled DoctorBest85
+zombieMarleneRadiated,Misterri
+zombieJoeRadiated,Glock9's Dealer
+zombieJanitorRadiated,HellsJanitorTV
+zombieYoRadiated,NotOnly25
+
+
+attStrengthRank01LongDesc,"Quisque corporis fabricatorem esse vult, sed onerosa illa pondera asinos levare nemo vult. Fac 215% capitis iactum damnum et maiorem occasionem habere 3% discumbere cum pyrobolis et pugnis."
+attStrengthRank02LongDesc,"Fors esses sordent, sed ignem intus habes ut magnus et fortis sim. Benigne 230% caput iaculat damnum et a 6% forte discerpturi cum shotguns et pugni."
+attStrengthRank03LongDesc,"Quid est lac potator sicut facis in apocalypsi Zombie? Fac 245% capitis iactum damnum et maiorem occasionem habere 9% discumbere cum shotguns et pugni."
+attStrengthRank04LongDesc,"Parce strigare ut fame pereas, sed non adiuvat te sledgehammer iactare. Fac 260% capitis iactum dampnum et habent 12% maiorem occasionem discerpendi cum shotguns et pugni."
+attStrengthRank05LongDesc,"Estis idonei et valentes 275% capitis iactum damnum et maiorem occasionem habent 15% discerpturi cum pyrobolis et pugnis."
+attStrengthRank06LongDesc,"Valde fortis es et omnes normae gymnasii invidi sunt. Benigne 290% capitis iactum damnum et maiorem occasionem habere 18% discumbere cum shotguns et pugni."
+attStrengthRank07LongDesc,"Elit fustes et acetabula tibi nonnulla lucra dederunt. Benigne 305% capitis iactum damnum et maiorem occasionem habent 21% discerpendi cum shotguns et pugni."
+attStrengthRank08LongDesc,"Magna vis tua fabulosa est. Fac 320% capitis iactum dampnum et habere 24% maiorem occasionem discumbere cum shotguns et pugni."
+attStrengthRank09LongDesc,"Magnitudo, robur, potestas omnes nunc aequo propugnant. Benigne 335% capitis iactum damnum et maiorem occasionem habent 27% discerpendi cum shotguns et pugni."
+attStrengthRank10LongDesc,"Tu esses propugnator Olympicus si Apocalypsis illud somnium non oppressisset. Nunc immortui iustus opprimere potes. Benigne 350% capitis iactum dampnum et habere 30% maiorem occasionem discerpere shotguns et pugni."
+perkDemolitionsExpertRank1LongDescRE,"Nunc grenadier inchoare es, cave cum illis explosives. Crescere damnum 17%, celeritas reload 10%, intendere 15% velocius, maiorem 15% casum discumbere."
+perkDemolitionsExpertRank2LongDescRE,"Crescere damnum per 34%, reload celeritatem 20%, intendere 30% velocius, 30% maiorem casum discumbere."
+perkDemolitionsExpertRank3LongDescRE,"Nunc explosivae tracto es. Auge damnum 51%, auge reload velocitatem per 30%, intende 45% velocius, 45% maiorem casum discerpendi."
+perkBoomstickRank1LongDescRE,"Fac 17% plus damni, 10% ocius ignis rate, et 10% ocius reload. Stupefaciunt inimicos pro 6 seconds.\ nIncreases facultas discerpendi 5%."
+perkBoomstickRank3LongDescRE,"Fac 34% plus damni, 20% velocius ignis rate, et 20% ocius reload. Stupefaciunt inimicos pro 8 secundis. \nIncreases facultas discerpendi per 10%."
+perkBoomstickRank5LongDescRE,"Fac 51% plus damni, 30% celerius ignis rate, et 30% ocius reload. nLegs ictus claudunt adversarios."
+perkBrawlerNameRE,Rixator (Slots 7 8 9 0)
+perkBrawlerRank1LongDescRE,"Plus 17% damnum pugnis agere. Pugnis ad caput negate infectio facultatem."
+perkBrawlerRank3LongDescRE,"Fac plus damni 34% pugnis. Potestas impetus ad caput habere 20% forte deturbare adversario tuo et habere 30% casu vacillare adversarios cum potestate impetus."
+perkBrawlerRank5LongDescRE,"Fac plus damni 51%. Potestas impetus ad caput habere 30% casum ut adversarium tuum evertere et superiorem occasionem habere pugnis capitibus explodere."
+perkSexualTrexRank1LongDescRE,"Lectus es ad scamnum calidiorem. Minue concursus et instrumentum patientia usus ab 6% et potentia impetus per 10%."
+perkSexualTrexRank2LongDescRE,"Tu nunc bonus es athleta, et nihil agis, nihil est praeteriti temporis. Minue concursus et instrumentum patientiae usus per 12% et vim impetus per 20%.\nKilling ictus dona 10 patientia."
+perkSexualTrexRank3LongDescRE,"Nemo despiciet virum bellatorem. Minue concursus et instrumentum patientiae usus per 18% et vim impetus per 30%. \nKilling ictus da 15 patientia.\n\nKilling ictus da 20 patientia."
+perkSexualTrexRank4LongDescRE,"Nunc gladiator es cavea, et ad summam athleticam virtutem coortus es. Reducere concursus et instrumentum patientiae usus per 24% et vim impetus per 40%."
+perkMiner69rNameRE,Miner 69'er (Pulchrum/Wrench)
+perkMiner69rDescRE,"Tuam fodienda nisus maximize augendo instrumentum damnum ad saxa et arbores detrahe celeriter."
+perkMiner69rRank1LongDescRE,"Obstructionum damnum auget per 50% cum ferro et clavis."
+perkMiner69rRank2LongDescRE,"Obstructionum damnum auget per 100% cum ferro et clavis."
+perkMiner69rRank3LongDescRE,"Obstructionum damnum auget per 150% cum ferro et clavis."
+attFortitudeRank01LongDesc,"Non admodum diuturna aut sana es, sed saltem vivis. Benigne 215% capitis iaculat damnum et in 3% forte discerpere cum machina sclopeta."
+attFortitudeRank02LongDesc,"Tu paulo melius quam solebas. Benigne 330% caput iaculat dampnum et habere 6% forte discerpere cum machina sclopeta."
+attFortitudeRank03LongDesc,"Gravitatem detestor et stans serva pergis. Benigne 245% capitis iaculat damnum et habent 9% forte discerpere cum machina sclopeta."
+attFortitudeRank04LongDesc,"Incipis sentire sicut homines normales. Benigne 260% caput iaculat dampnum et habere 12% forte discerpere cum machina sclopeta."
+attFortitudeRank05LongDesc,"Sanus es. Benigne 275% capitis iaculat dampnum et habent 15% forte discerpere cum machina sclopeta."
+attFortitudeRank06LongDesc,"Sanus es valde. Benigne 290% caput iaculat damnum et a 18% forte discerperet cum machina sclopeta."
+attFortitudeRank07LongDesc,"Tu valetudinem strenuam habes. Benigne 305% capitis iaculat dampnum et habere 21% forte discerpere cum machina sclopeta."
+attFortitudeRank08LongDesc,"Sint mollit ut veniam. Benigne 320% caput iaculat damnum et a 24% forte discerpere cum machina sclopeta."
+attFortitudeRank09LongDesc,"Miram habes constitutionem. Benigne 335% capitis iaculat damnum et habent 27% forte discerpere cum machina sclopeta."
+attFortitudeRank10LongDesc,"Habes inuberantem fortitudinem et in turbinem pellere potes. Benigne 350% capitis iaculat dampnum et habere 30% forte discerpere cum machina sclopeta.
+perkMachineGunnerRank3LongDescRE,"Acuit omnes tuas artes pugna, et nunc es miles. Fac 17% plus damni, 8% velocius ignis rate et reload 10% velocius. Commando Adrenaline: Quilibet iecit laceratum latis armis det vobis 1 patientiam."
+perkMachineGunnerRank4LongDescRE,"Solertia tua nunc singulares copias aequet. Fac 34% plus damni, 16% velocius ignis rate et reload 20% velocius. Commando Adrenaline: Quilibet offa laceratum latis armis det vobis 2 patientiam."
+perkMachineGunnerRank5LongDescRE,"Nunc es ultimus machina tormentarii. Fac 51% plus damni, 24% velocius ignis rate et reload 30% velocius. Commando Adrenaline: Quilibet offa laceratum latis armis det vobis 3 patientiam."
+perkPainToleranceRank1LongDescRE,"Boosts armaturam tuam rating per 1 pro unaquaque parte armorum quam geris (charactere screen ostendit improprie) et casu demittit ut sopitum 34%."
+perkPainToleranceRank2LongDescRE,"Boosts armaturam tuam rating per 2 pro unaquaque parte armorum quam geris (charactere screen ostendit improprie) et casu demittit ut sopitum 67%."
+perkPainToleranceRank3LongDescRE,"Boosts armaturam tuam rating per 3 pro unaquaque parte armorum quam geris (charactere screen ostendit improprie) et nunquam adepto sopitum."
+buffPerkCharismaticNatureDescRE,Tu es usus tuos superstes!
+perkCharismaticNatureDescRE,Tu es superstes.
+perkCharismaticNatureNameRE,Salvos Instinctus
+perkCharismaticNatureRank1DescRE,Fit et Healthy
+perkCharismaticNatureRank2DescRE,Violente
+perkCharismaticNatureRank3DescRE,Ferrum Cutis
+perkCharismaticNatureRank1LongDescRE,"Tuus salvos instinctus 20 sanitatem et patientiam acquirit."
+perkCharismaticNatureRank2LongDescRE,"Tua Clausus damnum augetur 50% et Entity damnum per 8.5%."
+perkCharismaticNatureRank3LongDescRE,"Armatura tua rating ac resistentia explosivae augetur per 1 pro unaquaque parte armorum detrita et tua max Salutem et Stamina augetur ab alio 10."
+perkHealingFactorRank1LongDescRE,"enendum est metabolismum ieiunium habere. 24 Omni hora sanitatem naturalem proficiet. Laesiones criticae 50% sana citius."
+perkHealingFactorRank2LongDescRE,"Tenendum est metabolismum ieiunium habere. 42 salutem omni hora cum sanitate naturali. Iniuriae criticae 100% sana citius."
+perkPhysicianRank1LongDescRE,"Medicinae sanitatem items sana 25% plus sanitatis."
+perkPhysicianRank2LongDescRE,"Medicinae sanitatem items sana 50% plus sanitatis."
+perkPhysicianRank3LongDescRE,"Medicinae sanitatem items sana 75% plus sanitatis."
+attAgilityRank01LongDesc,"Tam informes es cum veniunt, sed tamen 215% capitis iactum damnum facis et 3% casu discerpendo, handguns, et cultri habes.."
+attAgilityRank02LongDesc,"Turma pediludii non fecisti, sed te exercere non prohibebat. Benigne 230% capitis iactum damnum et a 6% forte discerpendo arcubus, handguns et cultris."
+attAgilityRank03LongDesc,"Adhuc magna et clunky es, sed damnum 245% caput iactum agere potes et forte 9% discerpere cum arcu, handguns et cultris."
+attAgilityRank04LongDesc,"Tuum dexteritas aliquid ineptum est, sed tractare potes 260% damnum capitis iactum et forte 12% discerpere arcus, handguns et cultros."
+attAgilityRank05LongDesc,"Nunc agilis es et fac 275% capitis iactum damnum et 15% casu distrahendi arcus, handguns et cultri."
+attAgilityRank06LongDesc,"Motus tuus nunc valde perniciosus est et 290% capitis iactum damnum incidit et 18% casu lacerandum est cum arcu, handguns et cultris."
+attAgilityRank07LongDesc,"Tua sollertia est valde gravis. Benigne 305% capitis iactum dampnum et habere 21% forte discerpere arcus, handguns et cultris."
+attAgilityRank08LongDesc,"Liquorem movens et pedibus tuis exiens natura secunda est tibi. Fac 320% capitis iactum damnum et habent 24% forte discerpturi cum arcu, handguns et cultris."
+attAgilityRank09LongDesc,"Agilitas tua satis bene professio athletae esse potes. Benigne 335% capitis iactum dampnum et habere 27% forte discerpere arcus, handguns et cultris."
+attAgilityRank10LongDesc,"Tua dexteritas singularis est. Benigne 350% capitis iaculat dampnum et habere 30% forte discerpere arcubus, handguns et cultris."
+perkGunslingerRank3LongDescRE,"Plures condiciones sub dominio vicecomitis tenere potes. Fac 17% plus damni, 8% ocius ignis rate, ac reload 10% velocius. Critica Damnum: 5 continuos hits in brevi causa ultimum iaculat facere 100% extra damnum."
+perkGunslingerRank4LongDescRE,"Nunc propugnator es et nilum plenum protervi nothi ad guttam pilei purgare potes. Fac 34% plus damni, 16% velocius ignis rate, et reload 20% velocius. Critica Damnum: 4 continuos hits in brevi causa ultimum iaculat facere 100% extra damnum."
+perkGunslingerRank5LongDescRE,"In Navezgane es celerrimus tormentarii. Fac 51% plus damni, 24% velocius ignis rate, et 30% ocius reload cum handguns. Critica Damnum: 3 continuos hits in brevi causa ultimum iaculat facere 10% extra damnum."
+perkDeepCutsRank1LongDescRE,"Hebes ferrum poteras habere, sed uti scis. Fac plus damnum% 17. Addit angustos damnum cultris per 50%."
+perkDeepCutsRank2LongDescRE,"Amici tui dicunt te puellam vere cultrum esse. Fac plus damni 34%. Angustos 100% per damnum addit cultris."
+perkDeepCutsRank3LongDescRE,"Praecisus es prae ceteris. Fac plus damni 51%. Crescit angustos damnum cultris per 150%."
+perkRunAndGunRank1LongDescRE,"Sparge et Ora. Petens est overrated, mox primum iacio et postea interrogare. Coxae ignis accurate emendatur per 10% et motus poenae cum reloading reducitur 20%."
+perkRunAndGunRank2LongDescRE,"Vellicatio digiti tui te in tribulatione possent, sed pellem tuam multis occasionibus servaverunt. Coxae ignis accurate emendatur per 20% et motum poenae cum reloading reducitur 40%."
+perkRunAndGunRank3LongDescRE,"Nunc felis mortiferae vir es et artem run et sclopetis compescens. Coxae ignis accurate emendatur per 30% et motus poenae cum reloading reducitur 60%."
+perkFlurryOfBlowsRank1LongDescRE,"Manus velox effectae es. Una manu concursus celeritatum impetus augentur per 15%. Quisque occiditis recharges patientia in 5 puncta."
+perkFlurryOfBlowsRank2LongDescRE,"Excogitatum est repentino ictu. Una manu concursus celeritatum impetus augentur 30%. Quisque occiditis recharges patientia per 10 puncta."
+perkFlurryOfBlowsRank3LongDescRE,"Verberum tumultum doxisti. Una manu concursus celeritatum impetus augentur 45%. Quisque occiditis recharges patientia per 15 puncta."
