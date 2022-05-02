@@ -1,6 +1,6 @@
 Key,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
 goDifficultyRE,"[FF4F00]Schwierigkeit (Lies mich)[-]"
-goDifficultyREDesc,"C – Sie verursachen 100 % Schaden und nehmen 100 % Schaden.\n\nB – Sie verursachen 80 % Schaden und nehmen 150 % Schaden.\n\nA – Sie verursachen 67 % Schaden und nehmen 200 % Schaden.\n\nS – Sie verursachen 50 % Schaden und nehmen 250 % Schaden.\n\nX – Sie verursachen 40 % Schaden und nehmen 350 % Schaden.\n[FF4F00](Versuchen Sie dies NICHT bei Ihrem ersten Abschluss)"
+goDifficultyREDesc,"C – Sie verursachen 100 % Schaden und nehmen 100 % Schaden.\n\nB – Sie verursachen 80 % Schaden und nehmen 150 % Schaden.\n\nA – Sie verursachen 67 % Schaden und nehmen 200 % Schaden.\n\nS – Sie verursachen 50 % Schaden und nehmen 250 % Schaden.\n\nX – Sie verursachen 40 % Schaden und nehmen 350 % Schaden.\n[FF4F00](Versuchen Sie dies NICHT bei Ihrem ersten Abschluss)[-]\n\nZ – Sie verursachen 80 % Schaden und nehmen 700 % Schaden.\n[FF4F00](Versuchen Sie dies NICHT bei Ihrem ersten Abschluss)[-]"
 goDifficulty1RE,"C"
 goDifficulty2RE,"B"
 goDifficulty3RE,"A"
@@ -29,7 +29,7 @@ loadingTipRE5,"Sammle unterwegs Knochen und Leder, die du später beim Bau des G
 loadingTipRE5_title,"Knochen und Leder:"
 loadingTipRE6,"Zombies spüren keine Schmerzen, genau wie in Resident Evil, also zucken sie nur zusammen, wenn sie angegriffen werden."
 loadingTipRE6_title,"Zombies fühlen keinen Schmerz:"
-loadingTipRE7,"Ein großes Dankeschön an die folgenden Personen: AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake."
+loadingTipRE7,"Ein großes Dankeschön an die folgenden Personen: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake."
 loadingTipRE7_title,"Besonderen Dank!"
 tutorialTipQuest01,"Sie sind dabei, den Vorfall in der Spencer Mansion aus einer First-Person-Perspektive zu erleben.\n\nBei dieser Herausforderung wird es immer Nacht sein, daher wird empfohlen, dass Sie die Zombie-Geschwindigkeit für die Nacht nach Ihren Wünschen einstellen.\n\nUm die Herausforderung für Resident Evil treu zu halten, beachte bitte Folgendes.\n1) Sie haben einen begrenzten Inventarplatz von 12 Slots. Es gibt Artikelaufbewahrungsboxen, um Ihre Artikel aufzubewahren.\n2) Sie können nicht springen.\n3) Die meisten Feinde empfinden keine Schmerzen, daher wird es anders sein, sie zu bekämpfen, als Sie es gewohnt sind.\n\nFür ein immersives Erlebnis würde ich empfehlen, die Musik so einzustellen, dass sie die ganze Zeit abgespielt wird.\n\nStellen Sie für das beabsichtigte Erlebnis sicher, dass Sie alle nicht verwandten Modlets entfernen und Ihre orangefarbenen Spieleinstellungen korrekt sind."
 "buffNewbieCoatNameRE",Unendlich Nahrung und Wasser
@@ -295,6 +295,9 @@ MuzzleBreakDesc,"Macht das Sturmgewehr genauer und insgesamt einfacher zu handha
 "Athletic Jacket Mod",Sportjacke Mod
 "High Permormance Running Soles",Hochleistungs-Laufsohlen
 modGunMeleeBlessedMetalDesc,"Erhöht den Schaden an Tyrant\n\nNur Messer stark."
+drugBoulderBusters,"Chris Redfield hat diese heimlich in seinem Proteinshake.\n\nErhöht Schlägereischaden um 400 %.\nKann mit Skull Crushers und Beer gestapelt werden!"
+drugBoulderBustersDesc,"Dein Brawling-Schaden wird um 400 % erhöht.\nKann mit Skull Crushers und Beer gestapelt werden!"
+drugRockBusters,Boulder-Buster!
 SuperGogglesDesc,"Diese bösen Jungs werden dich davon abhalten, ein Jill Sandwich zu werden.\n\n\nZähigkeit +2\nBeweglichkeit +2.\nHerstellungszeit -40 %."
 "Note from Barry",Hinweis von Barry
 BarryNote,"Jill, ich habe dir ein paar Vorräte dagelassen.\n\nBarry"
