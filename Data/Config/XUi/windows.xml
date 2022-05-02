@@ -63,7 +63,7 @@
 		<rect pos="-200,-125" width="400" height="0" visible="{isnotboss}" >
 			<sprite depth="1" name="border" color="0,0,0,200" type="sliced" width="0" globalopacity="false"/>
 			<filledsprite depth="2" name="BarContent" type="filled" color="200,0,0,180" width="0" fill="{fill}" globalopacity="false"/>
-			<label depth="3" name="TextContent" pos="9,-4" font_size="28" color="[white]" justify="center" pivot="topleft" text="{name}" height="30"/>
+			<label depth="3" name="TextContent" pos="-1,-4" font_size="36" color="[green]" justify="center" pivot="topleft" text="{name}" height="30"/>
 		</rect>
 		
 		<rect pos="-267,-85" width="725" height="25" visible="{isboss}" >
@@ -89,6 +89,8 @@
 	</window>
 
 	<window name="windowGroupBars" controller="PartyWindow" depth="-20">
+
+		<sprite depth="8" name="voiceStatus" style="icon32px" pos="25,-68" sprite="ui_game_symbol_mic" visible="{# partyvisible and voicevisible}" pivot="center" color="{# voiceactive ? '255,255,255,255' : '128,128,128,255' }" />
 
 		<grid name="hud" pos="9,-88" rows="7" cols="1" width="168" cell_width="168" cell_height="40" side="left" repeat_content="true" controller="PartyEntryList" >
 			<party_entry />
@@ -203,7 +205,7 @@
 		
 		<texture depth="8" texture="Textures/UI/Compass/overlay-{gamelanguage}" pos="50, -12" width="380" height="27" color="[iconColor]" name="compassTexture3" rect_size="0.25,1" rect_offset="{#compass_rotation / 360 + 0.0625 - 0.125},0" />
 
-		<sprite pos="240,250" sprite="" color="255,255,255,255" globalopacitymod="1.8">
+		<sprite pos="240,350" sprite="" color="255,255,255,255" globalopacitymod="1.8">
 			<label depth="2" width="300" height="30" text="{daytitle}: [{daycolor}]{day}[-] {timetitle}: {time}" font_size="28" pivot="center" effect="outline" upper_case="true" justify="center"/>
 		</sprite>
 	</window>
@@ -874,8 +876,8 @@
 				</rect>
 			</rect>
 
-			<label depth="2" pos="432,-8" width="100" height="28" text="{currencyamount}" justify="right" />
-			<sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="537,-10" color="[white]" foregroundlayer="true" />
+			<label depth="2" pos="510,-8" width="100" height="28" text="{currencyamount}" justify="left" />
+			<sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="480,-10" color="[white]" foregroundlayer="true" />
 		</panel>
 
 		<panel name="content" width="100%" height="303" depth="0" pos="0,-80" disableautobackground="true">
@@ -1076,18 +1078,18 @@
 				</grid>
 			</rect>
 
-			<sprite depth="1" pos="0,6" height="8" color="[mediumGrey]" sprite="menu_empty2px" globalopacity="false" type="sliced" />
-			<sprite depth="9" pos="0,6" height="8" color="[black]" sprite="menu_empty2px" globalopacity="false" type="sliced" fillcenter="false" />
-			<sprite depth="4" pos="0,6" height="8" width="750" color="{xpcolor}" globalopacity="false" type="filled" fill="{xp}" />
+			<sprite depth="1" pos="1,14" height="16" color="[mediumGrey]" sprite="menu_empty2px" globalopacity="false" type="sliced" />
+			<sprite depth="9" pos="1,14" height="16" color="[black]" sprite="menu_empty2px" globalopacity="false" type="sliced" fillcenter="false" />
+			<sprite depth="4" pos="1,14" height="16" width="748" color="{xpcolor}" globalopacity="false" type="filled" fill="{xp}" />
 
-			<rect pos="0,-77" width="378" height="8" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
+			<rect pos="0,-76" width="378" height="16" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
 				<sprite depth="1" color="[mediumGrey]" sprite="menu_empty2px" globalopacity="false" type="sliced" />
 				<sprite depth="9" color="[black]" sprite="menu_empty2px" globalopacity="false" type="sliced" fillcenter="false" />
 
 				<filledsprite depth="5" pos="1,0" width="376" name="BarContent" color="0,255,54,128" globalopacity="false" type="filled" fill="0"  />
 			</rect>
 
-			<rect pos="376,-77" width="377" height="8" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
+			<rect pos="376,-76" width="377" height="16" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
 				<sprite depth="1" color="[mediumGrey]" sprite="menu_empty2px" globalopacity="false" type="sliced" />
 				<sprite depth="9" color="[black]" sprite="menu_empty2px" globalopacity="false" type="sliced" fillcenter="false" />
 
@@ -1348,7 +1350,7 @@
 		<panel name="content" depth="0" pos="0,0" height="46" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="3" controller="MapEnterWaypoint">
 			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
 			<panel pos="13,-8" depth="1" width="160" disableautobackground="true">
-				<textfield depth="1" name="searchInput" pos="0,0" width="140" height="30" virtual_keyboard_prompt="vkPromptWaypointName" open_vk_on_open="true" />
+				<textfield depth="1" name="searchInput" pos="0,0" width="140" height="30" virtual_keyboard_prompt="vkPromptWaypointName" />
 			</panel>
 		</panel>
 	</window>
@@ -1668,8 +1670,7 @@
 		</grid>
 	</window>
 
-
-	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
+  <!--#$-IGS BEGIN: Adding cursor area. -$#-->
 	<window name="windowAssemble" width="380" height="745" panel="Left" controller="AssembleWindow" cursor_area="true" >
 	<!--#$-IGS END.-$#-->
 		<panel name="header" pos="3,0" height="43" depth="1" backgroundspritename="ui_game_panel_header">
@@ -1754,7 +1755,91 @@
 		</panel>
 	</window>
 
-	<window name="windowRadial" anchor="CenterCenter">
+  <window name="windowAssembleDrone" width="380" height="745" panel="Left" controller="AssembleDroneWindow" cursor_area="true" >
+    <!--#$-IGS END.-$#-->
+    <panel name="header" pos="3,0" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+      <sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_assemble"/>
+      <label style="header.name" text="{itemname}" />
+
+      <sprite depth="2" width="112" pos="260, -17" height="10" type="sliced" color="[black]" />
+      <sprite depth="2" width="110" pos="261, -18" height="8" type="sliced" color="[mediumGrey]" />
+      <sprite depth="2" name="sprQuality" width="110" pos="261, -18" height="8" type="filled" color="{itemqualitycolor}" fill="{itemqualityfill}" />
+    </panel>
+
+    <panel name="content" depth="0" pos="0,-43" disableautobackground="true">
+      <rect depth="1"  height="625">
+        <!-- <sprite color="[darkGrey]" pos="3,-3" height="613" /> -->
+        <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="3,-3" width="380" height="213" color="[black]" type="sliced" fillcenter="false" />
+        <rect depth="1" pos="3,-3" width="380" height="619">
+
+          <rect name="stats">
+            <rect pos="0,0" height="33">
+              <sprite depth="8" sprite="menu_empty3px" height="33" color="[black]" type="sliced" fillcenter="false" />
+              <sprite depth="1" color="[darkestGrey]" pos="0,-1" height="31" type="sliced" />
+              <label depth="3" pos="15,-3" width="350" font_size="26" text="{itemstattitle1}" justify="left" color="[white]" />
+              <label depth="3" pos="15,-3" width="350" font_size="26" text="{itemstat1}" justify="right" color="[selectedColor]" />
+            </rect>
+            <rect pos="0,-30" height="33">
+              <sprite depth="8" sprite="menu_empty3px" height="33"  color="[black]" type="sliced" fillcenter="false" />
+              <sprite depth="1" color="[darkGrey]" type="sliced" />
+              <label depth="3" pos="15,-3" width="350" font_size="26" text="{itemstattitle2}" justify="left" color="[white]" />
+              <label depth="3" pos="15,-3" width="350" font_size="26" text="{itemstat2}" justify="right" color="[selectedColor]" />
+            </rect>
+            <rect pos="0,-60" height="33">
+              <sprite depth="8" sprite="menu_empty3px" height="33" color="[black]" type="sliced" fillcenter="false" />
+              <sprite depth="1" color="[darkestGrey]" pos="0,-1" height="31" type="sliced" />
+              <label depth="3" pos="15,-3" width="350" font_size="26" text="{itemstattitle3}" justify="left" color="[white]" />
+              <label depth="3" pos="15,-3" width="350" font_size="26" text="{itemstat3}" justify="right" color="[selectedColor]" />
+            </rect>
+            <rect pos="0,-90" height="33">
+              <sprite depth="8" sprite="menu_empty3px" height="33"  color="[black]" type="sliced" fillcenter="false" />
+              <sprite depth="1" color="[darkGrey]" type="sliced" />
+              <label depth="3" pos="15,-3" width="350" font_size="26" text="{itemstattitle4}" justify="left" color="[white]" />
+              <label depth="3" pos="15,-3" width="350" font_size="26" text="{itemstat4}" justify="right" color="[selectedColor]" />
+            </rect>
+            <rect pos="0,-120" height="33">
+              <sprite depth="8" sprite="menu_empty3px" height="33" color="[black]" type="sliced" fillcenter="false" />
+              <sprite depth="1" color="[darkestGrey]" pos="0,-1" height="31" type="sliced" />
+              <label depth="3" pos="15,-3" width="350" font_size="26" text="{itemstattitle5}" justify="left" color="[white]" />
+              <label depth="3" pos="15,-3" width="350" font_size="26" text="{itemstat5}" justify="right" color="[selectedColor]" />
+            </rect>
+            <rect pos="0,-150" height="33">
+              <sprite depth="8" sprite="menu_empty3px" height="33"  color="[black]" type="sliced" fillcenter="false" />
+              <sprite depth="1" color="[darkGrey]" type="sliced" />
+              <label depth="3" pos="15,-3" width="350" font_size="26" text="{itemstattitle6}" justify="left" color="[white]" />
+              <label depth="3" pos="15,-3" width="350" font_size="26" text="{itemstat6}" justify="right" color="[selectedColor]" />
+            </rect>
+            <rect pos="0,-180" height="33">
+              <sprite depth="8" sprite="menu_empty3px" height="33" color="[black]" type="sliced" fillcenter="false" />
+              <sprite depth="1" color="[darkestGrey]" pos="0,-1" height="31" type="sliced" />
+              <label depth="3" pos="15,-3" width="350" font_size="26" text="{itemstattitle7}" justify="left" color="[white]" />
+              <label depth="3" pos="15,-3" width="350" font_size="26" text="{itemstat7}" justify="right" color="[selectedColor]" />
+            </rect>
+          </rect>
+
+          <panel name="header" pos="0,-230" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+            <sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_paint_bucket"/>
+            <label style="header.name" text_key="xuiCosmetics" />
+          </panel>
+
+          <grid name="cosmeticparts" rows="1" cols="1" pos="3,-279" cell_width="374" cell_height="60" repeat_content="true" controller="ItemCosmeticStackGrid" sound_play_on_hover="[default_hover]">
+            <item_part_slot controller="ItemCosmeticStack" empty_slot_text_key="xuiEmptyCosmeticSlot" />
+          </grid>
+
+          <panel name="header" pos="0,-355" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+            <sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_assemble"/>
+            <label style="header.name" text_key="xuiModifiers" />
+          </panel>
+
+          <grid name="parts" rows="6" cols="1" pos="3,-404" cell_width="374" cell_height="60" repeat_content="true" controller="ItemDronePartStackGrid">
+            <item_part_slot controller="ItemDronePartStack" empty_slot_text_key="xuiEmptyModifierSlot" />
+          </grid>
+        </rect>
+      </rect>
+    </panel>
+  </window>
+  
+  <window name="windowRadial" anchor="CenterCenter">
 		<rect name="radialPanel" repeat_content="true" count="20" pivot="center">
 			<radial_entry />
 			<radial_entry />
