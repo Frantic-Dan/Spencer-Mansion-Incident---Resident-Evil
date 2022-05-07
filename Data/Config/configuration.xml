@@ -21,7 +21,7 @@ Wanna join the Discord? - https://discord.gg/4A5MF8GHM5
 DO NOT ALT+F4 AS YOUR CHARACTER WILL RESET!
 
 2) In Multiplayer, when accessing an Untouched Vault, *ALL* players need to open the Untouched Vault *BEFORE* anyone adds or removes items.
-Otherwise, ITEMS WILL DISAPPEAR!!!
+Otherwise, ITEMS WILL DISAPPEAR!!! (The Vault function is disabled by default due to bugs)
 
 3) Unconfirmed on what the cause is, it may be due to trying to load into the game while you're not logged into steam, or playing a different save, vanilla or another mod.
 The entire contents of 'The Vault' can get deleted.
@@ -50,7 +50,7 @@ so you'll be free to put your skill points wherever you wish as long as you have
 4) Zombie Pain: Zombies no longer feel pain, so they won't even flinch when attacked.
 5) Zombie Rage: Disabled, zombies will never enter rage mode and get faster.
 6) One Time Looting: Almost every loot container can only be looted once, and will downgrade or destroy after closing.
-7) Linked Storage: You'll be able to access your stored items from any of the storage boxes. (Huge thank you to wOOkie nOOkie!!)
+7) Linked Storage (disabled by default due to bugs): You'll be able to access your stored items from any of the storage boxes. (Huge thank you to wOOkie nOOkie!!)
 8) Simplified Criticals: I've removed the severe critical injuries (Broken arm/leg etc) and shortened the duration of fatigue.
 You can still get lessor criticals, like sprains.
 
