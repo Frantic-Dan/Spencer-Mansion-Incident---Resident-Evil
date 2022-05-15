@@ -5525,7 +5525,7 @@ The overall plan for loot distribution:
 </lootcontainer>
 
 <!-- medicalPileSmall -->
-<lootcontainer id="114" name="medicalPileSmall" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+<lootcontainer id="114" name="medicalPileSmall" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
 	<item group="groupMedicalPileSmall"/>
 </lootcontainer>
 
