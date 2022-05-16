@@ -14229,8 +14229,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="#Entities/LootContainers?medic_loot_pile_APrefab.prefab"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="IsTerrainDecoration" value="true"/>
-	<!-- <property name="Class" value="Loot"/>
-	<property name="LootList" value="medicalPileSmall"/> --> 
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="medicalPileSmall"/> 
 	<drop event="Destroy" name="resourceScrapPolymers" count="1,4"/>
 	<drop event="Harvest" name="resourceAcid" prob=".05" count="1" tag="WasteTreasuresAcidHarvest"/>
 	<property name="FilterTags" value="MC_building,SC_loot,MC_helpers,SC_treasureRoom"/>
