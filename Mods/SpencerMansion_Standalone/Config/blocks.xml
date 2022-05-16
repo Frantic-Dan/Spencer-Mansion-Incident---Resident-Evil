@@ -538,7 +538,7 @@
 <block name="UMB-No3">
 	<property name="Material" value="Mbedrock"/>
 	<property name="DisplayInfo" value="Name"/>
-	<property name="Extends" value="cntMedicLootPileA"/>
+	property name="Extends" value="cntChemPileSmall"/>
 	<property name="Model" value="#Entities/LootContainers?medic_loot_pile_BPrefab.prefab"/>
 	<property name="ModelOffset" value="0,0,0"/>
 	<property name="GndAlign" value="1"/>
