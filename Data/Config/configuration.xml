@@ -4,17 +4,15 @@
 
        <ServerGroup Name="Spencer Mansion Incident - Resident Evil" Logo="" Description="">
 
-               <Server Name="Jill Valentines Story v1.03" Logo="">
+               <Server Name="Jill Valentines Story v1.04" Logo="">
 
                        <Description>
-** Requires A20.4 (b42) **
+** Requires A20.5 (b2) **
 
 Have you ever wanted to play Resident Evil in first person? Well now you can!
-
 STORY: Experience the 1998 Spencer Mansion Incident as Jill Valentine. Collect keys, solve puzzles, manage your limited resources and escape from the Survival Horror.
 
 ******KNOWN BUGS******
-
 1) Clicking 'Equip' on an item in your main inventory - You will get an infinite wall of red text, to stop it, move an item from your toolbelt or into your toolbelt.
 DO NOT ALT+F4 AS YOUR CHARACTER WILL RESET!
 
@@ -26,11 +24,10 @@ The entire contents of 'The Vault' can get deleted.
 My advice is to commit to a playthrough before playing other 7 Days to Die playthroughs elsewhere.
 
 Setup:
-1) Requires A20.4 (b42)
+1) Requires A20.5 (b2)
 2) When starting a new game, make sure to select the 'Spencer Mansion Incident' world.
 3) I've made setup easy to follow by making the text orange for all settings you'll need to manually change for the intended Resident Evil experience.
 4) It will always be night, so be sure to change the Zombie Night Speed to your liking. (Walk is recommended)
-
 (If your game is in day time, you'll die a horrible death!)
 
 **IMPORTANT**
