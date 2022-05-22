@@ -770,7 +770,9 @@
 					<button name="btnShowFilters" pos="340,-66" width="30" height="30" sprite="server_filter" defaultcolor="180,180,180" hovercolor="[white]" selectedcolor="[selectedColor]" foregroundlayer="true" type="simple" hoverscale="1.1" pivot="left" tooltip_key="xuiServerBrowserShowFiltersTooltip" selected="{filtersbuttonselected}" />
 				</rect>
 				
-				<label name="limitWarning" pos="220,-66" width="400" height="34" pivot="Center" justify="Center" font_size="32" color="[red]" text="{limitwarningtext}" tooltip="{limitwarningtooltip}" on_hover="true" visible="{limitwarningvisible}" />
+				<rect depth="4" name="maxResultsRect" pos="10,-66" width="550" height="40" visible="{# isprefilteredsearch}">
+					<label name="maxResultsWarning" pos="0, 0" font_size="34" justify="center" pivot="left" on_hover="true" color="[red]" text="{# format(localization ('serverBrowserResultLimitWarningText'), resultlimit) }" tooltip="{# format(localization ('serverBrowserResultLimitWarningTooltip'), resultlimit) }" visible="{limitwarningvisible}" />
+				</rect>
 				
 				<panel pos="588,-44" width="98" height="43" disableautobackground="true">
 					<pager name="pager" pos="1,-6" />
@@ -1294,10 +1296,10 @@
 
 				<rect />
 
-				<audiooption name="VoiceChatEnabled" type="ComboBoxBool" localization_prefix="xuiComboYesNo" visible="{commsallowed}" />
-				<audiooption name="VoiceOutputDevice" type="ComboBoxList`1[Platform.IPartyVoice+VoiceAudioDevice]" value_wrap="false" visible="{commsallowed}" />
-				<audiooption name="VoiceInputDevice" type="ComboBoxList`1[Platform.IPartyVoice+VoiceAudioDevice]" value_wrap="false" visible="{commsallowed}" />
-				<audiooption name="VoiceVolumeLevel" type="ComboBoxFloat" value_increment="0.05" value_wrap="false" format_string="0%" visible="{commsallowed}" />
+				<audiooption name="VoiceChatEnabled" type="ComboBoxBool" localization_prefix="xuiComboYesNo" visible="{# commsallowed and voiceavailable}" />
+				<audiooption name="VoiceOutputDevice" type="ComboBoxList`1[Platform.IPartyVoice+VoiceAudioDevice]" value_wrap="false" visible="{# commsallowed and voiceavailable}" />
+				<audiooption name="VoiceInputDevice" type="ComboBoxList`1[Platform.IPartyVoice+VoiceAudioDevice]" value_wrap="false" visible="{# commsallowed and voiceavailable}" />
+				<audiooption name="VoiceVolumeLevel" type="ComboBoxFloat" value_increment="0.05" value_wrap="false" format_string="0%" visible="{# commsallowed and voiceavailable}" />
 
 				<!-- <audiooption name="MicVolumeLevel" type="ComboBoxFloat" value_increment="0.05" value_wrap="false" format_string="0%" visible="{commsallowed}" /> -->
 			</grid>
