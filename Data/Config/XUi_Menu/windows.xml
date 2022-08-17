@@ -627,7 +627,7 @@
 						<gameoption name="ServerMaxPlayerCount" title="goMaxPlayers" value_wrap="false" value_type="int" values="1, 2, 4, 8, 16" display_names="" value_localization_prefix="goPlayer" />
 						<rect/>
 						<gameoption name="GameDifficulty" title="goDifficultyRE" value_wrap="false" value_type="int" values="" display_names="goDifficulty1RE,goDifficulty2RE,goDifficulty3RE,goDifficulty4RE,goDifficulty5RE,goDifficulty6RE" value_localization_prefix="" />
-						<gameoption name="DayNightLength" title="goDayLengthRE" value_wrap="false" value_type="int" values="5, 150" display_names="" value_localization_prefix="goMinute" />
+						<gameoption name="DayNightLength" title="goDayLengthRE" value_wrap="false" value_type="int" values="5, 200" display_names="" value_localization_prefix="goMinute" />
 						<gameoption name="DayLightLength" title="goDayLightLengthRE" value_wrap="false" value_type="int" values="24, 0" display_names="" value_localization_prefix="goDayLightLengthValue" />
 					</grid>
 				</rect>
@@ -962,7 +962,7 @@
 					<rect tab_key="xuiGameSettingsBasic">
 						<grid pos="8,-40" rows="13" cell_width="725" cell_height="45" repeat_content="false" arrangement="vertical" >
 							<browsergameoptioncombined name="GameDifficulty" title="goDifficulty" value_wrap="false" values="" display_names="goDifficulty1,goDifficulty2,goDifficulty3,goDifficulty4,goDifficulty5,goDifficulty6" value_localization_prefix="" allow_custom="false" />
-							<browsergameoptioncombined name="DayNightLength" title="goDayLength" value_wrap="false" values="5, 150" display_names="" value_localization_prefix="goMinute" />
+							<browsergameoptioncombined name="DayNightLength" title="goDayLength" value_wrap="false" values="5, 200" display_names="" value_localization_prefix="goMinute" />
 							<browsergameoptioncombined name="DayLightLength" title="goDayLightLength" value_wrap="false" values="24, 0" display_names="" value_localization_prefix="goDayLightLengthValue" />
 							<browsergameoptioncombined name="ZombieMove" title="goZombieMove" value_wrap="false" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" allow_custom="false"  />
 							<browsergameoptioncombined name="ZombieMoveNight" title="goZombieMoveNight" value_wrap="false" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint" allow_custom="false" />
