@@ -1,0 +1,3100 @@
+<!--
+
+	starting_points - How many points a viewer starts with when they first join chat.
+	party_kill_reward_max - The maximum amount of points a viewer can get for killing a party member of the streamer. (Defaults to 250)
+	chat_activity_time - The amount of seconds your point generation is active after the last time you speak. (Defaults to 5 minutes)
+	nonsub_pp_cap - The cap on how many pimp points a non sub viewer can have.
+	sub_pp_cap - The cap on how many pimp points a sub viewer can have.
+	
+	// Game Events (See gameevents.xml)
+	
+	denied_crate_event - The game event that is activated when trying to open a party member's crate when crate stealing is off. 
+	stealing_crate_event - The game event that is activated when you open a party member's crate when crate stealing is on. 
+	party_respawn_event - The game event that is activated when a player respawns. 
+	on_death_event - The game event that is activated when a player dies. 
+	
+-->
+
+<twitch party_kill_reward_max="250" chat_activity_time="300" nonsub_pp_cap="1000" sub_pp_cap="2000"
+	denied_crate_event="action_cratedenied" stealing_crate_event="action_cratesteal" party_respawn_event="buff_respawn" on_death_event="action_ondeath">
+
+	<!-- Categories must be defined at the top. Must at least have one. Safe bet you should probably keep "Commands" in there and at the top. -->
+	<!-- Used to define the order the categories show in the UI and icon -->
+	<category name="Commands" display_name="TwitchActionCategory_Commands" />
+	<category name="Spawns" display_name="TwitchActionCategory_Spawns" icon="ui_game_symbol_twitch_spawn" />
+	<category name="Supplies" display_name="TwitchActionCategory_Supplies" icon="ui_game_symbol_twitch_drop" />
+	<category name="Buffs" display_name="TwitchActionCategory_Buffs" icon="ui_game_symbol_twitch_buffs" />
+	<category name="Debuffs" display_name="TwitchActionCategory_Debuffs" icon="ui_game_symbol_twitch_debuffs"/>
+	<category name="Special" display_name="TwitchActionCategory_Special" icon="ui_game_symbol_twitch_special" />
+	
+	<!-- Twitch Actions
+		
+		add_cooldown - If this action adds its point value to the cooldown bar when used.
+		category - Must have a defined category above. Comma delimited to allow expanding in UI to separate categories when list is longer than 10.
+			Example is the debuffs. They start in Buffs until there is more than 10 then they move into debuff category.
+		command - The command typed into the twitch chat for this action.
+		cooldown_blocked - If this action should not be allowed during cooldowns. (No actions are allowed during startup/corpse runs)
+		default_cost - The cost in PP/SP for the twitch action. We may add a modifier later so that's why it is called default_cost.
+		delay_notify - Delays the notification in twitch chat and in game for 5 seconds. Used for scare sounds.
+		description - The description of the Action displayed in the UI.
+		description_key - The localized description of the action that is displayed in the UI.
+		enabled - If this action is enabled. If this action shows in the UI you can re-enable it.
+		event_name - Game event that is called by this Twitch Action.
+		is_crate - This is used to handle the crate stealing code. Only use for crates.
+		is_positive - This defines if it shows red/blue in the UI.
+		only_usable_type - This defines who the twitch command can be used by: Everyone, Broadcaster, Mods, VIPs, Subs, Name
+		only_usable_by - If "Name" is defined for only_usable_type then this is a comma delimted list of names that can use it.
+		random_group - Random groups are defined below the action list. This groups actions into random group lists and randomly picks a defined number of
+			these actions to show per day.
+		replaces - Replaces the defined command (ie. #spawn_normal) with this action if its available.
+		show_in_action_list - If this action should show in the Twitch Info UI in the action list.
+		single_day - This action can only be used once per day.
+		special_only - Can only use special points for this action.
+		special_requirement - Currently used for pull to know there are SpawnedEntities. This may be added to in A20.
+		start_gamestage - The starting gamestage that the action shows up in.
+		title - Displayed name of the Action in the UI.
+		title_key - Localized name of the Action in the UI.
+		waiting_blocked - If this action should not be allowed when the cooldown is waiting for all spawned enemies to be defeated.
+		
+		cooldown_addition example:
+		
+		<cooldown_addition name="twitch_BigHead" time="360" />
+		name - name of the action you are adding cooldown to.
+		time - amount of cooldown being added.
+	-->
+	
+<action name="twitch_normalZombie">
+		<property name="start_gamestage" value="3" />
+		<property name="command" value="#spawn_normal" />
+		<property name="command_key" value="TwitchAction_SpawnNormalCommand" />
+		<property name="title_key" value="TwitchAction_SpawnNormal" />
+		<property name="category" value="Spawns" />
+		<property name="event_name" value="spnc_spawn_single" />
+		<property name="default_cost" value="75" />
+		<property name="cooldown" value="30" />
+		<property name="description_key" value="TwitchAction_SpawnNormalDesc" />
+		<property name="add_cooldown" value="true" />
+		<property name="cooldown_blocked" value="true" />
+		<property name="waiting_blocked" value="true" />
+	</action>
+	
+<action name="twitch_toughZombie" extends="twitch_normalZombie">
+		<property name="start_gamestage" value="8" />
+		<property name="command" value="#spawn_tough" />
+		<property name="command_key" value="TwitchAction_SpawnToughCommand" />
+		<property name="title_key" value="TwitchAction_SpawnNormal" />
+		<property name="description_key" value="TwitchAction_SpawnNormalDesc" />
+		<property name="event_name" value="spnc_spawn_tough" />
+		<property name="enabled" value="true" />
+		<property name="default_cost" value="125" />
+		<property name="cooldown" value="45" />
+	</action>
+	
+<action name="twitch_crawlerZombie" extends="twitch_normalZombie">
+		<property name="start_gamestage" value="3" />
+		<property name="command" value="#crawler" />
+		<property name="command_key" value="TwitchAction_SpawnCrawlerCommand" />
+		<property name="title_key" value="TwitchAction_SpawnCrawler" />
+		<property name="description_key" value="TwitchAction_SpawnCrawlerDesc" />
+		<property name="event_name" value="spnc_spawn_crawler" />
+		<property name="enabled" value="true" />
+		<property name="default_cost" value="50" />
+		<property name="cooldown" value="20" />
+	</action>
+	
+<action name="twitch_spiderZombie" extends="twitch_toughZombie">
+		<property name="start_gamestage" value="12" />
+		<property name="command" value="#web_spinner" />
+		<property name="command_key" value="TwitchAction_SpawnSpiderCommand" />
+		<property name="title_key" value="TwitchAction_SpawnSpider" />
+		<property name="description_key" value="TwitchAction_SpawnSpiderDesc" />
+		<property name="event_name" value="spnc_spawn_zombieSpider" />
+		<property name="enabled" value="true" />
+		<property name="default_cost" value="150" />
+		<property name="cooldown" value="60" />
+	</action>
+	
+<action name="twitch_snake" extends="twitch_normalZombie">
+		<property name="start_gamestage" value="8" />
+		<property name="command" value="#snake" />
+		<property name="command_key" value="TwitchAction_SpawnSnakeCommand" />
+		<property name="title_key" value="TwitchAction_SpawnSnake" />
+		<property name="description_key" value="TwitchAction_SpawnSnakeDesc" />
+		<property name="event_name" value="spnc_spawn_animalSnake" />
+		<property name="default_cost" value="50" />
+		<property name="cooldown" value="30" />
+		<property name="random_group" value="spawns" />
+	</action>
+	
+<!--	<action name="twitch_vulture" extends="twitch_normalZombie">
+		<property name="command" value="#spawn_vulture" />
+		<property name="command_key" value="TwitchAction_SpawnVultureCommand" />
+		<property name="title_key" value="TwitchAction_SpawnVulture" />
+		<property name="description_key" value="TwitchAction_SpawnVultureDesc" />
+		<property name="start_gamestage" value="8" />
+		<property name="event_name" value="spawn_vulture" />
+		<property name="special_only" value="false" />
+		<property name="default_cost" value="25" />
+		<property name="cooldown" value="30" />
+		<property name="random_group" value="spawns" />
+	</action> -->
+	
+<action name="twitch_dog" extends="twitch_normalZombie">
+		<property name="start_gamestage" value="8" />
+		<property name="command" value="#cerberus" />
+		<property name="command_key" value="TwitchAction_SpawnDogCommand" />
+		<property name="title_key" value="TwitchAction_SpawnDog" />
+		<property name="description_key" value="TwitchAction_SpawnDogDesc" />
+		<property name="event_name" value="spnc_spawn_animalZombieDog" />
+		<property name="default_cost" value="100" />
+		<property name="cooldown" value="90" />
+		<property name="random_group" value="spawn_animal" />
+	</action>
+	
+<action name="twitch_crimsonHeadZombie" extends="twitch_normalZombie">
+		<property name="start_gamestage" value="8" />
+		<property name="command" value="#crimson_head" />
+		<property name="command_key" value="TwitchAction_SpawnCrimsonHeadCommand" />
+		<property name="title_key" value="TwitchAction_SpawnCrimsonHead" />
+		<property name="description_key" value="TwitchAction_SpawnCrimsonHeadDesc" />
+		<property name="event_name" value="spnc_spawn_crimson_head" />
+		<property name="enabled" value="true" />
+		<property name="default_cost" value="200" />
+		<property name="cooldown" value="120" />
+	</action>
+
+<action name="twitch_forestSpeyerZombie" extends="twitch_normalZombie">
+		<property name="start_gamestage" value="8" />
+		<property name="command" value="#forest_speyer" />
+		<property name="command_key" value="TwitchAction_SpawnForestSpeyerCommand" />
+		<property name="title_key" value="TwitchAction_SpawnForestSpeyerHead" />
+		<property name="description_key" value="TwitchAction_SpawnForestSpeyerDesc" />
+		<property name="event_name" value="spnc_spawn_forest_speyer" />
+		<property name="enabled" value="true" />
+		<property name="default_cost" value="200" />
+		<property name="cooldown" value="120" />
+	</action>
+
+<action name="twitch_hunterZombie" extends="twitch_toughZombie">
+		<property name="start_gamestage" value="15" />
+		<property name="command" value="#hunter" />
+		<property name="command_key" value="TwitchAction_SpawnHunterCommand" />
+		<property name="title_key" value="TwitchAction_SpawnHunter" />
+		<property name="description_key" value="TwitchAction_SpawnHunterDesc" />
+		<property name="event_name" value="spnc_spawn_Hunter" />
+		<property name="enabled" value="true" />
+		<property name="default_cost" value="300" />
+		<property name="cooldown" value="180" />
+	</action>
+
+<action name="twitch_crimsonPrototypeZombie" extends="twitch_toughZombie">
+		<property name="start_gamestage" value="15" />
+		<property name="command" value="#crimson_prototype" />
+		<property name="command_key" value="TwitchAction_SpawncrimsonPrototypeCommand" />
+		<property name="title_key" value="TwitchAction_SpawncrimsonPrototype" />
+		<property name="description_key" value="TwitchAction_SpawncrimsonPrototypeDesc" />
+		<property name="event_name" value="spnc_spawn_Crimson_Head_Prototype2" />
+		<property name="enabled" value="true" />
+		<property name="default_cost" value="500" />
+		<property name="cooldown" value="300" />
+	</action>
+
+	<!-- Supply Drops -->
+	
+<action name="twitch_supplyAmmo9mm">
+		<property name="start_gamestage" value="3" />
+		<property name="command" value="#handgun_x8" />
+		<property name="command_key" value="TwitchAction_SupplyAmmo9mmCommand" />
+		<property name="title_key" value="TwitchAction_SupplyAmmo9mm" />
+		<property name="description_key" value="TwitchAction_SupplyAmmo9mmDesc" />
+		<property name="category" value="Spawns,Supplies" />
+		<property name="event_name" value="spnc_supply_ammo9mmBulletBallRE" />
+		<property name="default_cost" value="48" />
+		<property name="is_positive" value="true" />
+		<property name="is_crate" value="true" />
+		<property name="special_only" value="true" />
+	</action>
+	
+	<action name="twitch_supplyGreenHerb">
+		<property name="start_gamestage" value="3" />
+		<property name="command" value="#green_herb" />
+		<property name="command_key" value="TwitchAction_SupplyGreenHerbCommand" />
+		<property name="title_key" value="TwitchAction_SupplyGreenHerb" />
+		<property name="description_key" value="TwitchAction_SupplyGreenHerbDesc" />
+		<property name="category" value="Spawns,Supplies" />
+		<property name="event_name" value="spnc_supply_green_herb" />
+		<property name="default_cost" value="50" />
+		<property name="is_positive" value="true" />
+		<property name="is_crate" value="true" />
+		<property name="special_only" value="true" />
+	</action>
+	
+	<action name="twitch_supplyRedHerb">
+		<property name="start_gamestage" value="3" />
+		<property name="command" value="#red_herb" />
+		<property name="command_key" value="TwitchAction_SupplyRedHerbCommand" />
+		<property name="title_key" value="TwitchAction_SupplyRedHerb" />
+		<property name="description_key" value="TwitchAction_SupplyRedHerbDesc" />
+		<property name="category" value="Spawns,Supplies" />
+		<property name="event_name" value="spnc_supply_red_herb" />
+		<property name="default_cost" value="100" />
+		<property name="is_positive" value="true" />
+		<property name="is_crate" value="true" />
+		<property name="special_only" value="true" />
+	</action>
+	
+	<action name="twitch_supplyBlueHerb">
+		<property name="start_gamestage" value="3" />
+		<property name="command" value="#blue_herb" />
+		<property name="command_key" value="TwitchAction_SupplyBlueHerbCommand" />
+		<property name="title_key" value="TwitchAction_SupplyBlueHerb" />
+		<property name="description_key" value="TwitchAction_SupplyBlueHerbDesc" />
+		<property name="category" value="Spawns,Supplies" />
+		<property name="event_name" value="spnc_supply_blue_herb" />
+		<property name="default_cost" value="30" />
+		<property name="is_positive" value="true" />
+		<property name="is_crate" value="true" />
+		<property name="special_only" value="true" />
+	</action>
+		
+	<action name="twitch_supplyAmmoShells">
+		<property name="start_gamestage" value="6" />
+		<property name="command" value="#shotgun_x2" />
+		<property name="command_key" value="TwitchAction_SupplyAmmoShellsCommand" />
+		<property name="title_key" value="TwitchAction_SupplyAmmoShells" />
+		<property name="description_key" value="TwitchAction_SupplyAmmoShellsDesc" />
+		<property name="category" value="Spawns,Supplies" />
+		<property name="event_name" value="spnc_supply_ammoShotgunShellRE" />
+		<property name="default_cost" value="40" />
+		<property name="is_positive" value="true" />
+		<property name="is_crate" value="true" />
+		<property name="special_only" value="true" />
+	</action>
+		
+	<action name="twitch_supplyAmmo44Mag">
+		<property name="start_gamestage" value="10" />
+		<property name="command" value="#magnum_x2" />
+		<property name="command_key" value="TwitchAction_SupplyAmmo44MagCommand" />
+		<property name="title_key" value="TwitchAction_SupplyAmmo44Mag" />
+		<property name="description_key" value="TwitchAction_SupplyAmmo44MagDesc" />
+		<property name="category" value="Spawns,Supplies" />
+		<property name="event_name" value="spnc_supply_ammo44MagnumBulletBallRE" />
+		<property name="default_cost" value="50" />
+		<property name="is_positive" value="true" />
+		<property name="is_crate" value="true" />
+		<property name="special_only" value="true" />
+	</action>
+		
+	<action name="twitch_supplyAmmoRocket">
+		<property name="start_gamestage" value="8" />
+		<property name="command" value="#rocket" />
+		<property name="command_key" value="TwitchAction_SupplyAmmoRocketCommand" />
+		<property name="title_key" value="TwitchAction_SupplyAmmoRocket" />
+		<property name="description_key" value="TwitchAction_SupplyAmmoRocketDesc" />
+		<property name="category" value="Spawns,Supplies" />
+		<property name="event_name" value="spnc_supply_ammoRocketFragRE" />
+		<property name="default_cost" value="167" />
+		<property name="is_positive" value="true" />
+		<property name="is_crate" value="true" />
+		<property name="special_only" value="true" />
+	</action>
+		
+	<action name="twitch_supplyAmmoGrenade">
+		<property name="start_gamestage" value="8" />
+		<property name="command" value="#grenade" />
+		<property name="command_key" value="TwitchAction_SupplyAmmoGrenadeCommand" />
+		<property name="title_key" value="TwitchAction_SupplyAmmoGrenade" />
+		<property name="description_key" value="TwitchAction_SupplyAmmoGrenadeDesc" />
+		<property name="category" value="Spawns,Supplies" />
+		<property name="event_name" value="spnc_supply_thrownGrenadeRE" />
+		<property name="default_cost" value="100" />
+		<property name="is_positive" value="true" />
+		<property name="is_crate" value="true" />
+		<property name="special_only" value="true" />
+	</action>
+		
+	<action name="twitch_supplyAmmoMolotov">
+		<property name="start_gamestage" value="8" />
+		<property name="command" value="#molotov" />
+		<property name="command_key" value="TwitchAction_SupplyAmmoMolotovCommand" />
+		<property name="title_key" value="TwitchAction_SupplyAmmoMolotov" />
+		<property name="description_key" value="TwitchAction_SupplyAmmoMolotovDesc" />
+		<property name="category" value="Spawns,Supplies" />
+		<property name="event_name" value="spnc_supply_thrownAmmoMolotovCocktailRE" />
+		<property name="default_cost" value="125" />
+		<property name="is_positive" value="true" />
+		<property name="is_crate" value="true" />
+		<property name="special_only" value="true" />
+	</action>
+		
+<!--	<action name="twitch_supplyFirstAidSpray">
+		<property name="start_gamestage" value="15" />
+		<property name="command" value="#firstaidspray" />
+		<property name="command_key" value="TwitchAction_SupplyFirstAidSprayCommand" />
+		<property name="title_key" value="TwitchAction_SupplyFirstAidSpray" />
+		<property name="description_key" value="TwitchAction_SupplyFirstAidSprayDesc" />
+		<property name="category" value="Spawns,Supplies" />
+		<property name="event_name" value="spnc_supply_FirstAidSpray" />
+		<property name="default_cost" value="400" />
+		<property name="is_positive" value="true" />
+		<property name="is_crate" value="true" />
+		<property name="special_only" value="true" />
+	</action> -->
+		
+	<action name="twitch_supplyAmmo762">
+		<property name="start_gamestage" value="15" />
+		<property name="command" value="#rifle_x7" />
+		<property name="command_key" value="TwitchAction_SupplyAmmo762Command" />
+		<property name="title_key" value="TwitchAction_SupplyAmmo762" />
+		<property name="description_key" value="TwitchAction_SupplyAmmo762Desc" />
+		<property name="category" value="Spawns,Supplies" />
+		<property name="event_name" value="spnc_supply_ammo762mmBulletBallRE" />
+		<property name="default_cost" value="49" />
+		<property name="is_positive" value="true" />
+		<property name="is_crate" value="true" />
+		<property name="special_only" value="true" />
+	</action>
+	
+	<!-- BUFFS/DEBUFFS -->
+	
+	<!-- Mod Commands -->
+
+	
+	<!-- 
+		Random Groups are defined to allow random actions per day. 
+	-->
+	
+	<random_group name="spawns" random_count="3" />
+	<random_group name="spawn_tough" random_count="2" />
+	<random_group name="spawn_animal" random_count="2" />
+	<random_group name="buffs" random_count="3" />
+	<random_group name="debuffs" random_count="2" />
+	<random_group name="special_good" random_count="3" />
+	<random_group name="special_bad" random_count="3" />
+	<random_group name="buff_vision" random_count="1" />
+	<random_group name="near_helper" random_count="2" />
+
+	<!-- 
+	
+		Cooldown Presets - These define the presets for the cooldown settings used for twitch integration.
+		
+		bm_start_offset - The number of hours before the bloodmoon that the cooldown grace period starts.
+		bm_end_offset - The number of hours after the bloodmoon that the cooldown grace period ends.
+		cooldown_type - This defines how the cooldown is handled. (Always, Fill, None). 
+			Always - Always in cooldown using just the cooldown only actions.
+			Fill - Cooldown bar fills when cooldown_added actions are used. Once full a cooldown is triggered.
+			None - No cooldowns at all.
+		is_default - Is the default 
+		name - Name of the cooldown preset.
+		start_cooldown - The length of cooldown when you first startup the integration.
+		death_cooldown - The length of cooldown when the streamer respawns after death.	
+		title - Displayed name of the cooldown preset in the UI.
+		title_key - localized display name of the cooldown preset in the UI.
+	
+			cooldown_entry - These define based on Gamestage start and end the cooldown max and cooldown time.
+				start - Start gamestage.
+				end - End gamestage
+				cooldown_max - The maximum of cooldown points needed to fill the bar and trigger a cooldown.
+				cooldown_time - The time of the cooldown that is triggered from filling the bar.
+	-->
+	
+	<cooldown_preset>
+		<property name="name" value="noCooldown" />
+		<property name="title_key" value="TwitchCooldownPreset_NoCooldown" />
+		<property name="cooldown_type" value="None" /> 
+	</cooldown_preset>
+	
+	<cooldown_preset>
+		<property name="name" value="hardcore" />
+		<property name="title_key" value="TwitchCooldownPreset_Hardcore" />
+		<property name="start_cooldown" value="180" />
+		<property name="death_cooldown" value="60" />
+		<property name="bm_start_offset" value="1" />
+		<property name="bm_end_offset" value="1" />
+
+		<cooldown_entry end="4" cooldown_max="800" cooldown_time="300" />
+		<cooldown_entry start="5" end="10" cooldown_max="1500" cooldown_time="300" />
+		<cooldown_entry start="11" end="19" cooldown_max="2250" cooldown_time="300"/>
+		<cooldown_entry start="20" end="30" cooldown_max="3000" cooldown_time="300" />
+		<cooldown_entry start="31" end="40" cooldown_max="3000" cooldown_time="300" />
+		<cooldown_entry start="41" cooldown_max="3000" cooldown_time="60" />
+	</cooldown_preset>
+	
+	<cooldown_preset>
+		<property name="name" value="default" />
+		<property name="title_key" value="TwitchCooldownPreset_Default" />
+		<property name="is_default" value="true" />
+		<property name="start_cooldown" value="300" />
+		<property name="death_cooldown" value="300" />
+		<property name="bm_start_offset" value="3" />
+		<property name="bm_end_offset" value="3" />
+	
+		<cooldown_entry end="4" cooldown_max="800" cooldown_time="600" />
+		<cooldown_entry start="5" end="10" cooldown_max="1500" cooldown_time="600" />
+		<cooldown_entry start="11" end="19" cooldown_max="2250" cooldown_time="600"/>
+		<cooldown_entry start="20" end="30" cooldown_max="3000" cooldown_time="600"/>
+		<cooldown_entry start="31" end="40" cooldown_max="3000" cooldown_time="600"/>
+		<cooldown_entry start="41" cooldown_max="3000" />
+	</cooldown_preset>
+	
+	<cooldown_preset>
+		<property name="name" value="easy" />
+		<property name="title_key" value="TwitchCooldownPreset_Easy" />
+		<property name="start_cooldown" value="600" />
+		<property name="death_cooldown" value="300" />
+		<property name="bm_start_offset" value="6" />
+		<property name="bm_end_offset" value="6" />
+		
+		<cooldown_entry end="4" cooldown_max="800" cooldown_time="900" />
+		<cooldown_entry start="5" end="10" cooldown_max="1500" cooldown_time="900" />
+		<cooldown_entry start="11" end="19" cooldown_max="2250" cooldown_time="900" />
+		<cooldown_entry start="20" end="30" cooldown_max="3000" cooldown_time="900" />
+		<cooldown_entry start="31" cooldown_max="3000" cooldown_time="900" />
+	</cooldown_preset>
+	
+	<cooldown_preset>
+		<property name="name" value="always" />
+		<property name="title_key" value="TwitchCooldownPreset_Always" />
+		<property name="cooldown_type" value="Always" /> 
+	</cooldown_preset>
+
+	<tip name="TwitchTip_EarningPoints" />
+	<tip name="TwitchTip_ChatCommands" />
+	<tip name="TwitchTip_Votes" />
+	<tip name="TwitchTip_BossVotes" />
+	<tip name="TwitchTip_CustomInteractions" />
+	<tip name="TwitchTip_AdminCommands" />
+	<tip name="TwitchTip_Progression" />
+	<tip name="TwitchTip_Cooldowns" />
+	<tip name="TwitchTip_PimpPot" />
+	<tip name="TwitchTip_PartyActions" />
+	<tip name="TwitchTip_SafeZones" />
+	
+	<vote_type name="attack">
+		<property name="title" value="Standard Vote" />
+		<property name="title_key" value="TwitchVoteType_Attack" />
+		<property name="blood_moon_allowed" value="false" />
+		<property name="icon" value="ui_game_symbol_twitch_spawn" />
+		<property name="use_mystery" value="true" />
+		<property name="max_times_per_day" value="0" />
+		<property name="group" value="standard" />
+	</vote_type>
+	
+	<vote_type name="standard_good">
+		<property name="title" value="Standard Vote" />
+		<property name="title_key" value="TwitchVoteType_Supply" />
+		<property name="icon" value="ui_game_symbol_twitch_drop" />
+		<property name="max_times_per_day" value="0" />
+		<property name="group" value="standard" />
+	</vote_type>
+	
+	<vote_type name="boss">
+		<property name="title" value="Boss Vote" />
+		<property name="title_key" value="TwitchVoteType_Boss" />
+		<property name="icon" value="ui_game_symbol_skull" />
+		<property name="spawn_blocked" value="true" />
+		<property name="allowed_start_hour" value="6" />
+		<property name="allowed_end_hour" value="16" />
+		<property name="blood_moon_day" value="false" />
+		<property name="blood_moon_allowed" value="false" />
+		<property name="cooldown_on_end" value="true" />
+		<property name="action_lockout" value="true" />
+		<property name="max_times_per_day" value="0" />
+		<property name="group" value="standard" />
+		<property name="is_boss" value="true" />
+	</vote_type>
+	
+	<vote_type name="buff">
+		<property name="title" value="Buff Vote" />
+		<property name="title_key" value="TwitchVoteType_Buff" />
+		<property name="icon" value="ui_game_symbol_twitch_buffs" />
+		<property name="max_times_per_day" value="0" />
+		<property name="group" value="buff" />
+	</vote_type>
+	
+	<vote_type name="silly">
+		<property name="title" value="Silly Vote" />
+		<property name="title_key" value="TwitchVoteType_Silly" />
+		<property name="icon" value="ui_game_symbol_twitch_sound_effects" />
+		<property name="max_times_per_day" value="0" />
+		<property name="group" value="buff" />
+	</vote_type>
+	
+	<vote_type name="action">
+		<property name="title" value="Action Vote" />
+		<property name="title_key" value="TwitchVoteType_Action" />
+		<property name="icon" value="ui_game_symbol_twitch_actions" />
+		<property name="allowed_with_actions" value="false" />
+		<property name="max_times_per_day" value="0" />
+		<property name="group" value="action" />
+		<property name="vote_choice_count" value="0" />
+	</vote_type>
+	
+	<!-- Twitch Votes
+		
+		description - The description of the Action displayed in the UI.
+		description_format_key - The defined format key that handles the localization of the description. It expects 1 parameter defined in the title_var_key.
+		description_key - The localized description of the action that is displayed in the UI.
+		display_format_key - The defined format key that handles the localization of the display. It expects 1 parameter defined in the display_var_key.
+		display_var_key - The Variable key added to the display_format_key format.
+		enabled - If this vote is enabled. If this action shows in the UI you can re-enable it.
+		end_gamestage - The ending gamestage that the vote shows up in.
+		event_name - Game event that is called by this Twitch Vote.
+		group - The group text for the vote. This is used to not allow multiple of the same group in a single vote.
+		line1_desc - The first line description.
+		line1_desc_key - The first line description localization key.
+		line2_desc - The second line description.
+		line2_desc_key - The second line description localization key.
+		max_times_per_day - The maximum number of times per day it can be voted on.
+		start_gamestage - The starting gamestage that the vote shows up in.
+		title - Displayed name of the Vote in the UI.
+		title_color - Set the color of the title.
+		title_format_key - A defined format key that handles the localization of the title. It expects 1 parameter defined in the title_var_key.
+		title_key - Localized name of the Vote in the UI.
+		title_var_key - Variable key added to the format key.
+		vote_type - The type of vote this falls under. Must have an entry in the vote_type section above.
+		
+		cooldown_addition example:
+		
+		<cooldown_addition name="twitch_BigHead" time="360" />
+		name - name of the action you are adding cooldown to.
+		time - amount of cooldown being added.
+		
+		requirement example:
+		
+		HasBuff
+		HasProgression
+		
+		<requirement class="HasProgression">
+			<property name="operation" value="GT" />
+			<property name="skill_name" value="attFortitude" />
+			<property name="level" value="1" />
+		</requirement>
+	-->
+	
+	<!-- Action Votes -->
+	<vote_entry name="Action_Regen">
+		<property name="title" value="Regen" />
+		<property name="title_key" value="TwitchVote_ActionRegen" />
+		<property name="description_key" value="TwitchAction_BuffRegenDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_regen_vote" />
+		<property name="line1_desc" value="" />
+		<property name="line2_desc" value="" />
+		<property name="display_type" value="Special" />
+		<property name="title_color" value="175,175,255,255" />
+	</vote_entry>
+	
+	<vote_entry name="Action_Jump" extends="Action_Regen">
+		<property name="title" value="Jump" />
+		<property name="title_key" value="TwitchVote_ActionJump" />
+		<property name="description_key" value="TwitchAction_BuffJumpDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_jump" />
+	</vote_entry>
+	
+	<vote_entry name="Action_Fast" extends="Action_Regen">
+		<property name="title" value="Fast" />
+		<property name="title_key" value="TwitchVote_ActionFast" />
+		<property name="description_key" value="TwitchAction_BuffFastDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_fast" />
+	</vote_entry>
+	
+	<vote_entry name="Action_BoostMelee" extends="Action_Regen">
+		<property name="title" value="Boost Melee" />
+		<property name="title_key" value="TwitchVote_ActionBoostMelee" />
+		<property name="description_key" value="TwitchAction_BuffBoostMeleeDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_strengthenmelee" />
+		<property name="start_gamestage" value="10" />
+	</vote_entry>
+	
+	<vote_entry name="Action_BoostRange" extends="Action_Regen">
+		<property name="title" value="Boost Range" />
+		<property name="title_key" value="TwitchVote_ActionBoostRange" />
+		<property name="description_key" value="TwitchAction_BuffBoostRangeDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_strengthenranged" />
+		<property name="start_gamestage" value="10" />
+	</vote_entry>
+	
+	<vote_entry name="Action_Hurt">
+		<property name="title" value="Hurt" />
+		<property name="title_key" value="TwitchVote_ActionHurt" />
+		<property name="description_key" value="TwitchAction_BuffHurtDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_hurt" />
+		<property name="line1_desc" value="" />
+		<property name="line2_desc" value="" />
+		<property name="display_type" value="Special" />
+		<property name="title_color" value="255,175,175,255" />
+	</vote_entry>
+	
+	<vote_entry name="Action_Slow" extends="Action_Hurt">
+		<property name="title" value="Slow" />
+		<property name="title_key" value="TwitchVote_ActionSlow" />
+		<property name="description_key" value="TwitchAction_BuffSlowDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_slow" />
+	</vote_entry>
+	
+	<vote_entry name="Action_KeepMoving" extends="Action_Hurt">
+		<property name="title" value="Keep Moving" />
+		<property name="title_key" value="TwitchVote_ActionKeepMoving" />
+		<property name="description_key" value="TwitchAction_BuffKeepMovingDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_keepmoving" />
+	</vote_entry>
+	
+	<vote_entry name="Action_WeakenMelee" extends="Action_Hurt">
+		<property name="title" value="Weaken Melee" />
+		<property name="title_key" value="TwitchVote_ActionWeakenMelee" />
+		<property name="description_key" value="TwitchAction_BuffWeakenMeleeDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_weakenmelee" />
+		<property name="start_gamestage" value="10" />
+		<property name="end_gamestage" value="34" />
+	</vote_entry>
+	
+	<vote_entry name="Action_WeakenRange" extends="Action_Hurt">
+		<property name="title" value="Weaken Range" />
+		<property name="title_key" value="TwitchVote_ActionWeakenRange" />
+		<property name="description_key" value="TwitchAction_BuffWeakenRangeDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_weakenranged" />
+		<property name="start_gamestage" value="10" />
+		<property name="end_gamestage" value="34" />
+	</vote_entry>
+	
+	<vote_entry name="Action_NoMelee" extends="Action_Hurt">
+		<property name="title" value="No Melee" />
+		<property name="title_key" value="TwitchVote_ActionNoMelee" />
+		<property name="description_key" value="TwitchAction_BuffNoMeleeDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_nomelee" />
+		<property name="start_gamestage" value="35" />
+	</vote_entry>
+	
+	<vote_entry name="Action_NoRange" extends="Action_Hurt">
+		<property name="title" value="No Range" />
+		<property name="title_key" value="TwitchVote_ActionNoRange" />
+		<property name="description_key" value="TwitchAction_BuffNoRangeDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_norange" />
+		<property name="start_gamestage" value="35" />
+	</vote_entry>
+	
+	<vote_entry name="Action_Confuse" extends="Action_Hurt">
+		<property name="title" value="Confuse" />
+		<property name="title_key" value="TwitchVote_ActionConfuse" />
+		<property name="description_key" value="TwitchAction_BuffConfuseDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_confuse" />
+		<property name="start_gamestage" value="35" />
+	</vote_entry>
+	
+	<vote_entry name="Action_Leech" extends="Action_Regen">
+		<property name="title" value="Leech" />
+		<property name="title_key" value="TwitchVote_ActionLeech" />
+		<property name="description_key" value="TwitchAction_BuffLeechDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_leech" />
+		<property name="start_gamestage" value="15" />
+	</vote_entry>
+	
+	<vote_entry name="Action_AntiLeech" extends="Action_Hurt">
+		<property name="title" value="Anti-Leech" />
+		<property name="title_key" value="TwitchVote_ActionAntiLeech" />
+		<property name="description_key" value="TwitchAction_BuffAntiLeechDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_antileech" />
+		<property name="start_gamestage" value="15" />
+	</vote_entry>
+	
+	<vote_entry name="Action_NoExplosives" extends="Action_Hurt">
+		<property name="title" value="No Explosives" />
+		<property name="title_key" value="TwitchVote_ActionNoExplosives" />
+		<property name="description_key" value="TwitchAction_BuffNoExplosivesDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_noexplosives" />
+		<property name="start_gamestage" value="20" />
+	</vote_entry>
+	
+	<vote_entry name="Action_NoRobo" extends="Action_Hurt">
+		<property name="title" value="No Robotics" />
+		<property name="title_key" value="TwitchVote_ActionNoRobo" />
+		<property name="description_key" value="TwitchAction_BuffNoRoboDesc" />
+		<property name="vote_type" value="action" />
+		<property name="event_name" value="buff_norobo" />
+		<property name="start_gamestage" value="20" />
+	</vote_entry>
+	
+	<!-- Special Votes -->
+	<vote_entry name="Buff_Celebrate">
+		<property name="title" value="Celebration!" />
+		<property name="title_key" value="TwitchVote_SillyCelebration" />
+		<property name="description_key" value="TwitchVote_CelebrateDesc" />
+		<property name="vote_type" value="silly" />
+		<property name="event_name" value="vote_celebrate" />
+		<property name="line1_desc" value="" />
+		<property name="line2_desc" value="" />
+		<property name="display_type" value="Special" />
+		<property name="title_color" value="175,175,255,255" />
+		
+		<cooldown_addition name="twitch_buffCelebrate" time="360" />
+	</vote_entry>
+	
+	<vote_entry name="Buff_BigHead" extends="Buff_Celebrate">
+		<property name="title" value="Big Heads!" />
+		<property name="title_key" value="TwitchVote_SillyBigHeads" />
+		<property name="description_key" value="TwitchAction_BuffBigHeadDesc" />
+		<property name="vote_type" value="silly" />
+		<property name="event_name" value="vote_big_heads" />
+		<property name="title_color" value="255,175,175,255" />
+		
+		<cooldown_addition name="twitch_BigHead" time="360" />
+		<cooldown_addition name="twitch_buffHeadshotOnly" time="360" />
+	</vote_entry>
+	
+	<vote_entry name="Buff_DanceOff" extends="Buff_Celebrate">
+		<property name="title" value="Dance Off!" />
+		<property name="title_key" value="TwitchVote_SillyDanceOff" />
+		<property name="description_key" value="TwitchAction_BuffDanceOffDesc" />
+		<property name="vote_type" value="silly" />
+		<property name="event_name" value="vote_dance_off" />
+		<property name="title_color" value="255,175,175,255" />
+		
+		<cooldown_addition name="twitch_Enrage" time="120" />
+		<cooldown_addition name="twitch_BurnNearby" time="120" />
+		<cooldown_addition name="twitch_ShockNearby" time="120" />
+		<cooldown_addition name="twitch_Ragdoll" time="120" />
+		
+		<cooldown_addition name="twitch_Dance" time="120" />
+	</vote_entry>
+	
+	<vote_entry name="Buff_SillySounds" extends="Buff_Celebrate">
+		<property name="title" value="Silly Sounds!" />
+		<property name="title_key" value="TwitchVote_SillySillySounds" />
+		<property name="description_key" value="TwitchAction_BuffSillySoundsDesc" />
+		<property name="vote_type" value="silly" />
+		<property name="event_name" value="vote_sillysounds" />
+		<property name="title_color" value="175,175,255,255" />
+		
+		<cooldown_addition name="twitch_buffDeafen" time="300" />
+		<cooldown_addition name="twitch_buffNoStealth" time="300" />
+		
+		<cooldown_addition name="twitch_buffSillySounds" time="300" />
+	</vote_entry>
+	
+	<vote_entry name="Buff_Deafen" extends="Buff_Celebrate">
+		<property name="title" value="Deafen" />
+		<property name="title_key" value="TwitchVote_BuffDeafen" />
+		<property name="description_key" value="TwitchVote_BuffDeafenDesc" />
+		<property name="vote_type" value="buff" />
+		<property name="event_name" value="vote_deafen" />
+		<property name="title_color" value="255,175,175,255" />
+		<property name="start_gamestage" value="15" />
+		
+		<cooldown_addition name="twitch_Scare1" time="360" />
+		<cooldown_addition name="twitch_Scare2" time="360" />
+		<cooldown_addition name="twitch_Scare3" time="360" />
+		
+		<cooldown_addition name="twitch_buffDeafen" time="360" />
+		<cooldown_addition name="twitch_Dance" time="360" />
+		<cooldown_addition name="twitch_buffSillySounds" time="360" />
+	</vote_entry>
+	
+	<vote_entry name="Buff_JumbledBackpack" extends="Buff_Celebrate">
+		<property name="title" value="Jumbled Backpack" />
+		<property name="title_key" value="TwitchVote_BuffJumbledBackpack" />
+		<property name="description_key" value="TwitchVote_BuffJumbledBackpackDesc" />
+		<property name="vote_type" value="buff" />
+		<property name="event_name" value="vote_jumbled_backpack" />
+		<property name="title_color" value="255,175,175,255" />
+	</vote_entry>
+	
+	<vote_entry name="Buff_NoSafe" extends="Buff_Celebrate">
+		<property name="title" value="No Safe" />
+		<property name="title_key" value="TwitchVote_BuffNoSafe" />
+		<property name="description_key" value="TwitchVote_BuffNoSafeDesc" />
+		<property name="vote_type" value="buff" />
+		<property name="event_name" value="vote_nosafe" />
+		<property name="title_color" value="255,175,175,255" />
+		<property name="max_times_per_day" value="1" />
+		<property name="start_gamestage" value="10" />
+	</vote_entry>
+	
+	<vote_entry name="Buff_NoVehicle" extends="Buff_Celebrate">
+		<property name="title" value="No Vehicle" />
+		<property name="title_key" value="TwitchVote_BuffNoVehicle" />
+		<property name="description_key" value="TwitchVote_BuffNoVehicleDesc" />
+		<property name="vote_type" value="buff" />
+		<property name="event_name" value="vote_novehicle" />
+		<property name="title_color" value="255,175,175,255" />
+		<property name="max_times_per_day" value="1" />
+		<property name="start_gamestage" value="15" />
+		
+		<cooldown_addition name="twitch_buffNoVehicle" time="360" />
+	</vote_entry>
+	
+	<vote_entry name="Buff_Tough" extends="Buff_Celebrate">
+		<property name="title" value="Shield" />
+		<property name="title_key" value="TwitchVote_BuffShield" />
+		<property name="description_key" value="TwitchVote_BuffShieldDesc" />
+		<property name="vote_type" value="buff" />
+		<property name="event_name" value="vote_tough" />
+		<property name="title_color" value="175,175,255,255" />
+		
+		<cooldown_addition name="twitch_buffShield" time="360" />
+	</vote_entry>
+	
+	<vote_entry name="Buff_Energize" extends="Buff_Celebrate">
+		<property name="title" value="Energize" />
+		<property name="title_key" value="TwitchVote_BuffEnergize" />
+		<property name="description_key" value="TwitchVote_BuffEnergizeDesc" />
+		<property name="vote_type" value="buff" />
+		<property name="event_name" value="vote_energize" />
+		<property name="title_color" value="175,175,255,255" />
+		
+		<cooldown_addition name="twitch_buffEnergize" time="360" />
+	</vote_entry>
+	
+	<vote_entry name="Buff_Nourishment" extends="Buff_Celebrate">
+		<property name="title" value="Nourishment" />
+		<property name="title_key" value="TwitchVote_BuffNourishment" />
+		<property name="description_key" value="TwitchVote_BuffNourishmentDesc" />
+		<property name="vote_type" value="buff" />
+		<property name="event_name" value="vote_nourish" />
+		<property name="title_color" value="175,175,255,255" />
+	</vote_entry>
+	
+	<vote_entry name="Buff_Resourceful" extends="Buff_Celebrate">
+		<property name="title" value="Resourceful" />
+		<property name="title_key" value="TwitchVote_BuffResourceful" />
+		<property name="description_key" value="TwitchVote_BuffResourcefulDesc" />
+		<property name="vote_type" value="buff" />
+		<property name="event_name" value="vote_resourceful" />
+		<property name="title_color" value="175,175,255,255" />
+	</vote_entry>
+	
+	
+	<!-- Minor Votes --> 
+	<vote_entry name="Minor_PartyGirls">
+		<property name="title" value="Party Girl Attack" />
+		<property name="title_var_key" value="zombiePartyGirl" />
+		<property name="title_format_key" value="TwitchVoteTitle_Attack" />
+		<property name="description_format_key" value="TwitchVoteDescription_Attack" />
+		<property name="display_format_key" value="TwitchVoteTitle_Attack" />
+		<property name="vote_type" value="attack" />
+		<property name="event_name" value="vote_minor_party_girl" />
+		<property name="display_type" value="Single" />
+		<property name="start_gamestage" value="1" />
+		<property name="end_gamestage" value="10" />
+		<property name="line1_desc" value="" />
+		<property name="line2_desc" value="" />
+		<property name="title_color" value="255,175,175,255" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Business" extends="Minor_PartyGirls">
+		<property name="title" value="Business Attack" />
+		<property name="title_var_key" value="zombieBusinessMan" />
+		<property name="event_name" value="vote_minor_business" />
+		<property name="start_gamestage" value="1" />
+		<property name="end_gamestage" value="10" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Nurse" extends="Minor_PartyGirls">
+		<property name="title" value="Nurse Attack" />
+		<property name="title_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_minor_nurse" />
+		<property name="start_gamestage" value="1" />
+		<property name="end_gamestage" value="10" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Burnt" extends="Minor_PartyGirls">
+		<property name="title" value="Burnt Attack" />
+		<property name="title_var_key" value="zombieBurnt" />
+		<property name="event_name" value="vote_minor_burnt" />
+		<property name="start_gamestage" value="1" />
+		<property name="end_gamestage" value="10" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Janitor" extends="Minor_PartyGirls">
+		<property name="title" value="Janitor Attack" />
+		<property name="title_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_minor_janitor" />
+		<property name="start_gamestage" value="1" />
+		<property name="end_gamestage" value="10" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Random1">
+		<property name="title" value="Random Attack" />
+		<property name="title_key" value="TwitchVoteTitle_RandomAttack1" />
+		<property name="description_key" value="TwitchVoteDescription_RandomAttack1" />
+		<property name="display_key" value="TwitchVoteTitle_RandomAttack" />
+		<property name="event_name" value="vote_minor_random1" />
+		<property name="vote_type" value="attack" />
+		<property name="display_type" value="Single" />
+		<property name="start_gamestage" value="1" />
+		<property name="end_gamestage" value="10" />
+		<property name="line1_desc" value="" />
+		<property name="line2_desc" value="" />
+		<property name="title_color" value="255,175,175,255" />
+	</vote_entry>
+	
+	<!-- Tier 2 -->
+	
+	<vote_entry name="Minor_Biker" extends="Minor_PartyGirls">
+		<property name="title" value="Biker Attack" />
+		<property name="title_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_minor_biker" />
+		<property name="start_gamestage" value="10" />
+		<property name="end_gamestage" value="59" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Tourist" extends="Minor_PartyGirls">
+		<property name="title" value="Tourist Attack" />
+		<property name="title_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_minor_tourist" />
+		<property name="start_gamestage" value="10" />
+		<property name="end_gamestage" value="59" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Soldier" extends="Minor_PartyGirls">
+		<property name="title" value="Soldier Attack" />
+		<property name="title_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_minor_soldiers" />
+		<property name="start_gamestage" value="10" />
+		<property name="end_gamestage" value="59" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Mama" extends="Minor_PartyGirls">
+		<property name="title" value="Mama Attack" />
+		<property name="title_var_key" value="zombieFemaleFat" />
+		<property name="event_name" value="vote_minor_mama" />
+		<property name="start_gamestage" value="10" />
+		<property name="end_gamestage" value="59" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Spider" extends="Minor_PartyGirls">
+		<property name="title" value="Spider Attack" />
+		<property name="title_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_minor_spiders" />
+		<property name="start_gamestage" value="10" />
+		<property name="end_gamestage" value="59" />
+	</vote_entry>
+
+	<vote_entry name="Minor_RandomTough1" extends="Minor_Random1">
+		<property name="title" value="Random Attack" />
+		<property name="title_key" value="TwitchVoteTitle_RandomToughAttack1" />
+		<property name="description_key" value="TwitchVoteDescription_RandomToughAttack1" />
+		<property name="display_key" value="TwitchVoteTitle_RandomToughAttack" />
+		<property name="event_name" value="vote_minor_random2" />
+		<property name="start_gamestage" value="10" />
+		<property name="end_gamestage" value="59" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Dog" extends="Minor_PartyGirls">
+		<property name="title" value="Dog Attack" />
+		<property name="title_var_key" value="animalZombieDog" />
+		<property name="event_name" value="vote_minor_dogs" />
+		<property name="start_gamestage" value="20" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_Boar" extends="Minor_PartyGirls">
+		<property name="title" value="Boar Attack" />
+		<property name="title_var_key" value="animalBoar" />
+		<property name="event_name" value="vote_minor_boars" />
+		<property name="start_gamestage" value="35" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_Zoo1" extends="Minor_Random1">
+		<property name="title" value="Zoo Attack 1" />
+		<property name="display" value="Zoo Attack" />
+		<property name="title_key" value="TwitchVoteTitle_ZooAttack1" />
+		<property name="description_key" value="TwitchVoteDescription_ZooAttack1" />
+		<property name="display_key" value="TwitchVoteTitle_ZooAttack" />
+		<property name="event_name" value="vote_minor_zoo1" />
+		<property name="start_gamestage" value="50" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Zoo2" extends="Minor_Zoo1">
+		<property name="title" value="Zoo Attack 2" />
+		<property name="title_key" value="TwitchVoteTitle_ZooAttack2" />
+		<property name="description_key" value="TwitchVoteDescription_ZooAttack2" />
+		<property name="display_key" value="TwitchVoteTitle_ZooAttack" />
+		<property name="event_name" value="vote_minor_zoo2" />
+		<property name="start_gamestage" value="85" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Cop" extends="Minor_PartyGirls">
+		<property name="title" value="Cop Attack" />
+		<property name="title_var_key" value="zombieFatCop" />
+		<property name="event_name" value="vote_minor_cops" />
+		<property name="start_gamestage" value="35" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_Mutated" extends="Minor_PartyGirls">
+		<property name="title" value="Mutated Attack" />
+		<property name="title_var_key" value="zombieMutated" />
+		<property name="event_name" value="vote_minor_mutated" />
+		<property name="start_gamestage" value="35" />
+		<property name="end_gamestage" value="69" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Vulture" extends="Minor_PartyGirls">
+		<property name="title" value="Vulture Attack" />
+		<property name="title_var_key" value="animalZombieVulture" />
+		<property name="event_name" value="vote_minor_vultures" />
+		<property name="start_gamestage" value="8" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_Wolf" extends="Minor_PartyGirls">
+		<property name="title" value="Wolf Attack" />
+		<property name="title_var_key" value="TwitchAction_SpawnWolf" />
+		<property name="event_name" value="vote_minor_wolves" />
+		<property name="start_gamestage" value="50" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<!-- Tier 3 -->
+	<vote_entry name="Minor_FPartyGirl" extends="Minor_PartyGirls">
+		<property name="title" value="Party Girl Attack (Feral)" />
+		<property name="display" value="Party Girl Attack" />
+		<property name="title_var_key" value="zombiePartyGirlFeral" />
+		<property name="display_var_key" value="zombiePartyGirl" />
+		<property name="event_name" value="vote_minor_fparty_girl" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_FBusiness" extends="Minor_FPartyGirl">
+		<property name="title_var_key" value="zombieBusinessManFeral" />
+		<property name="display_var_key" value="zombieBusinessMan" />
+		<property name="event_name" value="vote_minor_fbusiness" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_FNurse" extends="Minor_FPartyGirl">
+		<property name="title_var_key" value="zombieNurseFeral" />
+		<property name="display_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_minor_fnurse" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_FBurnt" extends="Minor_FPartyGirl">
+		<property name="title" value="Burnt Attack (Feral)" />
+		<property name="display" value="Burnt Attack" />
+		<property name="title_var_key" value="zombieBurntFeral" />
+		<property name="display_var_key" value="zombieBurnt" />
+		<property name="event_name" value="vote_minor_fburnt" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_FJanitor" extends="Minor_FPartyGirl">
+		<property name="title" value="Janitor Attack (Feral)" />
+		<property name="display" value="Janitor Attack" />
+		<property name="title_var_key" value="zombieJanitorFeral" />
+		<property name="display_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_minor_fjanitor" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Random2" extends="Minor_Random1">
+		<property name="title_key" value="TwitchVoteTitle_RandomAttack2" />
+		<property name="description_key" value="TwitchVoteDescription_RandomAttack2" />
+		<property name="display_key" value="TwitchVoteTitle_RandomAttack" />
+		<property name="event_name" value="vote_minor_random3" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_FBiker" extends="Minor_FPartyGirl">
+		<property name="title" value="Biker Attack (Feral)" />
+		<property name="display" value="Biker Attack" />
+		<property name="title_var_key" value="zombieBikerFeral" />
+		<property name="display_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_minor_fbiker" />
+		<property name="start_gamestage" value="60" />
+		<property name="end_gamestage" value="109" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_FTourist" extends="Minor_FPartyGirl">
+		<property name="title" value="Tourist Attack (Feral)" />
+		<property name="display" value="Tourist Attack" />
+		<property name="title_var_key" value="zombieFatHawaiianFeral" />
+		<property name="display_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_minor_ftourist" />
+		<property name="start_gamestage" value="60" />
+		<property name="end_gamestage" value="109" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_FSoldier" extends="Minor_FPartyGirl">
+		<property name="title" value="Soldier Attack (Feral)" />
+		<property name="display" value="Soldier Attack" />
+		<property name="title_var_key" value="zombieSoldierFeral" />
+		<property name="display_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_minor_fsoldiers" />
+		<property name="start_gamestage" value="60" />
+		<property name="end_gamestage" value="109" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_FMama" extends="Minor_FPartyGirl">
+		<property name="title" value="Mama Attack (Feral)" />
+		<property name="display" value="Mama Attack" />
+		<property name="title_var_key" value="zombieFemaleFatFeral" />
+		<property name="display_var_key" value="zombieFemaleFat" />
+		<property name="event_name" value="vote_minor_fmama" />
+		<property name="start_gamestage" value="60" />
+		<property name="end_gamestage" value="109" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_FSpider" extends="Minor_FPartyGirl">
+		<property name="title" value="Spider Attack (Feral)" />
+		<property name="display" value="Spider Attack" />
+		<property name="title_var_key" value="zombieSpiderFeral" />
+		<property name="display_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_minor_fspiders" />
+		<property name="start_gamestage" value="60" />
+		<property name="end_gamestage" value="109" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_FMutated" extends="Minor_PartyGirls">
+		<property name="title" value="Mutated Attack" />
+		<property name="title_var_key" value="zombieMutatedFeral" />
+		<property name="display_var_key" value="zombieMutated" />
+		<property name="event_name" value="vote_minor_fmutated" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="119" />
+	</vote_entry>
+
+	<vote_entry name="Minor_FWight" extends="Minor_FPartyGirl">
+		<property name="title" value="Wight Attack (Feral)" />
+		<property name="display" value="Wight Attack" />
+		<property name="title_var_key" value="zombieWightFeral" />
+		<property name="display_var_key" value="zombieWight" />
+		<property name="event_name" value="vote_minor_fwight" />
+		<property name="start_gamestage" value="75" />
+		<property name="end_gamestage" value="129" />
+	</vote_entry>
+
+	<vote_entry name="Minor_RandomTough2" extends="Minor_Random1">
+		<property name="title_key" value="TwitchVoteTitle_RandomToughAttack2" />
+		<property name="description_key" value="TwitchVoteDescription_RandomToughAttack2" />
+		<property name="display_key" value="TwitchVoteTitle_RandomToughAttack" />
+		<property name="event_name" value="vote_minor_random4" />
+		<property name="start_gamestage" value="60" />
+		<property name="end_gamestage" value="109" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_DireWolf" extends="Minor_PartyGirls">
+		<property name="title" value="Wolf Attack" />
+		<property name="title_var_key" value="TwitchAction_SpawnDireWolf" />
+		<property name="event_name" value="vote_minor_wolves" />
+		<property name="start_gamestage" value="75" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_Lion" extends="Minor_PartyGirls">
+		<property name="title" value="Lion Attack" />
+		<property name="title_var_key" value="TwitchAction_SpawnLion" />
+		<property name="display_var_key" value="TwitchAction_SpawnLion" />
+		<property name="event_name" value="vote_minor_lions" />
+		<property name="start_gamestage" value="65" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_Bear" extends="Minor_PartyGirls">
+		<property name="title" value="Bear Attack" />
+		<property name="title_var_key" value="animalBear" />
+		<property name="display_var_key" value="animalBear" />
+		<property name="event_name" value="vote_minor_bears" />
+		<property name="start_gamestage" value="85" />
+		<property name="end_gamestage" value="109" />
+	</vote_entry>
+	
+	<!-- Tier 4 -->
+	<vote_entry name="Minor_RPartyGirl" extends="Minor_FPartyGirl">
+		<property name="title" value="Party Girl Attack" />
+		<property name="display" value="Party Girl Attack" />
+		<property name="title_var_key" value="zombiePartyGirlRadiated" />
+		<property name="display_var_key" value="zombiePartyGirl" />
+		<property name="event_name" value="vote_minor_rparty_girl" />
+		<property name="start_gamestage" value="90" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_RBusiness" extends="Minor_RPartyGirl">
+		<property name="title_var_key" value="zombieBusinessManRadiated" />
+		<property name="display_var_key" value="zombieBusinessMan" />
+		<property name="event_name" value="vote_minor_rbusiness" />
+		<property name="start_gamestage" value="90" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_RNurse" extends="Minor_RPartyGirl">
+		<property name="title_var_key" value="zombieNurseRadiated" />
+		<property name="display_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_minor_rnurse" />
+		<property name="start_gamestage" value="90" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_RBurnt" extends="Minor_RPartyGirl">
+		<property name="title_var_key" value="zombieBurntRadiated" />
+		<property name="display_var_key" value="zombieBurnt" />
+		<property name="event_name" value="vote_minor_rburnt" />
+		<property name="start_gamestage" value="90" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_RJanitor" extends="Minor_RPartyGirl">
+		<property name="title_var_key" value="zombieJanitorRadiated" />
+		<property name="display_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_minor_rjanitor" />
+		<property name="start_gamestage" value="90" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_Random3" extends="Minor_Random1">
+		<property name="title_key" value="TwitchVoteTitle_RandomAttack3" />
+		<property name="description_key" value="TwitchVoteDescription_RandomAttack3" />
+		<property name="display_key" value="TwitchVoteTitle_RandomAttack" />
+		<property name="event_name" value="vote_minor_random5" />
+		<property name="start_gamestage" value="90" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_RBiker" extends="Minor_RPartyGirl">
+		<property name="title_var_key" value="zombieBikerRadiated" />
+		<property name="display_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_minor_rbiker" />
+		<property name="start_gamestage" value="110" />
+		<!-- <property name="end_gamestage" value="60" />  -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_RTourist" extends="Minor_RPartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiianRadiated" />
+		<property name="display_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_minor_rtourist" />
+		<property name="start_gamestage" value="110" />
+		<!-- <property name="end_gamestage" value="120" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_RSoldier" extends="Minor_RPartyGirl">
+		<property name="title_var_key" value="zombieSoldierRadiated" />
+		<property name="display_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_minor_rsoldiers" />
+		<property name="start_gamestage" value="110" />
+		<!-- <property name="end_gamestage" value="60" />  -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_RMama" extends="Minor_RPartyGirl">
+		<property name="title_var_key" value="zombieFemaleFatRadiated" />
+		<property name="display_var_key" value="zombieFemaleFat" />
+		<property name="event_name" value="vote_minor_rmama" />
+		<property name="start_gamestage" value="110" />
+		<!-- <property name="end_gamestage" value="60" />  -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_RSpider" extends="Minor_RPartyGirl">
+		<property name="title_var_key" value="zombieSpiderRadiated" />
+		<property name="display_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_minor_rspiders" />
+		<property name="start_gamestage" value="110" />
+		<!-- <property name="end_gamestage" value="60" />  -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_RMutated" extends="Minor_PartyGirls">
+		<property name="title" value="Mutated Attack" />
+		<property name="title_var_key" value="zombieMutatedRadiated" />
+		<property name="display_var_key" value="zombieMutated" />
+		<property name="event_name" value="vote_minor_rmutated" />
+		<property name="start_gamestage" value="120" />
+	</vote_entry>
+
+	<vote_entry name="Minor_RandomTough3" extends="Minor_Random1">
+		<property name="title_key" value="TwitchVoteTitle_RandomToughAttack3" />
+		<property name="description_key" value="TwitchVoteDescription_RandomToughAttack3" />
+		<property name="display_key" value="TwitchVoteTitle_RandomToughAttack3" />
+		<property name="event_name" value="vote_minor_random6" />
+		<property name="start_gamestage" value="110" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_ZBear" extends="Minor_PartyGirls">
+		<property name="title_var_key" value="animalZombieBear" />
+		<property name="display_var_key" value="animalBear" />
+		<property name="event_name" value="vote_minor_zbears" />
+		<property name="start_gamestage" value="110" />
+		<!-- <property name="end_gamestage" value="10" /> -->
+	</vote_entry>
+	
+	<vote_entry name="Minor_RWight" extends="Minor_PartyGirls">
+		<property name="title_var_key" value="zombieWightRadiated" />
+		<property name="display_var_key" value="zombieWight" />
+		<property name="event_name" value="vote_minor_rwight" />
+		<property name="start_gamestage" value="130" />
+	</vote_entry>
+	
+	<!-- Minor Supplies -->
+	<vote_entry name="Minor_Supply_Ammo1">
+		<property name="title" value="Ammo Supplies 1" />
+		<property name="display" value="Ammo Supplies" />
+		<property name="title_var_key" value="TwitchVoteTitle_SuppliesAmmo" />
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies1" />
+		<property name="description_format_key" value="TwitchVoteDescription_Supplies" />
+		<property name="display_format_key" value="TwitchVoteTitle_Supplies" />
+		<property name="vote_type" value="standard_good" />
+		<property name="event_name" value="vote_minor_ammo1" />
+		<property name="display_type" value="Single" />
+		<property name="start_gamestage" value="1" />
+		<property name="end_gamestage" value="9" />
+		<property name="line1_desc" value="" />
+		<property name="line2_desc" value="" />
+		<property name="title_color" value="175,175,255,255" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Ammo2" extends="Minor_Supply_Ammo1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies2" />
+		<property name="event_name" value="vote_minor_ammo2" />
+		<property name="start_gamestage" value="10" />
+		<property name="end_gamestage" value="49" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Ammo3" extends="Minor_Supply_Ammo1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies3" />
+		<property name="event_name" value="vote_minor_ammo3" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Ammo4" extends="Minor_Supply_Ammo1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies4" />
+		<property name="event_name" value="vote_minor_ammo2" />
+		<property name="start_gamestage" value="90" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Weapon1" extends="Minor_Supply_Ammo1">
+		<property name="title_var_key" value="TwitchVoteTitle_SuppliesWeapon" />
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies1" />
+		<property name="display" value="Weapon Supplies" />
+		<property name="event_name" value="vote_minor_weapon1" />
+		<property name="start_gamestage" value="1" />
+		<property name="end_gamestage" value="9" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Weapon2" extends="Minor_Supply_Weapon1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies2" />
+		<property name="event_name" value="vote_minor_weapon2" />
+		<property name="start_gamestage" value="10" />
+		<property name="end_gamestage" value="49" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Weapon3" extends="Minor_Supply_Weapon1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies3" />
+		<property name="event_name" value="vote_minor_weapon3" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Weapon4" extends="Minor_Supply_Weapon1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies4" />
+		<property name="event_name" value="vote_minor_weapon4" />
+		<property name="start_gamestage" value="90" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Armor1" extends="Minor_Supply_Ammo1">
+		<property name="title_var_key" value="TwitchVoteTitle_SuppliesArmor" />
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies1" />
+		<property name="display" value="Armor Supplies" />
+		<property name="event_name" value="vote_minor_armor1" />
+		<property name="start_gamestage" value="1" />
+		<property name="end_gamestage" value="9" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Armor2" extends="Minor_Supply_Armor1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies2" />
+		<property name="event_name" value="vote_minor_armor2" />
+		<property name="start_gamestage" value="10" />
+		<property name="end_gamestage" value="49" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Armor3" extends="Minor_Supply_Armor1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies3" />
+		<property name="event_name" value="vote_minor_armor3" />
+		<property name="start_gamestage" value="50" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Food1" extends="Minor_Supply_Ammo1">
+		<property name="title_var_key" value="TwitchVoteTitle_SuppliesMeal" />
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies1" />
+		<property name="display" value="Meal Supplies" />
+		<property name="event_name" value="vote_minor_meal1" />
+		<property name="start_gamestage" value="6" />
+		<property name="end_gamestage" value="15" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Food2" extends="Minor_Supply_Food1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies2" />
+		<property name="event_name" value="vote_minor_meal2" />
+		<property name="start_gamestage" value="16" />
+		<property name="end_gamestage" value="55" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Food3" extends="Minor_Supply_Food1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies3" />
+		<property name="event_name" value="vote_minor_meal3" />
+		<property name="start_gamestage" value="56" />
+		<property name="end_gamestage" value="95" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Food4" extends="Minor_Supply_Food1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies4" />
+		<property name="event_name" value="vote_minor_meal4" />
+		<property name="start_gamestage" value="96" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Explosives1" extends="Minor_Supply_Ammo1">
+		<property name="title_var_key" value="TwitchVoteTitle_SuppliesExplosive" />
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies1" />
+		<property name="display" value="Explosive Supplies" />
+		<property name="event_name" value="vote_minor_explosives1" />
+		<property name="start_gamestage" value="8" />
+		<property name="end_gamestage" value="19" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Explosives2" extends="Minor_Supply_Explosives1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies2" />
+		<property name="event_name" value="vote_minor_explosives2" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="59" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Explosives3" extends="Minor_Supply_Explosives1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies3" />
+		<property name="event_name" value="vote_minor_explosives3" />
+		<property name="start_gamestage" value="60" />
+		<property name="end_gamestage" value="99" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Explosives4" extends="Minor_Supply_Explosives1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies4" />
+		<property name="event_name" value="vote_minor_explosives4" />
+		<property name="start_gamestage" value="100" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Meds1" extends="Minor_Supply_Ammo1">
+		<property name="title_var_key" value="TwitchVoteTitle_SuppliesMedical" />
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies1" />
+		<property name="event_name" value="vote_minor_meds1" />
+		<property name="start_gamestage" value="5" />
+		<property name="end_gamestage" value="14" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Meds2" extends="Minor_Supply_Meds1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies2" />
+		<property name="event_name" value="vote_minor_meds2" />
+		<property name="start_gamestage" value="15" />
+		<property name="end_gamestage" value="54" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Meds3" extends="Minor_Supply_Meds1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies3" />
+		<property name="event_name" value="vote_minor_meds3" />
+		<property name="start_gamestage" value="55" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Books1" extends="Minor_Supply_Ammo1">
+		<property name="title_var_key" value="TwitchVoteTitle_SuppliesBook" />
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies1" />
+		<property name="event_name" value="vote_minor_book1" />
+		<property name="start_gamestage" value="15" />
+		<property name="end_gamestage" value="54" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Books2" extends="Minor_Supply_Books1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies2" />
+		<property name="event_name" value="vote_minor_book2" />
+		<property name="start_gamestage" value="55" />
+		<property name="end_gamestage" value="94" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Books3" extends="Minor_Supply_Books1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies3" />
+		<property name="event_name" value="vote_minor_book3" />
+		<property name="start_gamestage" value="95" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Mystery1" extends="Minor_Supply_Ammo1">
+		<property name="title_var_key" value="TwitchVoteTitle_SuppliesMystery" />
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies1" />
+		<property name="display" value="Mystery Supplies" />
+		<property name="event_name" value="vote_minor_mystery1" />
+		<property name="start_gamestage" value="5" />
+		<property name="end_gamestage" value="9" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Mystery2" extends="Minor_Supply_Mystery1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies2" />
+		<property name="event_name" value="vote_minor_mystery2" />
+		<property name="start_gamestage" value="11" />
+		<property name="end_gamestage" value="49" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Mystery3" extends="Minor_Supply_Mystery1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies3" />
+		<property name="event_name" value="vote_minor_mystery3" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+	</vote_entry>
+	
+	<vote_entry name="Minor_Supply_Mystery4" extends="Minor_Supply_Mystery1">
+		<property name="title_format_key" value="TwitchVoteTitle_Supplies4" />
+		<property name="event_name" value="vote_minor_mystery4" />
+		<property name="start_gamestage" value="90" />
+	</vote_entry>
+	
+	<!-- Horde Votes -->
+	<vote_entry name="Standard_PartyGirl">
+		<property name="title_var_key" value="zombiePartyGirl" />
+		<property name="title_format_key" value="TwitchVoteTitle_Horde" />
+		<property name="description_format_key" value="TwitchVoteDescription_Horde" />
+		<property name="display_format_key" value="TwitchVoteTitle_Horde" />
+		<property name="vote_type" value="boss" />
+		<property name="event_name" value="vote_horde_s_stripper" />
+		<property name="display_type" value="Single" />
+		<property name="start_gamestage" value="8" />
+		<property name="end_gamestage" value="12" />
+		<property name="group" value="partygirl" />
+		<property name="line1_desc" value="" />
+		<property name="line2_desc" value="" />
+		<property name="title_color" value="255,175,175,255" />
+	</vote_entry>
+	
+	<vote_entry name="Standard_Business" extends="Standard_PartyGirl">
+		<property name="title_var_key" value="zombieBusinessMan" />
+		<property name="event_name" value="vote_horde_s_business" />
+		<property name="start_gamestage" value="8" />
+		<property name="end_gamestage" value="12" />
+		<property name="group" value="business" />
+	</vote_entry>
+	
+	<vote_entry name="Standard_Random" extends="Standard_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_Random" />
+		<property name="event_name" value="vote_horde_s_random" />
+		<property name="start_gamestage" value="8" />
+		<property name="end_gamestage" value="12" />
+		<property name="group" value="random" />
+	</vote_entry>
+	
+	<vote_entry name="Standard_Janitor" extends="Standard_PartyGirl">
+		<property name="title_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_horde_s_janitor" />
+		<property name="start_gamestage" value="8" />
+		<property name="end_gamestage" value="12" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<vote_entry name="Standard_Nurse" extends="Standard_PartyGirl">
+		<property name="title_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_horde_s_nurse" />
+		<property name="start_gamestage" value="8" />
+		<property name="end_gamestage" value="12" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<vote_entry name="Standard_Spider" extends="Standard_PartyGirl">
+		<property name="title_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_horde_s_spider" />
+		<property name="start_gamestage" value="15" />
+		<property name="end_gamestage" value="25" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<vote_entry name="Standard_Biker" extends="Standard_PartyGirl">
+		<property name="title_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_horde_s_biker" />
+		<property name="start_gamestage" value="11" />
+		<property name="end_gamestage" value="19" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<vote_entry name="Standard_Tough" extends="Standard_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_horde_s_random_tough" />
+		<property name="start_gamestage" value="11" />
+		<property name="end_gamestage" value="19" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<vote_entry name="Standard_Soldier" extends="Standard_PartyGirl">
+		<property name="title_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_horde_s_soldier" />
+		<property name="start_gamestage" value="11" />
+		<property name="end_gamestage" value="19" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<vote_entry name="Standard_Mama" extends="Standard_PartyGirl">
+		<property name="title_var_key" value="zombieFemaleFat" />
+		<property name="event_name" value="vote_horde_s_mama" />
+		<property name="start_gamestage" value="11" />
+		<property name="end_gamestage" value="19" />
+		<property name="group" value="mama" />
+	</vote_entry>
+	
+	<vote_entry name="Shock_PartyGirl">
+		<property name="title_format_key" value="TwitchVoteTitle_Horde" />
+		<property name="description_format_key" value="TwitchVoteDescription_HordeShock" />
+		<property name="display_format_key" value="TwitchVoteTitle_Horde" />
+		<property name="title_var_key" value="zombiePartyGirl" />
+		<property name="vote_type" value="boss" />
+		<property name="event_name" value="vote_h_stripper_shock" />
+		<property name="display_type" value="Single" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="line1_desc" value="+Shock" />
+		<property name="line1_desc_key" value="TwitchVoteSubtitle_Shock" />
+		<property name="line2_desc" value="" />
+		<property name="group" value="partygirl" />
+		<property name="display_type" value="HordeBuffed" />
+		<property name="title_color" value="255,175,175,255" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_PartyGirl">
+		<property name="title_format_key" value="TwitchVoteTitle_Horde" />
+		<property name="description_format_key" value="TwitchVoteDescription_HordeBurn" />
+		<property name="display_format_key" value="TwitchVoteTitle_Horde" />
+		<property name="title_var_key" value="zombiePartyGirl" />
+		<property name="vote_type" value="boss" />
+		<property name="event_name" value="vote_h_stripper_burn" />
+		<property name="display_type" value="Single" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="line1_desc" value="+Burn" />
+		<property name="line1_desc_key" value="TwitchVoteSubtitle_Burn" />
+		<property name="line2_desc" value="" />
+		<property name="group" value="partygirl" />
+		<property name="display_type" value="HordeBuffed" />
+		<property name="title_color" value="255,175,175,255" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_PartyGirl">
+		<property name="title_format_key" value="TwitchVoteTitle_Horde" />
+		<property name="description_format_key" value="TwitchVoteDescription_HordeRadiation" />
+		<property name="display_format_key" value="TwitchVoteTitle_Horde" />
+		<property name="title_var_key" value="zombiePartyGirl" />
+		<property name="vote_type" value="boss" />
+		<property name="event_name" value="vote_h_stripper_rad" />
+		<property name="display_type" value="Single" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="line1_desc" value="+Radiation" />
+		<property name="line1_desc_key" value="TwitchVoteSubtitle_Radiation" />
+		<property name="line2_desc" value="" />
+		<property name="group" value="partygirl" />
+		<property name="display_type" value="HordeBuffed" />
+		<property name="title_color" value="255,175,175,255" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_PartyGirl">
+		<property name="title_format_key" value="TwitchVoteTitle_Horde" />
+		<property name="description_format_key" value="TwitchVoteDescription_HordeImmortalBoss" />
+		<property name="display_format_key" value="TwitchVoteTitle_Horde" />
+		<property name="title_var_key" value="zombiePartyGirl" />
+		<property name="vote_type" value="boss" />
+		<property name="event_name" value="vote_h_stripper_immortal_b" />
+		<property name="display_type" value="Single" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="line1_desc" value="+Shielded Boss" />
+		<property name="line1_desc_key" value="TwitchVoteSubtitle_ShieldedBoss" />
+		<property name="line2_desc" value="" />
+		<property name="group" value="partygirl" />
+		<property name="display_type" value="HordeBuffed" />
+		<property name="title_color" value="255,175,175,255" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_PartyGirl">
+		<property name="title_format_key" value="TwitchVoteTitle_Horde" />
+		<property name="description_format_key" value="TwitchVoteDescription_HordeImmortalMinion" />
+		<property name="display_format_key" value="TwitchVoteTitle_Horde" />
+		<property name="title_var_key" value="zombiePartyGirl" />
+		<property name="vote_type" value="boss" />
+		<property name="event_name" value="vote_h_stripper_immortal_m" />
+		<property name="display_type" value="Single" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="line1_desc" value="+Shielded Minions" />
+		<property name="line1_desc_key" value="TwitchVoteSubtitle_ShieldedMinions" />
+		<property name="line2_desc" value="" />
+		<property name="group" value="partygirl" />
+		<property name="display_type" value="HordeBuffed" />
+		<property name="title_color" value="255,175,175,255" />
+	</vote_entry>
+	
+	<vote_entry name="Shock_Business" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieBusinessMan" />
+		<property name="event_name" value="vote_h_business_shock" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="business" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_Business" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieBusinessMan" />
+		<property name="event_name" value="vote_h_business_burn" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="business" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_Business" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieBusinessMan" />
+		<property name="event_name" value="vote_h_business_rad" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="business" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_Business" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieBusinessMan" />
+		<property name="event_name" value="vote_h_business_immortal_b" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="business" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_Business" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieBusinessMan" />
+		<property name="event_name" value="vote_h_business_immortal_m" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="business" />
+	</vote_entry>
+	
+	<vote_entry name="Shock_Random" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_Random" />
+		<property name="event_name" value="vote_h_random_shock" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="random" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_Random" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_Random" />
+		<property name="event_name" value="vote_h_random_burn" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="random" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_Random" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_Random" />
+		<property name="event_name" value="vote_h_random_rad" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="random" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_Random" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_Random" />
+		<property name="event_name" value="vote_h_random_immortal_b" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="random" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_Random" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_Random" />
+		<property name="event_name" value="vote_h_random_immortal_m" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="random" />
+	</vote_entry>
+	
+	<vote_entry name="Shock_Nurse" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_nurse_shock" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_Nurse" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_nurse_burn" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_Nurse" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_nurse_rad" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_Nurse" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_nurse_immortal_b" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_Nurse" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_nurse_immortal_m" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<vote_entry name="Shock_Janitor" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_janitor_shock" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_Janitor" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_janitor_burn" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_Janitor" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_janitor_rad" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_Janitor" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_janitor_immortal_b" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_Janitor" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_janitor_immortal_m" />
+		<property name="start_gamestage" value="20" />
+		<property name="end_gamestage" value="50" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<!-- Spider -->
+	
+	<vote_entry name="Shock_Spider" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_spider_shock" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_Spider" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_spider_burn" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_Spider" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_spider_rad" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_Spider" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_spider_immortal_b" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_Spider" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_spider_immortal_m" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<!-- Biker -->
+	
+	<vote_entry name="Shock_Biker" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_biker_shock" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_Biker" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_biker_burn" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_Biker" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_biker_rad" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_Biker" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_biker_immortal_b" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_Biker" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_biker_immortal_m" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<!-- Random Tough -->
+	
+	<vote_entry name="Shock_Random_Tough" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_random_tough_shock" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_Random_Tough" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_random_tough_burn" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_Random_Tough" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_random_tough_rad" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_Random_Tough" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_random_tough_immortal_b" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_Random_Tough" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_random_tough_immortal_m" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<!-- Soldier -->
+	
+	<vote_entry name="Shock_Soldier" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_soldier_shock" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_Soldier" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_soldier_burn" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_Soldier" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_soldier_rad" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_Soldier" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_soldier_immortal_b" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_Soldier" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_soldier_immortal_m" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<!-- Mama -->
+	
+	<vote_entry name="Shock_Mama" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieFemaleFat" />
+		<property name="event_name" value="vote_h_mama_shock" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="mama" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_Mama" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieFemaleFat" />
+		<property name="event_name" value="vote_h_mama_burn" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="mama" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_Mama" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieFemaleFat" />
+		<property name="event_name" value="vote_h_mama_rad" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="mama" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_Mama" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieFemaleFat" />
+		<property name="event_name" value="vote_h_mama_immortal_b" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="mama" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_Mama" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieFemaleFat" />
+		<property name="event_name" value="vote_h_mama_immortal_m" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="mama" />
+	</vote_entry>
+	
+	<!-- Tourist -->
+	
+	<vote_entry name="Shock_Tourist" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_tourist_shock" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_Tourist" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_tourist_burn" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_Tourist" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_tourist_rad" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_Tourist" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_tourist_immortal_b" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_Tourist" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_tourist_immortal_m" />
+		<property name="start_gamestage" value="30" />
+		<property name="end_gamestage" value="60" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<!-- Feral Party Girls -->
+	
+	<vote_entry name="Shock_FeralPartyGirl" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombiePartyGirlFeral" />
+		<property name="display_var_key" value="zombiePartyGirl" />
+		<property name="event_name" value="vote_h_fstripper_shock" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="partygirl" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_FeralPartyGirl" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombiePartyGirlFeral" />
+		<property name="display_var_key" value="zombiePartyGirl" />
+		<property name="event_name" value="vote_h_fstripper_burn" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="partygirl" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_FeralPartyGirl" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombiePartyGirlFeral" />
+		<property name="display_var_key" value="zombiePartyGirl" />
+		<property name="event_name" value="vote_h_fstripper_rad" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="partygirl" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_FeralPartyGirl" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombiePartyGirlFeral" />
+		<property name="display_var_key" value="zombiePartyGirl" />
+		<property name="event_name" value="vote_h_fstripper_immortal_b" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="partygirl" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_FeralPartyGirl" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombiePartyGirlFeral" />
+		<property name="display_var_key" value="zombiePartyGirl" />
+		<property name="event_name" value="vote_h_fstripper_immortal_m" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="partygirl" />
+	</vote_entry>
+	
+	<!-- Feral Business -->
+	
+	<vote_entry name="Shock_FeralBusiness" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieBusinessManFeral" />
+		<property name="display_var_key" value="zombieBusinessMan" />
+		<property name="event_name" value="vote_h_fbusiness_shock" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="business" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_FeralBusiness" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieBusinessManFeral" />
+		<property name="display_var_key" value="zombieBusinessMan" />
+		<property name="event_name" value="vote_h_fbusiness_burn" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="business" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_FeralBusiness" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieBusinessManFeral" />
+		<property name="display_var_key" value="zombieBusinessMan" />
+		<property name="event_name" value="vote_h_fbusiness_rad" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="business" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_FeralBusiness" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieBusinessManFeral" />
+		<property name="display_var_key" value="zombieBusinessMan" />
+		<property name="event_name" value="vote_h_fbusiness_immortal_b" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="business" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_FeralBusiness" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieBusinessManFeral" />
+		<property name="display_var_key" value="zombieBusinessMan" />
+		<property name="event_name" value="vote_h_fbusiness_immortal_m" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="business" />
+	</vote_entry>
+	
+	<!-- Feral Random Horde -->
+	
+	<vote_entry name="Shock_FeralRandom" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomFeral" />
+		<property name="display_var_key" value="TwitchVoteTitle_Random" />
+		<property name="event_name" value="vote_h_frandom_shock" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="random" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_FeralRandom" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomFeral" />
+		<property name="display_var_key" value="TwitchVoteTitle_Random" />
+		<property name="event_name" value="vote_h_frandom_burn" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="random" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_FeralRandom" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomFeral" />
+		<property name="display_var_key" value="TwitchVoteTitle_Random" />
+		<property name="event_name" value="vote_h_frandom_rad" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="random" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_FeralRandom" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomFeral" />
+		<property name="display_var_key" value="TwitchVoteTitle_Random" />
+		<property name="event_name" value="vote_h_frandom_immortal_b" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="random" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_FeralRandom" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomFeral" />
+		<property name="display_var_key" value="TwitchVoteTitle_Random" />
+		<property name="event_name" value="vote_h_frandom_immortal_m" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="random" />
+	</vote_entry>
+	
+	<!-- Feral Nurse Horde -->
+	
+	<vote_entry name="Shock_FeralNurse" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieNurseFeral" />
+		<property name="display_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_fnurse_shock" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_FeralNurse" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieNurseFeral" />
+		<property name="display_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_fnurse_burn" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_FeralNurse" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieNurseFeral" />
+		<property name="display_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_fnurse_rad" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_FeralNurse" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieNurseFeral" />
+		<property name="display_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_fnurse_immortal_b" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_FeralNurse" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieNurseFeral" />
+		<property name="display_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_fnurse_immortal_m" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<!-- Feral Janitor Horde -->
+	
+	<vote_entry name="Shock_FeralJanitor" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieJanitorFeral" />
+		<property name="display_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_fjanitor_shock" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_FeralJanitor" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieJanitorFeral" />
+		<property name="display_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_fjanitor_burn" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_FeralJanitor" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieJanitorFeral" />
+		<property name="display_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_fjanitor_rad" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_FeralJanitor" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieJanitorFeral" />
+		<property name="display_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_fjanitor_immortal_b" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_FeralJanitor" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieJanitorFeral" />
+		<property name="display_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_fjanitor_immortal_m" />
+		<property name="start_gamestage" value="50" />
+		<property name="end_gamestage" value="89" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<!-- Feral Spider -->
+	
+	<vote_entry name="Shock_FeralSpider" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieSpiderFeral" />
+		<property name="display_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_fspider_shock" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_FeralSpider" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieSpiderFeral" />
+		<property name="display_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_fspider_burn" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_FeralSpider" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieSpiderFeral" />
+		<property name="display_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_fspider_rad" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_FeralSpider" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieSpiderFeral" />
+		<property name="display_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_fspider_immortal_b" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_FeralSpider" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieSpiderFeral" />
+		<property name="display_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_fspider_immortal_m" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<!-- Feral Biker -->
+	
+	<vote_entry name="Shock_FeralBiker" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieBikerFeral" />
+		<property name="display_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_biker_shock" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_FeralBiker" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieBikerFeral" />
+		<property name="display_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_fbiker_burn" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_FeralBiker" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieBikerFeral" />
+		<property name="display_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_fbiker_rad" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_FeralBiker" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieBikerFeral" />
+		<property name="display_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_fbiker_immortal_b" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_FeralBiker" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieBikerFeral" />
+		<property name="display_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_fbiker_immortal_m" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<!-- Feral Random Tough -->
+	
+	<vote_entry name="Shock_FeralRandom_Tough" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomToughFeral" />
+		<property name="display_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_frandom_tough_shock" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_FeralRandom_Tough" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomToughFeral" />
+		<property name="display_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_frandom_tough_burn" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_FeralRandom_Tough" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomToughFeral" />
+		<property name="display_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_frandom_tough_rad" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_FeralRandom_Tough" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomToughFeral" />
+		<property name="display_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_frandom_tough_immortal_b" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_FeralRandom_Tough" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomToughFeral" />
+		<property name="display_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_frandom_tough_immortal_m" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<!-- Feral Soldier -->
+	
+	<vote_entry name="Shock_FeralSoldier" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieSoldierFeral" />
+		<property name="display_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_fsoldier_shock" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_FeralSoldier" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieSoldierFeral" />
+		<property name="display_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_fsoldier_burn" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_FeralSoldier" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieSoldierFeral" />
+		<property name="display_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_fsoldier_rad" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_FeralSoldier" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieSoldierFeral" />
+		<property name="display_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_fsoldier_immortal_b" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_FeralSoldier" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieSoldierFeral" />
+		<property name="display_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_fsoldier_immortal_m" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<!-- Feral Mama -->
+	
+	<vote_entry name="Shock_FeralMama" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieFemaleFatFeral" />
+		<property name="display_var_key" value="zombieFemaleFat" />
+		<property name="event_name" value="vote_h_fmama_shock" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="mama" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_FeralMama" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieFemaleFatFeral" />
+		<property name="display_var_key" value="zombieFemaleFat" />
+		<property name="event_name" value="vote_h_fmama_burn" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="mama" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_FeralMama" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieFemaleFatFeral" />
+		<property name="display_var_key" value="zombieFemaleFat" />
+		<property name="event_name" value="vote_h_fmama_rad" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="mama" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_FeralMama" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieFemaleFatFeral" />
+		<property name="display_var_key" value="zombieFemaleFat" />
+		<property name="event_name" value="vote_h_fmama_immortal_b" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="mama" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_FeralMama" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieFemaleFatFeral" />
+		<property name="display_var_key" value="zombieFemaleFat" />
+		<property name="event_name" value="vote_h_fmama_immortal_m" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="mama" />
+	</vote_entry>
+	
+	<!-- Feral Soldier -->
+	
+	<vote_entry name="Shock_FeralTourist" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiianFeral" />
+		<property name="display_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_ftourist_shock" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_FeralTourist" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiianFeral" />
+		<property name="display_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_ftourist_burn" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_FeralTourist" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiianFeral" />
+		<property name="display_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_ftourist_rad" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_FeralTourist" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiianFeral" />
+		<property name="display_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_ftourist_immortal_b" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_FeralTourist" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiianFeral" />
+		<property name="display_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_ftourist_immortal_m" />
+		<property name="start_gamestage" value="70" />
+		<property name="end_gamestage" value="99" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<!-- Feral Wight -->
+	
+	<vote_entry name="Shock_FeralWight" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieWightFeral" />
+		<property name="display_var_key" value="zombieWight" />
+		<property name="event_name" value="vote_h_fwight_shock" />
+		<property name="start_gamestage" value="85" />
+		<property name="end_gamestage" value="114" />
+		<property name="group" value="wight" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_FeralWight" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieWightFeral" />
+		<property name="display_var_key" value="zombieWight" />
+		<property name="event_name" value="vote_h_fwight_burn" />
+		<property name="start_gamestage" value="85" />
+		<property name="end_gamestage" value="114" />
+		<property name="group" value="wight" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_FeralWight" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieWightFeral" />
+		<property name="display_var_key" value="zombieWight" />
+		<property name="event_name" value="vote_h_fwight_rad" />
+		<property name="start_gamestage" value="85" />
+		<property name="end_gamestage" value="114" />
+		<property name="group" value="wight" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_FeralWight" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieWightFeral" />
+		<property name="display_var_key" value="zombieWight" />
+		<property name="event_name" value="vote_h_fwight_immortal_b" />
+		<property name="start_gamestage" value="85" />
+		<property name="end_gamestage" value="114" />
+		<property name="group" value="wight" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_FeralWight" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieWightFeral" />
+		<property name="display_var_key" value="zombieWight" />
+		<property name="event_name" value="vote_h_fwight_immortal_m" />
+		<property name="start_gamestage" value="85" />
+		<property name="end_gamestage" value="114" />
+		<property name="group" value="wight" />
+	</vote_entry>
+	
+	<!-- Radiated Party Girl Horde -->
+	
+	<vote_entry name="Shock_RadPartyGirl" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombiePartyGirlRadiated" />
+		<property name="display_var_key" value="zombiePartyGirl" />
+		<property name="event_name" value="vote_h_rpartygirl_shock" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="partygirl" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_RadPartyGirl" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombiePartyGirlRadiated" />
+		<property name="display_var_key" value="zombiePartyGirl" />
+		<property name="event_name" value="vote_h_rpartygirl_burn" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="partygirl" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_RadPartyGirl" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombiePartyGirlRadiated" />
+		<property name="display_var_key" value="zombiePartyGirl" />
+		<property name="event_name" value="vote_h_rpartygirl_rad" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="partygirl" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_RadPartyGirl" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombiePartyGirlRadiated" />
+		<property name="display_var_key" value="zombiePartyGirl" />
+		<property name="event_name" value="vote_h_rpartygirl_immortal_b" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="partygirl" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_RadPartyGirl" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombiePartyGirlRadiated" />
+		<property name="display_var_key" value="zombiePartyGirl" />
+		<property name="event_name" value="vote_h_rpartygirl_immortal_m" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="partygirl" />
+	</vote_entry>
+	
+	<!-- Radiated Janitor Horde -->
+	
+	<vote_entry name="Shock_RadJanitor" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieJanitorRadiated" />
+		<property name="display_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_rjanitor_shock" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_RadJanitor" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieJanitorRadiated" />
+		<property name="display_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_rjanitor_burn" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_RadJanitor" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieJanitorRadiated" />
+		<property name="display_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_rjanitor_rad" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_RadJanitor" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieJanitorRadiated" />
+		<property name="display_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_rjanitor_immortal_b" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_RadJanitor" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieJanitorRadiated" />
+		<property name="display_var_key" value="zombieJanitor" />
+		<property name="event_name" value="vote_h_rjanitor_immortal_m" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="janitor" />
+	</vote_entry>
+	
+	<!-- Radiated Nurse Horde -->
+	
+	<vote_entry name="Shock_RadNurse" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieNurseRadiated" />
+		<property name="display_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_rnurse_shock" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_RadNurse" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieNurseRadiated" />
+		<property name="display_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_rnurse_burn" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_RadNurse" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieNurseRadiated" />
+		<property name="display_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_rnurse_rad" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_RadNurse" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieNurseRadiated" />
+		<property name="display_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_rnurse_immortal_b" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_RadNurse" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieNurseRadiated" />
+		<property name="display_var_key" value="zombieNurse" />
+		<property name="event_name" value="vote_h_rnurse_immortal_m" />
+		<property name="start_gamestage" value="90" />
+		<property name="group" value="nurse" />
+	</vote_entry>
+	
+	<!-- Radiated Biker Horde -->
+	
+	<vote_entry name="Shock_RadBiker" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieBikerRadiated" />
+		<property name="display_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_rbiker_shock" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_RadBiker" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieBikerRadiated" />
+		<property name="display_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_rbiker_burn" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_RadBiker" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieBikerRadiated" />
+		<property name="display_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_rbiker_rad" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_RadBiker" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieBikerRadiated" />
+		<property name="display_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_rbiker_immortal_b" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_RadBiker" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieBikerRadiated" />
+		<property name="display_var_key" value="zombieBiker" />
+		<property name="event_name" value="vote_h_rbiker_immortal_m" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="biker" />
+	</vote_entry>
+	
+	<!-- Radiated Soldier Horde -->
+	
+	<vote_entry name="Shock_RadSoldier" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieSoldierRadiated" />
+		<property name="display_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_rsoldier_shock" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_RadSoldier" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieSoldierRadiated" />
+		<property name="display_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_rsoldier_burn" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_RadSoldier" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieSoldierRadiated" />
+		<property name="display_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_rsoldier_rad" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_RadSoldier" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieSoldierRadiated" />
+		<property name="display_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_rsoldier_immortal_b" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_RadSoldier" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieSoldierRadiated" />
+		<property name="display_var_key" value="zombieSoldier" />
+		<property name="event_name" value="vote_h_rsoldier_immortal_m" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="soldier" />
+	</vote_entry>
+	
+	<!-- Radiated Tourist Horde -->
+	
+	<vote_entry name="Shock_RadTourist" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiianRadiated" />
+		<property name="display_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_rtourist_shock" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_RadTourist" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiianRadiated" />
+		<property name="display_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_rtourist_burn" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_RadTourist" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiianRadiated" />
+		<property name="display_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_rtourist_rad" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_RadTourist" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiianRadiated" />
+		<property name="display_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_rtourist_immortal_b" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_RadTourist" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieFatHawaiianRadiated" />
+		<property name="display_var_key" value="zombieFatHawaiian" />
+		<property name="event_name" value="vote_h_rtourist_immortal_m" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="tourist" />
+	</vote_entry>
+	
+	<!-- Radiated Spider Horde -->
+	
+	<vote_entry name="Shock_RadSpider" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieSpiderRadiated" />
+		<property name="display_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_rspider_shock" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_RadSpider" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieSpiderRadiated" />
+		<property name="display_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_rspider_burn" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_RadSpider" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieSpiderRadiated" />
+		<property name="display_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_rspider_rad" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_RadSpider" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieSpiderRadiated" />
+		<property name="display_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_rspider_immortal_b" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_RadSpider" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieSpiderRadiated" />
+		<property name="display_var_key" value="zombieSpider" />
+		<property name="event_name" value="vote_h_rspider_immortal_m" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="spider" />
+	</vote_entry>
+	
+	<!-- Radiated Random Tough -->
+	
+	<vote_entry name="Shock_RadRandom_Tough" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomToughRadiated" />
+		<property name="display_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_rrandom_tough_shock" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_RadRandom_Tough" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomToughRadiated" />
+		<property name="display_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_rrandom_tough_burn" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_RadRandom_Tough" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomToughRadiated" />
+		<property name="display_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_rrandom_tough_rad" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_RadRandom_Tough" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomToughRadiated" />
+		<property name="display_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_rrandom_tough_immortal_b" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_RadRandom_Tough" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="TwitchVoteTitle_RandomToughRadiated" />
+		<property name="display_var_key" value="TwitchVoteTitle_RandomTough" />
+		<property name="event_name" value="vote_h_rrandom_tough_immortal_m" />
+		<property name="start_gamestage" value="100" />
+		<property name="group" value="tough" />
+	</vote_entry>
+	
+	<!-- Radiated Wight Horde -->
+	
+	<vote_entry name="Shock_RadWight" extends="Shock_PartyGirl">
+		<property name="title_var_key" value="zombieWightRadiated" />
+		<property name="display_var_key" value="zombieWight" />
+		<property name="event_name" value="vote_h_rwight_shock" />
+		<property name="start_gamestage" value="115" />
+		<property name="group" value="wight" />
+	</vote_entry>
+	
+	<vote_entry name="Burn_RadWight" extends="Burn_PartyGirl">
+		<property name="title_var_key" value="zombieWightRadiated" />
+		<property name="display_var_key" value="zombieWight" />
+		<property name="event_name" value="vote_h_rwight_burn" />
+		<property name="start_gamestage" value="115" />
+		<property name="group" value="wight" />
+	</vote_entry>
+	
+	<vote_entry name="Radiation_RadWight" extends="Radiation_PartyGirl">
+		<property name="title_var_key" value="zombieWightRadiated" />
+		<property name="display_var_key" value="zombieWight" />
+		<property name="event_name" value="vote_h_rwight_rad" />
+		<property name="start_gamestage" value="115" />
+		<property name="group" value="wight" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Boss_RadWight" extends="Shield_Boss_PartyGirl">
+		<property name="title_var_key" value="zombieWightRadiated" />
+		<property name="display_var_key" value="zombieWight" />
+		<property name="event_name" value="vote_h_rwight_immortal_b" />
+		<property name="start_gamestage" value="115" />
+		<property name="group" value="wight" />
+	</vote_entry>
+	
+	<vote_entry name="Shield_Minion_RadWight" extends="Shield_Minion_PartyGirl">
+		<property name="title_var_key" value="zombieWightRadiated" />
+		<property name="display_var_key" value="zombieWight" />
+		<property name="event_name" value="vote_h_rwight_immortal_m" />
+		<property name="start_gamestage" value="115" />
+		<property name="group" value="wight" />
+	</vote_entry>
+	
+</twitch>
