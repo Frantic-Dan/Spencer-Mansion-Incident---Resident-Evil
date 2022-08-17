@@ -470,41 +470,41 @@
 </recipe>
 
 <recipe name="Mixed Green Herb" count="1" craft_time="3">
-	<ingredient name="Green Herb" count="2"/>
+	<ingredient name="Green_Herb" count="2"/>
 </recipe>
 
 <recipe name="Mixed 3 Green Herbs" count="1" craft_time="3">
-	<ingredient name="Green Herb" count="1"/>
+	<ingredient name="Green_Herb" count="1"/>
 	<ingredient name="Mixed Green Herb" count="1"/>
 </recipe>
 
 <recipe name="Mixed Green+Blue Herb" count="1" craft_time="3">
-	<ingredient name="Green Herb" count="1"/>
-	<ingredient name="Blue Herb" count="1"/>
+	<ingredient name="Green_Herb" count="1"/>
+	<ingredient name="Blue_Herb" count="1"/>
 </recipe>
 
 <recipe name="Mixed 2 Green+Blue Herb" count="1" craft_time="3">
-	<ingredient name="Green Herb" count="1"/>
+	<ingredient name="Green_Herb" count="1"/>
 	<ingredient name="Mixed Green+Blue Herb" count="1"/>
 </recipe>
 
 <recipe name="Mixed 2 Green+Blue Herb" count="1" craft_time="3">
-	<ingredient name="Blue Herb" count="1"/>
+	<ingredient name="Blue_Herb" count="1"/>
 	<ingredient name="Mixed Green Herb" count="1"/>
 </recipe>
 
 <recipe name="Mixed Green+Red Herb" count="1" craft_time="3">
-	<ingredient name="Green Herb" count="1"/>
-	<ingredient name="Red Herb" count="1"/>
+	<ingredient name="Green_Herb" count="1"/>
+	<ingredient name="Red_Herb" count="1"/>
 </recipe>
 
 <recipe name="Mixed Green+Red+Blue Herb" count="1" craft_time="3">
-	<ingredient name="Blue Herb" count="1"/>
+	<ingredient name="Blue_Herb" count="1"/>
 	<ingredient name="Mixed Green+Red Herb" count="1"/>
 </recipe>
 
 <recipe name="Mixed Green+Red+Blue Herb" count="1" craft_time="3">
-	<ingredient name="Red Herb" count="1"/>
+	<ingredient name="Red_Herb" count="1"/>
 	<ingredient name="Mixed Green+Blue Herb" count="1"/>
 </recipe>
 
