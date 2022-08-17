@@ -1,4 +1,5 @@
 Key,english
+goGameWorld,[FF4F00]Select 'Spencer Mansion Incident'[-]
 goDifficultyRE,[FF4F00]Difficulty (Read me)[-]
 goDifficultyREDesc,C - You deal 100% Damage and take 100% damage.\n\nB - You deal 80% Damage and take 150% damage.\n\nA - You deal 67% Damage and take 200% damage.\n\nS - You deal 50% Damage and take 250% damage.\n\nX - You deal 40% Damage and take 350% damage.\n[FF4F00](DO NOT try this on your first completion)[-]\n\nZ - You deal 80% Damage and take 700% damage.\n[FF4F00](DO NOT try this on your first completion)[-]
 goDifficulty1RE,C
@@ -7,15 +8,15 @@ goDifficulty3RE,A
 goDifficulty4RE,S
 goDifficulty5RE,X
 goDifficulty6RE,Z
-goDayLengthRE,[FF4F00]Select 150[-]
-goDayLightLengthRE,[FF4F00]Select 0[-]
-goBloodMoonFrequencyRE,[FF4F00]Select 0[-]
-goXPMultiplierRE,[FF4F00]Select 100[-]
-goBlockDamagePlayerRE,[FF4F00]Select 100[-]
-goBlockDamageAIRE,[FF4F00]Select 100[-]
-goLootAbundanceRE,[FF4F00]Select 100[-]
-goLootRespawnDaysRE,[FF4F00]Select 1[-]
-goZombieMoveNight,[FF4F00]Zombie Night Speed\n(Always Night)[-]
+goDayLengthRE,[FF4F00]Select '200 Minutes'[-]
+goDayLightLengthRE,[FF4F00]Select '0'[-]
+goBloodMoonFrequencyRE,[FF4F00]Select '0 Days'[-]
+goXPMultiplierRE,[FF4F00]Select '100%'[-]
+goBlockDamagePlayerRE,[FF4F00]Select '100%'[-]
+goBlockDamageAIRE,[FF4F00]Select '100%'[-]
+goLootAbundanceRE,[FF4F00]Select '100%'[-]
+goLootRespawnDaysRE,[FF4F00]Select '1 Day'[-]
+goZombieMoveNight,[FF4F00]Zombie Night Speed (Always Night)[-]
 tutorialTipQuest01_title,Welcome To The Spencer Mansion Challenge
 loadingTipRE1,You're trapped inside Spencer Mansion. Healing supplies and ammunition are in short supply. Can you escape with your life? Or become a Jill Sandwich?
 loadingTipRE1_title,Welcome to Resident Evil!
@@ -32,6 +33,26 @@ loadingTipRE6_title,Zombies Feel No Pain:
 loadingTipRE7,"A huge thank you to the following people: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake."
 loadingTipRE7_title,Special Thanks!
 tutorialTipQuest01,"You're about to experience the Spencer Mansion Incident in a first person perspective.\n\n[FF4F00]In this challenge, it will always be night, so it is recommended you set the zombie speed for night to your preference.[-]\n\nTo keep the challenge true to Resident Evil, please note the following.\n1) You have limited inventory space of 12 slots. There are Item Storage Boxes to store your items.\n2) You cannot jump.\n3) Most enemies don't feel pain, so fighting them will be different to what you're used to.\n\nFor an immersive experience, I'd recommend setting your music to play all the time.\n\nFor the intended experience, be sure to remove any non-related modlets and your orange game settings are correct."
+TwitchAction_SpawnCrawlerCommand,#crawler
+TwitchAction_SpawnToughCommand,#spawn_tough
+TwitchAction_SpawnSnakeCommand,#snake
+TwitchAction_SpawnSpiderCommand,#web_spinner
+TwitchAction_SpawnDogCommand,#cerberus
+TwitchAction_SpawnCrimsonHeadCommand,#crimson_head
+TwitchAction_SpawnForestSpeyerCommand,#forest_speyer
+TwitchAction_SpawnHunterCommand,#hunter
+TwitchAction_SpawncrimsonPrototypeCommand,#crimson_prototype
+TwitchAction_SupplyAmmo9mmCommand,#handgun_x8
+TwitchAction_SupplyGreenHerbCommand,#green_herb
+TwitchAction_SupplyRedHerbCommand,#red_herb
+TwitchAction_SupplyBlueHerbCommand,#blue_herb
+TwitchAction_SupplyAmmoShellsCommand,#shotgun_x2
+TwitchAction_SupplyAmmo44MagCommand,#magnum_x2
+TwitchAction_SupplyAmmoRocketCommand,#rocket
+TwitchAction_SupplyAmmoGrenadeCommand,#grenade
+TwitchAction_SupplyAmmoMolotovCommand,#molotov
+TwitchAction_SupplyFirstAidSprayCommand,#firstaidspray
+TwitchAction_SupplyAmmo762Command,#rifle_x7
 buffNewbieCoatNameRE,Infinite food and water
 buffNewbieCoatDescRE,"While you have this buff, your food and water will remain full.\n\nOnce you reach level 10, your food and water will drain at 60% of the standard rate."
 xuiInventory,Jill Valentine's Inventory
@@ -44,10 +65,13 @@ InkRibbon,Ink Ribbon
 InkRibbondesc,"Currently useless, but will be needed to save your progress when manual saving is implemented.\n\nHold onto it for now."
 DeathMaskDesc,This Death Mask is used on the Door of Evil.\n\nUse with the secondary action.
 MansionBattery,This will power the door in the courtyard.
+Green_Herb,Green Herb
 GreenHerbDesc,Heals you slightly.\n\nPhysician 0 heals 8.\nPhysician 1 heals 10.\nPhysician 2 heals 12.\nPhysician 3 heals 14.
+Red_Herb,Red Herb
 RedHerbdesc,Amplifies the effect of Green Herbs.\n\nCan't be used on its own.
 GreenHerbCreamDesc,Heals you moderately.\n\nPhysician 0 heals 20.\nPhysician 1 heals 25.\nPhysician 2 heals 30.\nPhysician 3 heals 35.
 Green+RedHerbCreamDesc,Heals you substantially.\n\nPhysician 0 heals 36.\nPhysician 1 heals 45.\nPhysician 2 heals 54.\nPhysician 3 heals 63.
+Blue_Herb,Blue Herb
 BlueHerbDesc,Cures Poison
 Green+BlueHerbCreamDesc,Heals you slightly and cures poison.\n\nPhysician 0 heals 12.\nPhysician 1 heals 15.\nPhysician 2 heals 18.\nPhysician 3 heals 21.
 Green2+BlueHerbCreamDesc,Heals you moderately and cures poison.\n\nPhysician 0 heals 24.\nPhysician 1 heals 30.\nPhysician 2 heals 36.\nPhysician 3 heals 42.
@@ -384,8 +408,8 @@ Security Protocols,Security Protocols
 SecurityProtocolsTip_title,Security Protocols
 SecurityProtocolsTip,"BASEMENT LEVEL TWO\n\nVisual Data Room/ For use by the Special Research Division only. All other access to the Visual Data Room must be cleared with Keith Arving, Room Manager.\n\n\nBASEMENT LEVEL THREE\n\nPrison/ Sanitation Division controls the use of the prison. At least one Consultant Researcher (E. Smith, S. Ross, A. Wesker) must be present if viral use is authorized.\n\n\nTriple Lock Door/ Entry into the room is limited to the sole person who deactivates the lock with all of the Pass Codes. Accessing the exclusive Output Terminals located in each section of the Senior Researchers deactivates the lock.\n\nPower Room/ In this room nitro compound is used as the primary fuel source of power. Access is limited to Headquarters Supervisors. This restriction may not apply to Consultant Researchers with special authorization.\n\nPass Code Output Terminals/ Use and access of the Output Terminals is limited to authorized Senior Researchers.\n\n\nBASEMENT LEVEL FOUR\n\nRegarding the progress of 'Tyrant' after the administration of T- Virus...\n(Illegible hereafter...)"
 Quest_Completion_tip_title,Challenge Completed!
-Completion_desc,Congratulations!!\nYou have successfully completed the Spencer Mansion Challenge.\n\nI hope you a blast playing it as much as I did creating it!\n\nFrantic Dan
-Quest_Completion_tip,Congratulations!!\nYou have successfully completed the Spencer Mansion Challenge.\n\nI hope you a blast playing it as much as I did creating it!\n\nFrantic Dan
+Completion_desc,Congratulations!!\nYou have successfully completed the Spencer Mansion Challenge.\n\nI hope you had a blast playing it as much as I did creating it!\n\nFrantic Dan
+Quest_Completion_tip,Congratulations!!\nYou have successfully completed the Spencer Mansion Challenge.\n\nI hope you had a blast playing it as much as I did creating it!\n\nFrantic Dan
 zombieArlene,JaWoodle's Girl
 zombieMarlene,Misterri
 zombieNurse,Umbrella Surgeon
