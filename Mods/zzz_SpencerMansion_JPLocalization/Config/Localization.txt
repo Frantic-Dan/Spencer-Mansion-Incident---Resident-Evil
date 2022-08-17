@@ -155,15 +155,15 @@ Shaft,シャフト
 "Cylinder Shaft",シリンダーシャフト
 "Fuel Supply Capsule (Empty)",燃料供給用カプセル(空)
 "Fuel Supply Capsule",燃料供給用カプセル
-Green Herb,グリーンハーブ
+Green_Herb,グリーンハーブ
 "Mixed Green Herb",調合したハーブ (緑+緑)
 "Mixed 3 Green Herbs",調合したハーブ (緑+緑+緑)
 "Mixed Green+Red Herb",調合したハーブ (緑+赤)
 "Mixed Green+Blue Herb",調合したハーブ (緑+青)
 "Mixed 2 Green+Blue Herb",調合したハーブ (緑+緑+青)
 "Mixed Green+Red+Blue Herb",調合したハーブ (緑+赤+青)
-Red Herb,レッドハーブ
-Blue Herb,ブルーハーブ
+Red_Herb,レッドハーブ
+Blue_Herb,ブルーハーブ
 FirstAidSpray,救急スプレー
 Super Corn Bread,スーパーコーンパン
 Super Corn Meal,スーパーコーンミール
