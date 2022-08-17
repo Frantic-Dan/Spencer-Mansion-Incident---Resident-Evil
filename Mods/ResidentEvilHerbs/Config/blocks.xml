@@ -53,7 +53,7 @@
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
 	<property name="ModelOffset" value="0.25,0.5,0.21"/>
-    <drop event="Harvest" name="Green Herb" count="1" tag="cropHarvest"/>
+    <drop event="Harvest" name="Green_Herb" count="1" tag="cropHarvest"/>
     <property name="DowngradeBlock" value="HerbPot_Green"/>
 	<property name="DisplayInfo" value="Name"/>
 </block>
@@ -70,7 +70,7 @@
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
 	<property name="ModelOffset" value="0.25,0.5,0.21"/>
-    <drop event="Harvest" name="Green Herb" count="1" tag="cropHarvest"/>
+    <drop event="Harvest" name="Green_Herb" count="1" tag="cropHarvest"/>
     <property name="DowngradeBlock" value="Empty Pot"/>
 	<property name="DisplayInfo" value="Name"/>
 </block>
@@ -128,7 +128,7 @@
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
 	<property name="ModelOffset" value="0.25,0.5,0.21"/>
-    <drop event="Harvest" name="Blue Herb" count="1" tag="cropHarvest"/>
+    <drop event="Harvest" name="Blue_Herb" count="1" tag="cropHarvest"/>
     <property name="DowngradeBlock" value="HerbPot_Blue"/>
 	<property name="DisplayInfo" value="Name"/>
 </block>
@@ -145,7 +145,7 @@
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
 	<property name="ModelOffset" value="0.25,0.5,0.21"/>
-    <drop event="Harvest" name="Blue Herb" count="1" tag="cropHarvest"/>
+    <drop event="Harvest" name="Blue_Herb" count="1" tag="cropHarvest"/>
     <property name="DowngradeBlock" value="Empty Pot"/>
 	<property name="DisplayInfo" value="Name"/>
 </block>
@@ -203,7 +203,7 @@
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
 	<property name="ModelOffset" value="0.25,0.5,0.21"/>
-    <drop event="Harvest" name="Red Herb" count="1" tag="cropHarvest"/>
+    <drop event="Harvest" name="Red_Herb" count="1" tag="cropHarvest"/>
     <property name="DowngradeBlock" value="HerbPot_Red"/>
 	<property name="DisplayInfo" value="Name"/>
 </block>
@@ -220,7 +220,7 @@
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
 	<property name="ModelOffset" value="0.25,0.5,0.21"/>
-    <drop event="Harvest" name="Red Herb" count="1" tag="cropHarvest"/>
+    <drop event="Harvest" name="Red_Herb" count="1" tag="cropHarvest"/>
     <property name="DowngradeBlock" value="Empty Pot"/>
 	<property name="DisplayInfo" value="Name"/>
 </block>
