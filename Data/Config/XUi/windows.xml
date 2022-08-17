@@ -2421,7 +2421,7 @@
 			
 			<button pos="70,-21" depth="2" name="optionsButton" style="icon32px" sprite="ui_game_symbol_modded" tooltip_key="TwitchInfo_InfoButton" defaultcolor="[white]" pivot="center" collider_scale="1.5" sound="[paging_click]"/>
 			
-			<label pos="160,-9" depth="2" text="{potbalance}" justify="right" width="130" visible="{showpotbalance}" />
+			<label pos="160,-9" depth="2" text="{potbalance}" justify="right" width="130" visible="{showpotbalance}" color="230,100,255"/>
 		</panel>
 		
 		<panel name="titleHeader" pos="0,-96" height="43" depth="1" visible="{grouptitlevisible}">
@@ -2448,6 +2448,8 @@
 				<twitch_command_entry backgroundcolor="[darkestGrey]" index="8" />
 				<twitch_command_entry backgroundcolor="[darkGrey]"    index="9" />
 				<twitch_command_entry backgroundcolor="[darkestGrey]" index="10" />
+				<twitch_command_entry backgroundcolor="[darkGrey]"    index="11" />
+				<twitch_command_entry backgroundcolor="[darkestGrey]" index="12" />
 			</grid>
 			
 			<grid visible="{showvotes1}" depth="0" pos="0,0" width="327" cols="1" cell_height="56" repeat_content="false" arrangement="vertical" controller="TwitchVoteList" line_count="1">
