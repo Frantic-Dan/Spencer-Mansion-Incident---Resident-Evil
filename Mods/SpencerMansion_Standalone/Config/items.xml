@@ -6123,7 +6123,7 @@ add knockdown resist to armor
 	</effect_group>
 </item>
 
-<item name="Green Herb">
+<item name="Green_Herb">
 	<property name="CreativeMode" value="None"/>
 	<property name="Tags" value="medical"/>
 	<property name="DisplayType" value="medical"/>
@@ -6780,7 +6780,7 @@ add knockdown resist to armor
 	</effect_group>
 </item>
 
-<item name="Red Herb">
+<item name="Red_Herb">
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
@@ -6795,7 +6795,7 @@ add knockdown resist to armor
 	<property name="Group" value="Science"/>
 </item>
 
-<item name="Blue Herb">
+<item name="Blue_Herb">
 	<property name="CreativeMode" value="None"/>
 	<property name="Tags" value="medical"/>
 	<property name="DisplayType" value="medical"/>
