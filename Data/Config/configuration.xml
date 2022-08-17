@@ -4,11 +4,9 @@
 
        <ServerGroup Name="Spencer Mansion Incident - Resident Evil" Logo="" Description="">
 
-               <Server Name="Jill Valentines Story v1.04" Logo="">
+               <Server Name="Jill Valentines Story v1.05" Logo="">
 
                        <Description>
-** Requires A20.5 (b2) **
-
 Have you ever wanted to play Resident Evil in first person? Well now you can!
 STORY: Experience the 1998 Spencer Mansion Incident as Jill Valentine. Collect keys, solve puzzles, manage your limited resources and escape from the Survival Horror.
 
@@ -16,38 +14,32 @@ STORY: Experience the 1998 Spencer Mansion Incident as Jill Valentine. Collect k
 1) Clicking 'Equip' on an item in your main inventory - You will get an infinite wall of red text, to stop it, move an item from your toolbelt or into your toolbelt.
 DO NOT ALT+F4 AS YOUR CHARACTER WILL RESET!
 
-2) In Multiplayer, when accessing an Untouched Vault, *ALL* players need to open the Untouched Vault *BEFORE* anyone adds or removes items.
-Otherwise, ITEMS WILL DISAPPEAR!!! (The Vault function is disabled by default due to bugs)
+2) (The Linked Vault Storage is disabled by default due to bugs) In Multiplayer, when accessing an Untouched Vault,
+*ALL* players need to open the Untouched Vault *BEFORE* anyone adds or removes items. Otherwise, ITEMS WILL DISAPPEAR!!!
 
-3) Unconfirmed on what the cause is, it may be due to trying to load into the game while you're not logged into steam, or playing a different save, vanilla or another mod.
-The entire contents of 'The Vault' can get deleted.
-My advice is to commit to a playthrough before playing other 7 Days to Die playthroughs elsewhere.
+3) (The Linked Vault Storage is disabled by default due to bugs) Unconfirmed on what the cause is, it may be due to trying to load into the game while you're not logged into steam, or playing a different save, vanilla or another mod.
+The entire contents of 'The Vault' can get deleted. My advice is to commit to a playthrough before playing other 7 Days to Die playthroughs elsewhere.
 
 Setup:
-1) Requires A20.5 (b2)
-2) When starting a new game, make sure to select the 'Spencer Mansion Incident' world.
-3) I've made setup easy to follow by making the text orange for all settings you'll need to manually change for the intended Resident Evil experience.
-4) It will always be night, so be sure to change the Zombie Night Speed to your liking. (Walk is recommended)
-(If your game is in day time, you'll die a horrible death!)
+1) I've made setup easy to follow by making the text orange for all settings you'll need to manually change for the intended Resident Evil experience.
+2) It will always be night, so be sure to change the Zombie Night Speed to your liking. (Walk is recommended)
+3) If your game is in day time, you'll die a horrible death!
 
 **IMPORTANT**
 PLEASE NOTE: 
 1) The Spencer Mansion Incident is a *PERMADEATH* mod, and will test your combat and maneuverability skills.
 2) Multiplayer is now supported!!! So go have fun with a friend!
-3) If you don't change the orange coloured game settings to their stated value, you'll be playing with unintended settings.
-4) Currently, Twitch Integration is not supported, but is planned.
+3) Twitch Integration is now supported!! I recommend to use only after completing the challenge before turning on.
 
 KEY FEATURES:
 1) Limited Inventory: You'll be restricted to a 6 slot toolbelt and 6 slots of main inventory.
-2) Reworked and rebalanced Skill Tree: There are no attribute requirements for skills,
-so you'll be free to put your skill points wherever you wish as long as you have enough points.
+2) Reworked and rebalanced Skill Tree: There are no attribute requirements for skills, so you'll be free to put your skill points wherever you wish as long as you have enough points.
 3) You cannot jump.
 4) Zombie Pain: Zombies no longer feel pain, so they won't even flinch when attacked.
 5) Zombie Rage: Disabled, zombies will never enter rage mode and get faster.
 6) One Time Looting: Almost every loot container can only be looted once, and will downgrade or destroy after closing.
 7) Linked Storage (disabled by default due to bugs): You'll be able to access your stored items from any of the storage boxes. (Huge thank you to wOOkie nOOkie!!)
-8) Simplified Criticals: I've removed the severe critical injuries (Broken arm/leg etc) and shortened the duration of fatigue.
-You can still get lessor criticals, like sprains.
+8) Simplified Criticals: I've removed the severe critical injuries (Broken arm/leg etc) and shortened the duration of fatigue. You can still get lessor criticals, like sprains, fatigue, stun and abrasions. (Falling too far will still break your leg!)
 
 PLANNED FEATURE:
 Manual Saving: Auto saving will be disabled and you'll need to use an Ink Ribbon to save your progress.
@@ -55,19 +47,14 @@ You'll have to manually save BEFORE you exit your game session.
 Ink Ribbons will be very limited, and will allow you to continue your save if you die, by simply exiting the game and reloading your save to revert back to your last manual save.
 
 7 Days to Die Forum Thread - https://community.7daystodie.com/topic/27467-the-spencer-mansion-incident-resident-evil-a201/
+Discord - https://discord.gg/4A5MF8GHM5
 
 UPDATES:
 v1.01
-- Re-worded localisation for Healing Factor to be more accurate and transparent.
-- Slightly boosted Rank 2 of Healing Factor to be an equal increase as Rank 1
-Healing Factor 0: You heal 6 Health per hour
-Healing Factor 1: You heal 24 Health per hour
-Healing Factor 2: You heal 42 Health per hour
-
+- Rebalanced Healing Factor
+Healing Factor 0: You heal 6 Health per hour. Healing Factor 1: You heal 24 Health per hour. Healing Factor 2: You heal 42 Health per hour
 v1.02
 - Linked Storage 'The Vault' now works in multiplayer
-- Bug with 'The Vault' is now fixed
-
 v1.03 (Alpha 20.4)
 - Added a 6th Difficulty, Z: Deal 80% damage and Take 700% damage.
 - Added a secret loot room. Can you find it?
@@ -75,7 +62,11 @@ v1.03 (Alpha 20.4)
 - Increased entity damage of the Makeshift Mine from 160 to 180.
 - Wild crops now give 2 harvest instead of 1, may help with speed running.
 - Pop-up text for entity names is now green instead of white.
-
+v1.04
+- Updated for 20.5
+v1.05
+- Updated for 20.6 (Requires new game)
+- Added Twitch Integration
  
 
 			Weapons, Armour, Recovery Items and Hostiles
