@@ -639,7 +639,7 @@
 						<gameoption name="BloodMoonWarning" title="goBloodMoonWarning" value_wrap="false" value_type="int" values="-1, 8, 18" display_names="goDisabled,goMorning,goEvening" value_localization_prefix="" />
 						<gameoption name="ZombieMove" title="goZombieMove" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" value_localization_prefix="" />
 						<gameoption name="ZombieMoveNight" title="goZombieMoveNight" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint" value_localization_prefix="" />
-						<gameoption name="ZombieFeralMove" title="goZombieFeralMove" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" value_localization_prefix="" />
+						<gameoption name="ZombieFeralMove" title="goZombieFeralMove" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint" value_localization_prefix="" />
 						<gameoption name="ZombieBMMove" title="goZombieBMMove" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" value_localization_prefix="" />
 						<gameoption name="ZombieFeralSense" title="goZombieFeralSense" value_wrap="false" value_type="int" values="" display_names="goOff,goZMDay,goZMNight,goZMAll" value_localization_prefix="" />
 						<rect/>
@@ -843,14 +843,14 @@
 								<browsergameoptioninfo name="DayNightLength" title="goDayLength" value_localization_prefix="goMinute" />
 								<browsergameoptioninfo name="DayLightLength" title="goDayLightLength" value_localization_prefix="goDayLightLengthValue" />
 								<browsergameoptioninfo name="ZombieMove" title="goZombieMove" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" />
-								<browsergameoptioninfo name="ZombieMoveNight" title="goZombieMoveNight" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" />
-								<browsergameoptioninfo name="ZombieFeralMove" title="goZombieFeralMove" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" />
+								<browsergameoptioninfo name="ZombieMoveNight" title="goZombieMoveNight" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint" />
+								<browsergameoptioninfo name="ZombieFeralMove" title="goZombieFeralMove" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint" />
 								<browsergameoptioninfo name="ZombieBMMove" title="goZombieBMMove" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" />
 								<browsergameoptioninfo name="ZombieFeralSense" title="goZombieFeralSense" display_names="goOff,goZMDay,goZMNight,goZMAll" />
 								<!--<browsergameoptioninfo name="PersistentPlayerProfiles" title="goPersistentCharacters" />-->
 								<browsergameoptioninfo name="MaxSpawnedZombies" title="goMaxSpawnedZombies" />
 								<browsergameoptioninfo name="MaxSpawnedAnimals" title="goMaxSpawnedAnimals" />
-								<browsergameoptioninfo name="XPMultiplier" title="goXPMultiplier" value_wrap="false" value_type="int" values="25, 50, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goXPMultiplierValue" />
+								<browsergameoptioninfo name="XPMultiplier" title="goXPMultiplier" value_wrap="false" value_type="int" values="25, 100" display_names="" value_localization_prefix="goXPMultiplierValue" />
 							</grid>
 						</rect>
 
@@ -966,7 +966,7 @@
 							<browsergameoptioncombined name="DayLightLength" title="goDayLightLength" value_wrap="false" values="24, 0" display_names="" value_localization_prefix="goDayLightLengthValue" />
 							<browsergameoptioncombined name="ZombieMove" title="goZombieMove" value_wrap="false" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" allow_custom="false"  />
 							<browsergameoptioncombined name="ZombieMoveNight" title="goZombieMoveNight" value_wrap="false" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint" allow_custom="false" />
-							<browsergameoptioncombined name="ZombieFeralMove" title="goZombieFeralMove" value_wrap="false" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" allow_custom="false" />
+							<browsergameoptioncombined name="ZombieFeralMove" title="goZombieFeralMove" value_wrap="false" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint" allow_custom="false" />
 							<browsergameoptioncombined name="ZombieBMMove" title="goZombieBMMove" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint,goZMNightmare" allow_custom="false" />
 							<browsergameoptioncombined name="ZombieFeralSense" title="goZombieFeralSense" value_wrap="false" value_type="int" values="" display_names="goOff,goZMDay,goZMNight,goZMAll" value_localization_prefix="" allow_custom="false" />
 							<!--<gameoption name="PersistentPlayerProfiles" title="goPersistentCharacters" value_wrap="false" values="" display_names="" value_localization_prefix="" />-->
