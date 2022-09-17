@@ -1,27 +1,27 @@
 Key,japanese
 goDifficultyRE,[FF4F00]難易度(お読みください)[-]
-goDifficultyREDesc,"C - 与ダメ 100%/受ダメ 100%\n\nB - 与ダメ 80%/受ダメ 150%\n\nA - 与ダメ 67%/受ダメ 200%\n\nS - 与ダメ 50%/受ダメ 250%\n\nX - 与ダメ 40%/受ダメ 350%\n[FF4F00](最初は低めの難易度をお選びください)[-]\n\nZ - 与ダメ 80%/受ダメ 700%\n[FF4F00](最初は低めの難易度をお選びください)[-]"
+goDifficultyREDesc,"C - 与ダメ 100%/受ダメ 100%\n\nB - 与ダメ 80%/受ダメ 150%\n\nA - 与ダメ 67%/受ダメ 200%\n\nS - 与ダメ 50%/受ダメ 250%\n\nX - 与ダメ 40%/受ダメ 350%\n[FF4F00](最初は低めの難易度をお選びください)\n\nZ - 与ダメ 80%/受ダメ 700%\n[FF4F00](最初は低めの難易度をお選びください)[-]"
 goDifficulty1RE,C
 goDifficulty2RE,B
 goDifficulty3RE,A
 goDifficulty4RE,S
 goDifficulty5RE,X
 goDifficulty6RE,Z
-goDayLengthRE,[FF4F00]選択 150[-]
-goDayLengthREDesc,ゲーム内の24時間が現実時間の何分かを設定します。 このModでは、150を選択してください。
+goDayLengthRE,[FF4F00]選択 200分[-]
+goDayLengthREDesc,ゲーム内の24時間が現実時間の何分かを設定します。 このModでは、200を選択してください。
 goDayLightLengthRE,[FF4F00]選択 0[-]
 goDayLightLengthREDesc,ゲーム内の1日の内、何時間が日中扱いになるかを設定します。　このModでは、「0」を選択してください。
 goBloodMoonFrequencyRE,[FF4F00]選択 0[-]
 goBloodMoonFrequencyREDesc,大襲撃の発生頻度を設定します。 このModでは、「0」を選択してください。
-goXPMultiplierRE,[FF4F00]選択 100[-]
+goXPMultiplierRE,[FF4F00]選択 100%[-]
 goXPMultiplierREDesc,プレイヤーが受け取る経験値の量を増やします。　このModでは、100%をお選びください。
-goBlockDamagePlayerRE,[FF4F00]選択 100[-]
+goBlockDamagePlayerRE,[FF4F00]選択 100%[-]
 goBlockDamagePlayerREDesc,プレイヤーによるブロックへのダメージを調整します。　このModでは、100%をお選びください。
-goBlockDamageAIRE,[FF4F00]選択 100[-]
+goBlockDamageAIRE,[FF4F00]選択 100%[-]
 goBlockDamageAIREDesc,AIによるブロックへのダメージを調整します。　このModでは、100%をお選びください。
-goLootAbundanceRE,[FF4F00]選択 100[-]
+goLootAbundanceRE,[FF4F00]選択 100%[-]
 goLootAbundanceREDesc,コンテナおよびゾンビのドロップにより現れる略奪品の割合です。　このModでは、100%をお選びください。
-goLootRespawnDaysRE,[FF4F00]選択 1[-]
+goLootRespawnDaysRE,[FF4F00]選択 1日[-]
 goLootRespawnDaysREDesc,プレイヤーが周りにいない状況で、略奪品が再出現する日数です。　このModでは、「1」をお選びください。
 goZombieMoveNight,[FF4F00]夜間のゾンビ移動速度\n(常時夜)[-]
 goZombieMoveNightDesc,ゾンビの移動速度を設定します。　このModでは、お好みでお選びください。
@@ -38,9 +38,29 @@ loadingTipRE5,"動物の骨や皮は忘れず入手しましょう。\nジャイ
 loadingTipRE5_title,骨や皮：
 loadingTipRE6,"本家と同じように、ゾンビは痛みを感じません。\n攻撃を受けても、痛みを感じる動作をまったくしません。"
 loadingTipRE6_title,ゾンビは痛みを感じない：
-loadingTipRE7,"次の方達に大きな感謝： Mythix, AuroraGiggleFairy, wOOkie nOOkie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake"
+loadingTipRE7,"次の方達に大きな感謝： Mythix,AuroraGiggleFairy, wOOkie nOOkie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake"
 loadingTipRE7_title,スペシャルサンクス！
 tutorialTipQuest01,"あなたはこれからスペンサー邸での出来事を一人称視点で体験する事になります。\n\n[FF4F00]チャレンジ中はずっと夜なため、　夜間のゾンビの移動速度を、自分の好みに合わせて設定する事をお勧めします。[-]\n\nバイオハザードらしいチャレンジにするために使用が変更されています。\n1) 所持品は12スロットのみになるので、館内のアイテムボックス(The Vault)をご利用ください。\nThe Vaultは館内の何カ所かに設置してありますが、中身は、館内のどこからアクセスしても同じ内容になります。\n2) ジャンプをする事は出来ません。\n3) ほとんどの敵は痛みを感じないため、いつもの戦い方では難しいかもしれません。\n\nより楽しいチャレンジになる用、ダイナミック音楽の設定は、100%にする事をお勧めします。\n\nこのModとは関連性のないモドレットの導入はせず、オレンジ色になっているゲーム設定を修正してください。"
+TwitchAction_SpawnCrawlerCommand,#crawler
+TwitchAction_SpawnToughCommand,#spawn_tough
+TwitchAction_SpawnSnakeCommand,#snake
+TwitchAction_SpawnSpiderCommand,#web_spinner
+TwitchAction_SpawnDogCommand,#cerberus
+TwitchAction_SpawnCrimsonHeadCommand,#crimson_head
+TwitchAction_SpawnForestSpeyerCommand,#forest_speyer
+TwitchAction_SpawnHunterCommand,#hunter
+TwitchAction_SpawncrimsonPrototypeCommand,#crimson_prototype
+TwitchAction_SupplyAmmo9mmCommand,#handgun_x8
+TwitchAction_SupplyGreenHerbCommand,#green_herb
+TwitchAction_SupplyRedHerbCommand,#red_herb
+TwitchAction_SupplyBlueHerbCommand,#blue_herb
+TwitchAction_SupplyAmmoShellsCommand,#shotgun_x2
+TwitchAction_SupplyAmmo44MagCommand,#magnum_x2
+TwitchAction_SupplyAmmoRocketCommand,#rocket
+TwitchAction_SupplyAmmoGrenadeCommand,#grenade
+TwitchAction_SupplyAmmoMolotovCommand,#molotov
+TwitchAction_SupplyFirstAidSprayCommand,#firstaidspray
+TwitchAction_SupplyAmmo762Command,#rifle_x7
 buffNewbieCoatNameRE,減らない食料値と水分値
 buffNewbieCoatDescRE,"このバフが付いている間は、食料値や水分値が全く減少しません。\n\nプレイヤーレベルが10になると、通常の60%のレートで、緩やかに減少し始めます。"
 xuiInventory,ジル・バレンタインの所持品
@@ -50,13 +70,16 @@ TheVault,The Vault
 Reloading_Tool,リロードツール
 Reloading_Tooldesc,弾薬をクラフトするために使用するツール。\n\n空きスロットがあることを確認してからクラフトしてください。
 InkRibbon,インクリボン
-InkRibbondesc,"現在は役に立ちませんが、手動保存が実装されている場合は、進行状況を保存する必要があります。\n\n今のところストレージに保管してください。"
+InkRibbondesc,"現在は使用できませんが、 マニュアルセーブが実装されると、　進行状況をセーブするために必要になります。\n\nそれまでは保管しておいてください。"
 DeathMaskDesc,この仮面専用の扉を開くために使用します。\n\n第二アクションで使用します。
 MansionBattery,庭のドアを作動させるために使用します。
+Green_Herb,グリーンハーブ
 GreenHerbDesc,少量の体力回復。\n\n医師レベル0の回復量： 8\n医師レベル1の回復量： 10\n医師レベル2の回復量： 12\n医師レベル3の回復量： 14
+Red_Herb,レッドハーブ
 RedHerbdesc,グリーンハーブの効果を上げます。\n\nそのままでは使用できません。
 GreenHerbCreamDesc,程よい量の体力回復。\n\n医師レベル0の回復量： 20\n医師レベル1の回復量： 25\n医師レベル2の回復量： 30\n医師レベル3の回復量： 35
 Green+RedHerbCreamDesc,多めの体力回復。\n\n医師レベル0の回復量： 36\n医師レベル1の回復量： 45\n医師レベル2の回復量： 54\n医師レベル3の回復量： 63
+Blue_Herb,ブルーハーブ
 BlueHerbDesc,毒の治療に使用します。
 Green+BlueHerbCreamDesc,少量の体力回復と解毒治療。\n\n医師レベル0の回復量： 12\n医師レベル1の回復量：  15\n医師レベル2の回復量：  18\n医師レベル3の回復量：  21
 Green2+BlueHerbCreamDesc,程よい量の体力回復と解毒治療。\n\n医師レベル0の回復量： 24\n医師レベル1の回復量： 30\n医師レベル2の回復量： 36\n医師レベル3の回復量： 42
@@ -155,15 +178,15 @@ Shaft,シャフト
 "Cylinder Shaft",シリンダーシャフト
 "Fuel Supply Capsule (Empty)",燃料供給用カプセル(空)
 "Fuel Supply Capsule",燃料供給用カプセル
-Green_Herb,グリーンハーブ
+Green Herb,グリーンハーブ
 "Mixed Green Herb",調合したハーブ (緑+緑)
 "Mixed 3 Green Herbs",調合したハーブ (緑+緑+緑)
 "Mixed Green+Red Herb",調合したハーブ (緑+赤)
 "Mixed Green+Blue Herb",調合したハーブ (緑+青)
 "Mixed 2 Green+Blue Herb",調合したハーブ (緑+緑+青)
 "Mixed Green+Red+Blue Herb",調合したハーブ (緑+赤+青)
-Red_Herb,レッドハーブ
-Blue_Herb,ブルーハーブ
+Red Herb,レッドハーブ
+Blue Herb,ブルーハーブ
 FirstAidSpray,救急スプレー
 Super Corn Bread,スーパーコーンパン
 Super Corn Meal,スーパーコーンミール
@@ -329,9 +352,9 @@ MuzzleBreakDesc,アサルトライフルの命中精度とハンドリングを�
 "Athletic Jacket Mod",アスリートジャケット改造パーツ
 "High Permormance Running Soles",高パフォーマンス靴底
 modGunMeleeBlessedMetalDesc,タイラントに与えるダメージ量が大幅に上がります。\n\nナイフにセット可能。
-drugBoulderBusters,"クリス・レッドフィールドは彼のプロテインシェイクで密かにこれらを持っています.\n\nナックルのダメージが400％増加します.\nスカルクラッシャーとビールで使用できます!"
-drugBoulderBustersDesc,"ナックルのダメージが400％増加します.\nスカルクラッシャーとビールで使用できます!"
-drugRockBusters,ボルダーバスター!
+drugBoulderBusters,"クリス・レッドフィールドはプロテインシェイクにこっそりこれを入れています。\n\n拳攻撃時に与えるダメージ量上昇 400%\nスカルクラッシャーやビールのバフとスタックします！"
+drugBoulderBustersDesc,"ナックル武器や素手時に与えるダメージ量上昇 400%\nスカルクラッシャーやビールのバフとスタックします！"
+drugRockBusters,ボルダーバスター
 SuperGogglesDesc,これをかけるとジル・サンドイッチにならずに済みます。\n\n\n忍耐 +2\n素早さ +2.\nクラフト時間 -40%
 Note from Barry,バリーからのメモ
 BarryNote,"ジル、 物資をいくつか置いておく。\n\nバリー"
@@ -455,16 +478,16 @@ zombieJanitorRadiated,HellsJanitorTV
 zombieYoRadiated,NotOnly25
 
 
-attStrengthRank01LongDesc,"誰だってボディビルダーになりたいかもしれませんが、筋トレはだるいですね。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が215%になり、3%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank02LongDesc,"あなたは身体的に弱っちいかもしれませんが、内に燃え滾る強い炎が見え隠れしています。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が230%になり、6%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank03LongDesc,"あなたのような乳飲み子がなぜゾンビアポカリプスで生き残れているのでしょうか？\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が245%になり、9%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank04LongDesc,"あなたのお腹周りについているタイヤのようなお肉のおかげで餓死はしにくいでしょうが、スレハンを振るときには邪魔にしかなりませんね。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が260%になり、12%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank05LongDesc,"あなたの身体は引き締まって来ました。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が275%になり、15%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank06LongDesc,"あなたはとても強くなってきたので、ジムの凡人たちが羨ましそうに見ています。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が290%になり、18%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank07LongDesc,"棍棒やスレハンを振り続けた結果、かなり身体が鍛えられたようです。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が305%になり、21%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank08LongDesc,"伝説的な力を手に入れたようです。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が320%になり、24%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank09LongDesc,"サイズ、体力、パワー、全てがチャンピオン級になりました。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が335%になり、27%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank10LongDesc,"アポカリプスに夢を粉々にされなければ、オリンピックチャンピオンになれたほどですね、腹いせとして、ゾンビを粉々にしてやりましょう。\n\nショットガン、棍棒、スレッジハンマー、レンチ系以外のツール(斧やショベルなど)使用時のヘッドショットダメージ量が350%になり、30%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank01LongDesc,"誰だってボディビルダーになりたいかもしれませんが、筋トレはだるいですね。\n\nショットガンや拳使用時のヘッドショットダメージ量が215%になり、3%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank02LongDesc,"あなたは身体的に弱っちいかもしれませんが、内に燃え滾る強い炎が見え隠れしています。\n\nショットガンや拳使用時のヘッドショットダメージ量が230%になり、6%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank03LongDesc,"あなたのような乳飲み子がなぜゾンビアポカリプスで生き残れているのでしょうか？\n\nショットガンや拳使用時のヘッドショットダメージ量が245%になり、9%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank04LongDesc,"あなたのお腹周りについているタイヤのようなお肉のおかげで餓死はしにくいでしょうが、スレハンを振るときには邪魔にしかなりませんね。\n\nショットガンや拳使用時のヘッドショットダメージ量が260%になり、12%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank05LongDesc,"あなたの身体は引き締まって来ました。\n\nショットガンや拳使用時のヘッドショットダメージ量が275%になり、15%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank06LongDesc,"あなたはとても強くなってきたので、ジムの凡人たちが羨ましそうに見ています。\n\nショットガンや拳使用時のヘッドショットダメージ量が290%になり、18%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank07LongDesc,"棍棒やスレハンを振り続けた結果、かなり身体が鍛えられたようです。\n\nショットガンや拳使用時のヘッドショットダメージ量が305%になり、21%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank08LongDesc,"伝説的な力を手に入れたようです。\n\nショットガンや拳使用時のヘッドショットダメージ量が320%になり、24%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank09LongDesc,"サイズ、体力、パワー、全てがチャンピオン級になりました。\n\nショットガンや拳使用時のヘッドショットダメージ量が335%になり、27%多くの確率で敵の部位を破壊する事が可能になりました。"
+attStrengthRank10LongDesc,"アポカリプスに夢を粉々にされなければ、オリンピックチャンピオンになれたほどですね、腹いせとして、ゾンビを粉々にしてやりましょう。\n\nショットガンや拳使用時のヘッドショットダメージ量が350%になり、30%多くの確率で敵の部位を破壊する事が可能になりました。"
 perkDemolitionsExpertRank1LongDescRE,"あなたは手榴弾兵の見習いです、爆発物の扱いには十分注意してくださいね。\n\n爆発系武器使用時のダメージ量が17%上がり、リロード速度が10%上がり、照準を合わせる速度が15%上がり、部位破壊率が15%上がります"
 perkDemolitionsExpertRank2LongDescRE,"あなたは爆発物を扱う事が出来ます。\n\n爆発系武器使用時のダメージ量が34%上がり、リロード速度が20%上がり、照準を合わせる速度が30%上がり、部位破壊率が30%上がります"
 perkDemolitionsExpertRank3LongDescRE,"あなたは爆発物の扱いになれています。\n\n爆発系武器使用時のダメージ量が51%上がり、リロード速度が30%上がり、照準を合わせる速度が45%上がり、部位破壊率が45%上がります"
@@ -484,16 +507,16 @@ perkMiner69rDescRE,ブロックダメージ量を上げ、伐採や解体を素�
 perkMiner69rRank1LongDescRE,ナイフやレンチ使用時のブロックダメージ量が50%上昇します。
 perkMiner69rRank2LongDescRE,ナイフやレンチ使用時のブロックダメージ量が100%上昇します。
 perkMiner69rRank3LongDescRE,ナイフやレンチ使用時のブロックダメージ量が150%上昇します。
-attFortitudeRank01LongDesc,あなたはあまり頑丈ではなく、体力もあまりありませんが、かろうじて生きています。\n拳やマシンガンを使用時のヘッドショットダメージが215%になり、3%の確率で敵の部位を破壊する事が可能になりました。
-attFortitudeRank02LongDesc,"以前よりは少しましになりました。\n拳やマシンガンを使用時のヘッドショットダメージが230%になり、6%の確率で敵の部位を破壊する事が可能になりました。"
-attFortitudeRank03LongDesc,なんとか立っていられる状態です。\n拳やマシンガンを使用時のヘッドショットダメージが245%になり、9%の確率で敵の部位を破壊する事が可能になりました。
-attFortitudeRank04LongDesc,"段々普通の人に近付いてきました。\n拳やマシンガンを使用時のヘッドショットダメージが260%になり、の確率で敵の部位を破壊する事が可能になりました。"
-attFortitudeRank05LongDesc,あなたは良い健康状態です。\n拳やマシンガンを使用時のヘッドショットダメージが275%になり、15%の確率で敵の部位を破壊する事が可能になりました。
-attFortitudeRank06LongDesc,あなたは非常に健康な状態です。\n拳やマシンガンを使用時のヘッドショットダメージが290%になり、18%の確率で敵の部位を破壊する事が可能になりました。
-attFortitudeRank07LongDesc,あなたは完璧な健康状態です。\n拳やマシンガンを使用時のヘッドショットダメージが305%になり、21%の確率で敵の部位を破壊する事が可能になりました。
-attFortitudeRank08LongDesc,あなたは大変強い回復力の持ち主です。\n拳やマシンガンを使用時のヘッドショットダメージが320%になり、24%の確率で敵の部位を破壊する事が可能になりました。
-attFortitudeRank09LongDesc,あなたは驚くべき体質の持ち主です。\n拳やマシンガンを使用時のヘッドショットダメージが335%になり、27%の確率で敵の部位を破壊する事が可能になりました。
-attFortitudeRank10LongDesc,あなたは溢れんばかりの体力の持ち主です。\n拳やマシンガンを使用時のヘッドショットダメージが350%になり、30%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank01LongDesc,あなたはあまり頑丈ではなく、体力もあまりありませんが、かろうじて生きています。\nマシンガンを使用時のヘッドショットダメージが215%になり、3%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank02LongDesc,"以前よりは少しましになりました。\nマシンガンを使用時のヘッドショットダメージが230%になり、6%の確率で敵の部位を破壊する事が可能になりました。"
+attFortitudeRank03LongDesc,なんとか立っていられる状態です。\nマシンガンを使用時のヘッドショットダメージが245%になり、9%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank04LongDesc,"段々普通の人に近付いてきました。\nマシンガンを使用時のヘッドショットダメージが260%になり、の確率で敵の部位を破壊する事が可能になりました。"
+attFortitudeRank05LongDesc,あなたは良い健康状態です。\nマシンガンを使用時のヘッドショットダメージが275%になり、15%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank06LongDesc,あなたは非常に健康な状態です。\nマシンガンを使用時のヘッドショットダメージが290%になり、18%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank07LongDesc,あなたは完璧な健康状態です。\nマシンガンを使用時のヘッドショットダメージが305%になり、21%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank08LongDesc,あなたは大変強い回復力の持ち主です。\nマシンガンを使用時のヘッドショットダメージが320%になり、24%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank09LongDesc,あなたは驚くべき体質の持ち主です。\nマシンガンを使用時のヘッドショットダメージが335%になり、27%の確率で敵の部位を破壊する事が可能になりました。
+attFortitudeRank10LongDesc,あなたは溢れんばかりの体力の持ち主です。\nマシンガンを使用時のヘッドショットダメージが350%になり、30%の確率で敵の部位を破壊する事が可能になりました。
 perkMachineGunnerRank3LongDescRE,"幾度もの戦いの末、ソルジャーになる事が出来ました。\n\nマシンガン使用時のダメージ量が17%上がり、射撃レートが8%速くなり、リロード速度が10%短縮されます。\n\nコマンドーアドレナリン: マシンガンでの攻撃を命中すると、毎回スタミナを1ずつ回復します。"
 perkMachineGunnerRank4LongDescRE,"あなたのスキルの高さはスペシャルフォース並みです。\n\nマシンガン使用時のダメージ量が34%上がり、射撃レートが16%速くなり、リロード速度が20%短縮されます。\n\nコマンドーアドレナリン: マシンガンでの攻撃を命中すると、毎回スタミナを2ずつ回復します。"
 perkMachineGunnerRank5LongDescRE,"あなたは究極のマシンガンナーになりました。\n\nマシンガン使用時のダメージ量が51%上がり、射撃レートが24%速くなり、リロード速度が30%短縮されます。\n\nコマンドーアドレナリン: マシンガンでの攻撃を命中すると、毎回スタミナを3ずつ回復します。"
@@ -509,21 +532,21 @@ perkCharismaticNatureRank3DescRE,鋼の身体
 perkCharismaticNatureRank1LongDescRE,最大体力と最大スタミナ量が 20 上がります。
 perkCharismaticNatureRank2LongDescRE,与ブロックダメージ量が 50%上がり、 敵へのダメージ量が 8.5%上がります。
 perkCharismaticNatureRank3LongDescRE,アーマー値と爆発ダメージ耐性が、アーマー1部位ごとに 1上がり、最大体力と最大スタミナ量が 10増えます。
-perkHealingFactorRank1LongDescRE,自然治癒で毎時24の健康を得る。\nクリティカルダメージの回復速度が 50%早くなります。
-perkHealingFactorRank2LongDescRE,自然治癒で毎時42の健康を得る。\nクリティカルダメージの回復速度が 100%早くなります。
+perkHealingFactorRank1LongDescRE,1時間ごとに、体力が24自然回復します。\nクリティカルダメージの回復速度が 50%早くなります。
+perkHealingFactorRank2LongDescRE,1時間ごとに、体力が42自然回復します。\nクリティカルダメージの回復速度が 100%早くなります。
 perkPhysicianRank1LongDescRE,医療回復アイテムの回復量 25%増加します。
 perkPhysicianRank2LongDescRE,医療回復アイテムの回復量 50%増加します。
 perkPhysicianRank3LongDescRE,医療回復アイテムの回復量 75%増加します。
 attAgilityRank01LongDesc,"あなたはとても不器用ですが、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが215%になり、3%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank02LongDesc,"あなたはアメフトチームのメンバーになる事は出来ませんでしたが、めげずに練習を続けたため、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが230%になり、6%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank03LongDesc,"あなたは不器用なため、いつも大きな音を立ててしまいますが、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが245%になり、9%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank04LongDesc,"あなたはあまり器用ではありませんが、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが260%になり、12%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank05LongDesc,"あなたは器用なため、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが275%になり、15%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank06LongDesc,"あなたはとても身軽なため、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが290%になり、18%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank07LongDesc,"あなたはとても素早く、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが305%になり、21%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank08LongDesc,"流れるような動きでいつも完璧な動きをする事は、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが320%になり、24%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank09LongDesc,"あなたはプロのアスリートになれるほどの身体能力の持ち主ですので、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが335%になり、27%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank10LongDesc,"器用さにおいて、あなたの右に出る者はいません。　弓、ハンドガン、ナイフを使用時のヘッドショットダメージが350%になり、30%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank02LongDesc,"あなたはアメフトチームのメンバーになる事は出来ませんでしたが、めげずに練習を続けたため、ハンドガン、ナイフを使用時のヘッドショットダメージが230%になり、6%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank03LongDesc,"あなたは不器用なため、いつも大きな音を立ててしまいますが、ハンドガン、ナイフを使用時のヘッドショットダメージが245%になり、9%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank04LongDesc,"あなたはあまり器用ではありませんが、ハンドガン、ナイフを使用時のヘッドショットダメージが260%になり、12%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank05LongDesc,"あなたは器用なため、ハンドガン、ナイフを使用時のヘッドショットダメージが275%になり、15%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank06LongDesc,"あなたはとても身軽なため、ハンドガン、ナイフを使用時のヘッドショットダメージが290%になり、18%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank07LongDesc,"あなたはとても素早く、ハンドガン、ナイフを使用時のヘッドショットダメージが305%になり、21%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank08LongDesc,"流れるような動きでいつも完璧な動きをする事は、ハンドガン、ナイフを使用時のヘッドショットダメージが320%になり、24%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank09LongDesc,"あなたはプロのアスリートになれるほどの身体能力の持ち主ですので、ハンドガン、ナイフを使用時のヘッドショットダメージが335%になり、27%の確率で敵の部位を破壊する事が可能になりました。"
+attAgilityRank10LongDesc,"器用さにおいて、あなたの右に出る者はいません。　ハンドガン、ナイフを使用時のヘッドショットダメージが350%になり、30%の確率で敵の部位を破壊する事が可能になりました。"
 perkGunslingerRank3LongDescRE,"だいたいの状況をコントロールできるほどのシェリフになりました。\n\nハンドガン使用時のダメージ量が17%上がり、射撃レートが8%上がり、リロード速度が10%が速くなります。\n\nクリティカルダメージ: 5 回連続ヒット成功後にクリティカルヒット発生。"
 perkGunslingerRank4LongDescRE,"酒場いっぱいの騒がしい奴らを一瞬でクリアするほどのガンファイターになりました。\n\nハンドガン使用時のダメージ量が34%上がり、射撃レートが16%上がり、リロード速度が20%が速くなります。\n\nクリティカルダメージ: 4回連続ヒット成功すると最後の1発のダメージが倍になります。"
 perkGunslingerRank5LongDescRE,"ナベズゲイン1のガンスリンガーになりました。\n\nハンドガン使用時のダメージ量が51%上がり、射撃レートが24%上がり、リロード速度が30%が速くなります。\n\nクリティカルダメージ: 3 回連続ヒット成功すると最後の1発のダメージが倍になります。"
@@ -550,3 +573,17 @@ perkDeepCutsDescRE,ナイフ使用時のダメージ量が上がります。
 "Challenge Completion","チャレンジ完了"
 "Mission",ミッション
 "Congratulations!",おめでとうございます！
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
