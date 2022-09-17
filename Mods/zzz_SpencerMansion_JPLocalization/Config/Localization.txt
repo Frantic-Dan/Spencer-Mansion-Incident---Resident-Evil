@@ -237,7 +237,7 @@ Military-Grade Duct Tape,軍仕様ダクトテープ
 Gallery,絵画室
 "Control Room",コントロール室
 "Door (Insert Unprinted Book)",ドア (白紙の本を入れる)
-"Power Area Door",動力エリアのドア
+"Power Area Door",電力室の鍵
 "Sturdy Door (Insert Metal Object)",頑丈なドア (鉄製のオブジェを入れる)
 "Unpowered Door",無動力なドア
 "Sturdy Door (Insert Stone and Metal Object)",頑丈なドア (鉄と石製のオブジェを入れる)
