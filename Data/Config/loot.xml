@@ -1698,7 +1698,7 @@ The overall plan for loot distribution:
 
 <!-- *** Herbal_Recipe -->
 <lootgroup name="herbalRecipes" count="all">
-	<item name="drugHerbalAntibioticsSchematic"/>
+	<item name="drugHerbalAntibioticsSchematic" count="2"/>
 	<item name="drugHerbalAntibiotics"/>
 </lootgroup>
 
@@ -2110,11 +2110,10 @@ The overall plan for loot distribution:
 <!-- *** Brewery_Safe_Loot -->
 <!-- NOT_USED -->
 <lootgroup name="brewerySafe" count="all">
-	<item name="drinkYuccaJuiceSmoothieSchematic"/>
-	<item name="drinkJarBeerSchematic"/>
-	<item name="drinkCanMegaCrushSchematic"/>
-	<item name="drinkJarBlackStrapCoffeeSchematic"/>
-	<item name="apparelCigar"/>
+	<item name="drinkYuccaJuiceSmoothieSchematic" count="2"/>
+	<item name="drinkJarBeerSchematic" count="2"/>
+	<item name="drinkCanMegaCrushSchematic" count="2"/>
+	<item name="drinkJarBlackStrapCoffeeSchematic" count="2"/>
 </lootgroup>
 
 <!-- *** Shamway_Loot -->
@@ -2124,12 +2123,12 @@ The overall plan for loot distribution:
 
 <!-- *** Shamway_Safe_Loot -->
 <lootgroup name="groupShamwaySafe" count="all">
-	<item name="foodCanShamSchematic"/>
-	<item name="foodGumboStewSchematic"/>
-	<item name="foodShepardsPieSchematic"/>
-	<item name="foodSpaghettiSchematic"/>
-	<item name="foodTunaFishGravyToastSchematic"/>
-	<item name="foodShamChowderSchematic"/>
+	<item name="foodCanShamSchematic" count="2"/>
+	<item name="foodGumboStewSchematic" count="2"/>
+	<item name="foodShepardsPieSchematic" count="2"/>
+	<item name="foodSpaghettiSchematic" count="2"/>
+	<item name="foodTunaFishGravyToastSchematic" count="2"/>
+	<item name="foodShamChowderSchematic" count="2"/>
 </lootgroup>
 
 <!-- *** Weapon_Parts -->
@@ -5749,8 +5748,9 @@ The overall plan for loot distribution:
 </lootcontainer>
 
 <lootgroup name="DogLoot" count="all">
-	<item name="Dog Collar" count="1"/>
-	<item name="modMeleeErgonomicGrip" count="1"/>
+	<item name="Dog Collar"/>
+	<item name="modMeleeErgonomicGrip"/>
+	<item name="modMeleeErgonomicGrip"/>
 </lootgroup>
 
 <!-- EntityLootContainerBoss, rare random drop off bosses -->
@@ -5804,7 +5804,6 @@ The overall plan for loot distribution:
 </lootcontainer>
 
 <lootgroup name="TyrantLoot" count="all">
-	<item name="Super Goggles"/>
 	<item name="modGunMeleeBlessedMetal"/>
 	<item name="drugRockBusters"/>
 	<item name="Workbench Repair Kit"/>
@@ -5818,10 +5817,10 @@ The overall plan for loot distribution:
 </lootcontainer>
 
 <lootgroup name="HiPowerBooks" count="all">
-	<item name="bookPistolPeteHPAmmo"/>
-	<item name="bookShotgunMessiahSlugs"/>
-	<item name="bookEnforcerHPAmmo"/>
-	<item name="bookSniperHPAmmo"/>
+	<item name="bookPistolPeteHPAmmo" count="2"/>
+	<item name="bookShotgunMessiahSlugs" count="2"/>
+	<item name="bookEnforcerHPAmmo" count="2"/>
+	<item name="bookSniperHPAmmo" count="2"/>
 </lootgroup>
 
 <lootcontainer id="260" name="HiPowerAmmo" size="6,1" destroy_on_close="true" sound_open="UseActions/chest_tier2_open" sound_close="UseActions/chest_tier2_close" open_time="1">
@@ -5830,11 +5829,10 @@ The overall plan for loot distribution:
 
 <lootgroup name="SpecialClothes" count="all">
 	<item name="apparelToughGuySunglasses"/>
-	<item name="apparelSkiGoggles"/>
-	<item name="apparelNerdGlasses"/>
-	<item name="Athletic Jacket Mod Schematic"/>
-	<item name="High Permormance Running Soles Schematic"/>
-	<item name="modArmorBandolierSchematic"/>
+	<item name="apparelToughGuySunglasses"/>
+	<item name="Athletic Jacket Mod Schematic" count="2"/>
+	<item name="High Permormance Running Soles Schematic" count="2"/>
+	<item name="modArmorBandolierSchematic" count="2"/>
 </lootgroup>
 
 <lootcontainer id="261" name="SpecialClothing" size="6,1" destroy_on_close="true" sound_open="UseActions/chest_tier2_open" sound_close="UseActions/chest_tier2_close" open_time="1">
