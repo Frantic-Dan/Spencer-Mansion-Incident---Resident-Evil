@@ -2412,7 +2412,7 @@
 		<effect_group>
 			<requirement name="IsIndoors"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
-				<passive_effect name="HealthLoss" operation="perc_subtract" level="1" value=".05"/>
+  			    	<passive_effect name="GeneralDamageResist" operation="base_add" level="1" value=".05"/>
 		</effect_group>
 	</perk>
 	<!--<perk name="perkUrbanCombatComplete" parent="skillUrbanCombat" max_level="1" base_skill_point_cost="0" desc_key="perkUrbanCombatCompleteDesc" long_desc_key="perkUrbanCombatCompleteLongDesc">
