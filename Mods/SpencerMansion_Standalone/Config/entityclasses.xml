@@ -94,7 +94,6 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
 		<passive_effect name="HealthMax" operation="base_set" value="6000"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -129,7 +128,6 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
 		<passive_effect name="HealthMax" operation="base_set" value="30000"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -162,7 +160,6 @@
 	<property name="LootDropProb" value="0"/> <!-- Feral -->
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="450"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -192,7 +189,6 @@
 	<property name="LootDropProb" value="1"/> <!-- Feral -->
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1250"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -222,7 +218,6 @@
 	<property name="LootDropProb" value="0"/> <!-- Feral -->
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1250"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -272,7 +267,6 @@
 
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="500"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head"/>
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
 	</effect_group>
@@ -324,7 +318,6 @@
 
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="500"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head"/>
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
 	</effect_group>
@@ -710,7 +703,6 @@
 	<effect_group name="Base Effects">
 
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -730,7 +722,6 @@
 	<effect_group name="Base Effects">
 
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -750,7 +741,6 @@
 	<effect_group name="Base Effects">
 
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -776,7 +766,6 @@
 	<effect_group name="Base Effects">
 
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -792,7 +781,6 @@
 	<effect_group name="Base Effects">
 
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -819,7 +807,6 @@
 	<effect_group name="Base Effects">
 
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -845,7 +832,6 @@
 	<effect_group name="Base Effects">
 
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -865,7 +851,6 @@
 	<effect_group name="Base Effects">
 
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -885,7 +870,6 @@
 	<effect_group name="Base Effects">
 
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -904,7 +888,6 @@
 	<effect_group name="Base Effects">
 
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -929,7 +912,6 @@
 	<effect_group name="Base Effects">
 
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -955,7 +937,6 @@
 	<effect_group name="Base Effects">
 
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -973,7 +954,6 @@
 	<effect_group name="Base Effects">
 
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
@@ -994,7 +974,6 @@
 	<effect_group name="Base Effects">
 
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
 
