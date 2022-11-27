@@ -3212,9 +3212,9 @@
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="7.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="4.5"/>
-		<passive_effect name="HealthLoss" operation="perc_add" value="-.05">
+      		<passive_effect name="GeneralDamageResist" operation="base_add" value=".05"/>
 			<requirement name="ProgressionLevel" progression_name="perkEnforcerApparel" operation="Equals" value="1"/>
-		</passive_effect>
+		
 	</effect_group>
 </item>
 
@@ -3238,9 +3238,9 @@
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="15.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="2.5"/>
-		<passive_effect name="HealthLoss" operation="perc_add" value="-.05">
+     		<passive_effect name="GeneralDamageResist" operation="base_add" value=".05"/>
 			<requirement name="ProgressionLevel" progression_name="perkEnforcerApparel" operation="Equals" value="1"/>
-		</passive_effect>
+
 	</effect_group>
 </item>
 
