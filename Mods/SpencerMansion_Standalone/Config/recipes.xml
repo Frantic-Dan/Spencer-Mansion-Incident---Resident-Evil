@@ -46,49 +46,49 @@
 
 <recipe name="ammo9mmBulletBallRE" count="1" craft_area="workbench" tags="workbenchCrafting">
 	<ingredient name="resourceBulletTip" count="1"/>
-	<ingredient name="resourceGunPowder" count="6"/>
+	<ingredient name="resourceGunPowder" count="36"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 </recipe>
 
 <recipe name="ammo9mmBulletHPRE" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 	<ingredient name="resourceBulletTip" count="1"/>
-	<ingredient name="resourceGunPowder" count="8"/>
+	<ingredient name="resourceGunPowder" count="45"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 </recipe>
 
 <recipe name="ammo44MagnumBulletBallRE" count="1" craft_area="workbench" tags="workbenchCrafting">
 	<ingredient name="resourceBulletTip" count="4"/>
-	<ingredient name="resourceGunPowder" count="25"/>
+	<ingredient name="resourceGunPowder" count="144"/>
 	<ingredient name="resourceBulletCasing" count="4"/>
 </recipe>
 
 <recipe name="ammo44MagnumBulletHPRE" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 	<ingredient name="resourceBulletTip" count="4"/>
-	<ingredient name="resourceGunPowder" count="33"/>
+	<ingredient name="resourceGunPowder" count="180"/>
 	<ingredient name="resourceBulletCasing" count="4"/>
 </recipe>
 
 <recipe name="ammo762mmBulletBallRE" count="1" craft_area="workbench" tags="workbenchCrafting">
 	<ingredient name="resourceBulletTip" count="1"/>
-	<ingredient name="resourceGunPowder" count="7"/>
+	<ingredient name="resourceGunPowder" count="24"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 </recipe>
 
 <recipe name="ammo762mmBulletHPRE" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 	<ingredient name="resourceBulletTip" count="1"/>
-	<ingredient name="resourceGunPowder" count="9"/>
+	<ingredient name="resourceGunPowder" count="30"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 </recipe>
 
 <recipe name="ammoShotgunShellRE" count="1" craft_area="workbench" tags="workbenchCrafting">
 	<ingredient name="resourceBuckshot" count="1"/>
-	<ingredient name="resourceGunPowder" count="20"/>
+	<ingredient name="resourceGunPowder" count="120"/>
 	<ingredient name="resourcePaper" count="2"/>
 </recipe>
 
 <recipe name="ammoShotgunSlugRE" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 	<ingredient name="resourceBulletTip" count="4"/>
-	<ingredient name="resourceGunPowder" count="25"/>
+	<ingredient name="resourceGunPowder" count="150"/>
 	<ingredient name="resourceScrapPolymers" count="2"/>
 </recipe>
 
@@ -97,10 +97,10 @@
 	<ingredient name="resourceDuctTape" count="1"/>
 </recipe>
 
-<recipe name="armorClothGloves" count="1">
+<!-- <recipe name="armorClothGloves" count="1">
 	<ingredient name="resourceCloth" count="5"/>
 	<ingredient name="resourceDuctTape" count="1"/>
-</recipe>
+</recipe> -->
 
 <recipe name="armorClothHat" count="1">
 	<ingredient name="resourceCloth" count="5"/>
@@ -131,12 +131,12 @@
 	<ingredient name="armorClothJacket" count="1"/>
 </recipe>
 
-<recipe name="armorLeatherGloves" count="1">
+<!-- <recipe name="armorLeatherGloves" count="1">
 	<ingredient name="resourceLeather" count="5"/>
 	<ingredient name="resourceDuctTape" count="1"/>
 	<ingredient name="resourceSewingKit" count="1"/>
 	<ingredient name="armorClothGloves" count="1"/>
-</recipe>
+</recipe> -->
 
 <recipe name="armorLeatherHood" count="1">
 	<ingredient name="resourceLeather" count="5"/>
@@ -168,13 +168,13 @@
 	<ingredient name="armorLeatherChest" count="1"/>
 </recipe>
 
-<recipe name="armorScrapGloves" count="1">
+<!-- <recipe name="armorScrapGloves" count="1">
 	<ingredient name="resourceScrapIron" count="50"/>
 	<ingredient name="resourceLeather" count="3"/>
 	<ingredient name="resourceDuctTape" count="1"/>
 	<ingredient name="resourceSewingKit" count="1"/>
 	<ingredient name="armorLeatherGloves" count="1"/>
-</recipe>
+</recipe> -->
 
 <recipe name="armorScrapHelmet" count="1">
 	<ingredient name="resourceScrapIron" count="50"/>
@@ -192,9 +192,9 @@
 	<ingredient name="armorLeatherPants" count="1"/>
 </recipe>
 
-<recipe name="campfire" count="1">
+<!-- <recipe name="campfire" count="1">
 	<ingredient name="resourceRockSmall" count="5"/>
-</recipe>
+</recipe> -->
 
 <recipe name="resourceCrushedSand" count="1" craft_area="cementMixer" tags="cementMixerCrafting">
 	<ingredient name="resourceRockSmall" count="1"/>
@@ -238,7 +238,7 @@
 <recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="resourceCropCoffeeBeans" count="2"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
-	<ingredient name="resourceGunPowder" count="5"/>
+	<ingredient name="resourceGunPowder" count="25"/>
 </recipe>
 
 <recipe name="drinkJarGoldenRodTea" count="1" craft_area="campfire" craft_tool="toolCookingPot">
@@ -251,7 +251,7 @@
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
-<recipe name="drinkCanMegaCrush" count="1" craft_area="campfire" craft_time="60" tags="learnable">
+<recipe name="drinkCanMegaCrush" count="1" craft_area="campfire" craft_time="60" tags="learnable" craft_tool="toolCookingPot">
 	<ingredient name="drinkJarPureMineralWater" count="1"/>
 	<ingredient name="foodCropYuccaFruit" count="2"/>
 	<ingredient name="foodCropBlueberries" count="2"/>
@@ -269,12 +269,12 @@
 	<ingredient name="drinkJarEmpty" count="1"/>
 </recipe>
 
-<recipe name="drinkJarYuccaJuice" count="1" craft_area="campfire">
+<recipe name="drinkJarYuccaJuice" count="1" craft_area="campfire" craft_tool="toolCookingPot">
 	<ingredient name="foodCropYuccaFruit" count="3"/>
 	<ingredient name="drinkJarEmpty" count="1"/>
 </recipe>
 
-<recipe name="Snowberry Juice" count="1" craft_area="campfire" craft_time="12">
+<recipe name="Snowberry Juice" count="1" craft_area="campfire" craft_time="12" craft_tool="toolCookingPot">
 	<ingredient name="resourceCropSnowberryPlant" count="8"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
@@ -508,15 +508,9 @@
 	<ingredient name="Mixed Green+Blue Herb" count="1"/>
 </recipe>
 
-<recipe name="medicalSplint" count="1">
-	<ingredient name="resourceCloth" count="2"/>
-	<ingredient name="resourceWood" count="2"/>
-	<ingredient name="resourceDuctTape" count="1"/>
-</recipe>
-
 <recipe name="mineCandyTinRE" count="1" > <!-- trap size 1 -->
 	<ingredient name="resourceScrapIron" count="18"/>
-	<ingredient name="resourceGunPowder" count="25"/>
+	<ingredient name="resourceGunPowder" count="150"/>
 	<ingredient name="resourceDuctTape" count="1"/>
 </recipe>
 
@@ -718,9 +712,9 @@
 	<ingredient name="resourceRadiator" count="1"/>
 </recipe>
 
-<recipe name="9mm Bullet" count="1" craft_time="1">
+<recipe name="9mm Bullet" count="1" craft_time="0.5">
 	<ingredient name="resourceBulletTip" count="1"/>
-	<ingredient name="resourceGunPowder" count="6"/>
+	<ingredient name="resourceGunPowder" count="36"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 	<ingredient name="Reloading_Tool" count="1"/>
 </recipe>
@@ -729,16 +723,16 @@
 	<ingredient name="ammo9mmBulletBallRE" count="1"/>
 </recipe>
 
-<recipe name="9mm HP Bullet" count="1" craft_time="1" tags="learnable">
+<recipe name="9mm HP Bullet" count="1" craft_time="0.5" tags="learnable">
 	<ingredient name="resourceBulletTip" count="1"/>
-	<ingredient name="resourceGunPowder" count="8"/>
+	<ingredient name="resourceGunPowder" count="45"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 	<ingredient name="Reloading_Tool" count="1"/>
 </recipe>
 
-<recipe name="44Magnum Bullet" count="1" craft_time="1">
+<recipe name="44Magnum Bullet" count="1" craft_time="0.5">
 	<ingredient name="resourceBulletTip" count="4"/>
-	<ingredient name="resourceGunPowder" count="25"/>
+	<ingredient name="resourceGunPowder" count="144"/>
 	<ingredient name="resourceBulletCasing" count="4"/>
 	<ingredient name="Reloading_Tool" count="1"/>
 </recipe>
@@ -747,16 +741,16 @@
 	<ingredient name="ammo44MagnumBulletBallRE" count="1"/>
 </recipe>
 
-<recipe name="44Magnum HP Bullet" count="1" craft_time="1" tags="learnable">
+<recipe name="44Magnum HP Bullet" count="1" craft_time="0.5" tags="learnable">
 	<ingredient name="resourceBulletTip" count="4"/>
-	<ingredient name="resourceGunPowder" count="33"/>
+	<ingredient name="resourceGunPowder" count="180"/>
 	<ingredient name="resourceBulletCasing" count="4"/>
 	<ingredient name="Reloading_Tool" count="1"/>
 </recipe>
 
-<recipe name="762 Bullet" count="1" craft_time="1">
+<recipe name="762 Bullet" count="1" craft_time="0.5">
 	<ingredient name="resourceBulletTip" count="1"/>
-	<ingredient name="resourceGunPowder" count="7"/>
+	<ingredient name="resourceGunPowder" count="24"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 	<ingredient name="Reloading_Tool" count="1"/>
 </recipe>
@@ -765,16 +759,16 @@
 	<ingredient name="ammo762mmBulletBallRE" count="1"/>
 </recipe>
 
-<recipe name="762 HP Bullet" count="1" craft_time="1" tags="learnable">
+<recipe name="762 HP Bullet" count="1" craft_time="0.5" tags="learnable">
 	<ingredient name="resourceBulletTip" count="1"/>
-	<ingredient name="resourceGunPowder" count="9"/>
+	<ingredient name="resourceGunPowder" count="30"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 	<ingredient name="Reloading_Tool" count="1"/>
 </recipe>
 
-<recipe name="Shotgun Shell" count="1" craft_time="1">
+<recipe name="Shotgun Shell" count="1" craft_time="0.5">
 	<ingredient name="resourceBuckshot" count="1"/>
-	<ingredient name="resourceGunPowder" count="20"/>
+	<ingredient name="resourceGunPowder" count="120"/>
 	<ingredient name="resourcePaper" count="2"/>
 	<ingredient name="Reloading_Tool" count="1"/>
 </recipe>
@@ -783,14 +777,14 @@
 	<ingredient name="ammoShotgunShellRE" count="1"/>
 </recipe>
 
-<recipe name="Shotgun Slug" count="1" craft_time="1" tags="learnable">
+<recipe name="Shotgun Slug" count="1" craft_time="0.5" tags="learnable">
 	<ingredient name="resourceBulletTip" count="4"/>
-	<ingredient name="resourceGunPowder" count="25"/>
+	<ingredient name="resourceGunPowder" count="150"/>
 	<ingredient name="resourceScrapPolymers" count="2"/>
 	<ingredient name="Reloading_Tool" count="1"/>
 </recipe>
 
-<recipe name="Gun Powder" count="1" craft_time="1">
+<recipe name="Gun Powder" count="1" craft_time="0.5">
 	<ingredient name="resourceCoal" count="10"/>
 	<ingredient name="resourcePotassiumNitratePowder" count="10"/>
 	<ingredient name="Reloading_Tool" count="1"/>
@@ -852,6 +846,118 @@
 	<ingredient name="Red Gemstone" count="1"/>
 	<ingredient name="Locked Jewelry Box" count="1"/>
 </recipe>
+
+<recipe name="BrawlerTraining" craft_time="1">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="BoomstickTraining" craft_time="1">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="ArmourToleranceTraining" craft_time="1">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="SexualTrexTraining" craft_time="1">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="MachineGunnnerTraining" craft_time="1">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="PainToleranceTraining" craft_time="1">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="WellnessTraining" craft_time="1">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="HealingFactorTraining" craft_time="1">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="PhysicianTraining" craft_time="1">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="DeepCutsTraining" craft_time="1">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="GunslingerTraining" craft_time="1">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="RunandGunTraining" craft_time="1">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="FlurryofBlowsTraining" craft_time="1">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<recipe name="CardioTraining" craft_time="1">
+	<ingredient name="STARSTrainingManual"/>
+</recipe>
+
+<!-- <recipe name="STARSTrainingManual" craft_time="1">
+	<ingredient name="BrawlerTraining"/>
+</recipe>
+
+<recipe name="STARSTrainingManual" craft_time="1">
+	<ingredient name="BoomstickTraining"/>
+</recipe>
+
+<recipe name="STARSTrainingManual" craft_time="1">
+	<ingredient name="ArmourToleranceTraining"/>
+</recipe>
+
+<recipe name="STARSTrainingManual" craft_time="1">
+	<ingredient name="SexualTrexTraining"/>
+</recipe>
+
+<recipe name="STARSTrainingManual" craft_time="1">
+	<ingredient name="MachineGunnnerTraining"/>
+</recipe>
+
+<recipe name="STARSTrainingManual" craft_time="1">
+	<ingredient name="PainToleranceTraining"/>
+</recipe>
+
+<recipe name="STARSTrainingManual" craft_time="1">
+	<ingredient name="WellnessTraining"/>
+</recipe>
+
+<recipe name="STARSTrainingManual" craft_time="1">
+	<ingredient name="HealingFactorTraining"/>
+</recipe>
+
+<recipe name="STARSTrainingManual" craft_time="1">
+	<ingredient name="PhysicianTraining"/>
+</recipe>
+
+<recipe name="STARSTrainingManual" craft_time="1">
+	<ingredient name="DeepCutsTraining"/>
+</recipe>
+
+<recipe name="STARSTrainingManual" craft_time="1">
+	<ingredient name="GunslingerTraining"/>
+</recipe>
+
+<recipe name="STARSTrainingManual" craft_time="1">
+	<ingredient name="RunandGunTraining"/>
+</recipe>
+
+<recipe name="STARSTrainingManual" craft_time="1">
+	<ingredient name="FlurryofBlowsTraining"/>
+</recipe>
+
+<recipe name="STARSTrainingManual" craft_time="1">
+	<ingredient name="CardioTraining"/>
+</recipe> -->
 
 	</set>
 </FranticDan>
