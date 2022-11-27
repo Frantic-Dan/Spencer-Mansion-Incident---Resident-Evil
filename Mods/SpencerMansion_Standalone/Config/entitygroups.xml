@@ -116,7 +116,7 @@
 
 <!-- Mansion Hunter Sleeper Volume -->
 	<entitygroup name="sleeperMansionHunterStageGS1"><entity name="zombieJanitor"/><entity name="zombieJoe"/><entity name="zombieMarlene"/><entity name="zombieDarlene"/><entity name="zombieArlene"/><entity name="zombieBoe"/><entity name="zombieBusinessMan"/><entity name="zombieTomClark"/><entity name="zombieYo"/><entity name="zombieSteve"/></entitygroup>
-	<entitygroup name="sleeperMansionHunterStageGS9"><entity name="Hunter"/></entitygroup>
+	<entitygroup name="sleeperMansionHunterStageGS7"><entity name="Hunter"/></entitygroup>
 	<entitygroup name="sleeperMansionHunterStageGS20"><entity name="Hunter"/></entitygroup>
 	<entitygroup name="sleeperMansionHunterStageGS30"><entity name="Hunter"/></entitygroup>
 	<entitygroup name="sleeperMansionHunterStageGS40"><entity name="Hunter"/></entitygroup>
