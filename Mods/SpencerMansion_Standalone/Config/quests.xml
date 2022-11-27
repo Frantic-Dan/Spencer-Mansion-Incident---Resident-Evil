@@ -13,8 +13,8 @@
 		<property name="offer_key" value="questStartup_offer"/>
 		<property name="shareable" value="false"/>
 
-		<reward type="SkillPoints" value="1"/>
-		<reward type="Exp" value="11025"/>
+		<reward type="Item" id="STARSTrainingManual" value="12"/>
+		<reward type="Exp" value="9734"/>
 		<reward type="Quest" id="Escape"/>
 	</quest>
 
@@ -40,6 +40,7 @@
 		<property name="category" value="Memo"/>
 		<property name="offer_key" value="DogWhistle_offer"/>
 		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
 		<!-- <property name="completiontype" value="TurnIn"/> -->
 
 		<objective type="RandomGoto" value="35-36" phase="1">
