@@ -29423,7 +29423,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Explosion.RadiusBlocks" value="2"/>
 	<property name="Explosion.RadiusEntities" value="5"/>
 	<property name="Explosion.BlockDamage" value="10"/>
-	<property name="Explosion.EntityDamage" value="180"/> <!-- damage for entities in the center of the explosion. -->
+	<property name="Explosion.EntityDamage" value="225"/> <!-- damage for entities in the center of the explosion. -->
 	<property name="Explosion.DamageBonus.stone" value="0.1"/>
 	<property name="Explosion.DamageBonus.metal" value="0.1"/>
 	<property name="Explosion.DamageBonus.earth" value="0"/>
