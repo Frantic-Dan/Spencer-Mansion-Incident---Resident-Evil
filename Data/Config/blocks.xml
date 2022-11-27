@@ -21009,7 +21009,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="campfire">
 	<property name="Class" value="Campfire"/>
 	<property name="Material" value="MstoneNoGlue"/>
-	<property name="MaxDamage" value="100"/>
+	<property name="MaxDamage" value="50000"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Crafting/campfirePrefab"/>
@@ -29417,7 +29417,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Stacknumber" value="3"/> <!-- STK explosives -->
 	<property name="MaxDamage" value="1"/>
-	<property name="TriggerDelay" value="1"/>
+	<property name="TriggerDelay" value="0.4"/>
 	<property name="TriggerSound" value="landmine_trigger"/>
 	<property name="Explosion.ParticleIndex" value="11"/>
 	<property name="Explosion.RadiusBlocks" value="2"/>
@@ -29433,7 +29433,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<!-- <property name="DropScale" value="3"/>  SUPPOSEDLY works (again) but since all blocks use the bag as a drop mesh by default...
 	it  won't do anything interesting unless a specific drop mesh is declared. -->
 	<drop event="Destroy" count="0"/>
-	<property name="Group" value="Tools/Traps"/>
+	<property name="Group" value="Tools/Traps,Basics"/>
 	<property name="EconomicValue" value="97"/>
 	<property name="FilterTags" value="MC_building,SC_traps"/>
 	<property name="SortOrder1" value="70g0"/>
@@ -29458,7 +29458,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Texture" value="352"/>
 	<property name="Stacknumber" value="25"/> <!-- STK explosives -->
 	<property name="MaxDamage" value="4"/>
-	<property name="TriggerDelay" value="0.5"/>
+	<property name="TriggerDelay" value="0.8"/>
 	<property name="TriggerSound" value="landmine_trigger"/>
 	<property name="Explosion.ParticleIndex" value="11"/>
 	<property name="Explosion.RadiusBlocks" value="2"/>
