@@ -2596,9 +2596,11 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="MaxDamage" value="5000"/>
 	<property name="Material" value="Mbedrock"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="GndAlign" value="1"/>
 	<property class="RepairItems"> <property name="resourceScrapIron" value="1"/> </property>
-	<property name="Model" value="#Entities/LootContainers?metalToolBoxClosedPrefab.prefab"/>
-	<property name="CanPickup" value="true" param1="Reloading_Tool"/>
+	<property name="Model" value="#Entities/LootContainers?loot_satchelPrefab.prefab"/>
+	<property name="CanPickup" value="true" param1="Jewelry_Box"/>
 </block>
 
 <block name="GyroWheelBlock">
