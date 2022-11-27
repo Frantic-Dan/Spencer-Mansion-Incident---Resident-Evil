@@ -648,7 +648,7 @@
 						<gameoption name="MaxSpawnedAnimals" title="goMaxSpawnedAnimals" value_wrap="false" value_type="int" values="0, 10, 30, 50" display_names="" value_localization_prefix="" />
 						-->
 						<gameoption name="PersistentPlayerProfiles" title="goPersistentCharacters" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
-						<gameoption name="XPMultiplier" title="goXPMultiplierRE" value_wrap="false" value_type="int" values="25, 100" display_names="" value_localization_prefix="goXPMultiplierValue" />
+						<gameoption name="XPMultiplier" title="goXPMultiplierRE" value_wrap="false" value_type="int" values="500, 100" display_names="" value_localization_prefix="goXPMultiplierValue" />
 					</grid>
 				</rect>
 
@@ -672,7 +672,7 @@
 				
 				<rect tab_key="xuiGameSettingsMultiplayer">
 					<grid pos="6,-40" rows="13" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical" >
-						<gameoption name="PlayerKillingMode" title="goPlayerKillingMode" value_wrap="false" value_type="int" values="" display_names="goPlayerKillingModeNoKilling,goPlayerKillingModeKillAlliesOnly,goPlayerKillingModeKillStrangersOnly,goPlayerKillingModeKillEveryone" value_localization_prefix="" />
+						<gameoption name="PlayerKillingMode" title="goPlayerKillingMode" value_wrap="false" value_type="int" values="" display_names="goPlayerKillingModeKillAlliesOnly,goPlayerKillingModeKillStrangersOnly,goPlayerKillingModeKillEveryone" value_localization_prefix="" />
 						<gameoption name="LandClaimSize" title="goLandClaimSize" value_wrap="false" value_type="int" values="21, 31, 41, 51, 71" display_names="" value_localization_prefix="goLandClaimSizeValue" />
 						<gameoption name="LandClaimDeadZone" title="goLandClaimDeadZone" value_wrap="false" value_type="int" values="0, 5, 10, 15, 20, 30, 40, 50" display_names="goLandClaimNoDeadzone" value_localization_prefix="goLandClaimDeadZoneValue" />
 						<gameoption name="LandClaimExpiryTime" title="goLandClaimExpiryTime" value_wrap="false" value_type="int" values="1, 2, 3, 4, 5, 7, 10, 30" display_names="" value_localization_prefix="goLandClaimExpiryTimeValue" />
@@ -850,7 +850,7 @@
 								<!--<browsergameoptioninfo name="PersistentPlayerProfiles" title="goPersistentCharacters" />-->
 								<browsergameoptioninfo name="MaxSpawnedZombies" title="goMaxSpawnedZombies" />
 								<browsergameoptioninfo name="MaxSpawnedAnimals" title="goMaxSpawnedAnimals" />
-								<browsergameoptioninfo name="XPMultiplier" title="goXPMultiplier" value_wrap="false" value_type="int" values="25, 100" display_names="" value_localization_prefix="goXPMultiplierValue" />
+								<browsergameoptioninfo name="XPMultiplier" title="goXPMultiplier" value_wrap="false" value_type="int" values="500, 100" display_names="" value_localization_prefix="goXPMultiplierValue" />
 							</grid>
 						</rect>
 
@@ -873,7 +873,7 @@
 						
 						<rect tab_key="xuiGameSettingsMultiplayer">
 							<grid pos="8,-40" rows="15" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical" >
-								<browsergameoptioninfo name="PlayerKillingMode" title="goPlayerKillingMode" display_names="goPlayerKillingModeNoKilling,goPlayerKillingModeKillAlliesOnly,goPlayerKillingModeKillStrangersOnly,goPlayerKillingModeKillEveryone" />
+								<browsergameoptioninfo name="PlayerKillingMode" title="goPlayerKillingMode" display_names="goPlayerKillingModeKillAlliesOnly,goPlayerKillingModeKillStrangersOnly,goPlayerKillingModeKillEveryone" />
 								<browsergameoptioninfo name="LandClaimSize" title="goLandClaimSize" value_localization_prefix="goLandClaimSizeValue" />
 								<browsergameoptioninfo name="LandClaimDeadZone" title="goLandClaimDeadZone" display_names="goLandClaimNoDeadzone" value_localization_prefix="goLandClaimDeadZoneValue" />
 								<browsergameoptioninfo name="LandClaimExpiryTime" title="goLandClaimExpiryTime" value_localization_prefix="goLandClaimExpiryTimeValue" />
@@ -972,7 +972,7 @@
 							<!--<gameoption name="PersistentPlayerProfiles" title="goPersistentCharacters" value_wrap="false" values="" display_names="" value_localization_prefix="" />-->
 							<browsergameoptioncombined name="MaxSpawnedZombies" title="goMaxSpawnedZombies" value_wrap="false" values="" display_names="" value_localization_prefix="" allow_custom="true" force_custom="true" />
 							<browsergameoptioncombined name="MaxSpawnedAnimals" title="goMaxSpawnedAnimals" value_wrap="false" values="" display_names="" value_localization_prefix="" allow_custom="true" force_custom="true" />
-							<browsergameoptioncombined name="XPMultiplier" title="goXPMultiplier" value_wrap="false" value_type="int" values="25, 100" display_names="" value_localization_prefix="goXPMultiplierValue" />
+							<browsergameoptioncombined name="XPMultiplier" title="goXPMultiplier" value_wrap="false" value_type="int" values="500, 100" display_names="" value_localization_prefix="goXPMultiplierValue" />
 						</grid>
 					</rect>
 
@@ -995,7 +995,7 @@
 					
 					<rect tab_key="xuiGameSettingsMultiplayer">
 						<grid pos="8,-40" rows="13" cell_width="725" cell_height="45" repeat_content="false" arrangement="vertical" >
-							<browsergameoptioncombined name="PlayerKillingMode" title="goPlayerKillingMode" value_wrap="false" values="" display_names="goPlayerKillingModeNoKilling,goPlayerKillingModeKillAlliesOnly,goPlayerKillingModeKillStrangersOnly,goPlayerKillingModeKillEveryone" value_localization_prefix="" allow_custom="false" />
+							<browsergameoptioncombined name="PlayerKillingMode" title="goPlayerKillingMode" value_wrap="false" values="" display_names="goPlayerKillingModeKillAlliesOnly,goPlayerKillingModeKillStrangersOnly,goPlayerKillingModeKillEveryone" value_localization_prefix="" allow_custom="false" />
 							<browsergameoptioncombined name="LandClaimSize" title="goLandClaimSize" value_wrap="false" values="21, 31, 41, 51, 71" display_names="" value_localization_prefix="goLandClaimSizeValue" />
 							<browsergameoptioncombined name="LandClaimDeadZone" title="goLandClaimDeadZone" value_wrap="false" values="0, 5, 10, 15, 20, 30, 40, 50" display_names="goLandClaimNoDeadzone" value_localization_prefix="goLandClaimDeadZoneValue" />
 							<browsergameoptioncombined name="LandClaimExpiryTime" title="goLandClaimExpiryTime" value_wrap="false" values="1, 2, 3, 4, 5, 7, 10, 30" display_names="" value_localization_prefix="goLandClaimExpiryTimeValue" />
