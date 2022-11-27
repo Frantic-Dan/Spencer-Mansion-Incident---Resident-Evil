@@ -602,10 +602,10 @@
 			<variable name="itemname" value="FirstAidSpray"/>
 			<variable name="itemcount" value="1"/>
 		</action_sequence>
-		<!-- #ammo_762 (7 rds) -->
+		<!-- #ammo_762 (12 rds) -->
 		<action_sequence name="spnc_supply_ammo762mmBulletBallRE" template="spnc_supply_template">
 			<variable name="itemname" value="ammo762mmBulletBallRE"/>
-			<variable name="itemcount" value="7"/>
+			<variable name="itemcount" value="12"/>
 		</action_sequence>
 				
 		<!-- GS 15 - PP commands -->
