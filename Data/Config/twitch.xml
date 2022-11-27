@@ -343,13 +343,13 @@
 		
 	<action name="twitch_supplyAmmo762">
 		<property name="start_gamestage" value="15" />
-		<property name="command" value="#rifle_x7" />
+		<property name="command" value="#rifle_x12" />
 		<property name="command_key" value="TwitchAction_SupplyAmmo762Command" />
 		<property name="title_key" value="TwitchAction_SupplyAmmo762" />
 		<property name="description_key" value="TwitchAction_SupplyAmmo762Desc" />
 		<property name="category" value="Spawns,Supplies" />
 		<property name="event_name" value="spnc_supply_ammo762mmBulletBallRE" />
-		<property name="default_cost" value="49" />
+		<property name="default_cost" value="48" />
 		<property name="is_positive" value="true" />
 		<property name="is_crate" value="true" />
 		<property name="special_only" value="true" />
