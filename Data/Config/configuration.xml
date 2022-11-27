@@ -4,7 +4,7 @@
 
        <ServerGroup Name="Spencer Mansion Incident - Resident Evil" Logo="" Description="">
 
-               <Server Name="Jill Valentines Story v1.06" Logo="">
+               <Server Name="Jill Valentines Story v2.0" Logo="">
 
                        <Description>
 Have you ever wanted to play Resident Evil in first person? Well now you can!
@@ -46,23 +46,35 @@ Discord - https://discord.gg/4A5MF8GHM5
 Info Spreadsheet (spoilers) - https://docs.google.com/spreadsheets/d/1Tqa0JeUROVYSJv0rxZ2YRkOFY4njxbUISr7dm96D83s/edit#gid=0
 
 UPDATES:
-v1.01
-- Rebalanced Healing Factor
-Healing Factor 0: You heal 6 Health per hour. Healing Factor 1: You heal 24 Health per hour. Healing Factor 2: You heal 42 Health per hour
-v1.02
-- Linked Storage 'The Vault' now works in multiplayer
-v1.03 (Alpha 20.4)
-- Added a 6th Difficulty, Z: Deal 80% damage and Take 700% damage.
-- Added a secret loot room. Can you find it?
-- Doubled the thickness of the XP, Food and Water bars on the HUD.
-- Increased entity damage of the Makeshift Mine from 160 to 180.
-- Wild crops now give 2 harvest instead of 1, may help with speed running.
-- Pop-up text for entity names is now green instead of white.
-v1.04
-- Updated for 20.5
-v1.05
-- Updated for 20.6 (Requires new game)
-- Added Twitch Integration
+v2.0 changes (Requires Fresh Start)
+
+Changed: You now start with 12 perk points, instead of 2, in the form of Training Manuals.
+	 Choose your points wisely, as there are no refunds and no extras for the entire playthrough.
+Changed: Perks are rebalanced, and each level now costs 1 Training Manual. Before, some perks cost 2 points.
+Changed: All attributes are only 1 level, granting 250% headshot damage and 15% bonus to dismember.
+Changed: You now start with 120 Health and Stamina instead of 100.
+Changed: Power Attacks no longer pause stamina regeneration.
+Removed: Demolitions Expert perk.
+Added: Armour Tolerance perk. This perk does what Pain Tolerance used to do, but now also reduces the stamina and mobility penalties of armour.
+Changed: Pain Tolerance now works like in vanilla, but slightly more potent. (TFP fixed a bug recently so this perk works as intended now)
+Removed: Gloves, there are now 4 pieces of armour instead of 5.
+Changed: Rebalanced the armour rating of all armour to compensate the loss of the gloves piece.
+Changed: Rebalanced ammo crafting with the Reloading Tool, the amount of gunpowder to craft each round is equivilant to the firepower of that round.
+Changed: Reloading Tool now stacks to 10 instead of 1, so ammo crafting is less tedious than before.
+Added: Reloading Tool can now also allow you to dismantle standard ammo, at a cost of 25% gunpowder. (Requires Reloading Tool on you to dismantle)
+Changed: Moved one of the Locked Reinforced chests to an earlier section of the mod for earlier access.
+Changed: Removed campfire recipe and added campfires in most locations with a Storage Box. Includes the kitchen.
+Added: Placed a Blue Herb in each of the mansion's Save Rooms.
+Changed: Poison is now more deadly, lowering health every 30 seconds instead of 50.
+Removed: You no longer get XP from harvesting anything, or reading books. XP is mostly earned from kills.
+Changed: Player Level and Gamestage is solely used for Twitch Integration and mod progression, no perk points.
+Changed: Herbs heal more, up to 60 with a mixture of G+R+B. This mixture used to heal 40.
+Changed: Medical healing recovers health at 5 per tick instead of 2.
+Changed: Nerfed the firepower of the AK-47 from 42 Standard and 56 HiPower, to 24 Standard and 30 HiPower.
+Added: Another 60 rounds of Assault Rifle ammo, bringing the total non-crafted amount from 90 to 150.
+Changed: Extra 2 Player support, some looted items now come in doubles.
+Fixed: Rockets now cause radius damage instead of just impact damage. Displayed value applies to both, so direct hits are double the displayed value.
+Changed: Difficulty rebalanced, higher difficulties now increase Enemy HP instead of reducing the players damage inflicted to enemies.
  
 
 			Weapons, Armour, Recovery Items and Hostiles
