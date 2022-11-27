@@ -643,7 +643,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			</triggered_effect>
 
 			<!-- Player HP / stamina per level -->
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PlayerLevelBonus" operation="set" value="@$LastPlayerLevel"/>
+			<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PlayerLevelBonus" operation="set" value="@$LastPlayerLevel"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PlayerLevelBonus" operation="add" value="-1">
 				<requirement name="PlayerLevel" operation="LT" value="2"/>
 			</triggered_effect>
@@ -654,7 +654,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			<passive_effect name="HealthMax" operation="base_add" value="@$PlayerLevelBonus"/>
 			<passive_effect name="StaminaMax" operation="base_add" value="@$PlayerLevelBonus"/>
 			<passive_effect name="WaterMax" operation="base_add" value="@$PlayerLevelBonus"/>
-			<passive_effect name="FoodMax" operation="base_add" value="@$PlayerLevelBonus"/>
+			<passive_effect name="FoodMax" operation="base_add" value="@$PlayerLevelBonus"/> -->
 		</effect_group>
 
 		<!--
@@ -819,9 +819,9 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			<requirement name="CVarCompare" cvar=".ArmorLightWorn" operation="GT" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaRun" operation="set" value="@.ArmorLightStaminaWalk"/>
 				<!-- the full penalty that 1 piece of light armor adds -->
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaRun" operation="multiply" value="0.0562"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="multiply" value="0.0281"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="multiply" value="0.04"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaRun" operation="multiply" value="0.03"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="multiply" value="0.015"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightMobility" operation="multiply" value="0.02"/>
 
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaRun" operation="multiply" value="@.ArmorLightWorn"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorLightStaminaWalk" operation="multiply" value="@.ArmorLightWorn"/>
@@ -870,22 +870,26 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 		<effect_group> <!-- heavy armor, determine which % the armor perk restores -->
 			<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="1"/>
 			<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".05"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="set" value=".1"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="2"/>
 			<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="set" value=".2"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="3"/>
 			<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".17"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".3"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="set" value=".3"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="4"/>
 			<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".25"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".4"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="set" value=".4"/>
 		</effect_group>
 
 		<effect_group> <!-- heavy armor, add penalties back in -->
@@ -897,9 +901,9 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				</triggered_effect>
 
 				<!-- the full penalty that 1 piece of heavy armor adds -->
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaRun" operation="multiply" value="0.09"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="multiply" value="0.045"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="multiply" value="0.06"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaRun" operation="multiply" value="0.06"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="multiply" value="0.03"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="multiply" value="0.04"/>
 
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaRun" operation="multiply" value="@.ArmorHeavyWorn"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="multiply" value="@.ArmorHeavyWorn"/>
@@ -914,11 +918,11 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			<!-- set the speed at which crit buffs heal naturally -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1">
 				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1.5">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1.2">
 				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="2">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1.5">
 				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1.6">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="2">
 				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="3"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1.8">
 				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="4"/></triggered_effect>
@@ -1099,14 +1103,14 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="5"/></triggered_effect>
 
 			<!-- perkPhysician update, regular health per tick -->
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="2"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="2.5">
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="5"/>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="5.5">
 				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="3.0">
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="6.0">
 				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="3.5">
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="6.5">
 				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="3.5">
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="7.0">
 				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/></triggered_effect>
 
 			<!-- perkParkour update, fall damage/height -->
@@ -1261,7 +1265,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			<!-- Taking care of food/water not being maxed with all the game start / initial chunk generation -->
 			<passive_effect name="WaterChangeOT" operation="base_add" value="-2,-2" duration="0,20"/>
 			<passive_effect name="FoodChangeOT" operation="base_add" value="-2,-2" duration="0,20"/>
-			<passive_effect name="HealthChangeOT" operation="base_add" value="2,2" duration="0,20"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="5,5" duration="0,30"/>
 		</effect_group>
 		<!-- <duration value="0"/>
 		<update_rate value="180"/>
@@ -1294,7 +1298,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 	-->
 	</buff>
 
-	<buff name="buffMiningTip" name_key="buff Mining Tip Name" icon="ui_game_symbol_mining" hidden="true" remove_on_death="false">
+	<!-- <buff name="buffMiningTip" name_key="buff Mining Tip Name" icon="ui_game_symbol_mining" hidden="true" remove_on_death="false">
 		<duration value="0"/>
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$miningTipCounter" operation="set" value="-10"/>
@@ -1310,7 +1314,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 					<requirement name="CVarCompare" cvar="$miningTipCounter" operation="GT" value="100"/>
 				</triggered_effect>
 		</effect_group>
-	</buff>
+	</buff> -->
 
 	<buff name="buffMiningTipDisplay" name_key="buffMiningTipDisplayName" description_key="buffMiningTipDisplayDesc" tooltip_key="buffMiningTipDisplayTooltip" icon="ui_game_symbol_quest">
 		<duration value="20"/>
@@ -1387,17 +1391,17 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 
 		<effect_group name="perkT3">
 			<!-- counter goes up on attack, buff gets stacked up at the same time -->
-			<requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="Equals" value="2"/>
 			<requirement name="CVarCompare" cvar=".GunslingerCombo" operation="GTE" value="4"/>
 				<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar=".GunslingerBonusReady" operation="set" value="1"/>
 		</effect_group>
 		<effect_group name="perkT4">
-			<requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="Equals" value="2"/>
+			<requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="Equals" value="3"/>
 			<requirement name="CVarCompare" cvar=".GunslingerCombo" operation="Equals" value="3"/>
 				<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar=".GunslingerBonusReady" operation="set" value="1"/>
 		</effect_group>
 		<effect_group name="perkT5">
-			<requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="Equals" value="3"/>
+			<requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="Equals" value="4"/>
 			<requirement name="CVarCompare" cvar=".GunslingerCombo" operation="Equals" value="2"/>
 				<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar=".GunslingerBonusReady" operation="set" value="1"/>
 		</effect_group>
@@ -1489,31 +1493,26 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 		</effect_group>
 	</buff>
 
-	<buff name="buffPerkCharismaticNature" name_key="perkCharismaticNatureName" description_key="buffPerkCharismaticNatureDesc" icon="ui_game_symbol_talk" icon_color="0,255,0" icon_blink="false" hidden="false">
+	<buff name="buffPerkCharismaticNature" name_key="perkCharismaticNatureName" description_key="buffPerkCharismaticNatureDesc" icon="ui_game_symbol_talk" icon_color="0,255,0" icon_blink="false" hidden="true">
 		<stack_type value="replace"/>
 		<duration value="10"/>
 
 		<effect_group>
 			<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="1"/>
-				<passive_effect name="HealthMax" operation="base_add" value="20"/>
-				<passive_effect name="StaminaMax" operation="base_add" value="20"/>
+				<passive_effect name="HealthMax" operation="base_add" value="10"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="2"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value=".085"/>
-				<passive_effect name="BlockDamage" operation="perc_add" value=".5" tags="melee"/>
+				<passive_effect name="HealthMax" operation="base_add" value="10"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="3"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="1"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="1" tags="heat,electrical"/>
 				<passive_effect name="HealthMax" operation="base_add" value="10"/>
-				<passive_effect name="StaminaMax" operation="base_add" value="10"/>
 		</effect_group>
-		<!-- <effect_group>
+		<effect_group>
 			<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="4"/>
-				<passive_effect name="AttributeLevel" operation="base_add" value="0"/>
-		</effect_group> -->
+				<passive_effect name="HealthMax" operation="base_add" value="10"/>
+		</effect_group>
 
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffPerkAbilityUpdate"/>
@@ -2218,7 +2217,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 
 		<effect_group>
 
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value=".02"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value=".0334"/>
 
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_bleeding" play_in_head="true"/>
@@ -2706,10 +2705,10 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLegCast"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLegSprained"/>
 
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="2708">
-				<requirement name="CVarCompare" cvar="$legHurtCounter" operation="LT" value="2708"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="2708">
-				<requirement name="CVarCompare" cvar="$legHurtCounter" operation="LT" value="2708"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="36008">
+				<requirement name="CVarCompare" cvar="$legHurtCounter" operation="LT" value="36008"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="36008">
+				<requirement name="CVarCompare" cvar="$legHurtCounter" operation="LT" value="36008"/></triggered_effect>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="subtract" value="@$critHitNaturalHealingRate">
 				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
@@ -2737,8 +2736,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLegGetsWorse">
 					<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="2708">
-					<requirement name="CVarCompare" cvar="$legHurtCounter" operation="GT" value="2708"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="36008">
+					<requirement name="CVarCompare" cvar="$legHurtCounter" operation="GT" value="36008"/></triggered_effect>
 		</effect_group>
 
 		<effect_group>
@@ -2755,7 +2754,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="180"/> <!-- 25 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LegHurtHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.4"/>
+			<passive_effect name="Mobility" operation="base_add" value="-.7"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.12"/>
 		</effect_group>
 	</buff>
@@ -3011,11 +3010,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffArmCast"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffArmSprained"/>
 
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="2708">
-				<requirement name="CVarCompare" cvar="$armHurtCounter" operation="LT" value="2708"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="36008">
+				<requirement name="CVarCompare" cvar="$armHurtCounter" operation="LT" value="36008"/>
 			</triggered_effect>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="2708">
-				<requirement name="CVarCompare" cvar="$armHurtCounter" operation="LT" value="2708"/>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="36008">
+				<requirement name="CVarCompare" cvar="$armHurtCounter" operation="LT" value="36008"/>
 			</triggered_effect>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$armHurtCounter" operation="subtract" value="@$critHitNaturalHealingRate"/>
@@ -3044,8 +3043,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="melee"/>
 					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="7208">
-					<requirement name="CVarCompare" cvar="$armHurtCounter" operation="GT" value="7208"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="36008">
+					<requirement name="CVarCompare" cvar="$armHurtCounter" operation="GT" value="36008"/></triggered_effect>
 		</effect_group>
 
 		<effect_group>
@@ -3062,9 +3061,9 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmHurtHealthBlockage" operation="divide" value="180"/> <!-- 25 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.ArmHurtHealthBlockage"/>
 
-			<passive_effect name="WeaponHandling" operation="perc_add" value="-.25" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
-			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.35" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.25" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-.75" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.75" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.75" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 		</effect_group>
 	</buff>
 
@@ -4276,17 +4275,17 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<requirement name="!EntityTagCompare" tags="player"/>
 				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
 					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
-				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="20,20,20,20">
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
 					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
 
-				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="17,17,17,17">
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
 					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
 
-				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="13,13,13,13">
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
 					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
-				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="10,10,10,10">
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
 					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
-				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="20,20,20,20">
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,6,12,18" value="25,25,25,25">
 					<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect>
 		</effect_group>
 	</buff>
@@ -4453,7 +4452,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				Player respawns / regens to 90% health/food/water -->
 
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffInternalBleeding">
+			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffInternalBleeding,buffArmBroken,buffLegBroken">
 				<requirement name="PlayerLevel" operation="LTE" value="300"/>
 			</triggered_effect>
 			<!-- <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffNearDeathRegen"/> -->
@@ -5327,17 +5326,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="buffStatusThirsty01" name_key="buffStatusThirsty01Name" description_key="buffStatusThirsty01Desc" tooltip_key="buffStatusThirsty01Tooltip" icon="ui_game_symbol_water" icon_color="255,128,0">
+	<buff name="buffStatusThirsty01" name_key="buffStatusThirsty01Name" description_key="buffStatusThirsty01Desc" tooltip_key="buffStatusThirsty01Tooltip" icon="ui_game_symbol_water" icon_color="128,64,0">
 		<damage_type value="Dehydration"/>
 		<stack_type value="ignore"/>
 		<effect_group>
+			<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.78"/>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffStatusThirsty01"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffStatusThirsty02"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffStatusThirsty03"/>
 		</effect_group>
 		<effect_group>
-			<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.52"/>
+			<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.78"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffStatusThirsty01"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="set" value="0"/>
 		</effect_group>
@@ -5346,7 +5346,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="set" value="100"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="add" value="@$PlayerLevelBonus"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="multiply" value=".066"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="multiply" value="0"/>
 			<passive_effect name="StaminaMaxBlockage" operation="base_add" value="@$buffStatusThirstyBlockage"/>
 		</effect_group>
 	</buff>
@@ -5355,13 +5355,14 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<damage_type value="Dehydration"/>
 		<stack_type value="ignore"/>
 		<effect_group>
+			<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.52"/>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffStatusThirsty02"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffStatusThirsty01"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffStatusThirsty03"/>
 		</effect_group>
 		<effect_group>
-			<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.27"/>
+			<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.52"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffStatusThirsty01"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="set" value="0"/>
 		</effect_group>
@@ -5372,7 +5373,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="set" value="100"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="add" value="@$PlayerLevelBonus"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="multiply" value=".133"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="multiply" value=".066"/>
 			<passive_effect name="StaminaMaxBlockage" operation="base_add" value="@$buffStatusThirstyBlockage"/>
 		</effect_group>
 	</buff>
@@ -5482,17 +5483,17 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<requirement name="CVarCompare" cvar=".NoHealingManager" operation="Equals" value="0"/>
 			<requirement name="CVarCompare" cvar="medicalRegHealthAmount" operation="GT" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="@medRegHealthIncSpeed"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="subtract" value="2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="subtract" value="5"/>
 		</effect_group>
 
 		<effect_group name="display">
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".healHealthAmountDisplay" operation="set" value="@medicalRegHealthAmount"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".healHealthAmountDisplay" operation="divide" value="2"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".healHealthAmountDisplay" operation="divide" value="5"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".healHealthAmountDisplay" operation="multiply" value="@medRegHealthIncSpeed"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".healHealthAmountDisplay" operation="add" value="@foodHealthAmount"/>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".healHealthAmountDisplay" operation="set" value="@medicalRegHealthAmount"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".healHealthAmountDisplay" operation="divide" value="2"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".healHealthAmountDisplay" operation="divide" value="5"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".healHealthAmountDisplay" operation="multiply" value="@medRegHealthIncSpeed"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".healHealthAmountDisplay" operation="add" value="@foodHealthAmount"/>
 			<!--
@@ -5915,7 +5916,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
-			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".1"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".15"/>
 		</effect_group>
 	</buff>
 	<buff name="buffBandolierLegs" hidden="true">
@@ -5923,7 +5924,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="0"/>
 		<effect_group>
 			<requirement name="!HasBuff" buff="buffBandolierChest"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".1"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".15"/>
 		</effect_group>
 	</buff>
 
@@ -6248,7 +6249,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffGumboStewDuration" operation="set" value="0"/>
 		</effect_group>
 		<effect_group>
-			<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1" tags="perkFlurryOfBlows"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value=".15" tags="perkFlurryOfBlows"/>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffPerkAbilityUpdate"/>
 			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffPerkAbilityUpdate"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffPerkAbilityUpdate"/>
@@ -6526,7 +6527,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<effect_group>
 			<!-- heal effect is rolled into $critHitNaturalHealingRate -->
 			<passive_effect name="BuffResistance" operation="base_add" value=".5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
-			<passive_effect name="HealthMax" operation="base_add" value="50"/>
+			<passive_effect name="HealthMax" operation="base_add" value="40"/>
 		</effect_group>
 	</buff>
 
@@ -6625,7 +6626,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffDrugSkullCrushersDuration" operation="set" value="0"/>
 		</effect_group>
 		<effect_group>
-				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="0.5" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler"/>
 		</effect_group>
 	</buff>
 
@@ -6677,7 +6678,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 	<buff name="buffPowerAttackStaminaStunt" icon="ui_game_symbol_run" icon_color="255,128,0" hidden="true">
 		<stack_type value="replace"/>
-		<duration value="2"/>
+		<duration value="0.1"/>
 		<effect_group>
 			<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="1"/>
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
@@ -6783,21 +6784,21 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="perkRunAndGun" operation="Equals" value="1"/>
-				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".4"/>
-				<passive_effect name="RunSpeed" operation="perc_subtract" value=".4"/>
-				<passive_effect name="JumpStrength" operation="perc_subtract" value=".4"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".375"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value=".375"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".375"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="perkRunAndGun" operation="Equals" value="2"/>
-				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".3"/>
-				<passive_effect name="RunSpeed" operation="perc_subtract" value=".3"/>
-				<passive_effect name="JumpStrength" operation="perc_subtract" value=".3"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".25"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value=".25"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".25"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="perkRunAndGun" operation="Equals" value="3"/>
-				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".2"/>
-				<passive_effect name="RunSpeed" operation="perc_subtract" value=".2"/>
-				<passive_effect name="JumpStrength" operation="perc_subtract" value=".2"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".125"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value=".125"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".125"/>
 		</effect_group>
 	</buff>
 
