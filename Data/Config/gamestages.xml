@@ -1908,8 +1908,8 @@ Console command: gamestage
 		<gamestage stage="1">
 			<spawn group="sleeperMansionHunterStageGS1" num="1" maxAlive="1" duration="1"/>
 		</gamestage>
-		<gamestage stage="9">
-			<spawn group="sleeperMansionHunterStageGS9" num="1" maxAlive="1" duration="1"/>
+		<gamestage stage="7">
+			<spawn group="sleeperMansionHunterStageGS7" num="1" maxAlive="1" duration="1"/>
 		</gamestage>
 		<gamestage stage="20">
 			<spawn group="sleeperMansionHunterStageGS20" num="1" maxAlive="1" duration="1"/>
