@@ -1157,7 +1157,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 		</effect_group>
 	</buff>
 
-	<buff name="buffNewbieCoat" name_key="buffNewbieCoatNameRE" description_key="buffNewbieCoatDescRE"	icon="ui_game_symbol_hunger" remove_on_death="false">
+	<buff name="buffNewbieCoat" name_key="buffNewbieCoatNameRE" description_key="buffNewbieCoatDescRE"	icon="ui_game_symbol_fork" remove_on_death="false">
 		<!-- Be careful with that remove_on_death="false". You may have to restart screen effects, particles, etc. on game load. -->
 		<stack_type value="ignore"/>
 		<effect_group>
