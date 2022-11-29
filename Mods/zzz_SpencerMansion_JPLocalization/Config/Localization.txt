@@ -94,7 +94,7 @@ EagleMedal,鷲のメダル。\n\n第二アクションで使用します。
 "Book of Curses",呪いの本
 BookOfCursesdesc,3階に落ちていた、気持ちの悪い本。\n手に持ち、第一アクション(左クリック)でお読みください。
 "Dog Whistle",犬笛
-DogWhistledesc,犬を呼ぶために使用する笛。
+DogWhistledesc,犬を呼ぶために使用する笛。\n\nマルチプレイの場合、ゲームホストがクエストを開始してください。
 "Dog Collar",犬の首輪
 DogCollardesc,何かに使えるのでしょうか？
 Coin,コイン
