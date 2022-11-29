@@ -455,14 +455,14 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			</triggered_effect>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffStatusThirsty01">
-				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value="0.5"/>
+				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value="0.77"/>
 				<requirement name="!HasBuff" buff="buffStatusThirsty01"/>
 				<requirement name="!HasBuff" buff="buffStatusThirsty02"/>
 				<requirement name="!HasBuff" buff="buffStatusThirsty03"/>
 				<requirement name="!HasBuff" buff="buffHealWaterMax"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffStatusThirsty02">
-				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value="0.25"/>
+				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value="0.52"/>
 				<requirement name="!HasBuff" buff="buffStatusThirsty02"/>
 				<requirement name="!HasBuff" buff="buffStatusThirsty03"/>
 				<requirement name="!HasBuff" buff="buffHealWaterMax"/>
@@ -5326,18 +5326,17 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="buffStatusThirsty01" name_key="buffStatusThirsty01Name" description_key="buffStatusThirsty01Desc" tooltip_key="buffStatusThirsty01Tooltip" icon="ui_game_symbol_water" icon_color="128,64,0">
+	<buff name="buffStatusThirsty01" name_key="buffStatusThirsty01Name" description_key="buffStatusThirsty01Desc" tooltip_key="buffStatusThirsty01Tooltip" icon="ui_game_symbol_water" icon_color="245,245,66">
 		<damage_type value="Dehydration"/>
 		<stack_type value="ignore"/>
 		<effect_group>
-			<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.78"/>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffStatusThirsty01"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffStatusThirsty02"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffStatusThirsty03"/>
 		</effect_group>
 		<effect_group>
-			<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.78"/>
+			<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.79"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffStatusThirsty01"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="set" value="0"/>
 		</effect_group>
@@ -5355,14 +5354,13 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<damage_type value="Dehydration"/>
 		<stack_type value="ignore"/>
 		<effect_group>
-			<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.52"/>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffStatusThirsty02"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffStatusThirsty01"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffStatusThirsty03"/>
 		</effect_group>
 		<effect_group>
-			<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.52"/>
+			<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.54"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffStatusThirsty01"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="set" value="0"/>
 		</effect_group>
@@ -5373,7 +5371,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="set" value="100"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="add" value="@$PlayerLevelBonus"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="multiply" value=".066"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="multiply" value="0"/>
 			<passive_effect name="StaminaMaxBlockage" operation="base_add" value="@$buffStatusThirstyBlockage"/>
 		</effect_group>
 	</buff>
@@ -5403,7 +5401,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="set" value="100"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="add" value="@$PlayerLevelBonus"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="multiply" value=".133"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="multiply" value="0"/>
 			<passive_effect name="StaminaMaxBlockage" operation="base_add" value="@$buffStatusThirstyBlockage"/>
 		</effect_group>
 	</buff>
