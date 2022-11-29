@@ -1,12 +1,13 @@
 Key,japanese
+goGameWorld,[FF4F00]選択 'Spencer Mansion Incident'[-]
 goDifficultyRE,[FF4F00]難易度(お読みください)[-]
-goDifficultyREDesc,"C - 与ダメ 100%/受ダメ 100%\n\nB - 与ダメ 80%/受ダメ 150%\n\nA - 与ダメ 67%/受ダメ 200%\n\nS - 与ダメ 50%/受ダメ 250%\n\nX - 与ダメ 40%/受ダメ 350%\n[FF4F00](最初は低めの難易度をお選びください)\n\nZ - 与ダメ 80%/受ダメ 700%\n[FF4F00](最初は低めの難易度をお選びください)[-]"
+goDifficultyREDesc,C - 敵のHP: 100%/プレイヤーが受けるダメージ量: 100%\n\nB - 敵のHP: 125%/プレイヤーが受けるダメージ量: 150%.\n\nA - 敵のHP: 150%/プレイヤーが受けるダメージ量: 200%.\n\nS - 敵のHP: 175%/プレイヤーが受けるダメージ量: 250%.\n\nナイトメア - 敵のHP: 200%/プレイヤーが受けるダメージ量: 350%..\n[FF4F00](初回プレイ時には選ばないでください)[-]\n\nサドマゾヒスト - 敵のHP: 250%/プレイヤーが受けるダメージ量: 500%..\n[FF4F00](初回プレイ時には選ばないでください)[-]
 goDifficulty1RE,C
 goDifficulty2RE,B
 goDifficulty3RE,A
 goDifficulty4RE,S
-goDifficulty5RE,X
-goDifficulty6RE,Z
+goDifficulty5RE,ナイトメア
+goDifficulty6RE,サドマゾヒスト
 goDayLengthRE,[FF4F00]選択 200分[-]
 goDayLengthREDesc,ゲーム内の24時間が現実時間の何分かを設定します。 このModでは、200を選択してください。
 goDayLightLengthRE,[FF4F00]選択 0[-]
@@ -68,23 +69,23 @@ cntCashRegister,タイプライター
 cntHardenedChestInsecureT5,アイテムボックス
 TheVault,The Vault
 Reloading_Tool,リロードツール
-Reloading_Tooldesc,弾薬をクラフトするために使用するツール。\n\n空きスロットがあることを確認してからクラフトしてください。
+Reloading_Tooldesc,弾薬をクラフトするために使用するツール。\n\n火薬25%分は失われますが、弾薬を解体することが出来ます。\n\n空きスロットがあることを確認してからクラフトしてください。
 InkRibbon,インクリボン
 InkRibbondesc,"現在は使用できませんが、 マニュアルセーブが実装されると、　進行状況をセーブするために必要になります。\n\nそれまでは保管しておいてください。"
 DeathMaskDesc,この仮面専用の扉を開くために使用します。\n\n第二アクションで使用します。
 MansionBattery,庭のドアを作動させるために使用します。
 Green_Herb,グリーンハーブ
-GreenHerbDesc,少量の体力回復。\n\n医師レベル0の回復量： 8\n医師レベル1の回復量： 10\n医師レベル2の回復量： 12\n医師レベル3の回復量： 14
+GreenHerbDesc,少量の体力回復。\n\n医師レベル0の回復量： 10\n医師レベル1の回復量： 11\n医師レベル2の回復量： 12\n医師レベル3の回復量： 13\n医師レベル4の回復量： 14
 Red_Herb,レッドハーブ
 RedHerbdesc,グリーンハーブの効果を上げます。\n\nそのままでは使用できません。
-GreenHerbCreamDesc,程よい量の体力回復。\n\n医師レベル0の回復量： 20\n医師レベル1の回復量： 25\n医師レベル2の回復量： 30\n医師レベル3の回復量： 35
-Green+RedHerbCreamDesc,多めの体力回復。\n\n医師レベル0の回復量： 36\n医師レベル1の回復量： 45\n医師レベル2の回復量： 54\n医師レベル3の回復量： 63
+GreenHerbCreamDesc,程よい量の体力回復。\n\n医師レベル0の回復量： 30\n医師レベル1の回復量： 33\n医師レベル2の回復量： 36\n医師レベル3の回復量： 39\n医師レベル4の回復量： 42
+Green+RedHerbCreamDesc,多めの体力回復。\n\n医師レベル0の回復量： 50\n医師レベル1の回復量： 55\n医師レベル2の回復量： 60\n医師レベル3の回復量： 65\n医師レベル4の回復量： 70
 Blue_Herb,ブルーハーブ
-BlueHerbDesc,毒の治療に使用します。
-Green+BlueHerbCreamDesc,少量の体力回復と解毒治療。\n\n医師レベル0の回復量： 12\n医師レベル1の回復量：  15\n医師レベル2の回復量：  18\n医師レベル3の回復量：  21
-Green2+BlueHerbCreamDesc,程よい量の体力回復と解毒治療。\n\n医師レベル0の回復量： 24\n医師レベル1の回復量： 30\n医師レベル2の回復量： 36\n医師レベル3の回復量： 42
-Green+Red+BlueHerbCreamDesc,多めの量の体力回復と解毒治療。\n\n医師レベル0の回復量： 40\n医師レベル1の回復量： 50\n医師レベル2の回復量： 60\n医師レベル3の回復量： 70
-FirstAidSprayDesc,完全に体力を回復します。\n\n医師レベル0の回復量：  120\n医師レベル1の回復量： 150\n医師レベル2の回復量： 180\n医師レベル3の回復量： 210
+BlueHerbDesc,毒の治療に使用します。\n\n医師レベル0の回復量： 10\n医師レベル1の回復量： 11\n医師レベル2の回復量： 12\n医師レベル3の回復量： 13\n医師レベル4の回復量： 14
+Green+BlueHerbCreamDesc,少量の体力回復と解毒治療。\n\n医師レベル0の回復量： 20\n医師レベル1の回復量：  22\n医師レベル2の回復量：  24\n医師レベル3の回復量：  26\n医師レベル4の回復量： 28
+Green2+BlueHerbCreamDesc,程よい量の体力回復と解毒治療。\n\n医師レベル0の回復量： 40\n医師レベル1の回復量： 44\n医師レベル2の回復量： 48\n医師レベル3の回復量： 52\n医師レベル4の回復量： 56
+Green+Red+BlueHerbCreamDesc,多めの量の体力回復と解毒治療。\n\n医師レベル0の回復量： 60\n医師レベル1の回復量： 66\n医師レベル2の回復量： 72\n医師レベル3の回復量： 78\n医師レベル4の回復量： 84
+FirstAidSprayDesc,完全に体力を回復します。\n\n医師レベル0の回復量：  150\n医師レベル1の回復量： 165\n医師レベル2の回復量： 180\n医師レベル3の回復量： 210
 PowerSource,地下の台所近くにあるエレベーターを動かすために使用します。\n\n手に「鍵用アップグレードツール」を持ち、鞄内にスペンサー邸エレベーター用電源が入っている状態で館のエレベータードアを右クリックし、使用可能にします。
 WolfBook,狼に関する、青色の本。
 WolfMedal,狼のメダル。\n\n第二アクションで使用します。
@@ -119,6 +120,7 @@ Shaftdesc,リングのようなものが不足しているようです。
 CylinderShaftdesc,採掘場の発電機を作動させます。\n\n第二アクションで使用します。
 FuelSupplyEmptydesc,電力源の燃料として使用する、空のカプセル。\n\n冷たい何かを中に入れましょう。
 FuelSupplydesc,シャッターの燃料を入れるために使用します。
+JewelryBox2desc,"不思議な箱、　何が入っているのでしょうか？"
 JewelryBoxdesc,"鍵が外れましたので、中を見てみましょう。"
 RedGemstonedesc,とても高そうな石です...
 LockedBoxdesc,セキュリティロック
@@ -191,16 +193,12 @@ FirstAidSpray,救急スプレー
 Super Corn Bread,スーパーコーンパン
 Super Corn Meal,スーパーコーンミール
 Snowberry Juice,スノーベリージュース
-foodShamChowder,シャムチャウダー (忍耐)
-foodGumboStew,ガンボシチュー (近接攻撃速度)
-foodShepardsPie,シェパーズパイ (力)
-foodSpaghetti,スパゲティー (素早さ)
-foodTunaFishGravyToast,ツナグレイビートースト (リロード速度)
-modArmorBandolierDesc,リロード速度が10%速くなります。\n効果はスタックしませんが、チェストアーマー、またはレッグアーマーにセット可能です。
+modArmorBandolierDesc,リロード速度が15%速くなります。\n効果はスタックしませんが、チェストアーマー、またはレッグアーマーにセット可能です。
 "Athletic Jacket Mod Schematic",設計図「アスリートジャケット改造パーツ」
 "High Permormance Running Soles Schematic",設計図「高パフォーマンス靴底」
 drinkCanMegaCrushSchematic,メガクラッシュレシピ
 Military-Grade Duct Tape,軍仕様ダクトテープ
+Jewelry_Box,宝石箱
 "Jewelry Box",宝石箱
 "Key to Room 001",001号室の鍵
 "Key to Room 003",003号室の鍵
@@ -237,7 +235,7 @@ Military-Grade Duct Tape,軍仕様ダクトテープ
 Gallery,絵画室
 "Control Room",コントロール室
 "Door (Insert Unprinted Book)",ドア (白紙の本を入れる)
-"Power Area Door",電力室の鍵
+"Power Area Door",動力エリアのドア
 "Sturdy Door (Insert Metal Object)",頑丈なドア (鉄製のオブジェを入れる)
 "Unpowered Door",無動力なドア
 "Sturdy Door (Insert Stone and Metal Object)",頑丈なドア (鉄と石製のオブジェを入れる)
@@ -287,8 +285,22 @@ Laboratory Prison Door (Requires 1 MO Disc),研究所の鉄格子 (MOディス�
 "Workbench Repair Kit",作業台修理キット
 Lighter,ライター
 
-
-
+S.T.A.R.S Training Manual,S.T.A.R.S訓練マニュアル
+TrainingManualDesc,S.T.A.R.S.の一員として特別な訓練を受けたあなたは、その訓練を生かして生き残りをかけて戦うのです！\n\n14種類ある特典の内容をよく読んで、特典のレベル数を把握し、貴重な「訓練マニュアル」を無駄にしないようにしましょう。\n\n訓練マニュアルは12しか無いので、注意深く選択してください。
+Brawler Training,格闘家訓練
+Boomstick Training,ブームスティック訓練
+Armour Tolerance Training,アーマー耐性訓練
+Sexual Trex Training,セクシーティラノサウルス訓練
+Machine Gunnner Training,マシンガンナー訓練
+Pain Tolerance Training,痛み耐性訓練
+Wellness Training,健康値訓練
+Healing Factor Training,治癒因子訓練
+Physician Training,医師訓練
+Deep Cuts Training,ディープカット訓練
+Gunslinger Training,ガンスリンガー訓練
+Run and Gun Training,ラン&ガン訓練
+Flurry of Blows Training,突風訓練
+Cardio Training,有酸素訓練
 Survival_Knife,サバイバルナイフ
 Knifedesc,"ジルのナイフ。\n狭い場所での戦闘や、動物の解体に使用します。"
 S.T.A.R.S_Handgun,S.T.A.R.S ハンドガン
@@ -332,7 +344,7 @@ plantedBlueHerb3Harvest,ブルーハーブ
 plantedRedHerb3HarvestPlayer,レッドハーブ
 plantedBlueHerb3HarvestPlayer,ブルーハーブ
 buffPoisonedName,毒にかかった！
-buffPoisonedDesc,毒にかかってしまったため、ゆっくりと体力が失われています。\n\nブルーハーブクリームを使って解毒しましょう。
+buffPoisonedDesc,毒にかかってしまったため、ゆっくりと体力が失われています。\n\nブルーハーブを使って解毒しましょう。
 buffPoisonedTooltip,毒にかかってしまいました！
 questStartup_offer,"バイオハザードへようこそ\n\nあなたはこれからスペンサー邸での出来事を一人称視点で体験する事になります。\n\n一部のゲーム機能が変更、または削除されています。\n1) スキルツリーは、戦闘とサバイバルに特化しており、 特殊技能習得の条件から、特性レベルを取り除きました。\n2) ジャンプする事は出来ません、 ジャンプ用のボタンは、はしご使用時にしか使用しません。\n3) クラフトレシピは、ハイパワー弾以外、全て解除されているため、 材料が集まれば、アーマーや回復アイテムや弾薬がクラフト出来ます。\n4) 弾薬や回復アイテムは限られているので、注意して使用しましょう！ ナイフをしっかりと活用してください。\n\nこれは、パーマデスチャレンジですので、お気を付けください。\n\nバイオハザードのような体験をしていただくために、 あなたの所持品スペースは12スロットのみとなっています。 館内にあるアイテムボックス(The Vault)を活用してください。\nThe Vaultは館内の何カ所かに設置してありますが、中身は、館内のどこからアクセスしても同じ内容になります。"
 questStartup_desc,"1998年7月、あなたはジル・バレンタイン、特殊作戦部隊S.T.A.R.S.の一員です。同部隊のブラヴォーチームが行方不明となったため、現場に訪れました。\n\nアークレイ山地の森の中で墜落したヘリを発見しました。\n墜落したヘリはブラヴォーチームの物で、乗員は全員死んでおり、あなたのチームは野犬に追われてしまいました。\n野犬の群れから逃げていると、遠くに館が見えたため、そこに避難する事にしました。\n\n外は大変危険なため、あなたはここから出る事が出来なくなりました！"
@@ -477,88 +489,87 @@ zombieJoeRadiated,Glock9's Dealer
 zombieJanitorRadiated,HellsJanitorTV
 zombieYoRadiated,NotOnly25
 
-
-attStrengthRank01LongDesc,"誰だってボディビルダーになりたいかもしれませんが、筋トレはだるいですね。\n\nショットガンや拳使用時のヘッドショットダメージ量が215%になり、3%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank02LongDesc,"あなたは身体的に弱っちいかもしれませんが、内に燃え滾る強い炎が見え隠れしています。\n\nショットガンや拳使用時のヘッドショットダメージ量が230%になり、6%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank03LongDesc,"あなたのような乳飲み子がなぜゾンビアポカリプスで生き残れているのでしょうか？\n\nショットガンや拳使用時のヘッドショットダメージ量が245%になり、9%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank04LongDesc,"あなたのお腹周りについているタイヤのようなお肉のおかげで餓死はしにくいでしょうが、スレハンを振るときには邪魔にしかなりませんね。\n\nショットガンや拳使用時のヘッドショットダメージ量が260%になり、12%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank05LongDesc,"あなたの身体は引き締まって来ました。\n\nショットガンや拳使用時のヘッドショットダメージ量が275%になり、15%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank06LongDesc,"あなたはとても強くなってきたので、ジムの凡人たちが羨ましそうに見ています。\n\nショットガンや拳使用時のヘッドショットダメージ量が290%になり、18%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank07LongDesc,"棍棒やスレハンを振り続けた結果、かなり身体が鍛えられたようです。\n\nショットガンや拳使用時のヘッドショットダメージ量が305%になり、21%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank08LongDesc,"伝説的な力を手に入れたようです。\n\nショットガンや拳使用時のヘッドショットダメージ量が320%になり、24%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank09LongDesc,"サイズ、体力、パワー、全てがチャンピオン級になりました。\n\nショットガンや拳使用時のヘッドショットダメージ量が335%になり、27%多くの確率で敵の部位を破壊する事が可能になりました。"
-attStrengthRank10LongDesc,"アポカリプスに夢を粉々にされなければ、オリンピックチャンピオンになれたほどですね、腹いせとして、ゾンビを粉々にしてやりましょう。\n\nショットガンや拳使用時のヘッドショットダメージ量が350%になり、30%多くの確率で敵の部位を破壊する事が可能になりました。"
+STARSTrainingManual,S.T.A.R.S 訓練マニュアル
+BrawlerTraining,格闘家訓練
+BoomstickTraining,ブームスティック訓練
+ArmourToleranceTraining,アーマー耐性訓練
+SexualTrexTraining,セクシーティラノサウルス訓練
+MachineGunnnerTraining,マシンガンナー訓練
+PainToleranceTraining,痛み耐性訓練
+WellnessTraining,健康値訓練
+HealingFactorTraining,治癒因子訓練
+PhysicianTraining,医師訓練
+DeepCutsTraining,ディープカット訓練
+GunslingerTraining,ガンスリンガー訓練
+RunandGunTraining,ラン&ガン訓練
+FlurryofBlowsTraining,突風訓練
+CardioTraining,有酸素訓練
+attStrengthRank01LongDescRE,"Deal 250% head shot damage and have a 15% greater chance to dismember with shotguns and fists."
 perkDemolitionsExpertRank1LongDescRE,"あなたは手榴弾兵の見習いです、爆発物の扱いには十分注意してくださいね。\n\n爆発系武器使用時のダメージ量が17%上がり、リロード速度が10%上がり、照準を合わせる速度が15%上がり、部位破壊率が15%上がります"
 perkDemolitionsExpertRank2LongDescRE,"あなたは爆発物を扱う事が出来ます。\n\n爆発系武器使用時のダメージ量が34%上がり、リロード速度が20%上がり、照準を合わせる速度が30%上がり、部位破壊率が30%上がります"
 perkDemolitionsExpertRank3LongDescRE,"あなたは爆発物の扱いになれています。\n\n爆発系武器使用時のダメージ量が51%上がり、リロード速度が30%上がり、照準を合わせる速度が45%上がり、部位破壊率が45%上がります"
-perkBoomstickRank1LongDescRE,"ショットガン使用時のダメージ量が17%上がり、射撃レートが10%速くなり、リロード速度が10%上がります。\n\n敵のスタン状態が6間持続するようになり、部位破壊率が5%上がります。"
-perkBoomstickRank3LongDescRE,"ショットガン使用時のダメージ量が34%上がり、射撃レートが20%速くなり、リロード速度が20%上がります。\n\n敵のスタン状態が8間持続するようになり、部位破壊率が10%上がります。"
-perkBoomstickRank5LongDescRE,"ショットガン使用時のダメージ量が51%上がり、射撃レートが30%速くなり、リロード速度が30%上がります。\n\n敵の足を攻撃し、ダメージを負わせる事で、走れなくする事が出来るようになります。"
+perkBoomstickRank1LongDescRE,"ショットガン使用時のダメージ量が8.5%上がり、射撃レートが8%速くなり、リロード速度が8%上がります。\n\n敵のスタン状態が4秒間持続するようになります。"
+perkBoomstickRank2LongDescRE,"ショットガン使用時のダメージ量が17%上がり、射撃レートが16%速くなり、リロード速度が16%上がります。\n\n敵のスタン状態が6秒間持続するようになります。"
+perkBoomstickRank3LongDescRE,"ショットガン使用時のダメージ量が25.5%上がり、射撃レートが24%速くなり、リロード速度が24%上がります。\n\n敵のスタン状態が8秒間持続するようになります。"
+perkBoomstickRank4LongDescRE,"ショットガン使用時のダメージ量が34%上がり、射撃レートが32%速くなり、リロード速度が32%上がります。\n敵のスタン状態が8秒間持続するようになります。\n\n敵の足を攻撃し、ダメージを負わせる事で、走れなくする事が出来るようになります。"
 perkBrawlerNameRE,格闘家 (スロット 7 8 9 0)
-perkBrawlerRank1LongDescRE,ナックルや素手使用時のダメージ量が17%上がります。\n\n頭部を攻撃すると、敵の感染させる能力を無効化する事が出来ます。
-perkBrawlerRank3LongDescRE,ナックルや素手使用時のダメージ量が34%上がります。\n\nパワーアタック時、20%の確率で敵をノックダウンさせることが出来、30%の確率でパワーアタック時に敵をよろけさせます。
-perkBrawlerRank5LongDescRE,ナックルや素手使用時のダメージ量が51%上がります。\n\n頭部への30%の確率で敵をノックダウンさせることが出来、頭部破壊率が上がります。
+perkBrawlerRank1LongDescRE,ナックルや素手使用時のダメージ量が12.5%上がり、ブロックダメージ量が50%上がります。\n\n頭部を攻撃すると、敵の感染させる能力を無効化する事が出来ます。
+perkBrawlerRank2LongDescRE,ナックルや素手使用時のダメージ量が25%、ブロックダメージ量が100%上がります。\n\n頭部を攻撃すると、敵の感染させる能力を無効化する事が出来ます。\n30%の確率でパワーアタック時に敵をスタン状態にします。
+perkBrawlerRank3LongDescRE,ナックルや素手使用時のダメージ量が37.5%上がり、ブロックダメージ量が150%上がります。\n\n頭部を攻撃すると、敵の感染させる能力を無効化する事が出来ます。\n30%の確率でパワーアタック時に敵をスタン状態にします。\n\nパワーアタック時、30%の確率で敵をノックダウンさせることが出来ます。
+perkBrawlerRank4LongDescRE,ナックルや素手使用時のダメージ量が50%上がり、ブロックダメージ量が200%上がります。\n\n頭部を攻撃すると、敵の感染させる能力を無効化する事が出来ます。\n30%の確率でパワーアタック時に敵をスタン状態にします。\n\nパワーアタック時、30%の確率で敵をノックダウンさせることが出来ます。\n\n頭部破壊率が10%上がります。
 perkSexualTrexRank1LongDescRE,ベンチウォーマーへと昇格しました。\n\n近接武器やツール使用時の通常攻撃スタミナ消費量が 6% 軽減され、パワーアタックスタミナ時の消費量が 10%軽減されます。
 perkSexualTrexRank2LongDescRE,ずいぶんと強いアスリートになってきたため、スタミナ切れする事が少なくなりました。\n\n近接武器やツール使用時の通常攻撃スタミナ消費量が12%軽減され、パワーアタックスタミナ時の消費量が20%軽減されます。\n\n近接武器で敵にとどめを刺すたびに、スタミナが10回復します。
 perkSexualTrexRank3LongDescRE,ウォリアーを尊敬しない者などいません。\n\n近接武器やツール使用時の通常攻撃スタミナ消費量が18%軽減され、パワーアタックスタミナ時の消費量が30%軽減されます。\n\n近接武器で敵にとどめを刺すたびに、スタミナが15回復します。
 perkSexualTrexRank4LongDescRE,あなたはグラディエーターになりました、アスリートの頂点です。\n\n近接武器やツール使用時の通常攻撃スタミナ消費量が24%軽減され、パワーアタックスタミナ時の消費量が40%軽減されます。\n\n近接武器で敵にとどめを刺すたびに、スタミナが20回復します。
-perkMiner69rNameRE,69年の鉱夫 (ナイフ/レンチ)
-perkMiner69rDescRE,ブロックダメージ量を上げ、伐採や解体を素早く行いましょう。
-perkMiner69rRank1LongDescRE,ナイフやレンチ使用時のブロックダメージ量が50%上昇します。
-perkMiner69rRank2LongDescRE,ナイフやレンチ使用時のブロックダメージ量が100%上昇します。
-perkMiner69rRank3LongDescRE,ナイフやレンチ使用時のブロックダメージ量が150%上昇します。
-attFortitudeRank01LongDesc,あなたはあまり頑丈ではなく、体力もあまりありませんが、かろうじて生きています。\nマシンガンを使用時のヘッドショットダメージが215%になり、3%の確率で敵の部位を破壊する事が可能になりました。
-attFortitudeRank02LongDesc,"以前よりは少しましになりました。\nマシンガンを使用時のヘッドショットダメージが230%になり、6%の確率で敵の部位を破壊する事が可能になりました。"
-attFortitudeRank03LongDesc,なんとか立っていられる状態です。\nマシンガンを使用時のヘッドショットダメージが245%になり、9%の確率で敵の部位を破壊する事が可能になりました。
-attFortitudeRank04LongDesc,"段々普通の人に近付いてきました。\nマシンガンを使用時のヘッドショットダメージが260%になり、の確率で敵の部位を破壊する事が可能になりました。"
-attFortitudeRank05LongDesc,あなたは良い健康状態です。\nマシンガンを使用時のヘッドショットダメージが275%になり、15%の確率で敵の部位を破壊する事が可能になりました。
-attFortitudeRank06LongDesc,あなたは非常に健康な状態です。\nマシンガンを使用時のヘッドショットダメージが290%になり、18%の確率で敵の部位を破壊する事が可能になりました。
-attFortitudeRank07LongDesc,あなたは完璧な健康状態です。\nマシンガンを使用時のヘッドショットダメージが305%になり、21%の確率で敵の部位を破壊する事が可能になりました。
-attFortitudeRank08LongDesc,あなたは大変強い回復力の持ち主です。\nマシンガンを使用時のヘッドショットダメージが320%になり、24%の確率で敵の部位を破壊する事が可能になりました。
-attFortitudeRank09LongDesc,あなたは驚くべき体質の持ち主です。\nマシンガンを使用時のヘッドショットダメージが335%になり、27%の確率で敵の部位を破壊する事が可能になりました。
-attFortitudeRank10LongDesc,あなたは溢れんばかりの体力の持ち主です。\nマシンガンを使用時のヘッドショットダメージが350%になり、30%の確率で敵の部位を破壊する事が可能になりました。
-perkMachineGunnerRank3LongDescRE,"幾度もの戦いの末、ソルジャーになる事が出来ました。\n\nマシンガン使用時のダメージ量が17%上がり、射撃レートが8%速くなり、リロード速度が10%短縮されます。\n\nコマンドーアドレナリン: マシンガンでの攻撃を命中すると、毎回スタミナを1ずつ回復します。"
-perkMachineGunnerRank4LongDescRE,"あなたのスキルの高さはスペシャルフォース並みです。\n\nマシンガン使用時のダメージ量が34%上がり、射撃レートが16%速くなり、リロード速度が20%短縮されます。\n\nコマンドーアドレナリン: マシンガンでの攻撃を命中すると、毎回スタミナを2ずつ回復します。"
-perkMachineGunnerRank5LongDescRE,"あなたは究極のマシンガンナーになりました。\n\nマシンガン使用時のダメージ量が51%上がり、射撃レートが24%速くなり、リロード速度が30%短縮されます。\n\nコマンドーアドレナリン: マシンガンでの攻撃を命中すると、毎回スタミナを3ずつ回復します。"
-perkPainToleranceRank1LongDescRE,着用中のアーマー1部位につき、アーマー値を 1上昇させます(キャラの詳細には反映されません)\n\nスタン状態になる確率34%減少。
-perkPainToleranceRank2LongDescRE,着用中のアーマー1部位につき、アーマー値を 2上昇させます(キャラの詳細には反映されません)\n\nスタン状態になる確率67%減少。
-perkPainToleranceRank3LongDescRE,着用中のアーマー1部位につき、アーマー値を 3上昇させます(キャラの詳細には反映されません)\n\n一切スタンされなくなります。
-buffPerkCharismaticNatureDescRE,本能を使ってサバイバルしています！
-perkCharismaticNatureDescRE,あなたはサバイバリストです。
-perkCharismaticNatureNameRE,サバイバル本能
-perkCharismaticNatureRank1DescRE,健康的
-perkCharismaticNatureRank2DescRE,力尽く
-perkCharismaticNatureRank3DescRE,鋼の身体
-perkCharismaticNatureRank1LongDescRE,最大体力と最大スタミナ量が 20 上がります。
-perkCharismaticNatureRank2LongDescRE,与ブロックダメージ量が 50%上がり、 敵へのダメージ量が 8.5%上がります。
-perkCharismaticNatureRank3LongDescRE,アーマー値と爆発ダメージ耐性が、アーマー1部位ごとに 1上がり、最大体力と最大スタミナ量が 10増えます。
-perkHealingFactorRank1LongDescRE,1時間ごとに、体力が24自然回復します。\nクリティカルダメージの回復速度が 50%早くなります。
-perkHealingFactorRank2LongDescRE,1時間ごとに、体力が42自然回復します。\nクリティカルダメージの回復速度が 100%早くなります。
-perkPhysicianRank1LongDescRE,医療回復アイテムの回復量 25%増加します。
-perkPhysicianRank2LongDescRE,医療回復アイテムの回復量 50%増加します。
-perkPhysicianRank3LongDescRE,医療回復アイテムの回復量 75%増加します。
-attAgilityRank01LongDesc,"あなたはとても不器用ですが、弓、ハンドガン、ナイフを使用時のヘッドショットダメージが215%になり、3%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank02LongDesc,"あなたはアメフトチームのメンバーになる事は出来ませんでしたが、めげずに練習を続けたため、ハンドガン、ナイフを使用時のヘッドショットダメージが230%になり、6%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank03LongDesc,"あなたは不器用なため、いつも大きな音を立ててしまいますが、ハンドガン、ナイフを使用時のヘッドショットダメージが245%になり、9%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank04LongDesc,"あなたはあまり器用ではありませんが、ハンドガン、ナイフを使用時のヘッドショットダメージが260%になり、12%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank05LongDesc,"あなたは器用なため、ハンドガン、ナイフを使用時のヘッドショットダメージが275%になり、15%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank06LongDesc,"あなたはとても身軽なため、ハンドガン、ナイフを使用時のヘッドショットダメージが290%になり、18%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank07LongDesc,"あなたはとても素早く、ハンドガン、ナイフを使用時のヘッドショットダメージが305%になり、21%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank08LongDesc,"流れるような動きでいつも完璧な動きをする事は、ハンドガン、ナイフを使用時のヘッドショットダメージが320%になり、24%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank09LongDesc,"あなたはプロのアスリートになれるほどの身体能力の持ち主ですので、ハンドガン、ナイフを使用時のヘッドショットダメージが335%になり、27%の確率で敵の部位を破壊する事が可能になりました。"
-attAgilityRank10LongDesc,"器用さにおいて、あなたの右に出る者はいません。　ハンドガン、ナイフを使用時のヘッドショットダメージが350%になり、30%の確率で敵の部位を破壊する事が可能になりました。"
-perkGunslingerRank3LongDescRE,"だいたいの状況をコントロールできるほどのシェリフになりました。\n\nハンドガン使用時のダメージ量が17%上がり、射撃レートが8%上がり、リロード速度が10%が速くなります。\n\nクリティカルダメージ: 5 回連続ヒット成功後にクリティカルヒット発生。"
-perkGunslingerRank4LongDescRE,"酒場いっぱいの騒がしい奴らを一瞬でクリアするほどのガンファイターになりました。\n\nハンドガン使用時のダメージ量が34%上がり、射撃レートが16%上がり、リロード速度が20%が速くなります。\n\nクリティカルダメージ: 4回連続ヒット成功すると最後の1発のダメージが倍になります。"
-perkGunslingerRank5LongDescRE,"ナベズゲイン1のガンスリンガーになりました。\n\nハンドガン使用時のダメージ量が51%上がり、射撃レートが24%上がり、リロード速度が30%が速くなります。\n\nクリティカルダメージ: 3 回連続ヒット成功すると最後の1発のダメージが倍になります。"
-perkDeepCutsRank1LongDescRE,持っている武器はなまくらですが、使い方は理解しているようですね。\n\nナイフ使用時の敵へのダメージ量17%上昇\n\nナイフ使用時のブロックダメージ量上昇50%
-perkDeepCutsRank2LongDescRE,あなたの友人たちはあなたの事をナイフガイと呼びます。\n\nナイフ使用時の敵へのダメージ量34%上昇\n\nナイフ使用時のブロックダメージ量上昇100%
-perkDeepCutsRank3LongDescRE,斬撃武器の扱いに関しては、あなたは他の人より一段上です。\n\nナイフ使用時の敵へのダメージ量51%上昇\n\nナイフ使用時のブロックダメージ量上昇150%
-perkRunAndGunRank1LongDescRE,"エイム力なんていらない、考えるのは後にして、とりあえず撃ちましょう。\n\n腰撃ちの命中精度が10%上がり、リロード時の移動速度低下が20%軽減されます。"
-perkRunAndGunRank2LongDescRE,素早い射撃で、危険な状況から抜け出す事が出来るようになりました。\n\n腰撃ちの命中精度が 20% 上がり、リロード時の移動速度低下が40%軽減されます。
-perkRunAndGunRank3LongDescRE,あなたは凶悪なトリガーマンになりました。\n\n腰撃ちの命中精度が30%上がり、リロード時の移動速度低下が60%軽減されます。
-perkFlurryOfBlowsRank1LongDescRE,あなたは手を素早く動かせるようになりました。\n\n片手武器や拳での攻撃速度が15%上がり、敵をキルするごとに、スタミナが5回復します。
-perkFlurryOfBlowsRank2LongDescRE,サドンストライクを習得しました。\n\n片手武器や拳での攻撃速度が30%上がり、敵をキルするごとに、スタミナが10回復します。
-perkFlurryOfBlowsRank3LongDescRE,乱れ撃ちをマスターしました。\n\n片手武器や拳での攻撃速度が45%上がり、敵をキルするごとに、スタミナが15回復します。
+perkHeavyArmorNameRE,Armour Tolerance
+perkHeavyArmorRank1LongDescRE,一部位ごとに、アーマー値+1\n機動性とスタミナへのペナルティ10%軽減
+perkHeavyArmorRank2LongDescRE,一部位ごとに、アーマー値+2\n機動性とスタミナへのペナルティ20%軽減
+perkHeavyArmorRank3LongDescRE,一部位ごとに、アーマー値+3\n機動性とスタミナへのペナルティ30%軽減
+perkHeavyArmorRank4LongDescRE,一部位ごとに、アーマー値+4\n機動性とスタミナへのペナルティ40%軽減
+attFortitudeRank01LongDescRE,マシンガンを使用時のヘッドショットダメージが250%になり、15%の確率で敵の部位を破壊する事が可能になりました。
+perkMachineGunnerRank1LongDescRE,"マシンガン使用時のダメージ量が8.5%上がり、射撃レートが8%速くなり、リロード速度が8%短縮されます。\nスプレッドが8%減少します。\nコマンドーアドレナリン: シンガンでの攻撃を命中すると、毎回スタミナを1ずつ回復します。"
+perkMachineGunnerRank2LongDescRE,"マシンガン使用時のダメージ量が17%上がり、射撃レートが16%速くなり、リロード速度が16%短縮されます。\nスプレッドが16%減少します。\nコマンドーアドレナリン: シンガンでの攻撃を命中すると、毎回スタミナを2ずつ回復します。"
+perkMachineGunnerRank3LongDescRE,"マシンガン使用時のダメージ量が25.5%上がり、射撃レートが24%速くなり、リロード速度が24%短縮されます。\nスプレッドが24%減少します。\n\nコマンドーアドレナリン: マシンガンでの攻撃を命中すると、毎回スタミナを3ずつ回復します。"
+perkMachineGunnerRank4LongDescRE,"マシンガン使用時のダメージ量が34%上がり、射撃レートが32%速くなり、リロード速度が32%短縮されます。\nスプレッドが32%減少します。\n\nコマンドーアドレナリン: マシンガンでの攻撃を命中すると、毎回スタミナを4ずつ回復します。"
+perkPainToleranceRank1LongDescRE,7.5%のダメージ軽減 (アーマー値後の計算)\nスタン耐性40%
+perkPainToleranceRank2LongDescRE,15%のダメージ軽減 (アーマー値後の計算)\nスタン耐性60%
+perkPainToleranceRank3LongDescRE,22.5%のダメージ軽減 (アーマー値後の計算)\nスタン耐性80%
+perkPainToleranceRank4LongDescRE,30%のダメージ軽減 (アーマー値後の計算)\nスタン耐性100%
+buffPerkCharismaticNatureDescRE,健康的な生活をしています！　最大体力増加。
+perkCharismaticNatureDescRE,最大体力が上がりました
+perkCharismaticNatureNameRE,健康的
+perkCharismaticNatureRank1DescRE,朝練
+perkCharismaticNatureRank2DescRE,ノンシュガー
+perkCharismaticNatureRank3DescRE,ビタミン
+perkCharismaticNatureRank4DescRE,健康食
+perkCharismaticNatureRank1LongDescRE,健康なため、最大体力10増加
+perkCharismaticNatureRank2LongDescRE,健康なため、最大体力20増加
+perkCharismaticNatureRank3LongDescRE,健康なため、最大体力30増加
+perkCharismaticNatureRank4LongDescRE,健康なため、最大体力40増加
+perkHealingFactorRank1LongDescRE,リアル時間1時間ごとに、体力が24自然回復します。\nクリティカルダメージの回復速度が 20%早くなります。
+perkHealingFactorRank2LongDescRE,リアル時間1時間ごとに、体力が36自然回復します。\nクリティカルダメージの回復速度が 50%早くなります。
+perkHealingFactorRank3LongDescRE,リアル時間1時間ごとに、体力が48自然回復します。\nクリティカルダメージの回復速度が 100%早くなります。
+perkPhysicianRank1LongDescRE,医療回復アイテムの回復量 10%増加します。
+perkPhysicianRank2LongDescRE,医療回復アイテムの回復量 20%増加します。
+perkPhysicianRank3LongDescRE,医療回復アイテムの回復量 30%増加します。
+perkPhysicianRank4LongDescRE,医療回復アイテムの回復量 40%増加します。
+attAgilityRank01LongDescRE,"ハンドガンやナイフを使用時のヘッドショットダメージが250%になり、15%の確率で敵の部位を破壊する事が可能になりました。"
+perkGunslingerDescRE,ハンドガンやマグナム使用時の技術が上がります。
+perkGunslingerRank1LongDescRE,"ハンドガン使用時のダメージ量が8.5%上がり、射撃レートが8%上がり、リロード速度が8%が速くなります。\nスプレッドが8%減少します。"
+perkGunslingerRank2LongDescRE,"ハンドガン使用時のダメージ量が17%上がり、射撃レートが16%上がり、リロード速度が16%が速くなります。\nスプレッドが16%減少します。\n\nクリティカルダメージ: 5回連続ヒット成功後にクリティカルヒット発生。"
+perkGunslingerRank3LongDescRE,"ハンドガン使用時のダメージ量が25.5%上がり、射撃レートが24%上がり、リロード速度が24%が速くなります。\nスプレッドが24%減少します。\n\nクリティカルダメージ: 4回連続ヒット成功後にクリティカルヒット発生。"
+perkGunslingerRank4LongDescRE,"ハンドガン使用時のダメージ量が34%上がり、射撃レートが32%上がり、リロード速度が32%が速くなります。\nスプレッドが32%減少します。\n\nクリティカルダメージ: 3回連続ヒット成功後にクリティカルヒット発生。"
+perkDeepCutsDescRE,サバイバルナイフ使用時の技術が上がります。
+perkDeepCutsRank1LongDescRE,ナイフ使用時の敵へのダメージ量8.5%上昇\n\nナイフ使用時のブロックダメージ量上昇50%
+perkDeepCutsRank2LongDescRE,ナイフ使用時の敵へのダメージ量17%上昇\n\nナイフ使用時のブロックダメージ量上昇100%
+perkDeepCutsRank3LongDescRE,ナイフ使用時の敵へのダメージ量25.5%上昇\n\nナイフ使用時のブロックダメージ量上昇150%
+perkDeepCutsRank4LongDescRE,ナイフ使用時の敵へのダメージ量34%上昇\nナイフ使用時のブロックダメージ量上昇200%
+perkRunAndGunRank1LongDescRE,"腰撃ちの命中精度が10%上がり、リロード時の移動速度低下が25%軽減されます。"
+perkRunAndGunRank2LongDescRE,腰撃ちの命中精度が 20% 上がり、リロード時の移動速度低下が50%軽減されます。
+perkRunAndGunRank3LongDescRE,腰撃ちの命中精度が30%上がり、リロード時の移動速度低下が75%軽減されます。
+perkFlurryOfBlowsRank1LongDescRE,近接攻撃速度が15%上がり、敵をキルするごとに、スタミナが10回復します。
+perkFlurryOfBlowsRank2LongDescRE,近接攻撃速度が30%上がり、敵をキルするごとに、スタミナが15回復します。
+perkFlurryOfBlowsRank3LongDescRE,近接攻撃速度が45%上がり、敵をキルするごとに、スタミナが20回復します。
 
 "Gun Powder",火薬
 "The Challenge",チャレンジ
@@ -573,17 +584,3 @@ perkDeepCutsDescRE,ナイフ使用時のダメージ量が上がります。
 "Challenge Completion","チャレンジ完了"
 "Mission",ミッション
 "Congratulations!",おめでとうございます！
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
