@@ -277,7 +277,7 @@ Workbench Repair Kit,Workbench Repair Kit
 Lighter,Lighter
 
 S.T.A.R.S Training Manual,S.T.A.R.S Training Manual
-TrainingManualDesc,You've had special training as a member of S.T.A.R.S. And now you have to use your training to fight for your survival!\n\nRead over what each of the 14 available perks do and be mindful of how many levels each perk has to not waste any of your precious Training Manuals.\n\nThere are only 12 Training Manuals so choose wisely!
+TrainingManualDesc,You've had special training as a member of S.T.A.R.S. And now you have to use your training to fight for your survival!\n\nRead over what each of the 14 available perks do and be mindful of how many levels each perk has to not waste any of your precious Training Manuals.\n\nThere are only 12 Training Manuals so choose wisely!\nUse the secondary action on unwanted Training Books to get a S.T.A.R.S Training Manual back. 
 Brawler Training,Brawler Training
 Boomstick Training,Boomstick Training
 Armour Tolerance Training,Armour Tolerance Training
