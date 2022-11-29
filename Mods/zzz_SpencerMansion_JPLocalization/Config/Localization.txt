@@ -61,7 +61,7 @@ TwitchAction_SupplyAmmoRocketCommand,#rocket
 TwitchAction_SupplyAmmoGrenadeCommand,#grenade
 TwitchAction_SupplyAmmoMolotovCommand,#molotov
 TwitchAction_SupplyFirstAidSprayCommand,#firstaidspray
-TwitchAction_SupplyAmmo762Command,#rifle_x7
+TwitchAction_SupplyAmmo762Command,#rifle_x12
 buffNewbieCoatNameRE,減らない食料値と水分値
 buffNewbieCoatDescRE,"このバフが付いている間は、食料値や水分値が全く減少しません。\n\nプレイヤーレベルが10になると、通常の60%のレートで、緩やかに減少し始めます。"
 xuiInventory,ジル・バレンタインの所持品
