@@ -11798,8 +11798,17 @@ add knockdown resist to armor
 	<property name="Group" value="Books"/>
 	<property class="Action0">
 		<property name="Class" value="GainSkill"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
 		<property name="Skills_to_gain" value="perkBrawler"/>
+			<requirement name="ProgressionLevel" progression_name="perkBrawler" operation="LT" value="4"/>
 		<property name="Sound_start" value="read_skillbook"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Create_item" value="STARSTrainingManual"/>
 	</property>
 </item>
 
@@ -11820,8 +11829,17 @@ add knockdown resist to armor
 	<property name="Group" value="Books"/>
 	<property class="Action0">
 		<property name="Class" value="GainSkill"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
 		<property name="Skills_to_gain" value="perkBoomstick"/>
+			<requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="LT" value="4"/>
 		<property name="Sound_start" value="read_skillbook"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Create_item" value="STARSTrainingManual"/>
 	</property>
 </item>
 
@@ -11842,8 +11860,17 @@ add knockdown resist to armor
 	<property name="Group" value="Books"/>
 	<property class="Action0">
 		<property name="Class" value="GainSkill"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
 		<property name="Skills_to_gain" value="perkHeavyArmor"/>
+			<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="LT" value="4"/>
 		<property name="Sound_start" value="read_skillbook"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Create_item" value="STARSTrainingManual"/>
 	</property>
 </item>
 
@@ -11864,8 +11891,17 @@ add knockdown resist to armor
 	<property name="Group" value="Books"/>
 	<property class="Action0">
 		<property name="Class" value="GainSkill"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
 		<property name="Skills_to_gain" value="perkSexualTrex"/>
+			<requirement name="ProgressionLevel" progression_name="perkSexualTrex" operation="LT" value="4"/>
 		<property name="Sound_start" value="read_skillbook"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Create_item" value="STARSTrainingManual"/>
 	</property>
 </item>
 
@@ -11886,8 +11922,17 @@ add knockdown resist to armor
 	<property name="Group" value="Books"/>
 	<property class="Action0">
 		<property name="Class" value="GainSkill"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
 		<property name="Skills_to_gain" value="perkMachineGunner"/>
+			<requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="LT" value="4"/>
 		<property name="Sound_start" value="read_skillbook"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Create_item" value="STARSTrainingManual"/>
 	</property>
 </item>
 
@@ -11908,8 +11953,17 @@ add knockdown resist to armor
 	<property name="Group" value="Books"/>
 	<property class="Action0">
 		<property name="Class" value="GainSkill"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
 		<property name="Skills_to_gain" value="perkPainTolerance"/>
+			<requirement name="ProgressionLevel" progression_name="perkPainTolerance" operation="LT" value="4"/>
 		<property name="Sound_start" value="read_skillbook"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Create_item" value="STARSTrainingManual"/>
 	</property>
 </item>
 
@@ -11930,13 +11984,22 @@ add knockdown resist to armor
 	<property name="Group" value="Books"/>
 	<property class="Action0">
 		<property name="Class" value="GainSkill"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
 		<property name="Skills_to_gain" value="perkCharismaticNature"/>
+			<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" operation="LT" value="4"/>
 		<property name="Sound_start" value="read_skillbook"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Create_item" value="STARSTrainingManual"/>
+	</property>
 </item>
 
 <item name="HealingFactorTraining">
@@ -11956,8 +12019,17 @@ add knockdown resist to armor
 	<property name="Group" value="Books"/>
 	<property class="Action0">
 		<property name="Class" value="GainSkill"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
 		<property name="Skills_to_gain" value="perkHealingFactor"/>
+			<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="LT" value="3"/>
 		<property name="Sound_start" value="read_skillbook"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Create_item" value="STARSTrainingManual"/>
 	</property>
 </item>
 
@@ -11978,8 +12050,17 @@ add knockdown resist to armor
 	<property name="Group" value="Books"/>
 	<property class="Action0">
 		<property name="Class" value="GainSkill"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
 		<property name="Skills_to_gain" value="perkPhysician"/>
+			<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="LT" value="4"/>
 		<property name="Sound_start" value="read_skillbook"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Create_item" value="STARSTrainingManual"/>
 	</property>
 </item>
 
@@ -12000,8 +12081,17 @@ add knockdown resist to armor
 	<property name="Group" value="Books"/>
 	<property class="Action0">
 		<property name="Class" value="GainSkill"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
 		<property name="Skills_to_gain" value="perkDeepCuts"/>
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="LT" value="4"/>
 		<property name="Sound_start" value="read_skillbook"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Create_item" value="STARSTrainingManual"/>
 	</property>
 </item>
 
@@ -12022,8 +12112,17 @@ add knockdown resist to armor
 	<property name="Group" value="Books"/>
 	<property class="Action0">
 		<property name="Class" value="GainSkill"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
 		<property name="Skills_to_gain" value="perkGunslinger"/>
+			<requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="LT" value="4"/>
 		<property name="Sound_start" value="read_skillbook"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Create_item" value="STARSTrainingManual"/>
 	</property>
 </item>
 
@@ -12044,8 +12143,17 @@ add knockdown resist to armor
 	<property name="Group" value="Books"/>
 	<property class="Action0">
 		<property name="Class" value="GainSkill"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
 		<property name="Skills_to_gain" value="perkRunAndGun"/>
+			<requirement name="ProgressionLevel" progression_name="perkRunAndGun" operation="LT" value="3"/>
 		<property name="Sound_start" value="read_skillbook"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Create_item" value="STARSTrainingManual"/>
 	</property>
 </item>
 
@@ -12066,8 +12174,17 @@ add knockdown resist to armor
 	<property name="Group" value="Books"/>
 	<property class="Action0">
 		<property name="Class" value="GainSkill"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
 		<property name="Skills_to_gain" value="perkFlurryOfBlows"/>
+			<requirement name="ProgressionLevel" progression_name="perkFlurryOfBlows" operation="LT" value="3"/>
 		<property name="Sound_start" value="read_skillbook"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Create_item" value="STARSTrainingManual"/>
 	</property>
 </item>
 
@@ -12088,8 +12205,17 @@ add knockdown resist to armor
 	<property name="Group" value="Books"/>
 	<property class="Action0">
 		<property name="Class" value="GainSkill"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
 		<property name="Skills_to_gain" value="perkRuleOneCardio"/>
+			<requirement name="ProgressionLevel" progression_name="perkRuleOneCardio" operation="LT" value="3"/>
 		<property name="Sound_start" value="read_skillbook"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Create_item" value="STARSTrainingManual"/>
 	</property>
 </item>
 
