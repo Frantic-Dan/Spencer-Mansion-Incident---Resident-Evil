@@ -286,7 +286,7 @@ Laboratory Prison Door (Requires 1 MO Disc),研究所の鉄格子 (MOディス�
 Lighter,ライター
 
 S.T.A.R.S Training Manual,S.T.A.R.S訓練マニュアル
-TrainingManualDesc,S.T.A.R.S.の一員として特別な訓練を受けたあなたは、その訓練を生かして生き残りをかけて戦うのです！\n\n14種類ある特典の内容をよく読んで、特典のレベル数を把握し、貴重な「訓練マニュアル」を無駄にしないようにしましょう。\n\n訓練マニュアルは12しか無いので、注意深く選択してください。
+TrainingManualDesc,S.T.A.R.S.の一員として特別な訓練を受けたあなたは、その訓練を生かして生き残りをかけて戦うのです！\n\n14種類ある特典の内容をよく読んで、特典のレベル数を把握し、貴重な「訓練マニュアル」を無駄にしないようにしましょう。\n\n訓練マニュアルは12しか無いので、注意深く選択してください。\n不要な訓練本に第二アクションを使用する事で、S.T.A.R.S訓練マニュアルを再入手することが出来ます。
 Brawler Training,格闘家訓練
 Boomstick Training,ブームスティック訓練
 Armour Tolerance Training,アーマー耐性訓練
