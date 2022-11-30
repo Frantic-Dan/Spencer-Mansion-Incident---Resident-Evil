@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <ModInfo>
+    <Name value="Linked_Item_Boxes" />
+    <Description value="When this is enabled, Item Boxes will be linked together just like they are in Resident Evil" />
+    <Author value="w00kie n00kie" />
+    <Version value="1.0.0.0" />
+    <Website value="" />
+  </ModInfo>
+</xml>
