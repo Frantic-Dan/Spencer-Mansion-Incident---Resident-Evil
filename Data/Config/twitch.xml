@@ -251,7 +251,7 @@
 		<property name="description_key" value="TwitchAction_SupplyBlueHerbDesc" />
 		<property name="category" value="Spawns,Supplies" />
 		<property name="event_name" value="spnc_supply_blue_herb" />
-		<property name="default_cost" value="30" />
+		<property name="default_cost" value="50" />
 		<property name="is_positive" value="true" />
 		<property name="is_crate" value="true" />
 		<property name="special_only" value="true" />
