@@ -85,7 +85,7 @@ EagleMedal,A medal of an Eagle.\n\nUse with the secondary action.
 Book of Curses,Book of Curses
 BookOfCursesdesc,A creepy looking book you found on the ground on the 3rd floor.
 Dog Whistle,Dog Whistle
-DogWhistledesc,A whistle used to get the attention of dogs.\n\nIn multiplayer, the person who is hosting the game should be the one to start this quest.
+DogWhistledesc,A whistle used to get the attention of dogs.\n\nIn multiplayer the person who is hosting the game should be the one to start this quest.
 Dog Collar,Dog Collar
 DogCollardesc,Does this collar have some importance?
 Coin,Coin
